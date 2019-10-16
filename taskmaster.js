@@ -1,3 +1,4 @@
+"use strict";
 const readline = require('readline');
 const fs = require('fs');
 const os = require('os');
@@ -7,16 +8,21 @@ let {
 	startProgram,
 	write_fd
 } = require("./builtin.js");
-let read = readline.createInterface({
+let {
+	handle_command
+} = require("./commands.js");
+
+global.read = readline.createInterface({
 	input: process.stdin,
 	output: process.stdout,
 	terminal: true,
 	prompt: "\x1B[31mTaskmaster: \x1B[0m"
 });
 
-let main = {
+global.main = {
 	isConfigurationValid: true,
-	programs: [],
+	programs: {},
+	processes: [],
 	suffix: ".tm.json",
 	configDir: PATH + "/taskmaster"
 };
@@ -24,14 +30,14 @@ let main = {
 class Program {
 	constructor(object){
 		Object.assign(this, object);
+		this.subprocess = [];
 	}
 	get getVariables (){
 		return Object.keys(this).map(x=>this[x]);
 	}
 }
 
-
-let checkTaskMasterDir = () => {
+global.checkTaskMasterDir = () => {
 	try {
 		fs.accessSync(main.configDir, fs.constants.R_OK | fs.constants.W_OK);
 		console.log("Dossier existant");
@@ -54,15 +60,15 @@ let checkTaskMasterDir = () => {
 	}
 };
 
-let loadFile = file => {
+global.loadFile = file => {
 	let obj = JSON.parse(fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8"));
 	let program = new Program(obj);
-	main.programs.push(program);
+	main.programs[program.name] = program;
 	console.log(program.name + " a été ajouté aux programmes.");
 
 };
 
-let loadConfiguration = () => {
+global.loadConfiguration = () => {
 	if (!main.isConfigurationValid)  return console.log("Dossier de configuration inexistant.");
 	let files =  fs.readdirSync(main.configDir, "UTF-8");
 	files.filter(x=>x.endsWith(main.suffix)).forEach(loadFile);
@@ -75,7 +81,8 @@ loadConfiguration();
 
 read.prompt(true);
 read.on('line', (line) =>{
-	 read.prompt(true);
+	handle_command(line);
+	 read.prompt(!true);
 });
 
 
