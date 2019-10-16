@@ -9,20 +9,23 @@ let {
 	write_fd
 } = require("./builtin.js");
 let {
-	handle_command
+	handle_command,
+	autocompletion
 } = require("./commands.js");
 
 global.read = readline.createInterface({
 	input: process.stdin,
 	output: process.stdout,
 	terminal: true,
-	prompt: "\x1B[31mTaskmaster: \x1B[0m"
+	completer: autocompletion,
+	removeHistoryDuplicates: true
 });
 
 global.main = {
 	isConfigurationValid: true,
 	programs: {},
 	processes: [],
+	prompt: "Taskmaster: \x1B[0m",
 	suffix: ".tm.json",
 	configDir: PATH + "/taskmaster"
 };
@@ -78,11 +81,18 @@ global.loadConfiguration = () => {
 
 checkTaskMasterDir();
 loadConfiguration();
-
+read.setPrompt("\x1b[32m" + main.prompt)
 read.prompt(true);
 read.on('line', (line) =>{
-	handle_command(line);
-	 read.prompt(!true);
+	let retur = handle_command(line);
+	if (!handle_command(line))
+	{
+		read.setPrompt("\x1b[31m" + main.prompt)
+	} else {
+		read.setPrompt("\x1b[32m" + main.prompt)
+
+	}
+	read.prompt(!true);
 });
 
 

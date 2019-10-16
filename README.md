@@ -29,7 +29,7 @@ fichiers
 	- envoyer un SIGNAL a program
 - restart [program]
 	- redemarrer un program
-- reread
+- fetch
 	- fetch les nouveaux fichiers de configuration
 - update
 	- recharger les fichiers de configuration
