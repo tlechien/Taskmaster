@@ -1,0 +1,1 @@
+console.log("Arguments node: ", process.argv);
