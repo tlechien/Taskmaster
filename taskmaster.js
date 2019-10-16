@@ -73,25 +73,10 @@ let loadConfiguration = () => {
 checkTaskMasterDir();
 loadConfiguration();
 
-let a = child_process.exec();
-a.
-fs.close()
-//
-// fs.readFile("./default.tm.json", "UTF-8", (error, data) => {
-//	 if (error) throw error;
-//	 let obj = JSON.parse(data);
-//	 let program = new Program(obj);
-//	 console.log(program.getVariables);
-//	 console.log("Chargement du fichier effectué.")
-// });
-
-
-//
-//
-// read.prompt(true);
-// read.on('line', (line) =>{
-//	 read.prompt(true);
-// });
+read.prompt(true);
+read.on('line', (line) =>{
+	 read.prompt(true);
+});
 
 
 
