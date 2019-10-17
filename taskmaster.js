@@ -1,8 +1,8 @@
 "use strict";
-const readline = require('readline');
-const fs = require('fs');
-const os = require('os');
-const child_process = require('child_process');
+global.readline = require('readline');
+global.fs = require('fs');
+global.os = require('os');
+global.child_process = require('child_process');
 const PATH = os.homedir();
 let {
 	startProgram,
@@ -81,10 +81,11 @@ global.loadConfiguration = () => {
 
 checkTaskMasterDir();
 loadConfiguration();
+console.log("pid", process.pid)
+console.log("istty", process.stdin.isTTY);
 read.setPrompt("\x1b[32m" + main.prompt)
 read.prompt(true);
 read.on('line', (line) =>{
-	let retur = handle_command(line);
 	if (!handle_command(line))
 	{
 		read.setPrompt("\x1b[31m" + main.prompt)
@@ -94,10 +95,47 @@ read.on('line', (line) =>{
 	}
 	read.prompt(!true);
 });
+// read.on("pause", (x)=>{
+// 	console.log('PAUSE read');
+// 	///read.pause();
+// })
+//
+// read.on("close", (x)=>{
+// 	console.log('close read');
+// })
+
+read.on('SIGCONT', () => {
+	// `prompt` will automatically resume the stream
+	console.log("Reprise du programme readsigcont.");
+	//read.resume();
+	read.setPrompt("\x1b[32m" + main.prompt)
+	read.prompt();
+});
 
 
 
+
+process.on("resume", ()=>{console.log("xd e ouf")})
+
+process.on('SIGSTP', () => {
+	// `prompt` will automatically resume the stream
+	console.log("Reprise du programme stp process sigstp.");
+	process.kill(process.pid, "SIGTSTP");
+});
 process.on("SIGINT", ()=>{
 	console.log("SIGINT");
 	process.exit(0);
 });
+
+
+process.on("SIGCONT", ()=>{
+	//read.resume();
+})
+//
+// setInterval(()=>{
+// 	fs.appendFile("fichier.log", "Coucou lol\n", function (err) {
+// 		if (err) throw err;
+// 		//console.log('Saved!');
+// 	});
+// 	//process.stderr.write("coucou");
+// }, 1000)

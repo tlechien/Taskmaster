@@ -1,5 +1,4 @@
 "use strict";
-
 let commands = [
 	{
 		names: ["help", "h"],
@@ -88,6 +87,23 @@ let commands = [
 			console.log("Closing taskmaster ...");
 			process.exit(0);
 			return (true);
+		}
+	}, {
+		names: ["background", "bg"],
+		usage: "Background taskmaster.\n\tbg",
+		call: (argv) => {
+			read.pause();
+			child_process.exec('echo xd', (error, stdout, stderr) => {
+				if (error) {
+					console.error(`exec error: ${error}`);
+					return;
+				}
+				console.log(`stdout: ${stdout}`);
+				console.error(`stderr: ${stderr}`);
+			});
+			//console.log("test");
+			fs.appendFile("fichier.log", "sleep 1 && kill -CONT ", ()=>{});
+			process.kill(process.pid, 'SIGTSTP');
 		}
 	}
 ]

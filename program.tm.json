@@ -1,6 +1,6 @@
 {
 	"name": "atom",
-	"command": "string",
+	"command": "atom --wait ~",
 	"shell": "/bin/zsh",
 	"count": 1,
 	"execAtBoot": false,
