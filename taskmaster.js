@@ -12,7 +12,6 @@ global.read = readline.createInterface({
 	input: process.stdin,
 	output: process.stdout,
 	terminal: true,
-	historySize: 0,
 	completer: Commands.autocompletion,
 	removeHistoryDuplicates: true
 });
