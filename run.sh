@@ -6,4 +6,4 @@
 # kill -cont $1
 PID=$1
 sleep 2
-kill -cont $PID;
+kill -cont $PID 2> /dev/null;

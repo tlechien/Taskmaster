@@ -72,14 +72,7 @@ let commands = [
 		call: (argv) => {
 			console.log("Starting server ...");
 			return (true);
-		}
-	}, {
-		names: ["exit"],
-		usage: "Exit taskmaster's shell.\n\texit",
-		call: (argv) => {
-			process.exit(0);
-			return (true);
-		}
+		},
 	}, {
 		names: ["quit", "q"],
 		usage: "Close taskmaster.\n\tquit",
@@ -89,41 +82,59 @@ let commands = [
 			return (true);
 		}
 	}, {
-		names: ["background", "bg"],
-		usage: "Background taskmaster.\n\tbg",
+		names: ["exit", "background", "bg"],
+		usage: "Exit and send taskmaster in background.\n\tbg",
 		call: (argv) => {
-			read.close();
-			main.isTTIN = false;
-			//read = undefined;
-			let schild = child_process.spawn("/Users/tlechien/taskmaster/run.sh", [process.pid], {detach : true, stdio:[0,1,2]});
-			process.kill(process.pid, 'SIGUSR1')
-		}
-	}, {
-		names: ["kii"],
-		usage: "Background taskmaster.\n\tbg",
-		call: (argv) => {
-
+				child_process.spawn("/Users/tlechien/taskmaster/run.sh", [process.pid], {detach : true, stdio:[0,1,2]});
+				read && read.close();
+				process.kill(process.pid, "SIGTSTP");
+				read = readline.createInterface({
+					input: process.stdin,
+					output: process.stdout,
+					terminal: true,
+					completer: autocompletion,
+					historySize: 0,
+					prompt: "Taskmaster",
+					removeHistoryDuplicates: true
+				});
+				read && read.prompt(true);
+				read.on('line', (line) =>{
+					if (!handle_command(line) && read) read.setPrompt("\x1b[31m" + main.prompt)
+					else if (read)read.setPrompt("\x1b[32m" + main.prompt)
+					if (read) read.prompt(!true);
+				});
+				//process.kill(process.pid, 'SIGUSR1')
 		}
 	}
 ]
 
-function autocompletion(line) {
-	let completions = commands.flatMap(x => x.names);
+global.autocompletion = line => {
+	let completions;
+	if (Array.prototype.flatMap)
+		completions = commands.flatMap(x => x.names);
+	else
+		completions = commands.reduce((x,y)=>x.concat(y.names), [])
 	let hits = completions.filter(c => !c.indexOf(line));
 	return [hits.length ? hits : completions, line];
 }
 
-let	handle_command = command => {
+global.handle_command = command => {
 	let cmds = command.split(" ");
 	command = cmds[0];
 	let argv = cmds.slice(1);
 	let index = commands.findIndex(x=>~x.names.indexOf(command));
-	if (~index) return commands[index].call(argv);
-	else
-	{
-		console.log("Commande not found. Type help for a list of available command");
-		return (false);
+	console.log("avant commande")
+	try {
+		if (~index) return commands[index].call(argv);
+		else if (command.trim().length)
+		{
+			console.log("Commande not found. Type help for a list of available command");
+			return (0);
+		} else return (1)
+	} catch (e) {
+		console.log("handle_command", e);
 	}
+
 }
 
 module.exports = {handle_command, autocompletion};

@@ -1,14 +1,8 @@
 'use strict';
 
-const fs = require('fs');
-const child_process = require('child_process');
-let write_fd = (fd, ...arg) => {
-	fs.writeSync(fd, arg.join(" "));
-}
-
 let getCustomEnv = env => env;
 
-let startProgram = program => {
+global.startProgram = program => {
 	/*if (!(fs.stat(program.path).mode & fs.constants.S_IRWXU)){
 	console.log("Missing rights to execute this command: %s", path);
 	return(1);
@@ -48,7 +42,7 @@ let startProgram = program => {
 	program.subprocess.push(cls);
 };
 
-let killPid = (pid, signal, callback)=>{
+global.killPid = (pid, signal, callback)=>{
 	signal = signal || 'SIGKILL';
 	callback = callback || function() {};
 	try {process.kill(pid, signal)}
@@ -56,13 +50,13 @@ let killPid = (pid, signal, callback)=>{
 	callback();
 }
 
-class Process {
+global.Process = class {
 	constructor(_child, _timestamp){
 		this.child = _child;
 		this.timestamp = _timestamp;
 	}
 }
 
-module.exports = {
-	startProgram, write_fd, Process
+ module.exports = {
+ 	startProgram, Process
 }
