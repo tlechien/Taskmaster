@@ -80,44 +80,4 @@ loadConfiguration();
 read.setPrompt("\x1b[32m" + main.prompt)
 read.prompt(true);
 
-if (read)
-	read.on('line', (line) =>{
-		if (!handle_command(line) && read) read.setPrompt("\x1b[31m" + main.prompt)
-		else if (read)read.setPrompt("\x1b[32m" + main.prompt)
-		if (read) read.prompt(!true);
-	});
-else
-	console.log("here");
-
-process.on('SIGUSR1', () => {
-	process.kill(process.pid, "SIGTSTP");
-	/*try {
-		read && read.close();
-		read = readline.createInterface({
-			input: process.stdin,
-			output: process.stdout,
-			terminal: true,
-			completer: Commands.autocompletion,
-			removeHistoryDuplicates: true
-		});
-		//if (read)
-		//	console.log(read);
-		//else console.log("MDR CA VA CRASH")
-		read &&  read.prompt(true);
-		read && read.on('line', (line) =>{
-			console.log("carsh line")
-			if (!handle_command(line))
-			{
-				//if (read) read.setPrompt("\x1b[31m" + main.prompt)
-			} else {
-				//if (read) read.setPrompt("\x1b[32m" + main.prompt)
-			}
-			console.log("apres commande")
-			if (read) read.prompt(!true);
-		});
-	} catch (e){
-		console.log("erreur", e);
-	}*/
-	//read.setPrompt("\x1b[32m" + main.prompt)
-
-});
+read && read.on('line', Commands.event_line);

@@ -85,30 +85,24 @@ let commands = [
 		names: ["exit", "background", "bg"],
 		usage: "Exit and send taskmaster in background.\n\tbg",
 		call: (argv) => {
-				child_process.spawn("/Users/tlechien/taskmaster/run.sh", [process.pid], {detach : true, stdio:[0,1,2]});
-				read && read.close();
-				process.kill(process.pid, "SIGTSTP");
-				read = readline.createInterface({
-					input: process.stdin,
-					output: process.stdout,
-					terminal: true,
-					completer: autocompletion,
-					historySize: 0,
-					prompt: "Taskmaster",
-					removeHistoryDuplicates: true
-				});
-				read && read.prompt(true);
-				read.on('line', (line) =>{
-					if (!handle_command(line) && read) read.setPrompt("\x1b[31m" + main.prompt)
-					else if (read)read.setPrompt("\x1b[32m" + main.prompt)
-					if (read) read.prompt(!true);
-				});
-				//process.kill(process.pid, 'SIGUSR1')
+			child_process.spawn(main.configDir + "/run.sh", [process.pid], {detach : true, stdio:[0,1,2]});
+			read && read.close();
+			process.kill(process.pid, "SIGTSTP");
+			read = readline.createInterface({
+				input: process.stdin,
+				output: process.stdout,
+				terminal: true,
+				completer: autocompletion,
+				historySize: 0,
+				removeHistoryDuplicates: true
+			});
+			read && read.prompt(true);
+			read.on('line', event_line);
 		}
 	}
 ]
 
-global.autocompletion = line => {
+let autocompletion = line => {
 	let completions;
 	if (Array.prototype.flatMap)
 		completions = commands.flatMap(x => x.names);
@@ -118,12 +112,17 @@ global.autocompletion = line => {
 	return [hits.length ? hits : completions, line];
 }
 
-global.handle_command = command => {
+let event_line = line =>{
+	if (!handle_command(line) && read) read.setPrompt("\x1b[31m" + main.prompt)
+	else if (read)read.setPrompt("\x1b[32m" + main.prompt)
+	if (read) read.prompt(!true);
+}
+
+let handle_command = command => {
 	let cmds = command.split(" ");
 	command = cmds[0];
 	let argv = cmds.slice(1);
 	let index = commands.findIndex(x=>~x.names.indexOf(command));
-	console.log("avant commande")
 	try {
 		if (~index) return commands[index].call(argv);
 		else if (command.trim().length)
@@ -137,4 +136,4 @@ global.handle_command = command => {
 
 }
 
-module.exports = {handle_command, autocompletion};
+module.exports = {handle_command, autocompletion, event_line};
