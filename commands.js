@@ -92,18 +92,17 @@ let commands = [
 		names: ["background", "bg"],
 		usage: "Background taskmaster.\n\tbg",
 		call: (argv) => {
-			read.pause();
-			child_process.exec('echo xd', (error, stdout, stderr) => {
-				if (error) {
-					console.error(`exec error: ${error}`);
-					return;
-				}
-				console.log(`stdout: ${stdout}`);
-				console.error(`stderr: ${stderr}`);
-			});
-			//console.log("test");
-			fs.appendFile("fichier.log", "sleep 1 && kill -CONT ", ()=>{});
-			process.kill(process.pid, 'SIGTSTP');
+			read.close();
+			main.isTTIN = false;
+			//read = undefined;
+			let schild = child_process.spawn("/Users/tlechien/taskmaster/run.sh", [process.pid], {detach : true, stdio:[0,1,2]});
+			process.kill(process.pid, 'SIGUSR1')
+		}
+	}, {
+		names: ["kii"],
+		usage: "Background taskmaster.\n\tbg",
+		call: (argv) => {
+
 		}
 	}
 ]

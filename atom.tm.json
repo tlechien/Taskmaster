@@ -1,0 +1,21 @@
+{
+  "name": "atom",
+  "command": "atom --wait",
+  "count": 1,
+  "execAtBoot": false,
+  "restart": ["always"],
+  "expectedOutput": [0],
+  "successTime": 1000,
+  "retryCount": 3,
+  "killSignal": "SIGTERM",
+  "terminationTime": 30000,
+  "redirect": {
+    "err": "default",
+    "out": "default"
+  },
+  "env": {
+    "key": "value"
+  },
+  "workingDirectory": {},
+  "umask": "0755"
+}

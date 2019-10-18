@@ -2,6 +2,7 @@
 global.readline = require('readline');
 global.fs = require('fs');
 global.os = require('os');
+global.tty = require('tty');
 global.child_process = require('child_process');
 const PATH = os.homedir();
 let {
@@ -27,7 +28,8 @@ global.main = {
 	processes: [],
 	prompt: "Taskmaster: \x1B[0m",
 	suffix: ".tm.json",
-	configDir: PATH + "/taskmaster"
+	configDir: PATH + "/taskmaster",
+	isTTIN: false,
 };
 
 class Program {
@@ -81,61 +83,62 @@ global.loadConfiguration = () => {
 
 checkTaskMasterDir();
 loadConfiguration();
-console.log("pid", process.pid)
-console.log("istty", process.stdin.isTTY);
+
 read.setPrompt("\x1b[32m" + main.prompt)
 read.prompt(true);
 read.on('line', (line) =>{
 	if (!handle_command(line))
 	{
-		read.setPrompt("\x1b[31m" + main.prompt)
+		if (read) read.setPrompt("\x1b[31m" + main.prompt)
 	} else {
-		read.setPrompt("\x1b[32m" + main.prompt)
+		read && read.setPrompt("\x1b[32m" + main.prompt)
 
 	}
-	read.prompt(!true);
-});
-// read.on("pause", (x)=>{
-// 	console.log('PAUSE read');
-// 	///read.pause();
-// })
-//
-// read.on("close", (x)=>{
-// 	console.log('close read');
-// })
-
-read.on('SIGCONT', () => {
-	// `prompt` will automatically resume the stream
-	console.log("Reprise du programme readsigcont.");
-	//read.resume();
-	read.setPrompt("\x1b[32m" + main.prompt)
-	read.prompt();
+	read && read.prompt(!true);
 });
 
-
-
-
-process.on("resume", ()=>{console.log("xd e ouf")})
-
-process.on('SIGSTP', () => {
+process.on('SIGUSR1', () => {
 	// `prompt` will automatically resume the stream
 	console.log("Reprise du programme stp process sigstp.");
+	read && read.close();
+	fs.writeFile(".state", "1", ()=>{});
 	process.kill(process.pid, "SIGTSTP");
 });
-process.on("SIGINT", ()=>{
-	console.log("SIGINT");
-	process.exit(0);
-});
 
-
-process.on("SIGCONT", ()=>{
-	//read.resume();
+process.on("SIGTTIN", ()=>{
+	if (main.isTTIN)
+		return;
+	global.read = readline.createInterface({
+		input: process.stdin,
+		output: process.stdout,
+		terminal: true,
+		completer: autocompletion,
+		removeHistoryDuplicates: true
+	});
+	console.log("fg")
+	read.setPrompt("\x1b[32m" + main.prompt)
+	read.prompt(true);
+	main.isTTIN = true;
+	fs.writeFile(".state", "0", ()=>{});
+	read.on('line', (line) =>{
+		if (!handle_command(line))
+		{
+			if (read) read.setPrompt("\x1b[31m" + main.prompt)
+		} else {
+			read && read.setPrompt("\x1b[32m" + main.prompt)
+		}
+		read && read.prompt(!true);
+	});
+	fs.appendFile("fichier.log", "signal recu TTIN", ()=>{});
 })
 //
 // setInterval(()=>{
-// 	fs.appendFile("fichier.log", "Coucou lol\n", function (err) {
+// 	let string = `istty ? ${[process.stdin.isTTY, process.stdout.isTTY], tty.isatty(0), tty.isatty(1)}
+// 	${[process.pid, process.getgid()]}
+// 	${[process.getegid(),process.geteuid(),process.getgid(),process.getgroups(), process.getuid(), process.ppid, process.uptime()]}}\n`;
+// 	fs.appendFile("fichier.log", string, function (err) {
 // 		if (err) throw err;
 // 		//console.log('Saved!');
 // 	});
 // 	//process.stderr.write("coucou");
-// }, 1000)
+// }, 1000 * 3)
