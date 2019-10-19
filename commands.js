@@ -97,6 +97,7 @@ let commands = [
 			});
 			read && read.prompt(true);
 			read.on('line', event_line);
+			return (1);
 		}
 	}, {
 		names: ["tasklist", "tl"],
@@ -112,11 +113,12 @@ let commands = [
 			{
 				console.log(array.join(" | ") + " sont des pids qui sont pas egaux a " + process.pid);
 				array.forEach(pid=>{
-					child_process.execSync("kill -KILL " + +pid, {encoding: "UTF-8"});
-					//console.log("\r" + pid + " terminé.")
+					//process.kill("SIGKILL", pid)
+					killPid(+pid, "SIGKILL");
+					console.log("\r" + pid + " terminé.")
 				})
 			}
-			return (1);
+			return (3);
 		}
 	}
 ]
@@ -133,9 +135,17 @@ let autocompletion = line => {
 }
 
 let event_line = line =>{
-	if (!handle_command(line) && read) read.setPrompt("\x1b[31m" + main.prompt)
+	let index = handle_command(line);
+	if (!index && read) read.setPrompt("\x1b[31m" + main.prompt)
+	else if (index == 3 && read) {
+		read.setPrompt("");
+		setTimeout(()=>{
+			read.setPrompt("\x1b[32m" + main.prompt)
+			read.prompt(true);
+		}, 50)
+	}
 	else if (read)read.setPrompt("\x1b[32m" + main.prompt)
-	if (read) read.prompt(!true);
+	if (index != 3 && read) read.prompt(!true);
 }
 
 let handle_command = command => {

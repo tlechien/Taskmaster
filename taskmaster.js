@@ -6,15 +6,7 @@ global.child_process = require('child_process');
 let Builtin = require("./builtin");
 let Commands = require("./commands");
 const PATH = os.homedir();
-process.stdin.setRawMode(true);
-
-global.read = readline.createInterface({
-	input: process.stdin,
-	output: process.stdout,
-	terminal: true,
-	completer: Commands.autocompletion,
-	removeHistoryDuplicates: true
-});
+//process.stdin.setRawMode(true);
 
 global.main = {
 	isConfigurationValid: true,
@@ -24,6 +16,16 @@ global.main = {
 	suffix: ".tm.json",
 	configDir: PATH + "/taskmaster",
 };
+
+global.read = readline.createInterface({
+	input: process.stdin,
+	output: process.stdout,
+	terminal: true,
+	completer: Commands.autocompletion,
+	//prompt: "\x1b[32m" + main.prompt,
+	removeHistoryDuplicates: true
+});
+
 
 class Program {
 	constructor(object){
