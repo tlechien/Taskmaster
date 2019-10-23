@@ -140,7 +140,6 @@ let handle_command = command => {
 
 }
 
-
 process.on("SIGCONT", ()=>{
 	console.log("on reprend ? " + process.stdin.isTTY);
 })

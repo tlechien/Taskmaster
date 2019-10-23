@@ -58,6 +58,6 @@ global.Process = class {
 	}
 }
 
- module.exports = {
- 	startProgram, Process
+module.exports = {
+	startProgram, Process
 }
