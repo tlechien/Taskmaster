@@ -17,9 +17,10 @@ global.startProgram = program => {
 		if (err)
 		console.log("err: '%s'" ,err);
 		console.log("out: '%s'" ,out);
-		//write_fd(program.fd.err, stderr);
+		e_fd(program.fd.err, stderr);
 		//write_fd(program.fd.out, stdout);
 	})
+	fs.appendFileSync(PATH + "/taskmaster/" + ".pids", program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
 	child.on("error", (error)=>{
 		console.log("child error: ", error);
 	})

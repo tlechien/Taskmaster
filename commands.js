@@ -99,27 +99,6 @@ let commands = [
 			read.on('line', event_line);
 			return (1);
 		}
-	}, {
-		names: ["tasklist", "tl"],
-		usage: "Close taskmaster.\n\tquit",
-		call: (argv) => {
-			let command = `ps -A | grep "node taskmaster.js" | grep -v grep`;
-			let stdout = child_process.execSync(command, {encoding: "UTF-8"});
-			let array = stdout.split("\n");
-			array = array.filter(x=>x.length).map(x=>x.trim().substr(0, x.trim().indexOf(" "))).filter(x=>x!=process.pid);
-			if (!array.length)
-				console.log("Une seule instance de taskmaster est en cours")
-			else
-			{
-				console.log(array.join(" | ") + " sont des pids qui sont pas egaux a " + process.pid);
-				array.forEach(pid=>{
-					//process.kill("SIGKILL", pid)
-					killPid(+pid, "SIGKILL");
-					console.log("\r" + pid + " terminé.")
-				})
-			}
-			return (3);
-		}
 	}
 ]
 
@@ -134,18 +113,13 @@ let autocompletion = line => {
 	return [hits.length ? hits : completions, line];
 }
 
+
+
 let event_line = line =>{
 	let index = handle_command(line);
 	if (!index && read) read.setPrompt("\x1b[31m" + main.prompt)
-	else if (index == 3 && read) {
-		read.setPrompt("");
-		setTimeout(()=>{
-			read.setPrompt("\x1b[32m" + main.prompt)
-			read.prompt(true);
-		}, 50)
-	}
 	else if (read)read.setPrompt("\x1b[32m" + main.prompt)
-	if (index != 3 && read) read.prompt(!true);
+	if (read) read.prompt(!true);
 }
 
 let handle_command = command => {
@@ -166,4 +140,8 @@ let handle_command = command => {
 
 }
 
+
+process.on("SIGCONT", ()=>{
+	console.log("on reprend ? " + process.stdin.isTTY);
+})
 module.exports = {handle_command, autocompletion, event_line};
