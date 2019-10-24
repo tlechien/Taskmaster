@@ -17,10 +17,11 @@ global.startProgram = program => {
 		if (err)
 		console.log("err: '%s'" ,err);
 		console.log("out: '%s'" ,out);
-		e_fd(program.fd.err, stderr);
+		//write_fd(program.fd.err, stderr);
 		//write_fd(program.fd.out, stdout);
 	})
-	fs.appendFileSync(PATH + "/taskmaster/" + ".pids", program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
+	fs.appendFileSync(main.pidLogs, program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
+	//write_fd(taskLogs, "Process spawned: " + program.name + ":" + child.pid);
 	child.on("error", (error)=>{
 		console.log("child error: ", error);
 	})
@@ -43,6 +44,42 @@ global.startProgram = program => {
 	program.subprocess.push(cls);
 };
 
+global.onLaunchPrograms = () =>{
+	Object.keys(main.programs).forEach(p => {
+		let program = main.programs[p];
+		if (program.execAtLaunch)
+			for (let i = 0; i < program.count; i++)
+				startProgram(program);
+	});
+}
+
+global.resetLogs = () =>{
+	fs.writeFile(main.pidLogs, "", (err) =>{
+		//write_fd(main.taskLogs, "Pid logs has been reset");
+		if (err)
+		{
+			//write_fd(main.taskLogs, "Unable to erase Pid logs.");
+			throw error ()
+		}
+	});
+}
+
+// global.LoadLogs = ()=>{
+// 	fs.readFileSync()
+//
+// }
+
+global.killChilds = () =>{
+	for (prog in main.programs)
+	{
+		let program = prog;
+		prog.subprocess.forEach(pid=>killPid(pid, prog.killSignal, ()=>{
+			//write_fd(prog.redirect.err, "Program killed");
+			//write_fd(main.taskLogs, "Child Process " + prog.name + ";" + pid + " has been killed.");
+		}))
+	}
+}
+
 global.killPid = (pid, signal, callback)=>{
 	signal = signal || 'SIGKILL';
 	callback = callback || function() {};
@@ -58,6 +95,6 @@ global.Process = class {
 	}
 }
 
-module.exports = {
-	startProgram, Process
-}
+// module.exports = {
+// 	startProgram, Process
+// }

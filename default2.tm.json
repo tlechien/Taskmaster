@@ -2,7 +2,7 @@
   "name": "default",
   "command": "string",
   "count": 1,
-  "execAtBoot": false,
+  "execAtLaunch": false,
   "restart": ["always", "never", "signal"],
   "expectedOutput": [0],
   "successTime": 1000,

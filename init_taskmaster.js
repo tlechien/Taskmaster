@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/10/24 11:16:07 by aben-azz         ###   ########.fr       */
+/*   Updated: 2019/10/24 15:52:50 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ let checkTaskMasterDir = () => {
 let loadFile = file => {
 	let obj = JSON.parse(fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8"));
 	let program = new Program(obj);
+	program.name = file.substr(0, file.indexOf(".tm.json"))
 	main.programs[program.name] = program;
 	console.log(program.name + " a été ajouté aux programmes.");
 };
@@ -90,12 +91,10 @@ let setupRead = () => {
 
 let init = () => {
 	console.log("init")
-
 	/*
 	** Checks that taskmaster have access to ressources
 	*/
 	checkTaskMasterDir();
-
 	/*
 	** Load configuration, build objects.
 	*/
@@ -104,6 +103,15 @@ let init = () => {
 	** Kill other instances of taskmaster to be the only one alive.
 	*/
 	killOld();
+	/*
+	** Reset Pid log file.
+	*/
+	resetLogs();
+	/*
+	** Launch programs that should be started on launch from config.
+	*/
+	onLaunchPrograms();
+	//startProgram(main.programs.atom);
 	/*
 	** Setup stream if program is in foreground
 	*/

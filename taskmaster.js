@@ -12,6 +12,7 @@ global.PATH = os.homedir();
 /*
 ** DECLARATION
 */
+//console.log(os.constants);
 
 global.main = {
 	isConfigurationValid: true,
@@ -20,6 +21,8 @@ global.main = {
 	prompt: "Taskmaster: \x1B[0m",
 	suffix: ".tm.json",
 	configDir: PATH + "/taskmaster",
+	taskLogs: this.configDir + ".logs",
+	pidLogs: this.configDir + ".pids",
 	isTTY: true
 };
 
@@ -47,5 +50,9 @@ process.on("SIGCONT", ()=>{
 	//	clearInterval(global.id);
 	main.isTTY = true;
 })
+
+process.on("beforeExit", ()=>{
+	killChilds();
+});
 
 Init.init();

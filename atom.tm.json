@@ -1,8 +1,7 @@
 {
-  "name": "atom",
-  "command": "atom --wait",
-  "count": 1,
-  "execAtBoot": false,
+  "command": "atom --wait /Users/tlechien/.42sh_history",
+  "count": 2,
+  "execAtLaunch": true,
   "restart": ["always"],
   "expectedOutput": [0],
   "successTime": 1000,
@@ -16,6 +15,6 @@
   "env": {
     "key": "value"
   },
-  "workingDirectory": {},
+  "workingDirectory": "",
   "umask": "0755"
 }
