@@ -8,7 +8,7 @@ global.Builtin = require("./builtin");
 global.Commands = require("./commands");
 global.Init = require("./init_taskmaster");
 global.PATH = os.homedir();
-
+global.CONFIGDIR = PATH + "/taskmaster";
 /*
 ** DECLARATION
 */
@@ -20,9 +20,8 @@ global.main = {
 	processes: [],
 	prompt: "Taskmaster: \x1B[0m",
 	suffix: ".tm.json",
-	configDir: PATH + "/taskmaster",
-	taskLogs: this.configDir + ".logs",
-	pidLogs: this.configDir + ".pids",
+	taskLogs: CONFIGDIR + ".logs",
+	pidLogs: CONFIGDIR + ".pids",
 	isTTY: true
 };
 
@@ -51,8 +50,18 @@ process.on("SIGCONT", ()=>{
 	main.isTTY = true;
 })
 
-process.on("beforeExit", ()=>{
+function exitHandler(options, err) {
+	console.log("beforeExit")
 	killChilds();
-});
+	process.exit(1);
+}
+process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));
+process.on('SIGINT', exitHandler.bind(null, {exit: true, signal: "sigint"}));
+process.on('SIGUSR1', exitHandler.bind(null, {exit: true, signal: "usr1"}));
+process.on('SIGUSR2', exitHandler.bind(null, {exit: true, signal: "usr2"}));
+process.on('SIGTERM', exitHandler.bind(null, {exit: true, signal: "sigterm"}));
+process.on('uncaughtException', (x) => {
+    //exitHandler.bind(null, {exit: true, signal: "exception"});
 
+});
 Init.init();

@@ -1,6 +1,6 @@
 {
   "command": "atom --wait /Users/tlechien/.42sh_history",
-  "count": 2,
+  "count": 1,
   "execAtLaunch": true,
   "restart": ["always"],
   "expectedOutput": [0],

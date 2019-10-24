@@ -40,7 +40,7 @@ global.startProgram = program => {
 
 		console.log('closing code: ' + code + ": signal", signal);
 	});
-	let cls = new Process(child, program.name, Date.now());
+	let cls = new Process(child, Date.now());
 	program.subprocess.push(cls);
 };
 
@@ -64,27 +64,22 @@ global.resetLogs = () =>{
 	});
 }
 
-// global.LoadLogs = ()=>{
-// 	fs.readFileSync()
-//
-// }
-
 global.killChilds = () =>{
-	for (prog in main.programs)
-	{
-		let program = prog;
-		prog.subprocess.forEach(pid=>killPid(pid, prog.killSignal, ()=>{
-			//write_fd(prog.redirect.err, "Program killed");
-			//write_fd(main.taskLogs, "Child Process " + prog.name + ";" + pid + " has been killed.");
-		}))
-	}
+	Object.keys(main.programs).forEach(p => {
+		let program = main.programs[p];
+			program.subprocess.forEach(subprocess=>killPid(subprocess.child.pid, program.killSignal, ()=>{
+				console.log(main.taskLogs, "Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
+				//write_fd(prog.redirect.err, "Program killed");
+				//write_fd(main.taskLogs, "Child Process " + prog.name + ";" + pid + " has been killed.");
+			}))
+	});
 }
 
 global.killPid = (pid, signal, callback)=>{
 	signal = signal || 'SIGKILL';
 	callback = callback || function() {};
 	try {process.kill(pid, signal)}
-	catch (err) {console.log("Child couldn't be killed")}
+	catch (err) {console.log("Child couldn't be killed " + err.toString())}
 	callback();
 }
 

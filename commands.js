@@ -85,7 +85,7 @@ let commands = [
 		names: ["exit", "background", "bg"],
 		usage: "Exit and send taskmaster in background.\n\tbg",
 		call: (argv) => {
-			child_process.spawn(main.configDir + "/run.sh", [process.pid], {detach : true, stdio:[0,1,2]});
+			child_process.spawn(CONFIGDIR + "/run.sh", [process.pid], {detach : true, stdio:[0,1,2]});
 			read && read.close();
 			process.kill(process.pid, "SIGTSTP");
 			read = readline.createInterface({

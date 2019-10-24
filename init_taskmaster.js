@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/10/24 15:52:50 by tlechien         ###   ########.fr       */
+/*   Updated: 2019/10/24 16:52:15 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@
 */
 let checkTaskMasterDir = () => {
 	try {
-		fs.accessSync(main.configDir, fs.constants.R_OK | fs.constants.W_OK);
+		fs.accessSync(CONFIGDIR, fs.constants.R_OK | fs.constants.W_OK);
 		console.log("Dossier existant");
 	} catch (error) {
 		if (error === "ENOENT") {
 			console.log("Dossier ${PATH}/taskmaster non-existant on le crée ...");
-			fs.mkdir(main.configDir, (err)=>{
+			fs.mkdir(CONFIGDIR, (err)=>{
 				if (err) console.log("Création interrompue.");
 				console.log("Dossier créé avec succes...");
 			});
@@ -48,7 +48,7 @@ let loadFile = file => {
 
 let loadConfiguration = () => {
 	if (!main.isConfigurationValid)  return console.log("Dossier de configuration inexistant.");
-	let files =  fs.readdirSync(main.configDir, "UTF-8");
+	let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
 	files.filter(x=>x.endsWith(main.suffix)).forEach(loadFile);
 	console.log("Tous les fichiers de configuration ont été chargés")
 
@@ -66,7 +66,7 @@ let killOld = () => {
 		{
 			console.log(array.join(" | ") + " sont des pids qui sont pas egaux a " + process.pid);
 			array.forEach(pid=>{
-				killPid(+pid, "SIGKILL");
+				killPid(+pid, "SIGTERM");
 			//	console.log("\r" + pid + " terminé.")
 			})
 		}
