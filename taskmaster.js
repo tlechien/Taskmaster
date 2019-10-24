@@ -20,8 +20,8 @@ global.main = {
 	processes: [],
 	prompt: "Taskmaster: \x1B[0m",
 	suffix: ".tm.json",
-	taskLogs: CONFIGDIR + ".logs",
-	pidLogs: CONFIGDIR + ".pids",
+	taskLogs: CONFIGDIR + "/.logs",
+	pidLogs: CONFIGDIR + "/.pids",
 	isTTY: true
 };
 
@@ -62,6 +62,6 @@ process.on('SIGUSR2', exitHandler.bind(null, {exit: true, signal: "usr2"}));
 process.on('SIGTERM', exitHandler.bind(null, {exit: true, signal: "sigterm"}));
 process.on('uncaughtException', (x) => {
     //exitHandler.bind(null, {exit: true, signal: "exception"});
-
+	console.log("Error " + x);
 });
 Init.init();

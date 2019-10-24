@@ -43,6 +43,8 @@ fichiers
 	- demarrer le serveur
 - tail [program] [out]
 	- affiche la sortie fd dans la console de program
+- debug
+	- affiche le log de Taskmaster.
 - quit
 	- quitter taskmaster
 - exit

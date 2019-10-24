@@ -21,27 +21,12 @@ global.startProgram = program => {
 		//write_fd(program.fd.out, stdout);
 	})
 	fs.appendFileSync(main.pidLogs, program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
+	console.log("Process spawned: " + program.name + ":" + child.pid);
 	//write_fd(taskLogs, "Process spawned: " + program.name + ":" + child.pid);
-	child.on("error", (error)=>{
-		console.log("child error: ", error);
-	})
-	console.log("pid: ", child.pid)
-	child.on('exit', (code, signal) =>{
-		console.log("Child " + "exited with" + child.signal + " signal: ", signal);
-		//missing name
-		if (!program.expectedOutput.includes(code))
-			console.log("The exit wasn't the one expected");
-		else {
-			console.log("The execution was successful");
-		}
-		//child.exit();
-	})
-	child.on('close', (code, signal) =>{
 
-		console.log('closing code: ' + code + ": signal", signal);
-	});
-	let cls = new Process(child, Date.now());
+	let cls = new Process(child, Date.now(), "running");
 	program.subprocess.push(cls);
+	cls.startListener(program);
 };
 
 global.onLaunchPrograms = () =>{
@@ -54,10 +39,12 @@ global.onLaunchPrograms = () =>{
 }
 
 global.resetLogs = () =>{
+	console.log("reseting pidLogs");
 	fs.writeFile(main.pidLogs, "", (err) =>{
 		//write_fd(main.taskLogs, "Pid logs has been reset");
 		if (err)
 		{
+			console.log("err pidLogs");
 			//write_fd(main.taskLogs, "Unable to erase Pid logs.");
 			throw error ()
 		}
@@ -84,9 +71,37 @@ global.killPid = (pid, signal, callback)=>{
 }
 
 global.Process = class {
-	constructor(_child, _timestamp){
+	constructor(_child, _timestamp, _status){
+		this.status = _status;
 		this.child = _child;
 		this.timestamp = _timestamp;
+	}
+	startListener(program) {
+		this.child.on('exit', console.log.bind(console, 'exited'));
+		this.child.on('close', console.log.bind(console, 'closed'));
+		this.child.on("error", (error)=>{
+			console.log("child error: ", error);
+		})
+		this.child.on('exit', (code, signal) =>{
+			console.log("Child " + "exited with " + code+ " signal: ", signal);
+			this.status = signal;
+			//missing name
+			if (!program.expectedOutput.includes(code))
+				console.log("The exit wasn't the one expected");
+			else {
+				console.log("The execution was successful");
+			}
+			//child.exit();
+		})
+		this.child.on('close', (code, signal) =>{
+
+			console.log('closing code: ' + code + ": signal", signal);
+		});
+		 this.child.stderr.on('data', function (data) {
+		 	console.log("IM HERE - Error");
+		 	console.log('test: ' + data);
+		 	//process.exit(1); // <<<< this works as expected and exit the process asap
+		 });
 	}
 }
 
