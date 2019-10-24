@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/10/23 20:00:25 by aben-azz         ###   ########.fr       */
+/*   Updated: 2019/10/24 11:16:07 by aben-azz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,15 +55,15 @@ let loadConfiguration = () => {
 
 let killOld = () => {
 	try {
-		let command = `ps -A | grep "node taskmaster.js" | grep -v grep`;
+		let command = `ps -A | grep "node taskmaster" | grep -v grep`;
 		let stdout = child_process.execSync(command, {encoding: "UTF-8"});
 		let array = stdout.split("\n");
 		array = array.filter(x=>x.length).map(x=>x.trim().substr(0, x.trim().indexOf(" "))).filter(x=>x!=process.pid);
 		if (!array.length)
-			;//console.log("Une seule instance de taskmaster est en cours")
+			console.log("Une seule instance de taskmaster est en cours")
 		else
 		{
-			//console.log(array.join(" | ") + " sont des pids qui sont pas egaux a " + process.pid);
+			console.log(array.join(" | ") + " sont des pids qui sont pas egaux a " + process.pid);
 			array.forEach(pid=>{
 				killPid(+pid, "SIGKILL");
 			//	console.log("\r" + pid + " terminé.")
@@ -78,7 +78,6 @@ let killOld = () => {
 ** Configure reading stream
 */
 let setupRead = () => {
-	process.stdin.setRawMode(true);
 	global.read = readline.createInterface({
 		input: process.stdin,
 		output: process.stdout,
@@ -92,23 +91,6 @@ let setupRead = () => {
 let init = () => {
 	console.log("init")
 
-	try {
-		console.log("on lit tty");
-		let a = fs.readFile("/dev/tty", "UTF-8", (e, d)=>{
-			if (e) return fs.appendFileSync("ok.log", "error " + e.toString() + "\n", "UTF-8")
-			else return fs.appendFileSync("ok.log", "data " + d.toString() + "\n", "UTF-8")
-		})
-	} catch (err){
-		fs.appendFileSync("ok.log", "error " + err + "\n", "UTF-8")
-		main.isTTY = false;
-	}
-	console.log("c en atty ? " + main.isTTY);
-	/*
-	** Setup stream if program is in foreground
-	*/
-	console.log("apres ca");
-	//if (main.isTTY) setupRead();
-
 	/*
 	** Checks that taskmaster have access to ressources
 	*/
@@ -118,40 +100,22 @@ let init = () => {
 	** Load configuration, build objects.
 	*/
 	loadConfiguration();
-
 	/*
 	** Kill other instances of taskmaster to be the only one alive.
 	*/
 	killOld();
-
+	/*
+	** Setup stream if program is in foreground
+	*/
+	setupRead();
 	/*
 	** Display the prompt and get the input.
 	*/
-	if (main.isTTY){
-		setupRead();
-		setTimeout(()=>{
-			read.setPrompt("\x1b[32m" + main.prompt)
-			read.prompt(true);
-		}, 50)
-		fs.appendFileSync("ok.log", "c tty\n", "UTF-8");
-		read && read.on('line', Commands.event_line);
-	} else {
-		fs.appendFileSync("ok.log", "c pa tty\n", "UTF-8");
-		let id = setInterval(()=>{
-			try {
-				fs.readFileSync("/dev/tty", (e, d)=>{
-					main.isTTY = true;
-					clearInterval(id);
-					setupRead();
-					read.on('line', Commands.event_line);
-					read.setPrompt("\x1b[32m" + main.prompt)
-					read.prompt(true);
-				})
-			} catch (err){
-				console.log("err try 2");
-			}
-		}, 500);
-	}
+	setTimeout(()=>{
+		read && read.setPrompt("\x1b[32m" + main.prompt)
+		read && read.prompt(true);
+	}, 50)
+	read && read.on('line', Commands.event_line);
 }
 
 module.exports = {init}
