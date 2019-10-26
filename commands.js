@@ -49,6 +49,27 @@ let commands = [
 		names: ["create", "c"],
 		usage: "Create configurations files.\n\tcreate",
 		call: (argv) => {
+			let newProgram = {
+				"command": "",
+				"count": 1,
+				"execAtLaunch": true,
+				"restart": ["always"],
+				"expectedOutput": [0],
+				"successTime": 1000,
+				"retryCount": 3,
+				"killSignal": "SIGINT",
+				"terminationTime": 30000,
+				"redirect": {
+					"err": "default",
+					"out": "default"
+				},
+				"env": {
+					"key": "value"
+				},
+				"workingDirectory": "",
+				"umask": "0755"
+			}
+			question(newProgram, 0);
 			console.log("Creating configuration file ...");
 			return (true);
 		}
