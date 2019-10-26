@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/10/24 16:52:15 by tlechien         ###   ########.fr       */
+/*   Updated: 2019/10/26 17:52:24 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,26 @@ let checkTaskMasterDir = () => {
 	}
 };
 
+global.get_hash = (file, callback) => {
+	let shasum = crypto.createHash('sha256')
+	let _stream = fs.ReadStream(file);
+	_stream.on('data', (_data) => {
+		shasum.update(_data);
+	});
+	_stream.on('end', () => {
+		callback(shasum.digest('hex'))
+	})
+};
+
 let loadFile = file => {
 	let obj = JSON.parse(fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8"));
 	let program = new Program(obj);
-	program.name = file.substr(0, file.indexOf(".tm.json"))
+	program.name = file.substr(0, file.indexOf(main.suffix))
+	let stream = CONFIGDIR + '/' + program.name + main.suffix;
+	get_hash(file, hash => {
+		program.hash = hash;
+		console.log(program.name + " " + program.hash + " xd")
+	});
 	main.programs[program.name] = program;
 	console.log(program.name + " a été ajouté aux programmes.");
 };
@@ -86,11 +102,18 @@ let setupRead = () => {
 		completer: Commands.autocompletion,
 		removeHistoryDuplicates: true
 	});
+	global.read.on("SIGINT", ()=>{
+		process.exit(1); //shouldn't exit ??
+	})
 };
 
 
 let init = () => {
 	console.log("init")
+	/*
+	** Setup stream if program is in foreground
+	*/
+	setupRead();
 	/*
 	** Checks that taskmaster have access to ressources
 	*/
@@ -112,10 +135,7 @@ let init = () => {
 	*/
 	onLaunchPrograms();
 	//startProgram(main.programs.atom);
-	/*
-	** Setup stream if program is in foreground
-	*/
-	setupRead();
+
 	/*
 	** Display the prompt and get the input.
 	*/
