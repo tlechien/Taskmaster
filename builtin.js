@@ -7,6 +7,8 @@ global.startProgram = program => {
 	console.log("Missing rights to execute this command: %s", path);
 	return(1);
 	}*/
+	console.log(`\x1b[32m ${program.command}\x1b[0m`)
+		read.pause();
 	let child = child_process.exec(program.command, {
 		cwd : program.workingDirector,
 		env : getCustomEnv(program.env),
@@ -27,6 +29,7 @@ global.startProgram = program => {
 	let cls = new Process(child, Date.now(), "running");
 	program.subprocess.push(cls);
 	cls.startListener(program);
+	read.resume();
 };
 
 global.onLaunchPrograms = () =>{
@@ -77,8 +80,6 @@ global.Process = class {
 		this.timestamp = _timestamp;
 	}
 	startListener(program) {
-		this.child.on('exit', console.log.bind(console, 'exited'));
-		this.child.on('close', console.log.bind(console, 'closed'));
 		this.child.on("error", (error)=>{
 			console.log("child error: ", error);
 		})
@@ -94,7 +95,6 @@ global.Process = class {
 			//child.exit();
 		})
 		this.child.on('close', (code, signal) =>{
-
 			console.log('closing code: ' + code + ": signal", signal);
 		});
 		 this.child.stderr.on('data', function (data) {
