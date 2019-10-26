@@ -26,6 +26,17 @@ let commands = [
 			return (false);
 		}
 	}, {
+		names: ["status", "s"],
+		usage: "Print status of programs.\n\ts",
+		call: (argv) => {
+			for (let i in main.programs)
+			{
+				let program = main.programs[i];
+				console.log(program.name + ": " + program.command);
+			}
+			return (true);
+		}
+	}, {
 		names: ["tail", "t", "log", "l"],
 		usage: "Display log file.\n\ttail program [out|err]",
 		call: (argv) => {
@@ -34,15 +45,56 @@ let commands = [
 		}
 	}, {
 		names: ["update", "u"],
-		usage: "Update configurations files.\n\tupdate",
+		usage: "Update configurations files.\n\tupdate -l",
 		call: (argv) => {
-			return loadConfiguration();
+			if (!main.fetchs.length)
+				console.log("La liste des fetchs est vide, utilisez .fetch");
+			else if (~argv.indexOf("-l") || ~argv.indexOf("-list")){
+				console.log("Fetchs: "  + main.fetchs.join(" | ") + ".")
+			} else if (!argv.length){
+				main.fetchs.forEach(x=>{
+					//modifier le fichiers
+					console.log(x + " a été fetch");
+				});
+				main.fetchs = [];
+			} else {
+				argv.forEach(x=>{
+					if (~main.fetchs.indexOf(x.toLowerCase()))
+					{
+						main.fetchs.splice(main.fetchs.indexOf(x.toLowerCase()), 1);
+						console.log(x + " a été fetch seul");
+					}
+					else
+						console.log(x + " n'existe pas dans la liste des fetchs");
+				})
+			}
 		}
 	}, {
 		names: ["fetch", "f"],
 		usage: "Fetch configurations files.\n\tfetch",
 		call: (argv) => {
-			console.log("fetching ...");
+			let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
+			files.filter(x=>x.endsWith(main.suffix)).forEach((x, y, arr)=>{
+				let name = x.substr(0, x.indexOf(main.suffix))
+				if (!main.programs[name])
+				{
+					if (!~main.fetchs.indexOf(name.toLowerCase()))
+						main.fetchs.push(name.toLowerCase());
+					console.log("Nouveau fichier trouvé " + name);
+				} else {
+					get_hash(x, (hash)=>{
+						if (hash != main.programs[name].hash)
+						{
+							if (!~main.fetchs.indexOf(name.toLowerCase()))
+								main.fetchs.push(name.toLowerCase());
+							console.log("Le fichier " + name + " a été modifié.")
+						}
+						if (y == arr.length - 1 && !main.fetchs.length)
+							console.log("Rien a fetch");
+					})
+				}
+
+			});
 			return (true);
 		}
 	}, {
@@ -69,8 +121,9 @@ let commands = [
 				"workingDirectory": "",
 				"umask": "0755"
 			}
+			//main.isQuestion = true;
 			question(newProgram, 0);
-			console.log("Creating configuration file ...");
+			//main.isQuestion = false;
 			return (true);
 		}
 	}, {
@@ -85,6 +138,29 @@ let commands = [
 		usage: "Clear all logs files.\n\tclearall",
 		call: (argv) => {
 			console.log("Creating call log files ...");
+			return (true);
+		}
+	}, {
+		names: ["import"],
+		usage: "import config files from a directory",
+		call: (argv) => {
+			// while (argv)
+			// {
+			// 	let name = argv.substr(argv.lastIndexOf("_") + 1)
+			// 	if (name in main.programs);{
+			// 	if (read.question("A file called $name is already loaded, do you want to rename it ? (y)es|(n)o/(a)bort" + "\n> ", answer=>{
+			// 	return(answer == "y")})); {
+			// 		read.question("")
+			// 	}
+			// 	}
+			// 	if (deja existant || deja dans le dossier || pas .tm.json)
+			// 		demander si renommer ou annuler
+			// 	else
+			// 	{
+			// 		verifier integrité fichier;
+			// 		copy file dans le CONFIGDIR;
+			// 	}
+			// }
 			return (true);
 		}
 	}, {
@@ -123,7 +199,6 @@ let commands = [
 	}
 ]
 
-
 let autocompletion = line => {
 	let completions;
 	if (Array.prototype.flatMap)
@@ -134,13 +209,11 @@ let autocompletion = line => {
 	return [hits.length ? hits : completions, line];
 }
 
-
-
 let event_line = line =>{
 	let index = handle_command(line);
-	if (!index && read) read.setPrompt("\x1b[31m" + main.prompt)
-	else if (read)read.setPrompt("\x1b[32m" + main.prompt)
-	if (read) read.prompt(!true);
+	if (!index && read&& !main.isQuestion) read.setPrompt("\x1b[31m" + main.prompt)
+	else if (read&& !main.isQuestion)read.setPrompt("\x1b[32m" + main.prompt)
+	if (read && !main.isQuestion) read.prompt(!true);
 }
 
 let handle_command = command => {
