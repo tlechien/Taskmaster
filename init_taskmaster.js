@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/10/26 17:52:24 by tlechien         ###   ########.fr       */
+/*   Updated: 2019/10/28 22:20:47 by aben-azz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,35 @@ global.get_hash = (file, callback) => {
 	})
 };
 
+let checkJSONFile = file => {
+	let string = fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8")
+	try {
+		let objet = JSON.parse(string);
+		//console.log(objet);
+		try {
+			if  (!Boolean(parseInt(objet.umask, 8)))
+				return ("Umask incorrect");
+		} catch (e){
+			return ("Umask inexistant");
+		}
+		if (!objet.command || !objet.command.length) return ("Commande inexistante");
+		else if (objet.execAtLaunch && !objet.execAtLaunch.length) return ("ExecAtLaunch incorrect");
+		else if (objet.killSignal)
+		{
+			let sig = ["SIGALRM", "SIGHUP", "SIGINT", "SIGKILL", "SIGPIPE", "SIGTERM", "SIGUSR1", "SIGUSR2"];
+			if (objet.killSignal.filter(x=>!~sig.indexOf(x)).length)
+				return ("Signal incorrect");
+		}
+		return (1);
+	} catch (e) {
+		console.log(e.toString());
+		return (0);
+	}
+}
+
 let loadFile = file => {
+	if (!checkJSONFile(file))
+		return console.log(file + "\x1b[31m Erreur dans le fichier\x1b[0m");
 	let obj = JSON.parse(fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8"));
 	let program = new Program(obj);
 	program.name = file.substr(0, file.indexOf(main.suffix))
