@@ -10,7 +10,7 @@ global.startProgram = program => {
 	console.log(`\x1b[32m ${program.command}\x1b[0m`)
 		read.pause();
 	let child = child_process.exec(program.command, {
-		cwd : program.workingDirector,
+		cwd : program.workingDirectory,
 		env : getCustomEnv(program.env),
 		killSignal : program.killSignal,
 		gid: process.getgid(), // a verif
@@ -22,22 +22,56 @@ global.startProgram = program => {
 		//write_fd(program.fd.err, stderr);
 		//write_fd(program.fd.out, stdout);
 	})
+	//write_fd(taskLogs, "Process spawned: " + program.name + ":" + child.pid);
 	fs.appendFileSync(main.pidLogs, program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
 	console.log("Process spawned: " + program.name + ":" + child.pid);
-	//write_fd(taskLogs, "Process spawned: " + program.name + ":" + child.pid);
-
 	let cls = new Process(child, Date.now(), "running");
 	program.subprocess.push(cls);
 	cls.startListener(program);
 	read.resume();
 };
 
+global.updateConfig = (newProgram) => {
+	let oldProgram = main.programs[newProgram.name];
+	if (shouldRestart(oldProgram, newProgram))
+	{
+		killChilds(oldProgram);
+		launchProcess(newProgram);
+	}
+	else if (oldProgram.count != newProgram.count)
+	{
+		if (oldProgram.count > newProgram.count)
+			oldProgram.subprocess.splice(Math.max(tab.length - 2, 0), 2).forEach(process=>killPid(process.child.pid));
+		else {
+			let diff = Math.abs(oldProgram.count - newProgram.count)
+			while (diff--)
+				startProgram(newProgram);
+		}
+		newProgram.subprocess += oldProgram.subprocess
+	}
+	oldProgram = newProgram;
+}
+
+global.shouldRestart = (oldProgram, newProgram) => {
+	if (oldProgram.command != newProgram.command ||
+		oldProgram.restart != newProgram.restart ||
+		oldProgram.successTime != newProgram.successTime ||
+		oldProgram.env != newProgram.env ||
+		oldProgram.workingDirectory != newProgram.workingDirectory)
+		return (true);
+	return (false);
+}
+
+global.launchProcess = (program) => {
+	for (let i = 0; i < program.count; i++)
+		startProgram(program);
+}
+
 global.onLaunchPrograms = () =>{
 	Object.keys(main.programs).forEach(p => {
 		let program = main.programs[p];
 		if (program.execAtLaunch)
-			for (let i = 0; i < program.count; i++)
-				startProgram(program);
+			launchProcess(program);
 	});
 }
 
@@ -54,14 +88,18 @@ global.resetLogs = () =>{
 	});
 }
 
-global.killChilds = () =>{
+global.killChilds = (program) => {
+	program.subprocess.forEach(subprocess=>killPid(subprocess.child.pid, program.killSignal, ()=>{
+		console.log(main.taskLogs, "Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
+		//write_fd(prog.redirect.err, "Program killed");
+		//write_fd(main.taskLogs, "Child Process " + prog.name + ";" + pid + " has been killed.");
+		}))
+}
+
+global.killAllChilds = () =>{
 	Object.keys(main.programs).forEach(p => {
 		let program = main.programs[p];
-			program.subprocess.forEach(subprocess=>killPid(subprocess.child.pid, program.killSignal, ()=>{
-				console.log(main.taskLogs, "Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
-				//write_fd(prog.redirect.err, "Program killed");
-				//write_fd(main.taskLogs, "Child Process " + prog.name + ";" + pid + " has been killed.");
-			}))
+		killChilds(program);
 	});
 }
 

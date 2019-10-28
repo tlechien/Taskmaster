@@ -139,6 +139,7 @@ global.Program = class {
 		Object.assign(this, object);
 		this.subprocess = [];
 		this.hash = "";
+		this.name = "";
 	}
 	get getVariables (){
 		return Object.keys(this).map(x=>this[x]);
@@ -166,7 +167,7 @@ process.on("SIGINT", ()=>{
 
 function exitHandler(options, err) {
 	console.log(options.signal + " beforeExit")
-	//killChilds();
+	//killAllChilds();
 	//process.exit(1);
 }
 process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));

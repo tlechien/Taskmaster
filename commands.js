@@ -53,8 +53,8 @@ let commands = [
 				console.log("Fetchs: "  + main.fetchs.join(" | ") + ".")
 			} else if (!argv.length){
 				main.fetchs.forEach(x=>{
-					//modifier le fichiers
-					console.log(x + " a été fetch");
+					updateConfig(x);
+					console.log(x + " a été mis à jour.");
 				});
 				main.fetchs = [];
 			} else {
@@ -101,25 +101,25 @@ let commands = [
 		names: ["create", "c"],
 		usage: "Create configurations files.\n\tcreate",
 		call: (argv) => {
-			let newProgram = {
-				"command": "",
-				"count": 1,
-				"execAtLaunch": true,
-				"restart": ["always"],
-				"expectedOutput": [0],
-				"successTime": 1000,
-				"retryCount": 3,
-				"killSignal": "SIGINT",
-				"terminationTime": 30000,
-				"redirect": {
+			let newProgram = { //restart prog ? (updateConfig)
+				"command": "", //always
+				"count": 1, //depends
+				"execAtLaunch": true, //non
+				"restart": ["always"], //oui
+				"expectedOutput": [0], //non
+				"successTime": 1000, //oui
+				"retryCount": 3, //non
+				"killSignal": "SIGINT", //non
+				"terminationTime": 30000, //non
+				"redirect": { //non
 					"err": "default",
 					"out": "default"
 				},
-				"env": {
+				"env": { //oui
 					"key": "value"
 				},
-				"workingDirectory": "",
-				"umask": "0755"
+				"workingDirectory": "", //oui
+				"umask": "0755" // ?
 			}
 			//main.isQuestion = true;
 			question(newProgram, 0);
