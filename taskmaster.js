@@ -135,11 +135,11 @@ global.main = {
 };
 
 global.Program = class {
-	constructor(object){
+	constructor(object, _hash = "", _name = ""){
 		Object.assign(this, object);
 		this.subprocess = [];
-		this.hash = "";
-		this.name = "";
+		this.hash = _hash;
+		this.name = _name;
 	}
 	get getVariables (){
 		return Object.keys(this).map(x=>this[x]);
@@ -167,7 +167,7 @@ process.on("SIGINT", ()=>{
 
 function exitHandler(options, err) {
 	console.log(options.signal + " beforeExit")
-	//killAllChilds();
+	killAllChilds();
 	//process.exit(1);
 }
 process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));

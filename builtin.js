@@ -37,26 +37,33 @@ global.updateConfig = (newProgram) => {
 	{
 		killChilds(oldProgram);
 		launchProcess(newProgram);
+		console.log("on est dans shouldrestart")
 	}
 	else if (oldProgram.count != newProgram.count)
 	{
+		console.log(oldProgram);
 		if (oldProgram.count > newProgram.count)
-			oldProgram.subprocess.splice(Math.max(tab.length - 2, 0), 2).forEach(process=>killPid(process.child.pid));
+			oldProgram.subprocess.splice(Math.max(oldProgram.subprocess.length - 2, 0), 2).forEach(process=>killPid(process.child.pid));
 		else {
 			let diff = Math.abs(oldProgram.count - newProgram.count)
 			while (diff--)
 				startProgram(newProgram);
 		}
-		newProgram.subprocess += oldProgram.subprocess
+		newProgram.subprocess.push(...oldProgram.subprocess)
 	}
-	oldProgram = newProgram;
+	main.programs[newProgram.name] = newProgram;
 }
 
 global.shouldRestart = (oldProgram, newProgram) => {
+	console.log(oldProgram.command != newProgram.command);
+	console.log(oldProgram.restart != newProgram.restart);
+	console.log(oldProgram.successTime != newProgram.successTime);
+	console.log(oldProgram.env != newProgram.env);
+	console.log(oldProgram.workingDirectory != newProgram.workingDirectory);
 	if (oldProgram.command != newProgram.command ||
-		oldProgram.restart != newProgram.restart ||
+		oldProgram.restart.toString() != newProgram.restart.toString() ||
 		oldProgram.successTime != newProgram.successTime ||
-		oldProgram.env != newProgram.env ||
+		JSON.stringify(oldProgram.env) != JSON.stringify(newProgram.env) ||
 		oldProgram.workingDirectory != newProgram.workingDirectory)
 		return (true);
 	return (false);

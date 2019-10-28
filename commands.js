@@ -50,16 +50,16 @@ let commands = [
 			if (!main.fetchs.length)
 				console.log("La liste des fetchs est vide, utilisez .fetch");
 			else if (~argv.indexOf("-l") || ~argv.indexOf("-list")){
-				console.log("Fetchs: "  + main.fetchs.join(" | ") + ".")
+				console.log("Fetchs: "  + main.fetchs.program.name.join(" | ") + ".")
 			} else if (!argv.length){
-				main.fetchs.forEach(x=>{
-					updateConfig(x);
-					console.log(x + " a été mis à jour.");
+				main.fetchs.forEach(program=>{
+					updateConfig(program);
+					console.log(program.name + " a été mis à jour.");
 				});
 				main.fetchs = [];
 			} else {
 				argv.forEach(x=>{
-					if (~main.fetchs.indexOf(x.toLowerCase()))
+					if (~main.fetchs.program.indexOf(x.toLowerCase()))
 					{
 						main.fetchs.splice(main.fetchs.indexOf(x.toLowerCase()), 1);
 						console.log(x + " a été fetch seul");
@@ -82,11 +82,14 @@ let commands = [
 						main.fetchs.push(name.toLowerCase());
 					console.log("Nouveau fichier trouvé " + name);
 				} else {
-					get_hash(x, (hash)=>{
+					let hash = get_hash(x, (hash)=>{
 						if (hash != main.programs[name].hash)
 						{
-							if (!~main.fetchs.indexOf(name.toLowerCase()))
-								main.fetchs.push(name.toLowerCase());
+							if (!~main.fetchs.indexOf(name.toLowerCase())){
+								let obj = JSON.parse(fs.readFileSync(PATH + "/taskmaster/" + name + ".tm.json", "UTF-8"));
+								let program = new Program(obj, hash, name.toLowerCase()) ;
+								main.fetchs.push(program);
+							}
 							console.log("Le fichier " + name + " a été modifié.")
 						}
 						if (y == arr.length - 1 && !main.fetchs.length)

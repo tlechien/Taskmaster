@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/10/26 17:52:24 by tlechien         ###   ########.fr       */
+/*   Updated: 2019/10/28 21:08:41 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,7 @@ global.get_hash = (file, callback) => {
 let loadFile = file => {
 	let obj = JSON.parse(fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8"));
 	let program = new Program(obj);
-	program.name = file.substr(0, file.indexOf(main.suffix))
-	let stream = CONFIGDIR + '/' + program.name + main.suffix;
+	program.name = file.substr(0, file.indexOf(main.suffix));
 	get_hash(file, hash => {
 		program.hash = hash;
 		console.log(program.name + " " + program.hash + " xd")
