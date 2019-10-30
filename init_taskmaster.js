@@ -6,11 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2019/10/28 22:20:47 by aben-azz         ###   ########.fr       */
-=======
-/*   Updated: 2019/10/28 21:08:41 by tlechien         ###   ########.fr       */
->>>>>>> 971b8d5846be1cac9c310d49942955514f821870
+/*   Updated: 2019/10/30 14:37:46 by aben-azz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,34 +50,29 @@ global.get_hash = (file, callback) => {
 };
 
 let checkJSONFile = file => {
-	let string = fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8")
+	let string = fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8");
 	try {
 		let objet = JSON.parse(string);
 		//console.log(objet);
-		try {
-			if  (!Boolean(parseInt(objet.umask, 8)))
-				return ("Umask incorrect");
-		} catch (e){
-			return ("Umask inexistant");
-		}
-		if (!objet.command || !objet.command.length) return ("Commande inexistante");
-		else if (objet.execAtLaunch && !objet.execAtLaunch.length) return ("ExecAtLaunch incorrect");
-		else if (objet.killSignal)
-		{
-			let sig = ["SIGALRM", "SIGHUP", "SIGINT", "SIGKILL", "SIGPIPE", "SIGTERM", "SIGUSR1", "SIGUSR2"];
-			if (objet.killSignal.filter(x=>!~sig.indexOf(x)).length)
-				return ("Signal incorrect");
-		}
-		return (1);
-	} catch (e) {
-		console.log(e.toString());
-		return (0);
+		if  (!Boolean(parseInt(objet.umask, 8)))
+			return ("Umask incorrect");
+	} catch (e){
+		return ("Umask inexistant");
 	}
+	if (!objet.command || !objet.command.length) return ("Commande inexistante");
+	else if (objet.execAtLaunch && !objet.execAtLaunch.length) return ("ExecAtLaunch incorrect");
+	else if (objet.killSignal)
+	{
+		let sig = ["SIGALRM", "SIGHUP", "SIGINT", "SIGKILL", "SIGPIPE", "SIGTERM", "SIGUSR1", "SIGUSR2"];
+		if (objet.killSignal.filter(x=>!~sig.indexOf(x)).length)
+			return ("Signal incorrect");
+	}
+	return (1);
 }
 
 let loadFile = file => {
-	if (!checkJSONFile(file))
-		return console.log(file + "\x1b[31m Erreur dans le fichier\x1b[0m");
+	// if (!checkJSONFile(file))
+	// 	return console.log(file + "\x1b[31m Erreur dans le fichier\x1b[0m");
 	let obj = JSON.parse(fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8"));
 	let program = new Program(obj);
 	program.name = file.substr(0, file.indexOf(main.suffix));

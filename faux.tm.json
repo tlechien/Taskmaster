@@ -1,4 +1,5 @@
 {
+  "name": "default",
   "command": "string",
   "count": 1,
   "execAtLaunch": false,
