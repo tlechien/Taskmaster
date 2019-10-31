@@ -1,1 +1,17 @@
-{"command":"ls -l","count":1,"execAtLaunch":false,"restart":"always","expectedOutput":["0"],"successTime":20000,"retryCount":12,"killSignal":"SIGINT","terminationTime":10,"redirect":{"err":"log.err","out":"log.out"},"env":{"test":"t"},"workingDirectory":"path","umask":"0755","name":"ConfigurationTest","subprocess":[]}
+{"command":"ls -l",
+	"count":1,
+	"execAtLaunch":true,
+	"restart":"always",
+	"expectedOutput":["0"],
+	"successTime":20000,
+	"retryCount":12,
+	"killSignal":["SIGINT"],
+	"terminationTime":10,
+	"fd":{"err":"log.err",
+	"out":"log.out"},
+	"env":{"test":"t"},
+	"workingDirectory":"path",
+	"umask":"0755",
+	"name":"ConfigurationTest",
+	"subprocess":[]
+}

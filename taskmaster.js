@@ -15,7 +15,11 @@ global.CONFIGDIR = PATH + "/taskmaster";
 */
 //console.log(os.constants);
 
-global. questions = [
+global.log = (...msg) => {
+	fs.appendFileSync("log.tm", (new Date()) + ": " + msg.join(" ") + "\n", "utf-8");
+}
+log("Session taskmaster demarrée.");
+global.questions = [
 	"Quel sera le nom du programme ?",
 	"Quelle sera la commande lancée au demarrage du programme? ",
 	"Combien de fois la commande doit-elle etre executée ?",
@@ -85,10 +89,10 @@ global.question = (program, id) => {
 			program.terminationTime = +answer;
 		} else if (id == 10){
 			//verifier si le path est existant
-			program.redirect = {err: answer, out: ""}
+			program.fd = {err: answer, out: ""}
 		} else if (id == 11){
 			//verifier si le path est existant
-			program.redirect.out = answer
+			program.fd.out = answer
 		} else if (id == 12){
 			let env = answer.split(" ");
 			program.env = {};
@@ -117,6 +121,7 @@ global.question = (program, id) => {
 			read.prompt(true);
 			main.programs[program.name] = new Program(program);
 			fs.writeFileSync(program.name + ".tm.json", JSON.stringify(main.programs[program.name]));
+			log("Create new program", program.name);
 			main.isQuestion = false;
 		}
 	})
@@ -142,7 +147,7 @@ global.Program = class {
 		this.name = _name;
 	}
 	get getVariables (){
-		return Object.keys(this).map(x=>this[x]);
+		return Object.keys(this).map(x=>x + "=> " + this[x]);
 	}
 }
 
@@ -174,9 +179,9 @@ process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));
 process.on('SIGINT', exitHandler.bind(null, {exit: true, signal: "sigint"}));
 process.on('SIGUSR1', exitHandler.bind(null, {exit: true, signal: "usr1"}));
 process.on('SIGUSR2', exitHandler.bind(null, {exit: true, signal: "usr2"}));
-process.on('SIGTERM', exitHandler.bind(null, {exit: true, signal: "sigterm"}));
-process.on('uncaughtException', (x) => {
-    //exitHandler.bind(null, {exit: true, signal: "exception"});
-	console.log("Error " + x);
-});
+// process.on('SIGTERM', exitHandler.bind(null, {exit: true, signal: "sigterm"}));
+// process.on('uncaughtException', (x) => {
+//     exitHandler.bind(null, {exit: true, signal: "exception"});
+// 	console.log("Error uncaught" + x.toString());
+// });
 Init.init();

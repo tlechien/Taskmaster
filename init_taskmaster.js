@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/10/30 14:37:46 by aben-azz         ###   ########.fr       */
+/*   Updated: 2019/10/30 16:55:47 by aben-azz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,16 +51,18 @@ global.get_hash = (file, callback) => {
 
 let checkJSONFile = file => {
 	let string = fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8");
+	let objet;
 	try {
-		let objet = JSON.parse(string);
+		objet = JSON.parse(string);
 		//console.log(objet);
-		if  (!Boolean(parseInt(objet.umask, 8)))
-			return ("Umask incorrect");
 	} catch (e){
-		return ("Umask inexistant");
+		console.log("Checkjson " + e.toString());
+		return ("Objet niqué inexistant");
 	}
+	if  (!objet.umask || !Boolean(parseInt(objet.umask, 8)))
+		return ("Umask incorrect");
 	if (!objet.command || !objet.command.length) return ("Commande inexistante");
-	else if (objet.execAtLaunch && !objet.execAtLaunch.length) return ("ExecAtLaunch incorrect");
+	else if (!objet.hasOwnProperty("execAtLaunch") && !objet.execAtLaunch.length) return ("ExecAtLaunch incorrect");
 	else if (objet.killSignal)
 	{
 		let sig = ["SIGALRM", "SIGHUP", "SIGINT", "SIGKILL", "SIGPIPE", "SIGTERM", "SIGUSR1", "SIGUSR2"];
@@ -71,14 +73,15 @@ let checkJSONFile = file => {
 }
 
 let loadFile = file => {
-	// if (!checkJSONFile(file))
-	// 	return console.log(file + "\x1b[31m Erreur dans le fichier\x1b[0m");
+	let msg = "";
+	if ((msg = checkJSONFile(file)) != 1)
+		return console.log(file + "\x1b[31m Erreur dans le fichier: " + msg + "\x1b[0m");
 	let obj = JSON.parse(fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8"));
 	let program = new Program(obj);
 	program.name = file.substr(0, file.indexOf(main.suffix));
 	get_hash(file, hash => {
 		program.hash = hash;
-		console.log(program.name + " " + program.hash + " xd")
+		//console.log(program.name + " " + program.hash + " xd")
 	});
 	main.programs[program.name] = program;
 	console.log(program.name + " a été ajouté aux programmes.");
@@ -135,36 +138,47 @@ let init = () => {
 	/*
 	** Setup stream if program is in foreground
 	*/
+	log("setup read ... ")
 	setupRead();
+	log("setup read: done")
 	/*
 	** Checks that taskmaster have access to ressources
 	*/
+	log("Checking taskmaster dir ...")
 	checkTaskMasterDir();
+	log("Checking taskmaster dir done")
 	/*
 	** Load configuration, build objects.
 	*/
+	log("load Configuration ...")
 	loadConfiguration();
+	log("load Configuration done")
 	/*
 	** Kill other instances of taskmaster to be the only one alive.
 	*/
+	log("kill Old Taskmaster ...")
 	killOld();
+	log("kill Old Taskmaster done")
 	/*
 	** Reset Pid log file.
 	*/
+	log("reset logs ...")
 	resetLogs();
+	log("reset logs done")
 	/*
 	** Launch programs that should be started on launch from config.
 	*/
+	log("exec onLaunch programs ...")
 	onLaunchPrograms();
+	log("exec onLaunch programs done")
 	//startProgram(main.programs.atom);
-
 	/*
 	** Display the prompt and get the input.
 	*/
 	setTimeout(()=>{
 		read && read.setPrompt("\x1b[32m" + main.prompt)
 		read && read.prompt(true);
-	}, 50)
+	}, 500)
 	read && read.on('line', Commands.event_line);
 }
 

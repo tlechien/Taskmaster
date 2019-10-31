@@ -10,21 +10,24 @@ global.startProgram = program => {
 	console.log(`\x1b[32m ${program.command}\x1b[0m`)
 		read.pause();
 	let child = child_process.exec(program.command, {
-		cwd : program.workingDirectory,
+		cwd : "/",//program.workingDirectory,
 		env : getCustomEnv(program.env),
-		killSignal : program.killSignal,
+		killSignal : program.killSignal[0],
 		gid: process.getgid(), // a verif
-		shell : true, // verif aussi
+		shell : "/bin/sh", // verif aussi
 	}, (error, out, err)=>{
 		if (err)
-		console.log("err: '%s'" ,err);
-		console.log("out: '%s'" ,out);
+		//console.log("err: '%s'" ,err);
+		//console.log("out: '%s'" ,out);
+		fs.writeFileSync(program.fd.err, err, "utf-8");
+		fs.writeFileSync(program.fd.out, out, "utf-8");
 		//write_fd(program.fd.err, stderr);
 		//write_fd(program.fd.out, stdout);
 	})
 	//write_fd(taskLogs, "Process spawned: " + program.name + ":" + child.pid);
 	fs.appendFileSync(main.pidLogs, program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
 	console.log("Process spawned: " + program.name + ":" + child.pid);
+	log("Process spawned: " + program.name + ":" + child.pid);
 	let cls = new Process(child, Date.now(), "running");
 	program.subprocess.push(cls);
 	cls.startListener(program);
@@ -84,11 +87,13 @@ global.onLaunchPrograms = () =>{
 
 global.resetLogs = () =>{
 	console.log("reseting pidLogs");
+	log("reseting pidLogs");
 	fs.writeFile(main.pidLogs, "", (err) =>{
 		//write_fd(main.taskLogs, "Pid logs has been reset");
 		if (err)
 		{
 			console.log("err pidLogs");
+			log("err pidLogs");
 			//write_fd(main.taskLogs, "Unable to erase Pid logs.");
 			throw error ()
 		}
@@ -97,9 +102,10 @@ global.resetLogs = () =>{
 
 global.killChilds = (program) => {
 	program.subprocess.forEach(subprocess=>killPid(subprocess.child.pid, program.killSignal, ()=>{
-		console.log(main.taskLogs, "Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
-		//write_fd(prog.redirect.err, "Program killed");
-		//write_fd(main.taskLogs, "Child Process " + prog.name + ";" + pid + " has been killed.");
+		//console.log(main.taskLogs, "Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
+			log("Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
+			console.log("program ", program);
+			fs.writeFileSync(program.fd.err, "Program killed", "utf-8");
 		}))
 }
 
@@ -113,9 +119,12 @@ global.killAllChilds = () =>{
 global.killPid = (pid, signal, callback)=>{
 	signal = signal || 'SIGKILL';
 	callback = callback || function() {};
-	try {process.kill(pid, signal)}
-	catch (err) {console.log("Child couldn't be killed " + err.toString())}
-	callback();
+	try {process.kill(pid, signal);callback();}
+	catch (err) {
+		console.log("Child couldn't be killed " + err.toString())
+		log("Child couldn't be killed " + err.toString())
+		callback();
+	}
 }
 
 global.Process = class {
@@ -130,6 +139,7 @@ global.Process = class {
 		})
 		this.child.on('exit', (code, signal) =>{
 			console.log("Child " + "exited with " + code+ " signal: ", signal);
+			log("Child " + "exited with " + code+ " signal: ", signal);
 			this.status = signal;
 			//missing name
 			if (!program.expectedOutput.includes(code))
@@ -142,11 +152,14 @@ global.Process = class {
 		this.child.on('close', (code, signal) =>{
 			console.log('closing code: ' + code + ": signal", signal);
 		});
-		 this.child.stderr.on('data', function (data) {
-		 	console.log("IM HERE - Error");
-		 	console.log('test: ' + data);
-		 	//process.exit(1); // <<<< this works as expected and exit the process asap
-		 });
+		this.child.stderr.on('data', function (data) {
+			console.log('child err: ' + data);
+			//process.exit(1); // <<<< this works as expected and exit the process asap
+		});
+		this.child.stdout.on('data', function (data) {
+			console.log('child out: ' + data);
+			//process.exit(1); // <<<< this works as expected and exit the process asap
+		});
 	}
 }
 

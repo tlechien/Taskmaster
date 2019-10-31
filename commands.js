@@ -32,7 +32,9 @@ let commands = [
 			for (let i in main.programs)
 			{
 				let program = main.programs[i];
-				console.log(program.name + ": " + program.command);
+				console.log(program.name + ": " + program.command)
+				if (~argv.indexOf("-l"))
+					console.log("\t" + program.getVariables.join("\n\t"));
 			}
 			return (true);
 		}
@@ -40,7 +42,7 @@ let commands = [
 		names: ["tail", "t", "log", "l"],
 		usage: "Display log file.\n\ttail program [out|err]",
 		call: (argv) => {
-			console.log("Tail program log ...");
+			log("Tail program log ...");
 			return (true);
 		}
 	}, {
@@ -127,6 +129,7 @@ let commands = [
 			//main.isQuestion = true;
 			question(newProgram, 0);
 			//main.isQuestion = false;
+
 			return (true);
 		}
 	}, {
@@ -134,13 +137,15 @@ let commands = [
 		usage: "Clear logs files.\n\tclear program program2 ...",
 		call: (argv) => {
 			console.log("Clear program log files...");
+			log("Clear program log files...");
 			return (true);
 		}
 	}, {
 		names: ["clearall"],
 		usage: "Clear all logs files.\n\tclearall",
 		call: (argv) => {
-			console.log("Creating call log files ...");
+			console.log("Clearing log files ...");
+			log("Clearing log files ...")
 			return (true);
 		}
 	}, {
@@ -170,14 +175,14 @@ let commands = [
 		names: ["startserver", "ss"],
 		usage: "Start server manager.\n\tstartserver",
 		call: (argv) => {
-			console.log("Starting server ...");
+			log("Starting server ...");
 			return (true);
 		},
 	}, {
 		names: ["quit", "q"],
 		usage: "Close taskmaster.\n\tquit",
 		call: (argv) => {
-			console.log("Closing taskmaster ...");
+			log("Closing taskmaster ...");
 			process.exit(0);
 			return (true);
 		}
@@ -197,6 +202,7 @@ let commands = [
 			});
 			read && read.prompt(true);
 			read.on('line', event_line);
+			log("Taskmaster set in background.");
 			return (1);
 		}
 	}
