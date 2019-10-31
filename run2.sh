@@ -1,1 +1,1 @@
-sleep 3 &&   ls -l &&  kill -CONT $(pgrep node)
+sleep 3 &&   ls -l &&  kill -CONT $1

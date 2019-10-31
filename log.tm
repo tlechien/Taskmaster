@@ -523,3 +523,26 @@ Wed Oct 30 2019 16:57:24 GMT+0100 (CET): Child couldn't be killed Error: kill ES
 Wed Oct 30 2019 16:57:24 GMT+0100 (CET): Child Process ConfigurationTest;85491 has been killed.
 Wed Oct 30 2019 16:57:24 GMT+0100 (CET): Child couldn't be killed Error: kill ESRCH
 Wed Oct 30 2019 16:57:24 GMT+0100 (CET): Child Process atom;85492 has been killed.
+Thu Oct 31 2019 16:38:16 GMT+0100 (Central European Standard Time): Session taskmaster demarrée.
+Thu Oct 31 2019 16:38:16 GMT+0100 (Central European Standard Time): setup read ... 
+Thu Oct 31 2019 16:38:16 GMT+0100 (Central European Standard Time): setup read: done
+Thu Oct 31 2019 16:38:16 GMT+0100 (Central European Standard Time): Checking taskmaster dir ...
+Thu Oct 31 2019 16:38:16 GMT+0100 (Central European Standard Time): Checking taskmaster dir done
+Thu Oct 31 2019 16:38:16 GMT+0100 (Central European Standard Time): load Configuration ...
+Thu Oct 31 2019 16:38:16 GMT+0100 (Central European Standard Time): load Configuration done
+Thu Oct 31 2019 16:38:16 GMT+0100 (Central European Standard Time): kill Old Taskmaster ...
+Thu Oct 31 2019 16:38:17 GMT+0100 (Central European Standard Time): kill Old Taskmaster done
+Thu Oct 31 2019 16:38:17 GMT+0100 (Central European Standard Time): reset logs ...
+Thu Oct 31 2019 16:38:17 GMT+0100 (Central European Standard Time): reseting pidLogs
+Thu Oct 31 2019 16:38:17 GMT+0100 (Central European Standard Time): reset logs done
+Thu Oct 31 2019 16:38:17 GMT+0100 (Central European Standard Time): exec onLaunch programs ...
+Thu Oct 31 2019 16:38:17 GMT+0100 (Central European Standard Time): Process spawned: ConfigurationTest:49881
+Thu Oct 31 2019 16:38:17 GMT+0100 (Central European Standard Time): Process spawned: atom:49882
+Thu Oct 31 2019 16:38:17 GMT+0100 (Central European Standard Time): exec onLaunch programs done
+Thu Oct 31 2019 16:38:17 GMT+0100 (Central European Standard Time): Child exited with 0 signal:  
+Thu Oct 31 2019 16:38:17 GMT+0100 (Central European Standard Time): Child exited with 1 signal:  
+Thu Oct 31 2019 16:38:19 GMT+0100 (Central European Standard Time): Closing taskmaster ...
+Thu Oct 31 2019 16:38:19 GMT+0100 (Central European Standard Time): Child couldn't be killed Error: kill ESRCH
+Thu Oct 31 2019 16:38:19 GMT+0100 (Central European Standard Time): Child Process ConfigurationTest;49881 has been killed.
+Thu Oct 31 2019 16:38:19 GMT+0100 (Central European Standard Time): Child couldn't be killed Error: kill ESRCH
+Thu Oct 31 2019 16:38:19 GMT+0100 (Central European Standard Time): Child Process atom;49882 has been killed.

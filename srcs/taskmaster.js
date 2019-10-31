@@ -184,4 +184,9 @@ process.on('SIGUSR2', exitHandler.bind(null, {exit: true, signal: "usr2"}));
 //     exitHandler.bind(null, {exit: true, signal: "exception"});
 // 	console.log("Error uncaught" + x.toString());
 // });
+//process.on('SIGTERM', exitHandler.bind(null, {exit: true, signal: "sigterm"}));
+process.on('uncaughtException', (x) => {
+    //exitHandler.bind(null, {exit: true, signal: "exception"});
+	console.log("Error " + x);
+});
 Init.init();

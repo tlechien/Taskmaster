@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/10/30 16:55:47 by aben-azz         ###   ########.fr       */
+/*   Updated: 2019/10/31 16:25:34 by aben-azz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ let killOld = () => {
 		{
 			console.log(array.join(" | ") + " sont des pids qui sont pas egaux a " + process.pid);
 			array.forEach(pid=>{
-				killPid(+pid, "SIGTERM");
+				killPid(+pid, "SIGKILL");
 			//	console.log("\r" + pid + " terminé.")
 			})
 		}
@@ -130,11 +130,14 @@ let setupRead = () => {
 	global.read.on("SIGINT", ()=>{
 		process.exit(1); //shouldn't exit ??
 	})
+	global.read.on("SIGTERM", ()=>{
+		process.exit(1); //shouldn't exit ??
+	})
 };
 
 
 let init = () => {
-	console.log("init")
+	//console.log("init")
 	/*
 	** Setup stream if program is in foreground
 	*/
