@@ -2,3 +2,4 @@
 .pids
 *.log
 xd
+node_modules/

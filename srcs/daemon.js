@@ -1,15 +1,14 @@
 const express = require("express");
 const socket = require("socket.io");
-const fs = require("fs");
+const {appendFileSync, exists, readFile, statSync} = require("fs");
 const url = require('url')
 const path = require('path')
-const port = 8080;
+const port = 5959;
 const logfile = "./srcs/taskmaster_log"
 
 global.log = (...msg) =>{
-	fs.appendFileSync(logfile, "[" + (new Date()) + "] " + msg.join(" ") + "\n", "utf-8");
+	appendFileSync(logfile, "[" + (new Date()) + "] " + msg.join(" ") + "\n", "utf-8");
 }
-
 let server = express().use((req, res) => {
 	const parsedUrl = url.parse(req.url);
 	let pathname = `./srcs/${parsedUrl.pathname}`;
@@ -25,16 +24,16 @@ let server = express().use((req, res) => {
 		'.mp3': 'audio/mpeg',
 		'.pdf': 'application/pdf',
 	};
-	fs.exists(pathname, function (exist) {
+	exists(pathname, function (exist) {
 		if(!exist) {
 			res.statusCode = 404;
 			res.end(`File ${pathname} not found!`);
 			return;
 		}
-		if (fs.statSync(pathname).isDirectory()) {
+		if (statSync(pathname).isDirectory()) {
 			pathname += 'index.html';
 		}
-		fs.readFile(pathname, function(err, data){
+		readFile(pathname, function(err, data){
 			if(err){
 				res.statusCode = 500;
 				res.end(`Error getting the file: ${err}.`);
@@ -45,8 +44,13 @@ let server = express().use((req, res) => {
 			}
 		});
 	});
-}).listen(process.env.port || port || 8080);
-
+}).listen(process.env.port || port || 8080).on("error", (obj)=>{
+	if (obj.errno == "EADDRINUSE")
+	{
+		console.log("Port " + port + " déjà utilisé.")
+		process.exit(1);
+	}
+});
 let io = socket(server).on("connection", socket => {
 	socket.emit("connection_ok");
 	socket.on("data", (x)=>{
