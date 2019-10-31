@@ -4,10 +4,15 @@ const fs = require("fs");
 const url = require('url')
 const path = require('path')
 const port = 8080;
+const logfile = "taskmaster_log"
+
+global.log = (...msg) =>{
+	fs.appendFileSync(logfile, "[" + (new Date()) + "] " + msg.join(" ") + "\n", "utf-8");
+}
 
 let server = express().use((req, res) => {
 	const parsedUrl = url.parse(req.url);
-	let pathname = `./${parsedUrl.pathname}`;
+	let pathname = `./srcs/${parsedUrl.pathname}`;
 	const mimeType = {
 		'.ico': 'image/x-icon',
 		'.html': 'text/html',
@@ -40,9 +45,13 @@ let server = express().use((req, res) => {
 			}
 		});
 	});
-}).listen(8080);
+}).listen(process.env.port || port || 8080);
 
 let io = socket(server).on("connection", socket => {
 	socket.emit("connection_ok");
-	socket.on("data", (x)=>{console.log("Utilisateur envoi data " + x)})
+	socket.on("data", (x)=>{
+		log("Server: Utilisateur envoi data '" + x + "'")
+	})
 });
+
+log("Daemon: Daemon demarré")
