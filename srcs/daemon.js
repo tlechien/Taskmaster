@@ -4,7 +4,7 @@ const fs = require("fs");
 const url = require('url')
 const path = require('path')
 const port = 8080;
-const logfile = "taskmaster_log"
+const logfile = "./srcs/taskmaster_log"
 
 global.log = (...msg) =>{
 	fs.appendFileSync(logfile, "[" + (new Date()) + "] " + msg.join(" ") + "\n", "utf-8");
