@@ -188,15 +188,16 @@ let commands = [
 			child_process.spawn(CONFIGDIR + "/run.sh", [process.pid], {detach : true, stdio:[0,1,2]});
 			read && read.close();
 			process.kill(process.pid, "SIGTSTP");
-			read = readline.createInterface({
+			let _read = readline.createInterface({
 				input: process.stdin,
 				output: process.stdout,
-				terminal: true,
+				terminal: false,
 				completer: autocompletion,
 				removeHistoryDuplicates: true
 			});
-			read && read.prompt(true);
-			read.on('line', event_line);
+			_read && _read.setPrompt("\x1b[32m" + main.prompt)
+			_read && _read.prompt(true);
+			_read.on('line', event_line);
 			return (1);
 		}
 	}

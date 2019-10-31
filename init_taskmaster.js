@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/10/30 14:37:46 by aben-azz         ###   ########.fr       */
+/*   Updated: 2019/10/30 17:29:44 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,7 @@ let killOld = () => {
 		{
 			console.log(array.join(" | ") + " sont des pids qui sont pas egaux a " + process.pid);
 			array.forEach(pid=>{
-				killPid(+pid, "SIGTERM");
+				killPid(+pid, "SIGKILL");
 			//	console.log("\r" + pid + " terminé.")
 			})
 		}
@@ -127,11 +127,14 @@ let setupRead = () => {
 	global.read.on("SIGINT", ()=>{
 		process.exit(1); //shouldn't exit ??
 	})
+	global.read.on("SIGTERM", ()=>{
+		process.exit(1); //shouldn't exit ??
+	})
 };
 
 
 let init = () => {
-	console.log("init")
+	//console.log("init")
 	/*
 	** Setup stream if program is in foreground
 	*/
@@ -139,23 +142,23 @@ let init = () => {
 	/*
 	** Checks that taskmaster have access to ressources
 	*/
-	checkTaskMasterDir();
+	//checkTaskMasterDir();
 	/*
 	** Load configuration, build objects.
 	*/
-	loadConfiguration();
+	//loadConfiguration();
 	/*
 	** Kill other instances of taskmaster to be the only one alive.
 	*/
-	killOld();
+	//killOld();
 	/*
 	** Reset Pid log file.
 	*/
-	resetLogs();
+	//resetLogs();
 	/*
 	** Launch programs that should be started on launch from config.
 	*/
-	onLaunchPrograms();
+	//onLaunchPrograms();
 	//startProgram(main.programs.atom);
 
 	/*

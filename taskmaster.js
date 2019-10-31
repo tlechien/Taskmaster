@@ -174,7 +174,7 @@ process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));
 process.on('SIGINT', exitHandler.bind(null, {exit: true, signal: "sigint"}));
 process.on('SIGUSR1', exitHandler.bind(null, {exit: true, signal: "usr1"}));
 process.on('SIGUSR2', exitHandler.bind(null, {exit: true, signal: "usr2"}));
-process.on('SIGTERM', exitHandler.bind(null, {exit: true, signal: "sigterm"}));
+//process.on('SIGTERM', exitHandler.bind(null, {exit: true, signal: "sigterm"}));
 process.on('uncaughtException', (x) => {
     //exitHandler.bind(null, {exit: true, signal: "exception"});
 	console.log("Error " + x);
