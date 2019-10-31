@@ -4,11 +4,14 @@ const {appendFileSync, exists, readFile, statSync} = require("fs");
 const url = require('url')
 const path = require('path')
 const port = 5959;
-const logfile = "./srcs/taskmaster_log"
+const logfile = "./logs/taskmaster_log"
 
 global.log = (...msg) =>{
-	appendFileSync(logfile, "[" + (new Date()) + "] " + msg.join(" ") + "\n", "utf-8");
+	let date = new Date().toString();
+	date = date.substr(0, date.indexOf(" ("))
+	appendFileSync(logfile, "[" + date + "] " + msg.join(" ") + "\n", "utf-8");
 }
+
 let server = express().use((req, res) => {
 	const parsedUrl = url.parse(req.url);
 	let pathname = `./srcs/${parsedUrl.pathname}`;
@@ -51,11 +54,13 @@ let server = express().use((req, res) => {
 		process.exit(1);
 	}
 });
+
 let io = socket(server).on("connection", socket => {
 	socket.emit("connection_ok");
 	socket.on("data", (x)=>{
 		log("Server: Utilisateur envoi data '" + x + "'")
+		socket.emit("renvoi", "c bien recu mon pote");
 	})
 });
 
-log("Daemon: Daemon demarré")
+log("Daemon: Daemon demarré avec le pid: " + process.pid);

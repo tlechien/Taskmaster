@@ -1,5 +1,6 @@
-Utilisateur envoi data 'Envoi depuis le client'
-Utilisateur envoi data 'Envoi depuis le client'
-[Thu Oct 31 2019 17:09:37 GMT+0100 (Central European Standard Time)] Daemon demarré
-[Thu Oct 31 2019 17:09:37 GMT+0100 (Central European Standard Time)] Utilisateur envoi data 'Envoi depuis le client'
-[Thu Oct 31 2019 17:13:11 GMT+0100 (Central European Standard Time)] Utilisateur envoi data 'Envoi depuis le client'
+[Oct 31 2019 17:35:57 GMT+0100] Daemon: Daemon demarré avec le pid: 84334
+[Thu Oct 31 2019 17:36:03 GMT+0100] Daemon: Daemon demarré avec le pid: 84446
+[Thu Oct 31 2019 17:36:04 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Thu Oct 31 2019 17:36:27 GMT+0100] Server: Utilisateur envoi data 'MSG DE OUF'
+[Thu Oct 31 2019 17:37:19 GMT+0100] Daemon: Daemon demarré avec le pid: 85200
+[Thu Oct 31 2019 17:37:21 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
