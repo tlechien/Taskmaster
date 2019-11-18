@@ -2,7 +2,6 @@
 global.readline = require('readline');
 global.fs = require('fs');
 global.child_process = require('child_process');
-global.crypto = require('crypto');
 global.Commands = require("../commands");
 global.Init = require("./init_taskmaster_ctl");
 global.socket = require("socket.io");
@@ -143,17 +142,6 @@ global.ctl = {
 	isQuestion: false,
 };
 
-global.Program = class {
-	constructor(object, _hash = "", _name = ""){
-		Object.assign(this, object);
-		this.subprocess = [];
-		this.hash = _hash;
-		this.name = _name;
-	}
-	get getVariables (){
-		return Object.keys(this).map(x=>x + "=> " + this[x]);
-	}
-}
 
 /*
 ** Catch event SIGTTIN to prevent interruption in background

@@ -11,7 +11,5 @@
 	"out":"log.out"},
 	"env":{"test":"t"},
 	"workingDirectory":"path",
-	"umask":"0755",
-	"name":"ConfigurationTest",
-	"subprocess":[]
+	"umask":"0755"
 }

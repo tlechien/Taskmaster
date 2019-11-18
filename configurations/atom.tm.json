@@ -1,5 +1,5 @@
 {
-  "command": "cat /Users/tlechien/.42sh_history",
+  "command": "echo grosse commande atom",
   "count": 1,
   "execAtLaunch": true,
   "restart": ["always"],

@@ -3,12 +3,12 @@
 let getCustomEnv = env => env;
 
 global.startProgram = program => {
+	console.log("startprogram ", program);
 	/*if (!(fs.stat(program.path).mode & fs.constants.S_IRWXU)){
 	console.log("Missing rights to execute this command: %s", path);
 	return(1);
 	}*/
 	console.log(`\x1b[32m ${program.command}\x1b[0m`)
-		read.pause();
 	let child = child_process.exec(program.command, {
 		cwd : "/",//program.workingDirectory,
 		env : getCustomEnv(program.env),
@@ -25,17 +25,16 @@ global.startProgram = program => {
 		//write_fd(program.fd.out, stdout);
 	})
 	//write_fd(taskLogs, "Process spawned: " + program.name + ":" + child.pid);
-	fs.appendFileSync(main.pidLogs, program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
+	fs.appendFileSync(daemon.pidLogs, program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
 	console.log("Process spawned: " + program.name + ":" + child.pid);
 	log("Process spawned: " + program.name + ":" + child.pid);
 	let cls = new Process(child, Date.now(), "running");
 	program.subprocess.push(cls);
 	cls.startListener(program);
-	read.resume();
 };
 
 global.updateConfig = (newProgram) => {
-	let oldProgram = main.programs[newProgram.name];
+	let oldProgram = daemon.programs[newProgram.name];
 	if (shouldRestart(oldProgram, newProgram))
 	{
 		killChilds(oldProgram);
@@ -54,7 +53,7 @@ global.updateConfig = (newProgram) => {
 		}
 		newProgram.subprocess.push(...oldProgram.subprocess)
 	}
-	main.programs[newProgram.name] = newProgram;
+	daemon.programs[newProgram.name] = newProgram;
 }
 
 global.shouldRestart = (oldProgram, newProgram) => {
@@ -77,32 +76,13 @@ global.launchProcess = (program) => {
 		startProgram(program);
 }
 
-global.onLaunchPrograms = () =>{
-	Object.keys(main.programs).forEach(p => {
-		let program = main.programs[p];
-		if (program.execAtLaunch)
-			launchProcess(program);
-	});
-}
 
-global.resetLogs = () =>{
-	console.log("reseting pidLogs");
-	log("reseting pidLogs");
-	fs.writeFile(main.pidLogs, "", (err) =>{
-		//write_fd(main.taskLogs, "Pid logs has been reset");
-		if (err)
-		{
-			console.log("err pidLogs");
-			log("err pidLogs");
-			//write_fd(main.taskLogs, "Unable to erase Pid logs.");
-			throw error ()
-		}
-	});
-}
+
+
 
 global.killChilds = (program) => {
 	program.subprocess.forEach(subprocess=>killPid(subprocess.child.pid, program.killSignal, ()=>{
-		//console.log(main.taskLogs, "Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
+		//console.log(daemon.taskLogs, "Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
 			log("Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
 			console.log("program ", program);
 			fs.writeFileSync(program.fd.err, "Program killed", "utf-8");
@@ -110,8 +90,8 @@ global.killChilds = (program) => {
 }
 
 global.killAllChilds = () =>{
-	Object.keys(main.programs).forEach(p => {
-		let program = main.programs[p];
+	Object.keys(daemon.programs).forEach(p => {
+		let program = daemon.programs[p];
 		killChilds(program);
 	});
 }

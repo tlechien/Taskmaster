@@ -1,5 +1,27 @@
 const Builtins = require("./builtin");
 
+let checkTaskMasterDir = () => {
+	try {
+		fs.accessSync(CONFIGDIR, fs.constants.R_OK | fs.constants.W_OK);
+		console.log("Dossier existant");
+	} catch (error) {
+		if (error === "ENOENT") {
+			console.log("Dossier ${PATH}/taskmaster non-existant on le crée ...");
+			fs.mkdir(CONFIGDIR, (err)=>{
+				if (err) console.log("Création interrompue.");
+				console.log("Dossier créé avec succes...");
+			});
+		} else if (error === "EACCESS") {
+			console.log("Droit insuffisant.");
+			daemon.isConfigurationValid = false;
+			//Initialiser variable pour empecher les manipulations sur les fichiers de configurations
+		} else {
+			daemon.isConfigurationValid = false;
+			console.log(error.toString());
+		}
+		console.log("Erreur checktaskmaster dir: " + error.code);
+	}
+};
 let onLaunchPrograms = () =>{
 	Object.keys(daemon.programs).forEach(p => {
 		let program = daemon.programs[p];
@@ -18,6 +40,7 @@ let resetLogs = () =>{
 			console.log("err pidLogs");
 			log("err pidLogs");
 			//write_fd(daemon.taskLogs, "Unable to erase Pid logs.");
+			console.log("resetlog throw")
 			throw error ()
 		}
 	});
@@ -25,7 +48,7 @@ let resetLogs = () =>{
 
 global.get_hash = (file, callback) => {
 	let shasum = crypto.createHash('sha256')
-	let _stream = fs.ReadStream(file);
+	let _stream = fs.ReadStream(CONFIGDIR + file);
 	_stream.on('data', (_data) => {
 		shasum.update(_data);
 	});
@@ -35,7 +58,8 @@ global.get_hash = (file, callback) => {
 };
 
 let checkJSONFile = file => {
-	let string = fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8");
+	//console.log(`${file} file + [ath ${PATH + "/taskmaster/" + file}`)
+	let string = fs.readFileSync(CONFIGDIR + file, "UTF-8");
 	let objet;
 	try {
 		objet = JSON.parse(string);
@@ -61,7 +85,7 @@ let loadFile = file => {
 	let msg = "";
 	if ((msg = checkJSONFile(file)) != 1)
 		return console.log(file + "\x1b[31m Erreur dans le fichier: " + msg + "\x1b[0m");
-	let obj = JSON.parse(fs.readFileSync(PATH + "/taskmaster/" + file, "UTF-8"));
+	let obj = JSON.parse(fs.readFileSync(CONFIGDIR + file, "UTF-8"));
 	let program = new Program(obj);
 	program.name = file.substr(0, file.indexOf(daemon.suffix));
 	get_hash(file, hash => {
@@ -75,7 +99,12 @@ let loadFile = file => {
 let loadConfiguration = () => {
 	if (!daemon.isConfigurationValid)  return console.log("Dossier de configuration inexistant.");
 	let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
-	files.filter(x=>x.endsWith(daemon.suffix)).forEach(loadFile);
+	if (files.length)
+	{
+		files.filter(x=>x.endsWith(daemon.suffix)).forEach(loadFile);
+		console.log(files)
+	}
+	else console.log("petit soucis avec files ligne 100")
 	console.log("Tous les fichiers de configuration ont été chargés")
 
 };
@@ -103,6 +132,13 @@ let killOld = () => {
 
 
 let init = () => {
+
+	/*
+	** Checks that taskmaster have access to ressources
+	*/
+	log("Checking taskmaster dir ...")
+	checkTaskMasterDir();
+	log("Checking taskmaster dir done")
 	/*
 	** Load configuration, build objects.
 	*/

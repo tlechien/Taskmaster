@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/11/18 22:45:52 by tlechien         ###   ########.fr       */
+/*   Updated: 2019/11/18 22:50:34 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,30 +15,6 @@
 /*
 **	EXECUTION
 */
-let checkTaskMasterDir = () => {
-	try {
-		fs.accessSync(CONFIGDIR, fs.constants.R_OK | fs.constants.W_OK);
-		console.log("Dossier existant");
-	} catch (error) {
-		if (error === "ENOENT") {
-			console.log("Dossier ${PATH}/taskmaster non-existant on le crée ...");
-			fs.mkdir(CONFIGDIR, (err)=>{
-				if (err) console.log("Création interrompue.");
-				console.log("Dossier créé avec succes...");
-			});
-		} else if (error === "EACCESS") {
-			console.log("Droit insuffisant.");
-			ctl.isConfigurationValid = false;
-			//Initialiser variable pour empecher les manipulations sur les fichiers de configurations
-		} else {
-			ctl.isConfigurationValid = false;
-			console.log(error.toString());
-		}
-		console.log("Erreur: " + error.code);
-	}
-	ctl.socket_client.emit("configuration", ctl.isConfigurationValid);
-};
-
 /*
 ** Configure reading stream
 */
@@ -74,12 +50,6 @@ let init = () => {
 	log("setup read ... ")
 	setupRead();
 	log("setup read: done")
-	/*
-	** Checks that taskmaster have access to ressources
-	*/
-	log("Checking taskmaster dir ...")
-	checkTaskMasterDir();
-	log("Checking taskmaster dir done")
 
 	//startProgram(ctl.programs.atom);
 	/*

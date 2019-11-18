@@ -2,17 +2,20 @@ const express = require("express");
 const socket = require("socket.io");
 global.fs = require("fs");
 const url = require('url')
+global.crypto = require('crypto');
+global.child_process = require('child_process');
+
 const path = require('path')
 const port = 5959;
 const logfile = "./logs/taskmaster_log"
 const Daemon = require("./init_taskmaster_daemon")
 global.PATH = require("os").homedir();
 global.Commands = require("../commands");
-global.CONFIGDIR = PATH + "/taskmaster";
+global.CONFIGDIR = PATH + "/taskmaster/configurations/";
 global.logfile =  CONFIGDIR + "/logs/taskmaster_log"
 
 global.daemon = {
-	isConfigurationValid: false,
+	isConfigurationValid: true,
 	suffix: ".tm.json",
 	taskLogs: CONFIGDIR + "/.logs",
 	pidLogs: CONFIGDIR + "/.pids",
@@ -20,6 +23,18 @@ global.daemon = {
 	processes: [],
 	fetchs: [],
 };
+
+global.Program = class {
+	constructor(object, _hash = "", _name = ""){
+		Object.assign(this, object);
+		this.subprocess = [];
+		this.hash = _hash;
+		this.name = _name;
+	}
+	get getVariables (){
+		return Object.keys(this).map(x=>x + "=> " + this[x]);
+	}
+}
 
 global.log = (...msg) =>{
 	let date = new Date().toString();
@@ -86,9 +101,6 @@ let io = socket(server).on("connection", socket => {
 		} catch (e) {
 			socket.emit("renvoi", "echec cmd " + e.toString());
 		}
-	})
-	socket.on("configuration", (config)=>{
-		daemon.isConfigurationValid = config;
 	})
 });
 log("Daemon: Daemon demarré avec le pid: " + process.pid);
