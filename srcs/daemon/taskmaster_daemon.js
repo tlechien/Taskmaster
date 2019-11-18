@@ -88,7 +88,7 @@ let server = express().use((req, res) => {
 
 let io = socket(server).on("connection", socket => {
 	console.log("Nouvelle connexion entrante")
-	socket.emit("datas", []); // envoyer les données necessaire a laffichage du tableau process
+	socket.emit("datas", ["atom", "xd", "lol"]); // envoyer les données necessaire a laffichage du tableau process
 	socket.on("data", (x)=>{
 		log("Server: Utilisateur envoi data '" + x + "'")
 		socket.emit("renvoi", "c bien recu mon pote");
