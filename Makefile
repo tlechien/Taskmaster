@@ -25,12 +25,12 @@ all: taskmaster
 daemon:
 	@test -d $(MODULE) || npm i
 	@printf "$(_RED)Daemon executé$(_END)\n"
-	@node $(SRC_DIR)taskmaster_daemon.js
+	@node $(SRC_DIR)daemon/taskmaster_daemon.js
 
 taskmaster:
 	@test -d $(MODULE) || npm i
 	@printf "$(_RED)taskmaster executé$(_END)\n"
-	@node $(SRC_DIR)taskmaster_ctl.js
+	@node $(SRC_DIR)ctl/taskmaster_ctl.js
 fclean:
 	@rm -rf $(MODULE)
 	@printf "$(_RED)Node modules deleted.$(_END)\n"

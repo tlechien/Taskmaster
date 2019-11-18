@@ -1,16 +1,13 @@
 "use strict";
 global.readline = require('readline');
 global.fs = require('fs');
-global.os = require('os');
-global.tty = require('tty');
 global.child_process = require('child_process');
 global.crypto = require('crypto');
-global.Builtin = require("./builtin");
-global.Commands = require("./commands");
+global.Commands = require("../commands");
 global.Init = require("./init_taskmaster_ctl");
 global.socket = require("socket.io");
 global.io = require('socket.io-client');
-global.PATH = os.homedir();
+global.PATH = require('os').homedir();
 global.CONFIGDIR = PATH + "/taskmaster";
 global.logfile =  CONFIGDIR + "/logs/taskmaster_log"
 
@@ -49,7 +46,7 @@ let isValidCommandSyntaxe = command => {
 }
 
 global.question = (program, id) => {
-	main.isQuestion = true;
+	ctl.isQuestion = true;
 	let recall = (errorMsg) =>{
 		console.log("Message d'erreur: " + errorMsg);
 		question(program, id);
@@ -124,17 +121,17 @@ global.question = (program, id) => {
 			question(program, id + 1);
 		else
 		{
-			read.setPrompt("\x1b[32m" + main.prompt)
+			read.setPrompt("\x1b[32m" + ctl.prompt)
 			read.prompt(true);
-			main.programs[program.name] = new Program(program);
-			fs.writeFileSync(program.name + ".tm.json", JSON.stringify(main.programs[program.name]));
+			ctl.programs[program.name] = new Program(program);
+			fs.writeFileSync(program.name + ".tm.json", JSON.stringify(ctl.programs[program.name]));
 			log("Create new program", program.name);
-			main.isQuestion = false;
+			ctl.isQuestion = false;
 		}
 	})
 }
 
-global.main = {
+global.ctl = {
 	isConfigurationValid: true,
 	programs: {},
 	processes: [],
@@ -144,7 +141,6 @@ global.main = {
 	taskLogs: CONFIGDIR + "/.logs",
 	pidLogs: CONFIGDIR + "/.pids",
 	isQuestion: false,
-	side: "ctl",
 };
 
 global.Program = class {

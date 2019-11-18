@@ -28,21 +28,21 @@ global.commands = [
 				return (false);
 			}
 			else if (side == "daemon"){
-				console.log(side);
+				console.log("commande recu depuis " + side);
 			}
 		}
 	}, {
 		names: ["status", "s"],
 		usage: "Print status of programs.\n\ts",
 		call: (argv, side) => {
-			for (let i in main.programs)
-			{
-				let program = main.programs[i];
-				console.log(program.name + ": " + program.command)
-				if (~argv.indexOf("-l"))
-					console.log("\t" + program.getVariables.join("\n\t"));
-			}
-			return (true);
+			// for (let i in main.programs)
+			// {
+			// 	let program = main.programs[i];
+			// 	console.log(program.name + ": " + program.command)
+			// 	if (~argv.indexOf("-l"))
+			// 		console.log("\t" + program.getVariables.join("\n\t"));
+			// }
+			// return (true);
 		}
 	}, {
 		names: ["tail", "t", "log", "l"],
@@ -55,58 +55,58 @@ global.commands = [
 		names: ["update", "u"],
 		usage: "Update configurations files.\n\tupdate -l",
 		call: (argv, side) => {
-			if (!main.fetchs.length)
-				console.log("La liste des fetchs est vide, utilisez .fetch");
-			else if (~argv.indexOf("-l") || ~argv.indexOf("-list")){
-				console.log("Fetchs: "  + main.fetchs.program.name.join(" | ") + ".")
-			} else if (!argv.length){
-				main.fetchs.forEach(program=>{
-					updateConfig(program);
-					console.log(program.name + " a été mis à jour.");
-				});
-				main.fetchs = [];
-			} else {
-				argv.forEach(x=>{
-					if (~main.fetchs.program.indexOf(x.toLowerCase()))
-					{
-						main.fetchs.splice(main.fetchs.indexOf(x.toLowerCase()), 1);
-						console.log(x + " a été fetch seul");
-					}
-					else
-						console.log(x + " n'existe pas dans la liste des fetchs");
-				})
-			}
+			// if (!main.fetchs.length)
+			// 	console.log("La liste des fetchs est vide, utilisez .fetch");
+			// else if (~argv.indexOf("-l") || ~argv.indexOf("-list")){
+			// 	console.log("Fetchs: "  + main.fetchs.program.name.join(" | ") + ".")
+			// } else if (!argv.length){
+			// 	main.fetchs.forEach(program=>{
+			// 		updateConfig(program);
+			// 		console.log(program.name + " a été mis à jour.");
+			// 	});
+			// 	main.fetchs = [];
+			// } else {
+			// 	argv.forEach(x=>{
+			// 		if (~main.fetchs.program.indexOf(x.toLowerCase()))
+			// 		{
+			// 			main.fetchs.splice(main.fetchs.indexOf(x.toLowerCase()), 1);
+			// 			console.log(x + " a été fetch seul");
+			// 		}
+			// 		else
+			// 			console.log(x + " n'existe pas dans la liste des fetchs");
+			// 	})
+			// }
 		}
 	}, {
 		names: ["fetch", "f"],
 		usage: "Fetch configurations files.\n\tfetch",
 		call: (argv, side) => {
-			let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
-			files.filter(x=>x.endsWith(main.suffix)).forEach((x, y, arr)=>{
-				let name = x.substr(0, x.indexOf(main.suffix))
-				if (!main.programs[name])
-				{
-					if (!~main.fetchs.indexOf(name.toLowerCase()))
-						main.fetchs.push(name.toLowerCase());
-					console.log("Nouveau fichier trouvé " + name);
-				} else {
-					let hash = get_hash(x, (hash)=>{
-						if (hash != main.programs[name].hash)
-						{
-							if (!~main.fetchs.indexOf(name.toLowerCase())){
-								let obj = JSON.parse(fs.readFileSync(PATH + "/taskmaster/" + name + ".tm.json", "UTF-8"));
-								let program = new Program(obj, hash, name.toLowerCase()) ;
-								main.fetchs.push(program);
-							}
-							console.log("Le fichier " + name + " a été modifié.")
-						}
-						if (y == arr.length - 1 && !main.fetchs.length)
-							console.log("Rien a fetch");
-					})
-				}
-
-			});
-			return (true);
+			// let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
+			// files.filter(x=>x.endsWith(main.suffix)).forEach((x, y, arr)=>{
+			// 	let name = x.substr(0, x.indexOf(main.suffix))
+			// 	if (!main.programs[name])
+			// 	{
+			// 		if (!~main.fetchs.indexOf(name.toLowerCase()))
+			// 			main.fetchs.push(name.toLowerCase());
+			// 		console.log("Nouveau fichier trouvé " + name);
+			// 	} else {
+			// 		let hash = get_hash(x, (hash)=>{
+			// 			if (hash != main.programs[name].hash)
+			// 			{
+			// 				if (!~main.fetchs.indexOf(name.toLowerCase())){
+			// 					let obj = JSON.parse(fs.readFileSync(PATH + "/taskmaster/" + name + ".tm.json", "UTF-8"));
+			// 					let program = new Program(obj, hash, name.toLowerCase()) ;
+			// 					main.fetchs.push(program);
+			// 				}
+			// 				console.log("Le fichier " + name + " a été modifié.")
+			// 			}
+			// 			if (y == arr.length - 1 && !main.fetchs.length)
+			// 				console.log("Rien a fetch");
+			// 		})
+			// 	}
+			//
+			// });
+			// return (true);
 		}
 	}, {
 		names: ["create", "c"],
@@ -178,13 +178,6 @@ global.commands = [
 			return (true);
 		}
 	}, {
-		names: ["startserver", "ss"],
-		usage: "Start server manager.\n\tstartserver",
-		call: (argv, side) => {
-			log("Starting server ...");
-			return (true);
-		},
-	}, {
 		names: ["quit", "q"],
 		usage: "Close taskmaster.\n\tquit",
 		call: (argv, side) => {
@@ -196,23 +189,8 @@ global.commands = [
 		names: ["exit", "background", "bg"],
 		usage: "Exit and send taskmaster in background.\n\tbg",
 		call: (argv, side) => {
-			child_process.spawn(CONFIGDIR + "/run.sh", [process.pid], {detach : true, stdio:[0,1,2]});
-			read && read.close();
-			process.kill(process.pid, "SIGTSTP");
-			let _read = readline.createInterface({
-				input: process.stdin,
-				output: process.stdout,
-				terminal: false,
-				completer: autocompletion,
-				removeHistoryDuplicates: true
-			});
-			read && read.prompt(true);
-			read.on('line', event_line);
-			log("Taskmaster set in background.");
-			_read && _read.setPrompt("\x1b[32m" + main.prompt)
-			_read && _read.prompt(true);
-			_read.on('line', event_line);
-			return (1);
+			if (side == "ctl")
+				process.exit(0);
 		}
 	}
 ]
@@ -229,9 +207,9 @@ let autocompletion = line => {
 
 let event_line = line =>{
 	let index = handle_command(line);
-	if (!index && read&& !main.isQuestion) read.setPrompt("\x1b[31m" + main.prompt)
-	else if (read&& !main.isQuestion)read.setPrompt("\x1b[32m" + main.prompt)
-	if (read && !main.isQuestion) read.prompt(!true);
+	if (!index && read&& !ctl.isQuestion) read.setPrompt("\x1b[31m" + main.prompt)
+	else if (read&& !ctl.isQuestion)read.setPrompt("\x1b[32m" + ctl.prompt)
+	if (read && !ctl.isQuestion) read.prompt(!true);
 }
 
 let handle_command = command => {
@@ -242,8 +220,8 @@ let handle_command = command => {
 	try {
 		if (~index){
 			log("CTL command", command, argv.join());
-			//main.socket_client.emit("data", "test");
-			main.socket_client.emit("cmd", command, argv, index);
+			//ctl.socket_client.emit("data", "test");
+			ctl.socket_client.emit("cmd", command, argv, index);
 			return commands[index].call(argv, "ctl");
 		}
 		else if (command.trim().length)

@@ -1,20 +1,36 @@
 const express = require("express");
 const socket = require("socket.io");
-const {appendFileSync, exists, readFile, statSync} = require("fs");
+global.fs = require("fs");
 const url = require('url')
 const path = require('path')
 const port = 5959;
 const logfile = "./logs/taskmaster_log"
-global.Commands = require("./commands");
+const Daemon = require("./init_taskmaster_daemon")
+global.PATH = require("os").homedir();
+global.Commands = require("../commands");
+global.CONFIGDIR = PATH + "/taskmaster";
+global.logfile =  CONFIGDIR + "/logs/taskmaster_log"
+
+global.daemon = {
+	isConfigurationValid: false,
+	suffix: ".tm.json",
+	taskLogs: CONFIGDIR + "/.logs",
+	pidLogs: CONFIGDIR + "/.pids",
+	programs: {},
+	processes: [],
+	fetchs: [],
+};
+
 global.log = (...msg) =>{
 	let date = new Date().toString();
 	date = date.substr(0, date.indexOf(" ("))
-	appendFileSync(logfile, "[" + date + "] " + msg.join(" ") + "\n", "utf-8");
+	fs.appendFileSync(logfile, "[" + date + "] " + msg.join(" ") + "\n", "utf-8");
 }
-
+// /Users/tlechien/taskmaster/srcs/daemon/taskmaster_daemon.js
+// /Users/tlechien/taskmaster/logs/taskmaster_log
 let server = express().use((req, res) => {
 	const parsedUrl = url.parse(req.url);
-	let pathname = `./srcs/${parsedUrl.pathname}`;
+	let pathname = `./srcs/webserver${parsedUrl.pathname}`;
 	const mimeType = {
 		'.ico': 'image/x-icon',
 		'.html': 'text/html',
@@ -27,16 +43,16 @@ let server = express().use((req, res) => {
 		'.mp3': 'audio/mpeg',
 		'.pdf': 'application/pdf',
 	};
-	exists(pathname, function (exist) {
+	fs.exists(pathname, function (exist) {
 		if(!exist) {
 			res.statusCode = 404;
 			res.end(`File ${pathname} not found!`);
 			return;
 		}
-		if (statSync(pathname).isDirectory()) {
+		if (fs.statSync(pathname).isDirectory()) {
 			pathname += 'index.html';
 		}
-		readFile(pathname, function(err, data){
+		fs.readFile(pathname, function(err, data){
 			if(err){
 				res.statusCode = 500;
 				res.end(`Error getting the file: ${err}.`);
@@ -71,9 +87,13 @@ let io = socket(server).on("connection", socket => {
 			socket.emit("renvoi", "echec cmd " + e.toString());
 		}
 	})
+	socket.on("configuration", (config)=>{
+		daemon.isConfigurationValid = config;
+	})
 });
 log("Daemon: Daemon demarré avec le pid: " + process.pid);
 
+Daemon.init();
 /*
 Previsualisation de la partie webclient
 Process name        PID    Status   Temps de lancement count Log                                        Commandes
