@@ -7,4 +7,6 @@ socket.on("connection_ok", ()=>{
 	socket.emit("data", "Envoi depuis le client")
 }).on("renvoi", (x)=>{
 	console.log("recu depuis le serveur: " + x)
-});
+}).on("datas", (data)=>{
+	console.log(data, "recue de la partie daemon");
+})

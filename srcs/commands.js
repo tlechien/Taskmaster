@@ -1,34 +1,40 @@
 "use strict";
-let commands = [
+global.commands = [
 	{
 		names: ["help", "h"],
 		usage: "Lists commands.\n\thelp {command}",
-		call: (argv) => {
-			if (!argv.length){
-				let cmd = commands.map(x=>"[" + x.names.join(" | ") + "]: " + x.usage);
-				console.log("Commandes disponibles:\n" + cmd.join("\n"));
-				return (true);
-			} else {
-				let index = commands.findIndex(x=>~x.names.indexOf(argv[0]));
-				if (~index)
-				{
-					let cmd = commands[index];
-					console.log("[" + cmd.names.join("|") + "]: " + cmd.usage);
+		call: (argv, side) => {
+			if (side == "ctl"){
+				console.log(side);
+				if (!argv.length){
+					let cmd = commands.map(x=>"[" + x.names.join(" | ") + "]: " + x.usage);
+					console.log("Commandes disponibles:\n" + cmd.join("\n"));
 					return (true);
+				} else {
+					let index = commands.findIndex(x=>~x.names.indexOf(argv[0]));
+					if (~index)
+					{
+						let cmd = commands[index];
+						console.log("[" + cmd.names.join("|") + "]: " + cmd.usage);
+						return (true);
+					}
+					else
+					{
+						let cmd = commands.map(x=>"[" + x.names.join("|") + "]: " + x.usage);
+						console.log(argv[0] + " not found. Commandes disponibles:\n" + cmd.join("\n"));
+						return (false);
+					}
 				}
-				else
-				{
-					let cmd = commands.map(x=>"[" + x.names.join("|") + "]: " + x.usage);
-					console.log(argv[0] + " not found. Commandes disponibles:\n" + cmd.join("\n"));
-					return (false);
-				}
+				return (false);
 			}
-			return (false);
+			else if (side == "daemon"){
+				console.log(side);
+			}
 		}
 	}, {
 		names: ["status", "s"],
 		usage: "Print status of programs.\n\ts",
-		call: (argv) => {
+		call: (argv, side) => {
 			for (let i in main.programs)
 			{
 				let program = main.programs[i];
@@ -41,14 +47,14 @@ let commands = [
 	}, {
 		names: ["tail", "t", "log", "l"],
 		usage: "Display log file.\n\ttail program [out|err]",
-		call: (argv) => {
+		call: (argv, side) => {
 			log("Tail program log ...");
 			return (true);
 		}
 	}, {
 		names: ["update", "u"],
 		usage: "Update configurations files.\n\tupdate -l",
-		call: (argv) => {
+		call: (argv, side) => {
 			if (!main.fetchs.length)
 				console.log("La liste des fetchs est vide, utilisez .fetch");
 			else if (~argv.indexOf("-l") || ~argv.indexOf("-list")){
@@ -74,7 +80,7 @@ let commands = [
 	}, {
 		names: ["fetch", "f"],
 		usage: "Fetch configurations files.\n\tfetch",
-		call: (argv) => {
+		call: (argv, side) => {
 			let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
 			files.filter(x=>x.endsWith(main.suffix)).forEach((x, y, arr)=>{
 				let name = x.substr(0, x.indexOf(main.suffix))
@@ -105,7 +111,7 @@ let commands = [
 	}, {
 		names: ["create", "c"],
 		usage: "Create configurations files.\n\tcreate",
-		call: (argv) => {
+		call: (argv, side) => {
 			let newProgram = { //restart prog ? (updateConfig)
 				"command": "", //always
 				"count": 1, //depends
@@ -135,7 +141,7 @@ let commands = [
 	}, {
 		names: ["clear", "clr", "cl"],
 		usage: "Clear logs files.\n\tclear program program2 ...",
-		call: (argv) => {
+		call: (argv, side) => {
 			console.log("Clear program log files...");
 			log("Clear program log files...");
 			return (true);
@@ -143,7 +149,7 @@ let commands = [
 	}, {
 		names: ["clearall"],
 		usage: "Clear all logs files.\n\tclearall",
-		call: (argv) => {
+		call: (argv, side) => {
 			console.log("Clearing log files ...");
 			log("Clearing log files ...")
 			return (true);
@@ -151,7 +157,7 @@ let commands = [
 	}, {
 		names: ["import"],
 		usage: "import config files from a directory",
-		call: (argv) => {
+		call: (argv, side) => {
 			// while (argv)
 			// {
 			// 	let name = argv.substr(argv.lastIndexOf("_") + 1)
@@ -174,14 +180,14 @@ let commands = [
 	}, {
 		names: ["startserver", "ss"],
 		usage: "Start server manager.\n\tstartserver",
-		call: (argv) => {
+		call: (argv, side) => {
 			log("Starting server ...");
 			return (true);
 		},
 	}, {
 		names: ["quit", "q"],
 		usage: "Close taskmaster.\n\tquit",
-		call: (argv) => {
+		call: (argv, side) => {
 			log("Closing taskmaster ...");
 			process.exit(0);
 			return (true);
@@ -189,7 +195,7 @@ let commands = [
 	}, {
 		names: ["exit", "background", "bg"],
 		usage: "Exit and send taskmaster in background.\n\tbg",
-		call: (argv) => {
+		call: (argv, side) => {
 			child_process.spawn(CONFIGDIR + "/run.sh", [process.pid], {detach : true, stdio:[0,1,2]});
 			read && read.close();
 			process.kill(process.pid, "SIGTSTP");
@@ -234,7 +240,12 @@ let handle_command = command => {
 	let argv = cmds.slice(1);
 	let index = commands.findIndex(x=>~x.names.indexOf(command));
 	try {
-		if (~index) return commands[index].call(argv);
+		if (~index){
+			log("CTL command", command, argv.join());
+			//main.socket_client.emit("data", "test");
+			main.socket_client.emit("cmd", command, argv, index);
+			return commands[index].call(argv, "ctl");
+		}
 		else if (command.trim().length)
 		{
 			console.log("Commande not found. Type help for a list of available command");

@@ -1,6 +1,1271 @@
-[Oct 31 2019 17:35:57 GMT+0100] Daemon: Daemon demarré avec le pid: 84334
-[Thu Oct 31 2019 17:36:03 GMT+0100] Daemon: Daemon demarré avec le pid: 84446
-[Thu Oct 31 2019 17:36:04 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
-[Thu Oct 31 2019 17:36:27 GMT+0100] Server: Utilisateur envoi data 'MSG DE OUF'
-[Thu Oct 31 2019 17:37:19 GMT+0100] Daemon: Daemon demarré avec le pid: 85200
-[Thu Oct 31 2019 17:37:21 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 17:44:19 GMT+0100] Daemon: Daemon demarré avec le pid: 31257
+[Tue Nov 05 2019 17:44:21 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 17:44:25 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 17:44:28 GMT+0100]
+-> CTL command h 
+[Tue Nov 05 2019 17:44:40 GMT+0100]
+-> CTL command tail 
+[Tue Nov 05 2019 17:44:40 GMT+0100]
+-> Tail program log ...
+[Tue Nov 05 2019 17:45:34 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 17:45:34 GMT+0100]
+-> Closing taskmaster ...
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 17:45:35 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 17:45:39 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 17:45:48 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 17:45:48 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 17:45:48 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 17:45:48 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 17:45:48 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 17:45:48 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 17:45:48 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 17:45:48 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 17:45:49 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 17:45:49 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 17:45:49 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 17:45:49 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 17:45:49 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 17:45:49 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 17:45:51 GMT+0100]
+-> CTL command h 
+[Tue Nov 05 2019 17:47:14 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 17:47:14 GMT+0100]
+-> Closing taskmaster ...
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 17:47:16 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 17:47:21 GMT+0100]
+-> CTL command h 
+[Tue Nov 05 2019 17:47:26 GMT+0100]
+-> CTL command h 
+[Tue Nov 05 2019 17:47:32 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 17:47:32 GMT+0100]
+-> Closing taskmaster ...
+[Tue Nov 05 2019 17:48:12 GMT+0100] Daemon: Daemon demarré avec le pid: 33536
+[Tue Nov 05 2019 17:48:16 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 17:48:21 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 17:48:24 GMT+0100]
+-> CTL command h 
+[Tue Nov 05 2019 17:49:38 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 17:49:38 GMT+0100]
+-> Closing taskmaster ...
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 17:49:44 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 17:49:46 GMT+0100]
+-> CTL command h 
+[Tue Nov 05 2019 17:50:46 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 17:50:46 GMT+0100]
+-> Closing taskmaster ...
+[Tue Nov 05 2019 17:54:36 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 17:54:47 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 17:56:33 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 17:56:33 GMT+0100]
+-> Closing taskmaster ...
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 17:56:34 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 17:58:01 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 17:58:01 GMT+0100]
+-> Closing taskmaster ...
+[Tue Nov 05 2019 17:58:02 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 18:00:28 GMT+0100] Daemon: Daemon demarré avec le pid: 40641
+[Tue Nov 05 2019 18:00:29 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 18:00:41 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 18:01:17 GMT+0100] Daemon: Daemon demarré avec le pid: 41142
+[Tue Nov 05 2019 18:01:20 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 18:01:42 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 18:04:49 GMT+0100] Daemon: Daemon demarré avec le pid: 43178
+[Tue Nov 05 2019 18:04:51 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 18:04:56 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 18:05:01 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 18:05:28 GMT+0100] Server: Utilisateur envoi data 'test'
+[Tue Nov 05 2019 18:06:02 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 18:06:02 GMT+0100]
+-> Closing taskmaster ...
+[Tue Nov 05 2019 18:06:16 GMT+0100] Daemon: Daemon demarré avec le pid: 44024
+[Tue Nov 05 2019 18:06:16 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 18:06:19 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 18:06:21 GMT+0100] Server: Utilisateur envoi data 'test'
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 18:06:30 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 18:06:32 GMT+0100] Server: Utilisateur envoi data 'test'
+[Tue Nov 05 2019 18:08:39 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 18:08:39 GMT+0100]
+-> Closing taskmaster ...
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 18:08:40 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 18:08:54 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 18:08:54 GMT+0100]
+-> Closing taskmaster ...
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 18:08:55 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 18:09:03 GMT+0100] Server: Utilisateur envoi data 'test'
+[Tue Nov 05 2019 18:13:14 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 18:15:32 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 18:16:05 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 18:16:33 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 18:16:33 GMT+0100]
+-> Closing taskmaster ...
+[Tue Nov 05 2019 18:19:20 GMT+0100] Daemon: Daemon demarré avec le pid: 51384
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 18:19:22 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 18:19:24 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 05 2019 18:19:24 GMT+0100]
+-> CTL command h 
+[Tue Nov 05 2019 18:19:53 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 18:19:53 GMT+0100]
+-> Closing taskmaster ...
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> setup read ... 
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> setup read: done
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> Checking taskmaster dir ...
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> Checking taskmaster dir done
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> load Configuration ...
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> load Configuration done
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> kill Old Taskmaster ...
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> kill Old Taskmaster done
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> reset logs ...
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> reseting pidLogs
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> reset logs done
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> exec onLaunch programs ...
+[Tue Nov 05 2019 18:19:55 GMT+0100]
+-> exec onLaunch programs done
+[Tue Nov 05 2019 18:21:03 GMT+0100]
+-> CTL command quit 
+[Tue Nov 05 2019 18:21:03 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 06 2019 15:38:04 GMT+0100] Daemon: Daemon demarré avec le pid: 56347
+[Wed Nov 06 2019 15:38:17 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Wed Nov 06 2019 15:38:19 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:38:34 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:40:29 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:40:29 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 06 2019 15:40:40 GMT+0100] Daemon: Daemon demarré avec le pid: 57842
+[Wed Nov 06 2019 15:40:42 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:40:59 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:41:24 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:41:24 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 06 2019 15:44:56 GMT+0100] Daemon: Daemon demarré avec le pid: 60349
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:44:58 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:45:43 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:45:43 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 06 2019 15:45:50 GMT+0100] Daemon: Daemon demarré avec le pid: 60865
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:45:51 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:46:19 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:46:19 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 06 2019 15:46:21 GMT+0100] Daemon: Daemon demarré avec le pid: 61218
+[Wed Nov 06 2019 15:46:29 GMT+0100] Daemon: Daemon demarré avec le pid: 61297
+[Wed Nov 06 2019 15:46:35 GMT+0100] Daemon: Daemon demarré avec le pid: 61371
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:46:48 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:46:55 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Wed Nov 06 2019 15:47:07 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:47:07 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:47:08 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:48:38 GMT+0100] Daemon: Daemon demarré avec le pid: 62730
+[Wed Nov 06 2019 15:48:41 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Wed Nov 06 2019 15:48:49 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:48:49 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:48:51 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:49:29 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:49:32 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:49:41 GMT+0100] Daemon: Daemon demarré avec le pid: 63378
+[Wed Nov 06 2019 15:49:42 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:49:47 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:49:47 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 06 2019 15:50:12 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:50:14 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:50:14 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 06 2019 15:50:37 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:50:43 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:50:43 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 06 2019 15:50:45 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:50:45 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 06 2019 15:50:45 GMT+0100] Server: Command server-side :'quit'
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:50:50 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:50:50 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 06 2019 15:50:51 GMT+0100]
+-> CTL command h 
+[Wed Nov 06 2019 15:50:51 GMT+0100] Server: Command server-side :'h'
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:53:28 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:53:28 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 06 2019 15:53:30 GMT+0100]
+-> CTL command h 
+[Wed Nov 06 2019 15:53:30 GMT+0100] Server: Command server-side :'h'
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:54:28 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:54:28 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 06 2019 15:54:30 GMT+0100]
+-> CTL command h 
+[Wed Nov 06 2019 15:54:30 GMT+0100] Server: Command server-side :'h'
+[Wed Nov 06 2019 15:54:48 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:54:48 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 06 2019 15:54:48 GMT+0100] Server: Command server-side :'quit'
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:54:50 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:54:50 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 06 2019 15:54:52 GMT+0100]
+-> CTL command h 
+[Wed Nov 06 2019 15:54:52 GMT+0100] Server: Command server-side :'h'
+[Wed Nov 06 2019 15:54:58 GMT+0100]
+-> CTL command quit 
+[Wed Nov 06 2019 15:54:58 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 06 2019 15:54:58 GMT+0100] Server: Command server-side :'quit'
+[Wed Nov 06 2019 15:55:05 GMT+0100] Daemon: Daemon demarré avec le pid: 66600
+[Wed Nov 06 2019 15:55:06 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Wed Nov 06 2019 15:55:07 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:55:07 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:55:08 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:55:08 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:55:08 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:55:08 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:55:08 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:55:08 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:55:08 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:55:08 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:55:08 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:55:08 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:55:08 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:55:08 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:55:08 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 06 2019 15:55:09 GMT+0100]
+-> CTL command h 
+[Wed Nov 06 2019 15:55:09 GMT+0100] Server: Command server-side :'h'
+[Wed Nov 06 2019 15:56:07 GMT+0100] Daemon: Daemon demarré avec le pid: 67192
+[Wed Nov 06 2019 15:56:07 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:56:09 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:56:09 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 06 2019 15:56:10 GMT+0100]
+-> CTL command h 
+[Wed Nov 06 2019 15:56:10 GMT+0100] Server: Command server-side :'h'
+[Wed Nov 06 2019 15:57:10 GMT+0100] Daemon: Daemon demarré avec le pid: 67830
+[Wed Nov 06 2019 15:57:11 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Wed Nov 06 2019 15:57:11 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 06 2019 15:57:11 GMT+0100]
+-> setup read ... 
+[Wed Nov 06 2019 15:57:12 GMT+0100]
+-> setup read: done
+[Wed Nov 06 2019 15:57:12 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 06 2019 15:57:12 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 06 2019 15:57:12 GMT+0100]
+-> load Configuration ...
+[Wed Nov 06 2019 15:57:12 GMT+0100]
+-> load Configuration done
+[Wed Nov 06 2019 15:57:12 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 06 2019 15:57:12 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 06 2019 15:57:12 GMT+0100]
+-> reset logs ...
+[Wed Nov 06 2019 15:57:12 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 06 2019 15:57:12 GMT+0100]
+-> reset logs done
+[Wed Nov 06 2019 15:57:12 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 06 2019 15:57:12 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 06 2019 15:57:12 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 06 2019 15:57:13 GMT+0100]
+-> CTL command h 
+[Wed Nov 06 2019 15:57:13 GMT+0100] Server: Command server-side :'h'
+[Sun Nov 10 2019 19:54:21 GMT+0100] Daemon: Daemon demarré avec le pid: 88817
+[Sun Nov 10 2019 19:54:30 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Mon Nov 18 2019 21:34:02 GMT+0100] Daemon: Daemon demarré avec le pid: 19962
+[Mon Nov 18 2019 21:34:58 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Mon Nov 18 2019 21:35:10 GMT+0100] Daemon: Daemon demarré avec le pid: 20640
+[Mon Nov 18 2019 21:35:10 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Mon Nov 18 2019 21:35:14 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> Session CTL demarrée.
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> setup read ... 
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> setup read: done
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> Checking taskmaster dir ...
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> Checking taskmaster dir done
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> load Configuration ...
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> load Configuration done
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> kill Old Taskmaster ...
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> kill Old Taskmaster done
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> reset logs ...
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> reseting pidLogs
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> reset logs done
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> exec onLaunch programs ...
+[Mon Nov 18 2019 21:41:03 GMT+0100]
+-> exec onLaunch programs done
+[Mon Nov 18 2019 21:41:03 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Mon Nov 18 2019 21:41:05 GMT+0100]
+-> CTL command h 
+[Mon Nov 18 2019 21:41:05 GMT+0100] Server: Command server-side :'h'
+[Mon Nov 18 2019 21:44:40 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Mon Nov 18 2019 21:45:41 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Mon Nov 18 2019 21:48:32 GMT+0100] Daemon: Daemon demarré avec le pid: 28329
+[Mon Nov 18 2019 21:48:36 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> Session CTL demarrée.
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> setup read ... 
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> setup read: done
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> Checking taskmaster dir ...
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> Checking taskmaster dir done
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> load Configuration ...
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> load Configuration done
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> kill Old Taskmaster ...
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> kill Old Taskmaster done
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> reset logs ...
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> reseting pidLogs
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> reset logs done
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> exec onLaunch programs ...
+[Mon Nov 18 2019 21:48:42 GMT+0100]
+-> exec onLaunch programs done
+[Mon Nov 18 2019 21:48:42 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Mon Nov 18 2019 21:48:44 GMT+0100]
+-> CTL command h 
+[Mon Nov 18 2019 21:48:44 GMT+0100] Server: Command server-side :'h'
+[Mon Nov 18 2019 21:50:55 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Mon Nov 18 2019 21:52:22 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Mon Nov 18 2019 21:53:40 GMT+0100] Daemon: Daemon demarré avec le pid: 31377
+[Mon Nov 18 2019 21:53:41 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> Session CTL demarrée.
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> setup read ... 
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> setup read: done
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> Checking taskmaster dir ...
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> Checking taskmaster dir done
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> load Configuration ...
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> load Configuration done
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> kill Old Taskmaster ...
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> kill Old Taskmaster done
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> reset logs ...
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> reseting pidLogs
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> reset logs done
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> exec onLaunch programs ...
+[Mon Nov 18 2019 21:53:44 GMT+0100]
+-> exec onLaunch programs done
+[Mon Nov 18 2019 21:53:44 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Mon Nov 18 2019 21:53:47 GMT+0100]
+-> CTL command h 
+[Mon Nov 18 2019 21:53:47 GMT+0100] Server: Command server-side :'h'
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> Session CTL demarrée.
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> setup read ... 
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> setup read: done
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> Checking taskmaster dir ...
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> Checking taskmaster dir done
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> load Configuration ...
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> load Configuration done
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> kill Old Taskmaster ...
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> kill Old Taskmaster done
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> reset logs ...
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> reseting pidLogs
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> reset logs done
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> exec onLaunch programs ...
+[Mon Nov 18 2019 21:54:17 GMT+0100]
+-> exec onLaunch programs done
+[Mon Nov 18 2019 21:54:17 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> Session CTL demarrée.
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> setup read ... 
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> setup read: done
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> Checking taskmaster dir ...
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> Checking taskmaster dir done
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> load Configuration ...
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> load Configuration done
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> kill Old Taskmaster ...
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> kill Old Taskmaster done
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> reset logs ...
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> reseting pidLogs
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> reset logs done
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> exec onLaunch programs ...
+[Mon Nov 18 2019 21:54:43 GMT+0100]
+-> exec onLaunch programs done
+[Mon Nov 18 2019 21:54:43 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> Session CTL demarrée.
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> setup read ... 
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> setup read: done
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> Checking taskmaster dir ...
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> Checking taskmaster dir done
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> load Configuration ...
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> load Configuration done
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> kill Old Taskmaster ...
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> kill Old Taskmaster done
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> reset logs ...
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> reseting pidLogs
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> reset logs done
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> exec onLaunch programs ...
+[Mon Nov 18 2019 21:55:23 GMT+0100]
+-> exec onLaunch programs done
+[Mon Nov 18 2019 21:55:23 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Mon Nov 18 2019 22:02:14 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Mon Nov 18 2019 22:03:11 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Mon Nov 18 2019 22:04:43 GMT+0100] Daemon: Daemon demarré avec le pid: 37713
+[Mon Nov 18 2019 22:05:56 GMT+0100] Daemon: Daemon demarré avec le pid: 38373

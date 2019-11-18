@@ -7,18 +7,25 @@ global.child_process = require('child_process');
 global.crypto = require('crypto');
 global.Builtin = require("./builtin");
 global.Commands = require("./commands");
-global.Init = require("./init_taskmaster");
+global.Init = require("./init_taskmaster_ctl");
+global.socket = require("socket.io");
+global.io = require('socket.io-client');
 global.PATH = os.homedir();
 global.CONFIGDIR = PATH + "/taskmaster";
+global.logfile =  CONFIGDIR + "/logs/taskmaster_log"
+
 /*
 ** DECLARATION
 */
 //console.log(os.constants);
 
-global.log = (...msg) => {
-	fs.appendFileSync("log.tm", (new Date()) + ": " + msg.join(" ") + "\n", "utf-8");
+global.log = (...msg) =>{
+	let date = new Date().toString();
+	date = date.substr(0, date.indexOf(" ("))
+	fs.appendFileSync(logfile, "[" + date + "]\n-> " + msg.join(" ") + "\n", "utf-8");
 }
-log("Session taskmaster demarrée.");
+log("Session CTL demarrée.");
+
 global.questions = [
 	"Quel sera le nom du programme ?",
 	"Quelle sera la commande lancée au demarrage du programme? ",
@@ -137,6 +144,7 @@ global.main = {
 	taskLogs: CONFIGDIR + "/.logs",
 	pidLogs: CONFIGDIR + "/.pids",
 	isQuestion: false,
+	side: "ctl",
 };
 
 global.Program = class {
@@ -155,25 +163,11 @@ global.Program = class {
 ** Catch event SIGTTIN to prevent interruption in background
 */
 
-process.on("SIGTTIN", ()=>{
-	fs.appendFileSync("ok.log", "BG\n", "UTF-8")
-})
-
-process.on("SIGCONT", ()=>{
-	fs.appendFileSync("ok.log", "FG\n", "UTF-8")
-	//if (global.id)
-	//	clearInterval(global.id);
-})
-
-process.on("SIGINT", ()=>{
-	//process.exit(1);
-})
-
 
 function exitHandler(options, err) {
-	console.log(options.signal + " beforeExit")
-	killAllChilds();
-	//process.exit(1);
+	//log("Fin de session CTL")
+	//emit killAllChilds();
+	process.exit(1);
 }
 process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));
 process.on('SIGINT', exitHandler.bind(null, {exit: true, signal: "sigint"}));
@@ -189,4 +183,5 @@ process.on('uncaughtException', (x) => {
     //exitHandler.bind(null, {exit: true, signal: "exception"});
 	console.log("Error " + x);
 });
+
 Init.init();
