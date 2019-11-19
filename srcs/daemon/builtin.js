@@ -12,7 +12,7 @@ global.startProgram = program => {
 	let child = child_process.exec(program.command, {
 		cwd : "/",//program.workingDirectory,
 		env : getCustomEnv(program.env),
-		killSignal : program.killSignal[0],
+		killSignal : program.killSignal,
 		gid: process.getgid(), // a verif
 		shell : "/bin/sh", // verif aussi
 	}, (error, out, err)=>{

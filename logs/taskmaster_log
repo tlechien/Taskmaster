@@ -3020,3 +3020,331 @@ recu depuis le serveur: commande reçue
 [Tue Nov 19 2019 03:28:17 GMT+0100] Child exited with 0 signal:  
 [Tue Nov 19 2019 03:28:17 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
 [Tue Nov 19 2019 03:28:49 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:30:12 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:30:43 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:31:40 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:32:13 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:32:45 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:33:17 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:33:48 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:34:19 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:35:44 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:36:16 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:36:47 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:37:18 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:37:50 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:39:39 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:42:47 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:44:42 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:45:13 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:45:45 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:46:17 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:48:10 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:48:42 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:49:14 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:50:11 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:50:43 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:51:15 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:52:12 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:52:44 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:53:16 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:54:13 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:56:07 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:59:00 GMT+0100] Daemon: Daemon demarré avec le pid: 40065
+[Tue Nov 19 2019 03:59:00 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 03:59:00 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 03:59:00 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 03:59:00 GMT+0100] load Configuration done
+[Tue Nov 19 2019 03:59:00 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 03:59:00 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 03:59:00 GMT+0100] reset logs ...
+[Tue Nov 19 2019 03:59:00 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 03:59:00 GMT+0100] reset logs done
+[Tue Nov 19 2019 03:59:00 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: ConfigurationTest:40071
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: atom:40072
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40073
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40074
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40075
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40076
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40077
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40078
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40079
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40080
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40081
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40082
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40083
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40084
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40085
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40086
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40087
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40088
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40089
+[Tue Nov 19 2019 03:59:00 GMT+0100] Process spawned: default2:40090
+[Tue Nov 19 2019 03:59:00 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 03:59:00 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 03:59:00 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 03:59:04 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:59:35 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 04:00:47 GMT+0100] Daemon: Daemon demarré avec le pid: 41112
+[Tue Nov 19 2019 04:00:47 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 04:00:47 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 04:00:47 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 04:00:47 GMT+0100] load Configuration done
+[Tue Nov 19 2019 04:00:47 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 04:00:47 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 04:00:47 GMT+0100] reset logs ...
+[Tue Nov 19 2019 04:00:47 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 04:00:47 GMT+0100] reset logs done
+[Tue Nov 19 2019 04:00:47 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: ConfigurationTest:41118
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: atom:41119
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41121
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41122
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41123
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41124
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41125
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41126
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41127
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41128
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41129
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41130
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41131
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41132
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41133
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41134
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41135
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41136
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41137
+[Tue Nov 19 2019 04:00:47 GMT+0100] Process spawned: default2:41138
+[Tue Nov 19 2019 04:00:47 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 04:00:47 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 04:00:47 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 04:00:50 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 04:01:20 GMT+0100] Server: Command server-side :'ConfigurationTest'
+[Tue Nov 19 2019 04:02:01 GMT+0100] Daemon: Daemon demarré avec le pid: 41802
+[Tue Nov 19 2019 04:02:01 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 04:02:01 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 04:02:01 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 04:02:01 GMT+0100] load Configuration done
+[Tue Nov 19 2019 04:02:01 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 04:02:01 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 04:02:01 GMT+0100] reset logs ...
+[Tue Nov 19 2019 04:02:01 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 04:02:01 GMT+0100] reset logs done
+[Tue Nov 19 2019 04:02:01 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: ConfigurationTest:41814
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: atom:41815
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41816
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41817
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41818
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41819
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41820
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41821
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41822
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41823
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41824
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41825
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41826
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41827
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41828
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41829
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41830
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41831
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41832
+[Tue Nov 19 2019 04:02:01 GMT+0100] Process spawned: default2:41833
+[Tue Nov 19 2019 04:02:01 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 04:02:01 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 04:02:01 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 04:02:02 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 04:02:05 GMT+0100] Server: Command server-side :'ConfigurationTest'
+[Tue Nov 19 2019 04:02:41 GMT+0100] Daemon: Daemon demarré avec le pid: 42195
+[Tue Nov 19 2019 04:02:41 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 04:02:41 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 04:02:41 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 04:02:41 GMT+0100] load Configuration done
+[Tue Nov 19 2019 04:02:41 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 04:02:41 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 04:02:41 GMT+0100] reset logs ...
+[Tue Nov 19 2019 04:02:41 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 04:02:41 GMT+0100] reset logs done
+[Tue Nov 19 2019 04:02:41 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: ConfigurationTest:42227
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: atom:42228
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42229
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42230
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42231
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42232
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42233
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42234
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42235
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42236
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42237
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42238
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42239
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42240
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42241
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42242
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42243
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42244
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42245
+[Tue Nov 19 2019 04:02:41 GMT+0100] Process spawned: default2:42246
+[Tue Nov 19 2019 04:02:41 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 04:02:41 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 04:02:41 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 04:02:43 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 04:02:47 GMT+0100] Server: Command server-side :'stop'
+[Tue Nov 19 2019 04:03:11 GMT+0100] Server: Command server-side :'stop'
+[Tue Nov 19 2019 04:03:15 GMT+0100] Daemon: Daemon demarré avec le pid: 42582
+[Tue Nov 19 2019 04:03:15 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 04:03:15 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 04:03:15 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 04:03:15 GMT+0100] load Configuration done
+[Tue Nov 19 2019 04:03:15 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 04:03:15 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 04:03:15 GMT+0100] reset logs ...
+[Tue Nov 19 2019 04:03:15 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 04:03:15 GMT+0100] reset logs done
+[Tue Nov 19 2019 04:03:15 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: ConfigurationTest:42588
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: atom:42589
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42590
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42591
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42592
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42593
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42594
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42595
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42596
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42597
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42598
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42599
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42600
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42601
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42602
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42603
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42604
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42605
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42606
+[Tue Nov 19 2019 04:03:15 GMT+0100] Process spawned: default2:42607
+[Tue Nov 19 2019 04:03:15 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 04:03:15 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 04:03:15 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 04:03:16 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 04:03:21 GMT+0100] Server: Command server-side :'stop'
+[Tue Nov 19 2019 04:03:21 GMT+0100] Child couldn't be killed Error: kill ESRCH
+[Tue Nov 19 2019 04:03:21 GMT+0100] Child Process ConfigurationTest;42588 has been killed.
+[Tue Nov 19 2019 04:03:35 GMT+0100] Server: Command server-side :'stop'
+[Tue Nov 19 2019 04:03:35 GMT+0100] Child couldn't be killed Error: kill ESRCH
+[Tue Nov 19 2019 04:03:35 GMT+0100] Child Process atom;42589 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Server: Command server-side :'stop'
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42590 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42591 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42592 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42593 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42594 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42595 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42596 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42597 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42598 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42599 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42600 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42601 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42602 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42603 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42604 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42605 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42606 has been killed.
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child couldn't be killed Error: Unknown signal: SIGTERM,SIGHUP
+[Tue Nov 19 2019 04:03:41 GMT+0100] Child Process default2;42607 has been killed.
+[Tue Nov 19 2019 04:05:37 GMT+0100] Daemon: Daemon demarré avec le pid: 43921
+[Tue Nov 19 2019 04:05:37 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 04:05:37 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 04:05:37 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 04:05:37 GMT+0100] load Configuration done
+[Tue Nov 19 2019 04:05:37 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 04:05:38 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 04:05:38 GMT+0100] reset logs ...
+[Tue Nov 19 2019 04:05:38 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 04:05:38 GMT+0100] reset logs done
+[Tue Nov 19 2019 04:05:38 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: ConfigurationTest:43927
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: atom:43928
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43929
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43930
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43931
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43932
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43933
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43934
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43935
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43936
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43937
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43938
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43939
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43940
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43941
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43942
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43943
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43944
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43945
+[Tue Nov 19 2019 04:05:38 GMT+0100] Process spawned: default2:43946
+[Tue Nov 19 2019 04:05:38 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 04:05:38 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 04:05:38 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 04:05:39 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 04:05:41 GMT+0100] Server: Command server-side :'stop'
+[Tue Nov 19 2019 04:05:41 GMT+0100] Child couldn't be killed Error: kill ESRCH
+[Tue Nov 19 2019 04:05:41 GMT+0100] Child Process ConfigurationTest;43927 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Server: Command server-side :'stop'
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43929 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43930 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43931 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43932 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43933 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43934 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43935 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43936 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43937 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43938 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43939 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43940 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43941 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43942 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43943 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43944 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43945 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child Process default2;43946 has been killed.
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM
+[Tue Nov 19 2019 04:05:46 GMT+0100] Child exited with null signal:  SIGTERM

@@ -75,7 +75,7 @@ let checkJSONFile = file => {
 	else if (objet.killSignal)
 	{
 		let sig = ["SIGALRM", "SIGHUP", "SIGINT", "SIGKILL", "SIGPIPE", "SIGTERM", "SIGUSR1", "SIGUSR2"];
-		if (objet.killSignal.filter(x=>!~sig.indexOf(x)).length)
+		if (!~sig.indexOf(objet.killSignal).length)
 			return ("Signal incorrect");
 	}
 	return (1);

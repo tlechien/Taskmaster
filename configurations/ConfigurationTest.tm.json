@@ -5,7 +5,7 @@
 	"expectedOutput":["0"],
 	"successTime":20000,
 	"retryCount":12,
-	"killSignal":["SIGINT"],
+	"killSignal":"SIGINT",
 	"terminationTime":10,
 	"fd":{"err":"log.err",
 	"out":"log.out"},

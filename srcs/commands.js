@@ -45,6 +45,19 @@ global.commands = [
 			// return (true);
 		}
 	}, {
+		names: ["stop", "stp"],
+		usage: "Print status of programs.\n\tstop",
+		call: (argv, side) => {
+			if (!argv.length)
+				return console.log("Ca marche pa ")
+			console.log("On stop", argv[0])
+			let index = Object.keys(daemon.programs).findIndex(x=>{
+				return ~x.toLowerCase().indexOf(argv[0].toLowerCase())
+			});
+			if (!~index)	console.log("Commande non trouvée: %s", argv[0]);
+			else killChilds(daemon.programs[Object.keys(daemon.programs)[index]]);
+		}
+	}, {
 		names: ["tail", "t", "log", "l"],
 		usage: "Display log file.\n\ttail program [out|err]",
 		call: (argv, side) => {

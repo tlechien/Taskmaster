@@ -2,9 +2,9 @@ console.log("Ici on est dans le client");
 
 let socket = io.connect();
 let card = null
-socket.on("renvoi", (x)=>{
+socket.on("renvoi", (x) => {
 	console.log("recu depuis le serveur: " + x)
-}).on("datas", (data)=>{
+}).on("datas", (data) => {
 	console.log(data, "recue de la partie daemon");
 	card = document.querySelector("#processes");
 	card.innerHTML = "";
@@ -29,11 +29,11 @@ socket.on("renvoi", (x)=>{
 	                <div class="col">
 	                    <h4>${program.count == 1 ? program.subprocess.length ? program.subprocess[0].timestamp : "Exited" : "⬇️" || NaN }</h4>
 					</div>
-	                <div class="col">
-	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="width: inherit;height: inherit;">STDERR</button><button class="btn btn-primary" type="button">STDOUT</button></div>
+	                <div class="col" id=${program.name}_fd>
+	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="width: inherit;height: inherit;">err</button><button class="btn btn-primary" type="button">out</button></div>
 	                </div>
-	                <div class="col">
-	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="width: inherit;height: inherit;">Reload</button><button class="btn btn-primary" type="button">Stop</button></div>
+	                <div class="col" id=${program.name}_action>
+	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="width: inherit;height: inherit;">reload</button><button class="btn btn-primary" type="button">stop</button></div>
 	                </div>
 				</div>`
 			let subprocess = document.createElement("div");
@@ -70,6 +70,13 @@ socket.on("renvoi", (x)=>{
 			div.addEventListener("click", function(tag){
 				if (program.count <= 1 || tag.target.type == "button") return
 				$(subprocess).slideToggle();
+			})
+			document.querySelector(`#${program.name}_fd`).addEventListener("click", function (fd){
+				window.open(program.fd[fd.target.textContent]);
+			})
+			document.querySelector(`#${program.name}_action`).addEventListener("click", function (name){
+				if (~name.target.textContent.indexOf("reload")) console.log("action reload");
+				else if (~name.target.textContent.indexOf("stop")) socket.emit("cmd", "stop", [program.name], 2);
 			})
 	})
 	// data.forEach(x=>{
