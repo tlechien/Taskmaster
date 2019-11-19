@@ -89,16 +89,20 @@ let server = express().use((req, res) => {
 
 let io = socket(server).on("connection", socket => {
 	console.log("Nouvelle connexion entrante")
-	let programs = Object.keys(daemon.programs).map(y=>{
-		let x = daemon.programs[y];
-		return {command: x.command, count: x.count, name: x.name, fd: x.fd, subprocess: x.subprocess.map(sub=>{
-			return {status: sub.status, exit: sub.exit, pid: sub.child.pid, exitCode: sub.child.exitCode, timestamp: sub.timestamp}
-		})}
-	})
-		socket.emit("datas", programs); // envoyer les données necessaire a laffichage du tableau process
+	socket.emit("connection_ok");
+ // envoyer les données necessaire a laffichage du tableau process
 	socket.on("data", (x)=>{
 		log("Server: Utilisateur envoi data '" + x + "'")
 		socket.emit("renvoi", "c bien recu mon pote");
+	})
+	socket.on("senddata", ()=>{
+		let programs = Object.keys(daemon.programs).map(y=>{
+			let x = daemon.programs[y];
+			return {command: x.command, count: x.count, name: x.name, fd: x.fd, subprocess: x.subprocess.map(sub=>{
+				return {status: sub.status, exit: sub.exit, pid: sub.child.pid, exitCode: sub.child.exitCode, timestamp: sub.timestamp}
+			})}
+		})
+			socket.emit("datas", programs);
 	})
 	socket.on("cmd", (cmd, argv, index)=>{
 		log("Server: Command server-side :'" + cmd + "'")

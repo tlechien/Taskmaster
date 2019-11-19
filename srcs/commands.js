@@ -58,6 +58,24 @@ global.commands = [
 			else killChilds(daemon.programs[Object.keys(daemon.programs)[index]]);
 		}
 	}, {
+		names: ["restart", "re"],
+		usage: "Print status of programs.\n\tstop",
+		call: (argv, side) => {
+			if (!argv.length)
+				return console.log("Ca marche pa ")
+			console.log("On stop", argv[0])
+			let index = Object.keys(daemon.programs).findIndex(x=>{
+				return ~x.toLowerCase().indexOf(argv[0].toLowerCase())
+			});
+			if (!~index) console.log("Commande non trouvée: %s", argv[0]);
+			else {
+				let prog = daemon.programs[Object.keys(daemon.programs)[index]]
+				killChilds(prog);
+				prog.subprocess.length = 0;
+				launchProcess(prog)
+			}
+		}
+	}, {
 		names: ["tail", "t", "log", "l"],
 		usage: "Display log file.\n\ttail program [out|err]",
 		call: (argv, side) => {

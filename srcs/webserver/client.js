@@ -1,11 +1,14 @@
-console.log("Ici on est dans le client");
-
 let socket = io.connect();
 let card = null
+let toggleStates = {};
+let convert = function(s) {
+    let ms = s % 1000;s = (s - ms) / 1000;let secs = s % 60;s = (s - secs) / 60;let mins = s % 60;let hrs = (s - mins) / 60;return (hrs < 10 ? "0" + hrs : hrs) + ":" + (mins < 10 ? "0" + mins : mins) + ":" + (secs < 10  ?  "0" + secs : secs)
+}
 socket.on("renvoi", (x) => {
 	console.log("recu depuis le serveur: " + x)
+}).on("connection_ok", ()=>{
+	socket.emit("senddata");
 }).on("datas", (data) => {
-	console.log(data, "recue de la partie daemon");
 	card = document.querySelector("#processes");
 	card.innerHTML = "";
 	data.forEach(program=>{
@@ -21,13 +24,13 @@ socket.on("renvoi", (x) => {
 						<h4>${program.count}</h4>
 					</div>
 	                <div class="col">
-	                    <h4>${program.count == 1 ? program.subprocess.length ? program.subprocess[0].pid : "Exited" : "⬇️" || "pid"}</h4>
+	                    <h4>${program.count == 1 ? program.subprocess.length ? program.subprocess[0].pid : "Error" : "⬇️" || "pid"}</h4>
 	                </div>
 	                <div class="col">
-	                    <h4>${program.count == 1 ? program.subprocess.length ? program.subprocess[0].status : "Exited" : "⬇️" || "running"}</h4>
+	                    <h4>${program.count == 1 ? program.subprocess.length ? program.subprocess[0].status ?  program.subprocess[0].status : "Exit: " + program.subprocess[0].exitCode: "Error" : "⬇️" || "running"}</h4>
 	                </div>
 	                <div class="col">
-	                    <h4>${program.count == 1 ? program.subprocess.length ? program.subprocess[0].timestamp : "Exited" : "⬇️" || NaN }</h4>
+	                    <h4>${program.count == 1 ? program.subprocess.length ? convert(Date.now() - program.subprocess[0].timestamp) : "Error" : "⬇️" || NaN }</h4>
 					</div>
 	                <div class="col" id=${program.name}_fd>
 	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="width: inherit;height: inherit;">err</button><button class="btn btn-primary" type="button">out</button></div>
@@ -51,10 +54,10 @@ socket.on("renvoi", (x) => {
 		                    <h4>${sub.pid}</h4>
 		                </div>
 		                <div class="col">
-		                    <h4>${sub.status}</h4>
+		                    <h4>${sub.status ? sub.status : "Exit: " + sub.exit}</h4>
 		                </div>
 		                <div class="col">
-		                    <h4>${sub.timestamp}</h4>
+		                    <h4>${convert(Date.now() - sub.timestamp)}</h4>
 						</div>
 		                <div class="col">
 							<h4></h4>
@@ -65,32 +68,29 @@ socket.on("renvoi", (x) => {
 					</div>`
 				}).join("")
 			card.appendChild(div);
-			program.count > 1 && card.appendChild(subprocess);
-			$(subprocess).toggle(false);
+			if (program.count > 1){
+				card.appendChild(subprocess);
+				toggleStates[program.name] = toggleStates[program.name] || false;
+				toggleStates[program.name] || $(subprocess).toggle(false);
+			}
 			div.addEventListener("click", function(tag){
 				if (program.count <= 1 || tag.target.type == "button") return
 				$(subprocess).slideToggle();
+				toggleStates[program.name] = !toggleStates[program.name]
+				socket.emit("senddata");
 			})
 			document.querySelector(`#${program.name}_fd`).addEventListener("click", function (fd){
 				window.open(program.fd[fd.target.textContent]);
+				socket.emit("senddata");
+
 			})
 			document.querySelector(`#${program.name}_action`).addEventListener("click", function (name){
-				if (~name.target.textContent.indexOf("reload")) console.log("action reload");
+				if (~name.target.textContent.indexOf("reload")) socket.emit("cmd", "restart", [program.name], 3);
 				else if (~name.target.textContent.indexOf("stop")) socket.emit("cmd", "stop", [program.name], 2);
+				socket.emit("senddata");
 			})
 	})
-	// data.forEach(x=>{
-	// 	console.log(`
-	// 	name: ${x.name},
-	// 	count: ${x.count},
-	// 	fd: err = ${x.fd.err}, out = ${x.fd.out}
-	// 	command: ${x.command}
-	// 	timestamp: ${x.subprocess.length ? x.subprocess[0].timestamp : 0 || 0},
-	// 	status:  ${x.subprocess.length ? x.subprocess[0].status : 0 || "running"}
-	// 	exit: ${x.subprocess.length ? x.subprocess[0].exit : 0 || "exit"}
-	// 	pid: ${x.subprocess.length ? x.subprocess[0].pid : 0 || "pid"}
-	// 	exitCode: ${x.subprocess.length ? x.subprocess[0].exitCode : 0 || "exitCode"}`)
-	// })
 })
-
-document.onload = ()=>{console.log("page correctement chargée")}
+setInterval(()=>{
+	socket.emit("senddata");
+}, 10000);
