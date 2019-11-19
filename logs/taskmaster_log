@@ -2890,3 +2890,133 @@ recu depuis le serveur: commande reçue
 [Tue Nov 19 2019 02:43:07 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
 [Tue Nov 19 2019 02:43:39 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
 [Tue Nov 19 2019 02:45:06 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:46:03 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:47:02 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:47:59 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:48:56 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:49:28 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:50:00 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:50:58 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:51:30 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:52:01 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:52:59 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:53:31 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:54:03 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:56:21 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:06:02 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:08:18 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:08:50 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:10:14 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:10:46 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:12:09 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:12:42 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:13:13 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:18:07 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:21:59 GMT+0100] Daemon: Daemon demarré avec le pid: 19181
+[Tue Nov 19 2019 03:21:59 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 03:21:59 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 03:21:59 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 03:21:59 GMT+0100] load Configuration done
+[Tue Nov 19 2019 03:21:59 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 03:21:59 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 03:21:59 GMT+0100] reset logs ...
+[Tue Nov 19 2019 03:21:59 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 03:21:59 GMT+0100] reset logs done
+[Tue Nov 19 2019 03:21:59 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 03:21:59 GMT+0100] Process spawned: ConfigurationTest:19187
+[Tue Nov 19 2019 03:21:59 GMT+0100] Process spawned: atom:19188
+[Tue Nov 19 2019 03:21:59 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 03:21:59 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 03:21:59 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 03:21:59 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:23:23 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:23:39 GMT+0100] Daemon: Daemon demarré avec le pid: 20203
+[Tue Nov 19 2019 03:23:39 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 03:23:39 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 03:23:39 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 03:23:39 GMT+0100] load Configuration done
+[Tue Nov 19 2019 03:23:39 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 03:23:39 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 03:23:39 GMT+0100] reset logs ...
+[Tue Nov 19 2019 03:23:39 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 03:23:39 GMT+0100] reset logs done
+[Tue Nov 19 2019 03:23:39 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 03:23:39 GMT+0100] Process spawned: ConfigurationTest:20209
+[Tue Nov 19 2019 03:23:39 GMT+0100] Process spawned: atom:20210
+[Tue Nov 19 2019 03:23:39 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 03:23:39 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 03:23:39 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 03:23:41 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:24:11 GMT+0100] Daemon: Daemon demarré avec le pid: 20510
+[Tue Nov 19 2019 03:24:11 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 03:24:11 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 03:24:11 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 03:24:11 GMT+0100] load Configuration done
+[Tue Nov 19 2019 03:24:11 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 03:24:11 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 03:24:11 GMT+0100] reset logs ...
+[Tue Nov 19 2019 03:24:11 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 03:24:11 GMT+0100] reset logs done
+[Tue Nov 19 2019 03:24:11 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: ConfigurationTest:20515
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: atom:20516
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20518
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20519
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20520
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20521
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20522
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20523
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20524
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20525
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20526
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20527
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20528
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20529
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20530
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20531
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20532
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20533
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20534
+[Tue Nov 19 2019 03:24:11 GMT+0100] Process spawned: default2:20535
+[Tue Nov 19 2019 03:24:11 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 03:24:11 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 03:24:11 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 03:24:12 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:27:07 GMT+0100] Child exited with null signal:  SIGSEGV
+[Tue Nov 19 2019 03:27:46 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:28:17 GMT+0100] Daemon: Daemon demarré avec le pid: 22863
+[Tue Nov 19 2019 03:28:17 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 03:28:17 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 03:28:17 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 03:28:17 GMT+0100] load Configuration done
+[Tue Nov 19 2019 03:28:17 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 03:28:17 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 03:28:17 GMT+0100] reset logs ...
+[Tue Nov 19 2019 03:28:17 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 03:28:17 GMT+0100] reset logs done
+[Tue Nov 19 2019 03:28:17 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: ConfigurationTest:22869
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: atom:22870
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22871
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22872
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22873
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22874
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22875
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22876
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22877
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22878
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22879
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22880
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22881
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22882
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22883
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22884
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22885
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22886
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22887
+[Tue Nov 19 2019 03:28:17 GMT+0100] Process spawned: default2:22888
+[Tue Nov 19 2019 03:28:17 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 03:28:17 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 03:28:17 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 03:28:17 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 03:28:49 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'

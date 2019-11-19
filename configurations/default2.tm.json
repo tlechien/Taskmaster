@@ -1,8 +1,8 @@
 {
   "name": "default",
-  "command": "string",
+  "command": "~/42sh/sbgloop",
   "count": 18,
-  "execAtLaunch": false,
+  "execAtLaunch": true,
   "restart": ["always", "never", "signal"],
   "expectedOutput": [0],
   "successTime": 1000,
