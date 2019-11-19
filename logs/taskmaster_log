@@ -4111,3 +4111,51 @@ recu depuis le serveur: commande reçue
 [Tue Nov 19 2019 04:28:02 GMT+0100] Process spawned: default2:56932
 [Tue Nov 19 2019 04:28:02 GMT+0100] Process spawned: default2:56933
 [Tue Nov 19 2019 04:28:02 GMT+0100] Process spawned: default2:56934
+[Tue Nov 19 2019 04:56:09 GMT+0100] Daemon: Daemon demarré avec le pid: 73284
+[Tue Nov 19 2019 04:56:09 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 04:56:09 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 04:56:09 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 04:56:09 GMT+0100] load Configuration done
+[Tue Nov 19 2019 04:56:09 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 04:56:09 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 04:56:09 GMT+0100] reset logs ...
+[Tue Nov 19 2019 04:56:09 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 04:56:09 GMT+0100] reset logs done
+[Tue Nov 19 2019 04:56:09 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: ConfigurationTest:73289
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: atom:73290
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73291
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73292
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73293
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73294
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73295
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73296
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73297
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73298
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73299
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73300
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73301
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73302
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73303
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73304
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73305
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73306
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73307
+[Tue Nov 19 2019 04:56:09 GMT+0100] Process spawned: default2:73308
+[Tue Nov 19 2019 04:56:09 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 04:56:09 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 04:56:09 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 04:56:13 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Tue Nov 19 2019 04:56:19 GMT+0100]
+-> Session CTL demarrée.
+[Tue Nov 19 2019 04:56:19 GMT+0100]
+-> setup read ... 
+[Tue Nov 19 2019 04:56:19 GMT+0100]
+-> setup read: done
+[Tue Nov 19 2019 04:56:19 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Tue Nov 19 2019 04:56:19 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Tue Nov 19 2019 05:01:52 GMT+0100]
+-> CTL command exit 
+[Tue Nov 19 2019 05:01:52 GMT+0100] Server: Command server-side :'exit'

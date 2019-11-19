@@ -10,6 +10,9 @@ socket.on("renvoi", (x) => {
 	socket.emit("senddata");
 }).on("datas", (data) => {
 	card = document.querySelector("#processes");
+	document.querySelector("#log_button").addEventListener("click", ()=>{
+		window.open("logs/taskmaster_log")
+	})
 	card.innerHTML = "";
 	data.forEach(program=>{
 		let div = document.createElement("div");
