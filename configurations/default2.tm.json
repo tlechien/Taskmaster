@@ -1,7 +1,7 @@
 {
   "name": "default",
   "command": "string",
-  "count": 1,
+  "count": 18,
   "execAtLaunch": false,
   "restart": ["always", "never", "signal"],
   "expectedOutput": [0],

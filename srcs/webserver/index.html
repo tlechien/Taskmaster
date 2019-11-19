@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <!-- saved from url=(0023)http://10.2.10.4:8000/# -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Untitled</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="css">
-    <link rel="stylesheet" href="css(1)">
-    <link rel="stylesheet" href="Article-Dual-Column.css">
-    <link rel="stylesheet" href="Header-Blue.css">
-    <link rel="stylesheet" href="Navigation-with-Button.css">
-    <link rel="stylesheet" href="styles.css">
-	<script src="socket.io.js"></script>
-	<script src="client.js"></script>
-</head>
-
-<body>
-    <ul class="list-group"></ul>
-    <div class="card"></div>
-    <div class="card">
-        <div class="card-body">
-            <h1></h1>
-            <div class="row" style="align-items: center;">
-                <div class="col-xl-1 offset-xl-0">
-                    <h2>Process name</h2>
-                </div>
-                <div class="col-xl-1 offset-xl-2">
-                    <h2>PID</h2>
-                </div>
-                <div class="col">
-                    <h2>Status</h2>
-                </div>
-                <div class="col">
-                    <h2>Timestamp</h2>
-                </div>
-                <div class="col">
-                    <h2>Count</h2>
-                </div>
-                <div class="col">
-                    <h2>View logs files</h2>
-                </div>
-                <div class="col">
-                    <h2>Process action</h2>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-    <div></div>
-    <div></div>
-    <script src="jquery-3.4.1.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script id="bs-live-reload" data-sseport="57665" data-lastchange="1574119058567" src="livereload.js"></script>
-
-
-</body></html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	    <title>Untitled</title>
+	    <link rel="stylesheet" href="bootstrap.min.css">
+	    <!-- <link rel="stylesheet" href="css">
+	    <link rel="stylesheet" href="css(1)"> -->
+	    <link rel="stylesheet" href="Article-Dual-Column.css">
+	    <link rel="stylesheet" href="Header-Blue.css">
+	    <link rel="stylesheet" href="Navigation-with-Button.css">
+	    <link rel="stylesheet" href="styles.css">
+		<script src="jquery-3.4.1.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<script id="bs-live-reload" data-sseport="57665" data-lastchange="1574119058567" src="livereload.js"></script>
+		<script src="socket.io.js"></script>
+		<script src="client.js"></script>
+	</head>
+	<body>
+	    <ul class="list-group"></ul>
+	    <div class="card">
+	        <div class="card-body">
+	            <div class="row" style="align-items: center;">
+	                <div class="col-xl-2 offset-xl-0">
+	                    <h2>Process name</h2>
+	                </div>
+	                <div class="col-xl-1 offset-xl-2">
+	                    <h2>PID</h2>
+	                </div>
+	                <div class="col">
+	                    <h2>Status</h2>
+	                </div>
+	                <div class="col">
+	                    <h2>Timestamp</h2>
+	                </div>
+	                <div class="col">
+	                    <h2>Count</h2>
+	                </div>
+	                <div class="col">
+	                    <h2>View logs files</h2>
+	                </div>
+	                <div class="col">
+	                    <h2>Process action</h2>
+	                </div>
+	            </div>
+				<p>
+	        </div>
+			<div id="processes"></div>
+	    </div>
+	</body>
+</html>

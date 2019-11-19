@@ -110,6 +110,7 @@ global.killPid = (pid, signal, callback)=>{
 global.Process = class {
 	constructor(_child, _timestamp, _status){
 		this.status = _status;
+		this.exit = {};
 		this.child = _child;
 		this.timestamp = _timestamp;
 	}
@@ -121,6 +122,7 @@ global.Process = class {
 			console.log("Child " + "exited with " + code+ " signal: ", signal);
 			log("Child " + "exited with " + code+ " signal: ", signal);
 			this.status = signal;
+			this.exit = code;
 			//missing name
 			if (!program.expectedOutput.includes(code))
 				console.log("The exit wasn't the one expected");
