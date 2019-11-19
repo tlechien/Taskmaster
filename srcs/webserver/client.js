@@ -30,10 +30,7 @@ socket.on("renvoi", (x)=>{
 		                    <h4>${program.count}</h4>
 		                </div>
 		                <div class="col">
-		                    <div class="btn-group" style="display: flex;"><button class="btn btn-primary" type="button">Select fd</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false" type="button"></button>
-		                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation">Standard output</a>
-		                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation">Standard error</a></div>
-		                    </div>
+		                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="width: inherit;height: inherit;">STDERR</button><button class="btn btn-primary" type="button">STDOUT</button></div>
 		                </div>
 		                <div class="col">
 		                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="width: inherit;height: inherit;">Reload</button><button class="btn btn-primary" type="button">Stop</button></div>

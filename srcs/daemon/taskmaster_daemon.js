@@ -45,7 +45,7 @@ global.log = (...msg) =>{
 // /Users/tlechien/taskmaster/logs/taskmaster_log
 let server = express().use((req, res) => {
 	const parsedUrl = url.parse(req.url);
-	let pathname = `./srcs/webserver${parsedUrl.pathname}`;
+	let pathname = `.${parsedUrl.pathname}`;
 	const mimeType = {
 		'.ico': 'image/x-icon',
 		'.html': 'text/html',
@@ -58,6 +58,7 @@ let server = express().use((req, res) => {
 		'.mp3': 'audio/mpeg',
 		'.pdf': 'application/pdf',
 	};
+	console.log(process.cwd(), pathname)
 	fs.exists(pathname, function (exist) {
 		if(!exist) {
 			res.statusCode = 404;
@@ -65,7 +66,7 @@ let server = express().use((req, res) => {
 			return;
 		}
 		if (fs.statSync(pathname).isDirectory()) {
-			pathname += 'index.html';
+			pathname += './srcs/webserver/index.html';
 		}
 		fs.readFile(pathname, function(err, data){
 			if(err){

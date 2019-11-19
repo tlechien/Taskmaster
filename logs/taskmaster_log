@@ -2611,3 +2611,282 @@ recu depuis le serveur: commande reçue
 [Tue Nov 19 2019 02:26:09 GMT+0100] Child exited with 0 signal:  
 [Tue Nov 19 2019 02:26:09 GMT+0100] Child exited with 0 signal:  
 [Tue Nov 19 2019 02:26:10 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:26:41 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:27:38 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:28:10 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:28:42 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:32:36 GMT+0100] Daemon: Daemon demarré avec le pid: 90788
+[Tue Nov 19 2019 02:32:36 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:32:36 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:32:36 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:32:36 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:32:36 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:32:37 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:32:37 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:32:37 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:32:37 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:32:37 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:32:37 GMT+0100] Process spawned: ConfigurationTest:90794
+[Tue Nov 19 2019 02:32:37 GMT+0100] Process spawned: atom:90795
+[Tue Nov 19 2019 02:32:37 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:32:37 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:32:37 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:32:37 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:32:55 GMT+0100] Daemon: Daemon demarré avec le pid: 90990
+[Tue Nov 19 2019 02:32:55 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:32:55 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:32:55 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:32:55 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:32:55 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:32:55 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:32:55 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:32:55 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:32:55 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:32:55 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:32:55 GMT+0100] Process spawned: ConfigurationTest:91029
+[Tue Nov 19 2019 02:32:55 GMT+0100] Process spawned: atom:91031
+[Tue Nov 19 2019 02:32:55 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:32:55 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:32:55 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:32:55 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:33:42 GMT+0100] Daemon: Daemon demarré avec le pid: 91436
+[Tue Nov 19 2019 02:33:42 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:33:42 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:33:42 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:33:42 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:33:42 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:33:42 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:33:42 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:33:42 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:33:42 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:33:42 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:33:42 GMT+0100] Process spawned: ConfigurationTest:91442
+[Tue Nov 19 2019 02:33:42 GMT+0100] Process spawned: atom:91443
+[Tue Nov 19 2019 02:33:42 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:33:42 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:33:42 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:33:42 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:33:59 GMT+0100] Daemon: Daemon demarré avec le pid: 91668
+[Tue Nov 19 2019 02:33:59 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:33:59 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:33:59 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:33:59 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:33:59 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:33:59 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:33:59 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:33:59 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:33:59 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:33:59 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:33:59 GMT+0100] Process spawned: ConfigurationTest:91675
+[Tue Nov 19 2019 02:33:59 GMT+0100] Process spawned: atom:91676
+[Tue Nov 19 2019 02:33:59 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:33:59 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:33:59 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:34:01 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:34:37 GMT+0100] Daemon: Daemon demarré avec le pid: 92026
+[Tue Nov 19 2019 02:34:37 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:34:37 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:34:37 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:34:37 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:34:37 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:34:37 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:34:37 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:34:37 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:34:37 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:34:37 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:34:37 GMT+0100] Process spawned: ConfigurationTest:92032
+[Tue Nov 19 2019 02:34:37 GMT+0100] Process spawned: atom:92033
+[Tue Nov 19 2019 02:34:37 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:34:37 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:34:37 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:34:38 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:35:17 GMT+0100] Daemon: Daemon demarré avec le pid: 92437
+[Tue Nov 19 2019 02:35:17 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:35:17 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:35:17 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:35:17 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:35:17 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:35:17 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:35:17 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:35:17 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:35:17 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:35:17 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:35:17 GMT+0100] Process spawned: ConfigurationTest:92443
+[Tue Nov 19 2019 02:35:17 GMT+0100] Process spawned: atom:92444
+[Tue Nov 19 2019 02:35:17 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:35:17 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:35:17 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:35:19 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:36:23 GMT+0100] Daemon: Daemon demarré avec le pid: 93061
+[Tue Nov 19 2019 02:36:23 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:36:23 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:36:23 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:36:23 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:36:23 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:36:23 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:36:23 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:36:23 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:36:23 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:36:23 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:36:23 GMT+0100] Process spawned: ConfigurationTest:93066
+[Tue Nov 19 2019 02:36:23 GMT+0100] Process spawned: atom:93067
+[Tue Nov 19 2019 02:36:23 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:36:23 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:36:23 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:36:24 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:36:34 GMT+0100] Daemon: Daemon demarré avec le pid: 93180
+[Tue Nov 19 2019 02:36:34 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:36:34 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:36:34 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:36:34 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:36:34 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:36:34 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:36:34 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:36:34 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:36:34 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:36:34 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:36:34 GMT+0100] Process spawned: ConfigurationTest:93193
+[Tue Nov 19 2019 02:36:34 GMT+0100] Process spawned: atom:93194
+[Tue Nov 19 2019 02:36:34 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:36:34 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:36:34 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:36:35 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:37:08 GMT+0100] Daemon: Daemon demarré avec le pid: 93564
+[Tue Nov 19 2019 02:37:08 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:37:08 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:37:08 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:37:08 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:37:08 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:37:08 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:37:08 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:37:08 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:37:08 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:37:08 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:37:08 GMT+0100] Process spawned: ConfigurationTest:93570
+[Tue Nov 19 2019 02:37:08 GMT+0100] Process spawned: atom:93571
+[Tue Nov 19 2019 02:37:08 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:37:08 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:37:08 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:37:09 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:38:36 GMT+0100] Daemon: Daemon demarré avec le pid: 94374
+[Tue Nov 19 2019 02:38:36 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:38:36 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:38:36 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:38:36 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:38:36 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:38:36 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:38:36 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:38:36 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:38:36 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:38:36 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:38:36 GMT+0100] Process spawned: ConfigurationTest:94380
+[Tue Nov 19 2019 02:38:36 GMT+0100] Process spawned: atom:94381
+[Tue Nov 19 2019 02:38:36 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:38:36 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:38:36 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:38:37 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:39:00 GMT+0100] Daemon: Daemon demarré avec le pid: 94665
+[Tue Nov 19 2019 02:39:00 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:39:00 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:39:00 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:39:01 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:39:01 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:39:01 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:39:01 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:39:01 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:39:01 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:39:01 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:39:01 GMT+0100] Process spawned: ConfigurationTest:94671
+[Tue Nov 19 2019 02:39:01 GMT+0100] Process spawned: atom:94672
+[Tue Nov 19 2019 02:39:01 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:39:01 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:39:01 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:39:02 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:39:41 GMT+0100] Daemon: Daemon demarré avec le pid: 95027
+[Tue Nov 19 2019 02:39:41 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:39:41 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:39:41 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:39:41 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:39:41 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:39:41 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:39:41 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:39:41 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:39:41 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:39:41 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:39:41 GMT+0100] Process spawned: ConfigurationTest:95034
+[Tue Nov 19 2019 02:39:41 GMT+0100] Process spawned: atom:95035
+[Tue Nov 19 2019 02:39:41 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:39:41 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:39:41 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:39:46 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:40:42 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:41:54 GMT+0100] Daemon: Daemon demarré avec le pid: 96313
+[Tue Nov 19 2019 02:41:54 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:41:54 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:41:54 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:41:54 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:41:54 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:41:54 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:41:54 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:41:54 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:41:54 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:41:54 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:41:54 GMT+0100] Process spawned: ConfigurationTest:96318
+[Tue Nov 19 2019 02:41:54 GMT+0100] Process spawned: atom:96319
+[Tue Nov 19 2019 02:41:54 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:41:54 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:41:54 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:42:00 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:42:11 GMT+0100] Daemon: Daemon demarré avec le pid: 96514
+[Tue Nov 19 2019 02:42:11 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:42:11 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:42:11 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:42:11 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:42:11 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:42:11 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:42:11 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:42:11 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:42:11 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:42:11 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:42:11 GMT+0100] Process spawned: ConfigurationTest:96519
+[Tue Nov 19 2019 02:42:11 GMT+0100] Process spawned: atom:96520
+[Tue Nov 19 2019 02:42:11 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:42:11 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:42:11 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:42:12 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:42:41 GMT+0100] Daemon: Daemon demarré avec le pid: 96821
+[Tue Nov 19 2019 02:42:41 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:42:41 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:42:41 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:42:41 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:42:41 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:42:42 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:42:42 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:42:42 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:42:42 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:42:42 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:42:42 GMT+0100] Process spawned: ConfigurationTest:96827
+[Tue Nov 19 2019 02:42:42 GMT+0100] Process spawned: atom:96828
+[Tue Nov 19 2019 02:42:42 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:42:42 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:42:42 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:42:43 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:43:06 GMT+0100] Daemon: Daemon demarré avec le pid: 97101
+[Tue Nov 19 2019 02:43:06 GMT+0100] Checking taskmaster dir ...
+[Tue Nov 19 2019 02:43:06 GMT+0100] Checking taskmaster dir done
+[Tue Nov 19 2019 02:43:06 GMT+0100] load Configuration ...
+[Tue Nov 19 2019 02:43:06 GMT+0100] load Configuration done
+[Tue Nov 19 2019 02:43:06 GMT+0100] kill Old Taskmaster ...
+[Tue Nov 19 2019 02:43:06 GMT+0100] kill Old Taskmaster done
+[Tue Nov 19 2019 02:43:06 GMT+0100] reset logs ...
+[Tue Nov 19 2019 02:43:06 GMT+0100] reseting pidLogs
+[Tue Nov 19 2019 02:43:06 GMT+0100] reset logs done
+[Tue Nov 19 2019 02:43:06 GMT+0100] exec onLaunch programs ...
+[Tue Nov 19 2019 02:43:06 GMT+0100] Process spawned: ConfigurationTest:97107
+[Tue Nov 19 2019 02:43:06 GMT+0100] Process spawned: atom:97108
+[Tue Nov 19 2019 02:43:06 GMT+0100] exec onLaunch programs done
+[Tue Nov 19 2019 02:43:06 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:43:06 GMT+0100] Child exited with 0 signal:  
+[Tue Nov 19 2019 02:43:07 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:43:39 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
+[Tue Nov 19 2019 02:45:06 GMT+0100] Server: Utilisateur envoi data 'Envoi depuis le client'
