@@ -52,3 +52,5 @@ fichiers
 #Idées
 - au lancement du programme, afficher tous les logs sur le chargement des fichiers de configuration et envoyer le status de tous les programmes executés avant d'envoyer le prompt
 - mettre des logs colorisé a chaque interaction pour plus dinformation
+- Webserver over name => command
+- button reload configuration
