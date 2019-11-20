@@ -39,7 +39,7 @@ global.Program = class {
 global.log = (...msg) =>{
 	let date = new Date().toString();
 	date = date.substr(0, date.indexOf(" ("))
-	fs.appendFileSync(logfile, "[" + date + "] " + msg.join(" ") + "\n", "utf-8");
+	fs.appendFileSync(logfile, "[" + date + "]\n-> " + msg.join(" ") + "\n", "utf-8");
 }
 // /Users/tlechien/taskmaster/srcs/daemon/taskmaster_daemon.js
 // /Users/tlechien/taskmaster/logs/taskmaster_log
@@ -74,7 +74,7 @@ let server = express().use((req, res) => {
 				res.end(`Error getting the file: ${err}.`);
 			} else {
 				const ext = path.parse(pathname).ext;
-				res.setHeader('Content-type', mimeType[ext] || 'text/plain' );
+				res.setHeader('Content-type', (mimeType[ext] || 'text/plain') + "; charset=utf-8" );
 				res.end(data);
 			}
 		});
@@ -98,8 +98,8 @@ let io = socket(server).on("connection", socket => {
 	socket.on("senddata", ()=>{
 		let programs = Object.keys(daemon.programs).map(y=>{
 			let x = daemon.programs[y];
-			return {command: x.command, count: x.count, name: x.name, fd: x.fd, subprocess: x.subprocess.map(sub=>{
-				return {status: sub.status, exit: sub.exit, pid: sub.child.pid, exitCode: sub.child.exitCode, timestamp: sub.timestamp}
+			return {command: x.command, count: x.count, name: x.name, expectedOutput: x.expectedOutput, fd: x.fd, subprocess: x.subprocess.map(sub=>{
+				return {status: sub.status, exit: sub.exit, pid: sub.child.pid, exitCode: sub.child.exitCode, timestamp: sub.timestamp, timestop: sub.timestop}
 			})}
 		})
 			socket.emit("datas", programs);
@@ -113,6 +113,7 @@ let io = socket(server).on("connection", socket => {
 			socket.emit("renvoi", "echec cmd " + e.toString());
 		}
 	})
+	socket.on("reloadConfiguration", (file)=>loadFile(file + daemon.suffix));
 });
 log("Daemon: Daemon demarré avec le pid: " + process.pid);
 

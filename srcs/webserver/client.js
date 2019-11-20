@@ -16,7 +16,7 @@ socket.on("renvoi", (x) => {
 	card.innerHTML = "";
 	data.forEach(program=>{
 		let div = document.createElement("div");
-			div.setAttribute("style", "align-items: center; border: 1px solid rgba(0,0,0,.125)");
+			div.setAttribute("style", "align-items: center;");
 			div.className = "card-body";
 			div.innerHTML =
 				`<div style="align-items: center" class="row">
@@ -27,13 +27,13 @@ socket.on("renvoi", (x) => {
 						<h4>${program.count}</h4>
 					</div>
 	                <div class="col">
-	                    <h4>${program.count == 1 ? program.subprocess.length ? program.subprocess[0].pid : "Error" : "⬇️" || "pid"}</h4>
+	                    <h4>${display_pid(program)}</h4>
 	                </div>
 	                <div class="col">
-	                    <h4>${program.count == 1 ? program.subprocess.length ? program.subprocess[0].status ?  program.subprocess[0].status : "Exit: " + program.subprocess[0].exitCode: "Error" : "⬇️" || "running"}</h4>
+	                    ${display_status(program)}
 	                </div>
 	                <div class="col">
-	                    <h4>${program.count == 1 ? program.subprocess.length ? convert(Date.now() - program.subprocess[0].timestamp) : "Error" : "⬇️" || NaN }</h4>
+	                    <h4>${display_ts(program)}</h4>
 					</div>
 	                <div class="col" id=${program.name}_fd>
 	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="width: inherit;height: inherit;">err</button><button class="btn btn-primary" type="button">out</button></div>
@@ -57,10 +57,10 @@ socket.on("renvoi", (x) => {
 		                    <h4>${sub.pid}</h4>
 		                </div>
 		                <div class="col">
-		                    <h4>${sub.status ? sub.status : "Exit: " + sub.exit}</h4>
+		                    ${display_sub_status(sub, program.expectedOutput)}
 		                </div>
 		                <div class="col">
-		                    <h4>${convert(Date.now() - sub.timestamp)}</h4>
+		                    <h4>${convert(((sub.timestop) ? sub.timestop : Date.now()) - sub.timestamp)}</h4>
 						</div>
 		                <div class="col">
 							<h4></h4>
@@ -78,9 +78,10 @@ socket.on("renvoi", (x) => {
 			}
 			div.addEventListener("click", function(tag){
 				if (program.count <= 1 || tag.target.type == "button") return
-				$(subprocess).slideToggle();
+				console.log(subprocess)
+				$(subprocess).slideToggle("linear");
 				toggleStates[program.name] = !toggleStates[program.name]
-				socket.emit("senddata");
+				//socket.emit("senddata");
 			})
 			document.querySelector(`#${program.name}_fd`).addEventListener("click", function (fd){
 				window.open(program.fd[fd.target.textContent]);
@@ -97,3 +98,80 @@ socket.on("renvoi", (x) => {
 setInterval(()=>{
 	socket.emit("senddata");
 }, 10000);
+
+let display_pid = program=>{
+	let str = "⬇️";
+	if (program.count == 1)
+	{
+		if (str = program.subprocess.length)
+			str = program.subprocess[0].pid;
+		else
+			str = "---";
+	}
+	return (str);
+}
+
+let display_status = (program)=>{
+	let status = "⬇️";
+	let style = "<h4>";
+	if (program.count == 1)
+	{
+		if (program.subprocess.length)
+		{
+			if (program.subprocess[0].status)
+			{
+				style = "<h4 style='color:#00babc'>";
+			 	status = program.subprocess[0].status
+			}
+			else if (typeof program.subprocess[0].exit != 'undefined')
+			{
+				status = "Exit: " + program.subprocess[0].exit;
+				if (~program.expectedOutput.indexOf(program.subprocess[0].exit))
+					style = "<h4 style='color:#28a745'>";
+				else
+					style = "<h4 style='color:#dc3545'>";
+			}
+			else
+				status = "Error";
+		}
+		else
+			status = "Ready";
+	}
+	return (style + status + "</h4>");
+}
+
+let display_sub_status = (sub, eOut)=>{
+	let status = "Running";
+	let style = "<h4>";
+	if (sub.status)
+	{
+		style = "<h4 style='color:#00babc'>";
+		status = sub.status;
+	}
+	else
+	{
+		status = "Exit: " + sub.exit;
+		if (~eOut.indexOf(sub.exit))
+			style = "<h4 style='color:#28a745'>";
+		else
+			style = "<h4 style='color:#dc3545'>";
+	}
+	return (style + status + "</h4>");
+}
+
+let display_ts = program=>{
+	let str = "⬇️";
+	if (program.count == 1)
+	{
+		if (program.subprocess.length)
+		{
+			if (program.subprocess[0].timestop)
+				str = convert(program.subprocess[0].timestop - program.subprocess[0].timestamp);
+			else
+				str = convert(Date.now() - program.subprocess[0].timestamp)
+		}
+		else
+			str = "---";
+	}
+	return (str);
+}

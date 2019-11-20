@@ -3,7 +3,6 @@
 let getCustomEnv = env => env;
 
 global.startProgram = program => {
-	console.log("startprogram ", program);
 	/*if (!(fs.stat(program.path).mode & fs.constants.S_IRWXU)){
 	console.log("Missing rights to execute this command: %s", path);
 	return(1);
@@ -16,17 +15,15 @@ global.startProgram = program => {
 		gid: process.getgid(), // a verif
 		shell : "/bin/sh", // verif aussi
 	}, (error, out, err)=>{
-		if (err)
 		//console.log("err: '%s'" ,err);
 		//console.log("out: '%s'" ,out);
-		fs.writeFileSync(program.fd.err, err, "utf-8");
-		fs.writeFileSync(program.fd.out, out, "utf-8");
+		fs.appendFileSync(program.fd.err, err, "utf-8");
+		fs.appendFileSync(program.fd.out, out, "utf-8");
 		//write_fd(program.fd.err, stderr);
 		//write_fd(program.fd.out, stdout);
 	})
 	//write_fd(taskLogs, "Process spawned: " + program.name + ":" + child.pid);
 	fs.appendFileSync(daemon.pidLogs, program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
-	console.log("Process spawned: " + program.name + ":" + child.pid);
 	log("Process spawned: " + program.name + ":" + child.pid);
 	let cls = new Process(child, Date.now(), "running");
 	program.subprocess.push(cls);
@@ -57,11 +54,6 @@ global.updateConfig = (newProgram) => {
 }
 
 global.shouldRestart = (oldProgram, newProgram) => {
-	console.log(oldProgram.command != newProgram.command);
-	console.log(oldProgram.restart != newProgram.restart);
-	console.log(oldProgram.successTime != newProgram.successTime);
-	console.log(oldProgram.env != newProgram.env);
-	console.log(oldProgram.workingDirectory != newProgram.workingDirectory);
 	if (oldProgram.command != newProgram.command ||
 		oldProgram.restart.toString() != newProgram.restart.toString() ||
 		oldProgram.successTime != newProgram.successTime ||
@@ -76,15 +68,10 @@ global.launchProcess = (program) => {
 		startProgram(program);
 }
 
-
-
-
-
 global.killChilds = (program) => {
 	program.subprocess.forEach(subprocess=>killPid(subprocess.child.pid, program.killSignal, ()=>{
 		//console.log(daemon.taskLogs, "Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
 			log("Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
-			console.log("program ", program);
 			fs.writeFileSync(program.fd.err, "Program killed", "utf-8");
 		}))
 }
@@ -101,7 +88,6 @@ global.killPid = (pid, signal, callback)=>{
 	callback = callback || function() {};
 	try {process.kill(pid, signal);callback();}
 	catch (err) {
-		console.log("Child couldn't be killed " + err.toString())
 		log("Child couldn't be killed " + err.toString())
 		callback();
 	}
@@ -113,21 +99,21 @@ global.Process = class {
 		this.exit = {};
 		this.child = _child;
 		this.timestamp = _timestamp;
+		this.timestop = 0;
 	}
 	startListener(program) {
 		this.child.on("error", (error)=>{
-			console.log("child error: ", error);
+			log("child error: ", error);
 		})
 		this.child.on('exit', (code, signal) =>{
-			console.log("Child " + "exited with " + code+ " signal: ", signal);
 			log("Child " + "exited with " + code+ " signal: ", signal);
 			this.status = signal;
 			this.exit = code;
-			//missing name
+			this.timestop = Date.now();
 			if (!program.expectedOutput.includes(code))
-				console.log("The exit wasn't the one expected");
+				log("The exit wasn't the one expected");
 			else {
-				console.log("The execution was successful");
+				log("The execution was successful");
 			}
 			//child.exit();
 		})
@@ -135,11 +121,11 @@ global.Process = class {
 			console.log('closing code: ' + code + ": signal", signal);
 		});
 		this.child.stderr.on('data', function (data) {
-			console.log('child err: ' + data);
+			//console.log('child err: ' + data);
 			//process.exit(1); // <<<< this works as expected and exit the process asap
 		});
 		this.child.stdout.on('data', function (data) {
-			console.log('child out: ' + data);
+			//console.log('child out: ' + data);
 			//process.exit(1); // <<<< this works as expected and exit the process asap
 		});
 	}

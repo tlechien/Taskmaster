@@ -122,8 +122,9 @@ global.question = (program, id) => {
 		{
 			read.setPrompt("\x1b[32m" + ctl.prompt)
 			read.prompt(true);
-			ctl.programs[program.name] = new Program(program);
-			fs.writeFileSync(program.name + ".tm.json", JSON.stringify(ctl.programs[program.name]));
+			//ctl.programs[program.name] = new Program(program);
+			fs.writeFileSync("configurations/" + program.name + ".tm.json", JSON.stringify(program));
+			ctl.socket_client.emit("reloadConfiguration", program.name);
 			log("Create new program", program.name);
 			ctl.isQuestion = false;
 		}

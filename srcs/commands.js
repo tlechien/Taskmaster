@@ -5,7 +5,6 @@ global.commands = [
 		usage: "Lists commands.\n\thelp {command}",
 		call: (argv, side) => {
 			if (side == "ctl"){
-				console.log(side);
 				if (!argv.length){
 					let cmd = commands.map(x=>"[" + x.names.join(" | ") + "]: " + x.usage);
 					console.log("Commandes disponibles:\n" + cmd.join("\n"));
@@ -238,8 +237,8 @@ let autocompletion = line => {
 
 let event_line = line =>{
 	let index = handle_command(line);
-	if (!index && read&& !ctl.isQuestion) read.setPrompt("\x1b[31m" + main.prompt)
-	else if (read&& !ctl.isQuestion)read.setPrompt("\x1b[32m" + ctl.prompt)
+	if (!index && read && !ctl.isQuestion) read.setPrompt("\x1b[31m" + main.prompt)
+	else if (read && !ctl.isQuestion)read.setPrompt("\x1b[32m" + ctl.prompt)
 	if (read && !ctl.isQuestion) read.prompt(!true);
 }
 

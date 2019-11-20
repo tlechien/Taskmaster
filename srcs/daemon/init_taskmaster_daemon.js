@@ -81,7 +81,7 @@ let checkJSONFile = file => {
 	return (1);
 }
 
-let loadFile = file => {
+global.loadFile = file => {
 	let msg = "";
 	if ((msg = checkJSONFile(file)) != 1)
 		return console.log(file + "\x1b[31m Erreur dans le fichier: " + msg + "\x1b[0m");
