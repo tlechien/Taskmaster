@@ -60,7 +60,7 @@ socket.on("renvoi", (x) => {
 		                    ${display_sub_status(sub, program.expectedOutput)}
 		                </div>
 		                <div class="col">
-		                    <h4>${convert(((sub.timestop) ? sub.timestop : Date.now()) - sub.timestamp)}</h4>
+		                    <h4>${convert(((~sub.timestop) ? sub.timestop : Date.now()) - sub.timestamp)}</h4>
 						</div>
 		                <div class="col">
 							<h4></h4>
@@ -165,7 +165,7 @@ let display_ts = program=>{
 	{
 		if (program.subprocess.length)
 		{
-			if (program.subprocess[0].timestop)
+			if (~program.subprocess[0].timestop)
 				str = convert(program.subprocess[0].timestop - program.subprocess[0].timestamp);
 			else
 				str = convert(Date.now() - program.subprocess[0].timestamp)

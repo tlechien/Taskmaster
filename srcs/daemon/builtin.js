@@ -69,11 +69,12 @@ global.launchProcess = (program) => {
 }
 
 global.killChilds = (program) => {
-	program.subprocess.forEach(subprocess=>killPid(subprocess.child.pid, program.killSignal, ()=>{
-		//console.log(daemon.taskLogs, "Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
-			log("Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")
-			fs.writeFileSync(program.fd.err, "Program killed", "utf-8");
-		}))
+	program.subprocess.forEach(subprocess=>{
+		if (subprocess.exit == Infinity)
+			return;
+		console.log("here2");
+		killPid(subprocess.child.pid, program.killSignal, ()=>{log("Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")});
+	})
 }
 
 global.killAllChilds = () =>{
@@ -96,10 +97,10 @@ global.killPid = (pid, signal, callback)=>{
 global.Process = class {
 	constructor(_child, _timestamp, _status){
 		this.status = _status;
-		this.exit = {};
+		this.exit = Infinity;
 		this.child = _child;
 		this.timestamp = _timestamp;
-		this.timestop = 0;
+		this.timestop = -1;
 	}
 	startListener(program) {
 		this.child.on("error", (error)=>{

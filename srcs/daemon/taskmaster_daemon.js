@@ -58,7 +58,6 @@ let server = express().use((req, res) => {
 		'.mp3': 'audio/mpeg',
 		'.pdf': 'application/pdf',
 	};
-	console.log(process.cwd(), pathname)
 	fs.exists(pathname, function (exist) {
 		if(!exist) {
 			res.statusCode = 404;
@@ -118,6 +117,16 @@ let io = socket(server).on("connection", socket => {
 log("Daemon: Daemon demarré avec le pid: " + process.pid);
 
 Daemon.init();
+
+function exitHandler(options, err) {
+	killAllChilds();
+	log("Fin de session daemon");
+	process.exit(1);
+}
+process.once('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));
+process.once('SIGINT', exitHandler.bind(null, {exit: true, signal: "exit"})); //once ? probably
+process.once('SIGUSR1', exitHandler.bind(null, {exit: true, signal: "usr1"}));
+
 /*
 Previsualisation de la partie webclient
 Process name        PID    Status   Temps de lancement count Log                                        Commandes
