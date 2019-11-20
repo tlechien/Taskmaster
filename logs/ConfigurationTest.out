@@ -64,3 +64,72 @@ lrwxr-xr-x@   1 root  wheel           11 May 10  2018 tmp -> private/tmp
 drwxr-xr-x@  10 root  wheel          340 Jul 13  2018 usr
 lrwxr-xr-x@   1 root  wheel           11 May 10  2018 var -> private/var
 
+[Wed Nov 20 2019 04:24:15 GMT+0100]
+total 46
+drwxrwxr-x+  52 root  admin         1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel         2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel           68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel          136 May 10  2018 System
+drwxr-xr-x  141 root  admin         4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel          136 Nov 19 19:15 Volumes
+drwxr-xr-x@  39 root  wheel         1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin           68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel         4950 Nov 19 19:15 dev
+lrwxr-xr-x@   1 root  wheel           11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications   578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel          204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel            1 Nov 19 22:50 home
+-rw-r--r--@   1 root  wheel          313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel            1 Nov 19 22:50 net
+drwxr-xr-x@   6 root  wheel          204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel         2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel           11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel          340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel           11 May 10  2018 var -> private/var
+
+[Wed Nov 20 2019 04:25:54 GMT+0100]
+total 46
+drwxrwxr-x+  52 root  admin         1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel         2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel           68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel          136 May 10  2018 System
+drwxr-xr-x  141 root  admin         4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel          136 Nov 19 19:15 Volumes
+drwxr-xr-x@  39 root  wheel         1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin           68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel         4950 Nov 19 19:15 dev
+lrwxr-xr-x@   1 root  wheel           11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications   578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel          204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel            1 Nov 19 22:50 home
+-rw-r--r--@   1 root  wheel          313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel            1 Nov 19 22:50 net
+drwxr-xr-x@   6 root  wheel          204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel         2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel           11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel          340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel           11 May 10  2018 var -> private/var
+
+[Wed Nov 20 2019 04:26:26 GMT+0100]
+total 46
+drwxrwxr-x+  52 root  admin         1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel         2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel           68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel          136 May 10  2018 System
+drwxr-xr-x  141 root  admin         4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel          136 Nov 19 19:15 Volumes
+drwxr-xr-x@  39 root  wheel         1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin           68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel         4950 Nov 19 19:15 dev
+lrwxr-xr-x@   1 root  wheel           11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications   578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel          204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel            1 Nov 19 22:50 home
+-rw-r--r--@   1 root  wheel          313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel            1 Nov 19 22:50 net
+drwxr-xr-x@   6 root  wheel          204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel         2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel           11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel          340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel           11 May 10  2018 var -> private/var
+

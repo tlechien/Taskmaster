@@ -9,10 +9,10 @@
   "retryCount": 3,
   "killSignal": "SIGTERM",
   "terminationTime": 30000,
-  "fd": {
-    "err": "logs/faux.err",
-    "out": "logs/faux.out"
-  },
+  "err": true,
+  "out": true,
+  "custom_err": "logs/faux.err",
+  "custom_out": "logs/faux.out",
   "env": {
     "key": "value"
 },

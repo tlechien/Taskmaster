@@ -19,8 +19,8 @@ global.startProgram = program => {
 	}, (error, out, err)=>{
 		//console.log("err: '%s'" ,err);
 		//console.log("out: '%s'" ,out);
-		fs.appendFileSync(program.fd.err, "[" + date + "]\n"  +  err + "\n", "utf-8");
-		fs.appendFileSync(program.fd.out, "[" + date + "]\n"  +  out + "\n", "utf-8");
+		if (program.err) fs.appendFileSync(program.custom_err, "[" + date + "]\n"  +  err + "\n", "utf-8");
+		if (program.out) fs.appendFileSync(program.custom_out, "[" + date + "]\n"  +  out + "\n", "utf-8");
 		//write_fd(program.fd.err, stderr);
 		//write_fd(program.fd.out, stdout);
 	})
@@ -72,7 +72,7 @@ global.launchProcess = (program) => {
 
 global.killChilds = (program) => {
 	program.subprocess.forEach(subprocess=>{
-		if (subprocess.exit == Infinity)
+		if (subprocess.exit != Infinity)
 			return;
 		console.log("here2");
 		killPid(subprocess.child.pid, program.killSignal, ()=>{log("Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")});

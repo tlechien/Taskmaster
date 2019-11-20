@@ -9,10 +9,10 @@
   "retryCount": 3,
   "killSignal": "SIGTERM",
   "terminationTime": 30000,
-  "fd": {
-    "err": "logs/default2.err",
-    "out": "logs/default2.out"
-  },
+  "err": true,
+  "out": true,
+  "custom_err": "logs/default2.err",
+  "custom_out": "logs/default2.out",
   "env": {
     "key": "value"
   },

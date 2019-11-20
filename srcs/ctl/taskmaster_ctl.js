@@ -35,7 +35,9 @@ global.questions = [
 	"A partir de combien de ms le programme doit terminer ?",
 	"Quelles variables d'environnement doivent etre mise au lancement ? Exemple: 'FCEDIT=\"atom -- wait\"'",
 	"Quelle est le dossier dans lequel le programme doit-il s'executer ?",
-	"Quelle sera l'umask ?"
+	"Quelle sera l'umask ?",
+	"Souhaitez-vous activez la sortie d'erreur ? (y)es|(o)ui/(n)o|(n)on",
+	"Souhaitez-vous activez la sortie standard ? (y)es|(o)ui/(n)o|(n)on",
 ]
 
 let isValidCommandSyntaxe = command => {
@@ -49,7 +51,7 @@ global.question = (program, id) => {
 		question(program, id);
 	}
 	read.question(questions[id] + "\n> ", answer=>{
-		if (answer.length == 0 && id != 10)
+		if (answer.length == 0 && !~[10,15,16].indexOf(id))
 			return (recall("Empty command"));
 		else if (id == 0){ // name
 			program.name = answer;
@@ -108,9 +110,35 @@ global.question = (program, id) => {
 			if (isNaN(+answer))
 				return recall("Invalid number");
 			program.umask = answer;
+		} else if (id == 13){
+			if (!~["y", "o", "oui", "yes", "non", "no", "n"].indexOf(answer))
+				return recall("Unexpected answer. Please choose amongst (y)es|(o)ui/(n)o|(n)on")
+			let question = 	"Souhaitez-vous écrire la sortie d'erreur dans un fichier spécifique laissez a vide pour qu'un fichier soit générer automatiquement"
+			if ((program.err = "oy".includes(answer[0])))
+				read.question(question + "\n>", answer=>{
+					if (!answer.length)
+					{
+						program.custom_err += program.name + ".err";
+						return ;
+					}
+					program.custom_err = answer;
+				})
+		} else if (id == 14){
+			if (!~["y", "o", "oui", "yes", "non", "no", "n"].indexOf(answer))
+				return recall("Unexpected answer. Please choose amongst (y)es|(o)ui/(n)o|(n)on")
+			program.out = "oy".includes(answer[0]);
+			let question = 	"Souhaitez-vous écrire la sortie standard dans un fichier spécifique laissez a vide pour qu'un fichier soit générer automatiquement"
+			if ((program.out = "oy".includes(answer[0])))
+				read.question(question + "\n>", answer=>{
+					if (!answer.length)
+					{
+						program.custom_out += program.name + ".out";
+						return ;
+					}
+					program.custom_out = answer;
+				})
 		}
-		if (questions[id + 1])
-			question(program, id + 1);
+		if (questions[id + 1]) question(program, id + 1);
 		else
 		{
 			read.setPrompt("\x1b[32m" + ctl.prompt)

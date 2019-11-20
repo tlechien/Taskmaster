@@ -1,1 +1,21 @@
-{"command":"ls -la","count":6,"execAtLaunch":true,"restart":"always","expectedOutput":["1"],"successTime":100,"retryCount":3,"killSignal":"SIGKILL","terminationTime":100,"env":{"":""},"workingDirectory":".","umask":"0755","name":"test_fd_ls","fd":{"err":"logs/test_fd_ls.err","out":"logs/test_fd_ls.out"}}
+{
+    "command": "ls -la",
+    "count": 6,
+    "execAtLaunch": true,
+    "restart": "always",
+    "expectedOutput": ["1"],
+    "successTime": 100,
+    "retryCount": 3,
+    "killSignal": "SIGKILL",
+    "terminationTime": 100,
+    "env": {
+        "": ""
+    },
+    "workingDirectory": ".",
+    "umask": "0755",
+    "name": "test_fd_ls",
+	"err": true,
+    "out": true,
+    "custom_err": "",
+    "custom_out": ""
+}

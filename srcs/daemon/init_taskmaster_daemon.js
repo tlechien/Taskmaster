@@ -93,7 +93,9 @@ global.loadFile = file => {
 		//console.log(program.name + " " + program.hash + " xd")
 	});
 	daemon.programs[program.name] = program;
-	console.log(program.name + " a été ajouté aux programmes.");
+	if (program.err && !program.custom_err.length) program.custom_err = "logs/" + program.name + ".err"
+	if (program.out && !program.custom_out.length) program.custom_out = "logs/" + program.name + ".out"
+	log(program.name + " a été ajouté aux programmes.");
 };
 
 let loadConfiguration = () => {
@@ -104,8 +106,7 @@ let loadConfiguration = () => {
 		files.filter(x=>x.endsWith(daemon.suffix)).forEach(loadFile);
 		console.log(files)
 	}
-	else console.log("petit soucis avec files ligne 100")
-	console.log("Tous les fichiers de configuration ont été chargés")
+	log("Tous les fichiers de configuration ont été chargés")
 
 };
 

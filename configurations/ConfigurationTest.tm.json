@@ -8,10 +8,10 @@
 	"retryCount":12,
 	"killSignal":"SIGINT",
 	"terminationTime":10,
-	"fd":{
-		"err":"logs/ConfigurationTest.err",
-		"out":"logs/ConfigurationTest.out"
-	},
+	"err": true,
+    "out": true,
+    "custom_err": "logs/ConfigurationTest.err",
+    "custom_out": "logs/ConfigurationTest.out",
 	"env":{"test":"t"},
 	"workingDirectory":"path",
 	"umask":"0755"
