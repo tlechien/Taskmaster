@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/11/20 05:59:36 by tlechien         ###   ########.fr       */
+/*   Updated: 2019/11/20 07:45:13 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,20 @@ let init = () => {
 			}
 		}
 		read.prompt();
+	}).on("tail", (fd, argv)=>{
+		if (!~fd)
+			console.log("\rErreur " + argv[0] + " n'existe pas.")
+		else if (fd == -2)
+			console.log("\rFd incorrect, veuillez choisir entre out et err");
+		else {
+			let str;
+			if (fd == "") str = "logs/" + CONFIGDIR + "/" + argv[0] + "." + argv[1];
+			else str = CONFIGDIR + "/" + fd;
+			child_process.spawnSync("more", [str], {stdio: "inherit"});
+		}
+		read.prompt();
 	});
+
 	//console.log("init")
 	/*
 	** Setup stream if program is in foreground

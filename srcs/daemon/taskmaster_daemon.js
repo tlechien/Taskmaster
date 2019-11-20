@@ -154,6 +154,15 @@ let io = socket(server).on("connection", socket => {
 		})
 		socket.emit("status", programs, string)
 	}).on("reloadConfiguration", (file)=>loadFile(file + daemon.suffix));
+	socket.on("tail", (argv)=>{
+		if (!daemon.programs.hasOwnProperty(argv[0]))
+			return socket.emit("tail", -1, argv);
+		else if (!~["out", "err"].indexOf(argv[1]))
+			return socket.emit("tail", -2, argv);
+		let prog = daemon.programs[argv[0]];
+		let fd = argv[1] == "err" ? prog.custom_err : prog.custom_out;
+		return socket.emit("tail", fd, argv);
+	})
 });
 
 log("Daemon: Daemon demarré avec le pid: " + process.pid);

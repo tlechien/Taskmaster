@@ -78,9 +78,10 @@ global.commands = [
 		usage: "Print status of a program.\n\tstatus program",
 		call: (argv, side) => {
 			if (side == "ctl")
+			{
 				if (argv.length)
 					ctl.socket_client.emit("status", argv[0]);
-			else {
+				else
 				console.log("Usage: status [command]\nUtilisez status [--l|-list] pour avoir la liste des commandes.")
 			}
 			return (true);
@@ -89,7 +90,13 @@ global.commands = [
 		names: ["tail", "t", "log", "l"],
 		usage: "Display log file.\n\ttail program [out|err]",
 		call: (argv, side) => {
-			log("Tail program log ...");
+			if (side == "ctl")
+			{
+				if (argv.length >= 2)
+					ctl.socket_client.emit("tail", argv);
+				else
+					console.log("To get the list of the programs, type `info -l`\nUsage: tail [program] [out|err]");
+			}
 			return (true);
 		}
 	}, {
@@ -147,7 +154,7 @@ global.commands = [
 			// 	}
 			//
 			// });
-			// return (true);
+			return (true);
 		}
 	}, {
 		names: ["create", "c"],
