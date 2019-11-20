@@ -107,62 +107,11 @@ let io = socket(server).on("connection", socket => {
 		log("Server: Command server-side :'" + cmd + "'")
 		socket.emit("renvoi", "commande reçue");
 		try {
-			global.commands[index].call(argv, "daemon");
+			global.commands[index].call(argv, "daemon", socket);
 		} catch (e) {
 			socket.emit("renvoi", "echec cmd " + e.toString());
 		}
-	})
-	socket.on("infos", (string)=>{
-		if (~["--list", "--l", "-l", "-list"].indexOf(string))
-			return socket.emit("infos", Object.keys(daemon.programs), -1)
-		if (!~Object.keys(daemon.programs).indexOf(string)) return socket.emit("infos", "Error", string);
-		let programs = daemon.programs[string];
-		programs = {
-			command: programs.command,
-			count: programs.count,
-			execAtLaunch: programs.execAtLaunch,
-			restart: programs.restart,
-			expectedOutput: programs.expectedOutput,
-			successTime: programs.successTime,
-			retryCount: programs.retryCount,
-			killSignal: programs.killSignal,
-			terminationTime: programs.terminationTime,
-			env: programs.env,
-			workingDirectory: programs.workingDirectory,
-			umask: programs.umask,
-			name: programs.name,
-			err: programs.err,
-			out: programs.out,
-			custom_err: programs.custom_err,
-			custom_out: programs.custom_out,
-		}
-		socket.emit("infos", programs, string)
-	})
-	socket.on("status", (string)=>{
-		if (~["--list", "--l", "-l", "-list"].indexOf(string))
-			return socket.emit("infos", Object.keys(daemon.programs), -1)
-		if (!~Object.keys(daemon.programs).indexOf(string)) return socket.emit("status", "Error", string);
-		let programs = daemon.programs[string].subprocess.map(sub=>{
-			return {
-				status: sub.status,
-				exit: sub.exit,
-				pid: sub.child.pid,
-				exitCode: sub.child.exitCode,
-				timestamp: sub.timestamp,
-				timestop: sub.timestop
-			}
-		})
-		socket.emit("status", programs, string)
 	}).on("reloadConfiguration", (file)=>loadFile(file + daemon.suffix));
-	socket.on("tail", (argv)=>{
-		if (!daemon.programs.hasOwnProperty(argv[0]))
-			return socket.emit("tail", -1, argv);
-		else if (!~["out", "err"].indexOf(argv[1]))
-			return socket.emit("tail", -2, argv);
-		let prog = daemon.programs[argv[0]];
-		let fd = argv[1] == "err" ? prog.custom_err : prog.custom_out;
-		return socket.emit("tail", fd, argv);
-	})
 });
 
 log("Daemon: Daemon demarré avec le pid: " + process.pid);
