@@ -33,8 +33,6 @@ global.questions = [
 	"Combien de tentative de lancement du programmes taskmaster devra faire ?",
 	"Quel signal sera utilisé pour kill le programme ?",
 	"A partir de combien de ms le programme doit terminer ?",
-	"Quelle sera le fichier d'ecriture de la sortie d'erreur ?",
-	"Quelle sera le fichier d'ecriture de la sortie standard ?",
 	"Quelles variables d'environnement doivent etre mise au lancement ? Exemple: 'FCEDIT=\"atom -- wait\"'",
 	"Quelle est le dossier dans lequel le programme doit-il s'executer ?",
 	"Quelle sera l'umask ?"
@@ -51,10 +49,11 @@ global.question = (program, id) => {
 		question(program, id);
 	}
 	read.question(questions[id] + "\n> ", answer=>{
-		if (answer.length == 0 && id != 12)
+		if (answer.length == 0 && id != 10)
 			return (recall("Empty command"));
 		else if (id == 0){ // name
 			program.name = answer;
+			program.fd = {err: "/logs" + answer + ".err", out: "/logs" + answer + ".out"};
 		} else if (id == 1){ //commande
 			if (!isValidCommandSyntaxe(answer))
 				return recall("Invalid syntax");
@@ -91,12 +90,6 @@ global.question = (program, id) => {
 				return recall("Invalid number");
 			program.terminationTime = +answer;
 		} else if (id == 10){
-			//verifier si le path est existant
-			program.fd = {err: answer, out: ""}
-		} else if (id == 11){
-			//verifier si le path est existant
-			program.fd.out = answer
-		} else if (id == 12){
 			let env = answer.split(" ");
 			program.env = {};
 			env.forEach(keyvalue=>{
@@ -108,10 +101,10 @@ global.question = (program, id) => {
 					program.env[key] = value || "";
 				}
 			})
-		} else if (id == 13){
+		} else if (id == 11){
 			//verifier si le path est existant
 			program.workingDirectory = answer;
-		} else if (id == 14){
+		} else if (id == 12){
 			if (isNaN(+answer))
 				return recall("Invalid number");
 			program.umask = answer;

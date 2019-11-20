@@ -8,6 +8,8 @@ global.startProgram = program => {
 	return(1);
 	}*/
 	console.log(`\x1b[32m ${program.command}\x1b[0m`)
+	let date = new Date().toString();
+	date = date.substr(0, date.indexOf(" ("))
 	let child = child_process.exec(program.command, {
 		cwd : "/",//program.workingDirectory,
 		env : getCustomEnv(program.env),
@@ -17,8 +19,8 @@ global.startProgram = program => {
 	}, (error, out, err)=>{
 		//console.log("err: '%s'" ,err);
 		//console.log("out: '%s'" ,out);
-		fs.appendFileSync(program.fd.err, err, "utf-8");
-		fs.appendFileSync(program.fd.out, out, "utf-8");
+		fs.appendFileSync(program.fd.err, "[" + date + "]\n"  +  err + "\n", "utf-8");
+		fs.appendFileSync(program.fd.out, "[" + date + "]\n"  +  out + "\n", "utf-8");
 		//write_fd(program.fd.err, stderr);
 		//write_fd(program.fd.out, stdout);
 	})

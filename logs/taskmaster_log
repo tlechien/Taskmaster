@@ -1682,3 +1682,1959 @@
 -> Child Process test_fd_ls;94271 has been killed.
 [Wed Nov 20 2019 03:36:25 GMT+0100]
 -> Fin de session daemon
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 94777
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: ConfigurationTest:94788
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: atom:94789
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94790
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94791
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94792
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94793
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94794
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94795
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94796
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94797
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94798
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94799
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94800
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94801
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94802
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94803
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94804
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94806
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94807
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: default2:94808
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: test_fd_ls:94809
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: test_fd_ls:94810
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: test_fd_ls:94811
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: test_fd_ls:94812
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: test_fd_ls:94813
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Process spawned: test_fd_ls:94814
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:37:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:38:33 GMT+0100]
+-> Server: Command server-side :'stop'
+[Wed Nov 20 2019 03:38:44 GMT+0100]
+-> Server: Command server-side :'stop'
+[Wed Nov 20 2019 03:38:45 GMT+0100]
+-> Server: Command server-side :'stop'
+[Wed Nov 20 2019 03:38:46 GMT+0100]
+-> Server: Command server-side :'stop'
+[Wed Nov 20 2019 03:38:46 GMT+0100]
+-> Server: Command server-side :'stop'
+[Wed Nov 20 2019 03:38:46 GMT+0100]
+-> Server: Command server-side :'stop'
+[Wed Nov 20 2019 03:38:46 GMT+0100]
+-> Server: Command server-side :'stop'
+[Wed Nov 20 2019 03:38:46 GMT+0100]
+-> Server: Command server-side :'stop'
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process ConfigurationTest;94788 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process atom;94789 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process test_fd_ls;94809 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process test_fd_ls;94810 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process test_fd_ls;94811 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process test_fd_ls;94812 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process test_fd_ls;94813 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process test_fd_ls;94814 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process ConfigurationTest;94788 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process atom;94789 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process test_fd_ls;94809 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process test_fd_ls;94810 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process test_fd_ls;94811 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process test_fd_ls;94812 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process test_fd_ls;94813 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Child Process test_fd_ls;94814 has been killed.
+[Wed Nov 20 2019 03:44:05 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 98752
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: ConfigurationTest:98758
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: atom:98759
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98760
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98761
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98762
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98763
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98764
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98765
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98766
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98767
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98768
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98769
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98770
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98771
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98772
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98773
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98774
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98775
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98776
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: default2:98777
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: test_fd_ls:98778
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: test_fd_ls:98779
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: test_fd_ls:98780
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: test_fd_ls:98782
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: test_fd_ls:98783
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Process spawned: test_fd_ls:98784
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:44:06 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:44:09 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 20 2019 03:44:09 GMT+0100]
+-> setup read ... 
+[Wed Nov 20 2019 03:44:09 GMT+0100]
+-> setup read: done
+[Wed Nov 20 2019 03:44:09 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 20 2019 03:44:09 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process ConfigurationTest;98758 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process atom;98759 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process test_fd_ls;98778 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process test_fd_ls;98779 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process test_fd_ls;98780 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process test_fd_ls;98782 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process test_fd_ls;98783 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process test_fd_ls;98784 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process ConfigurationTest;98758 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process atom;98759 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process test_fd_ls;98778 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process test_fd_ls;98779 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process test_fd_ls;98780 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process test_fd_ls;98782 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process test_fd_ls;98783 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Child Process test_fd_ls;98784 has been killed.
+[Wed Nov 20 2019 03:46:44 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 510
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: ConfigurationTest:515
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: atom:517
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:518
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:519
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:520
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:521
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:522
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:523
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:524
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:525
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:526
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:527
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:528
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:529
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:530
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:531
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:532
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:533
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:535
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: default2:536
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: test_fd_ls:537
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: test_fd_ls:538
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: test_fd_ls:539
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: test_fd_ls:540
+[Wed Nov 20 2019 03:46:46 GMT+0100]
+-> Process spawned: test_fd_ls:541
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> Process spawned: test_fd_ls:542
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:46:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:46:48 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 20 2019 03:46:48 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process ConfigurationTest;515 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process atom;517 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process test_fd_ls;537 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process test_fd_ls;538 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process test_fd_ls;539 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process test_fd_ls;540 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process test_fd_ls;541 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process test_fd_ls;542 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process ConfigurationTest;515 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process atom;517 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process test_fd_ls;537 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process test_fd_ls;538 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process test_fd_ls;539 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process test_fd_ls;540 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process test_fd_ls;541 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Child Process test_fd_ls;542 has been killed.
+[Wed Nov 20 2019 03:47:42 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 1105
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> Process spawned: ConfigurationTest:1110
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> Process spawned: atom:1111
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> Process spawned: default2:1112
+[Wed Nov 20 2019 03:47:43 GMT+0100]
+-> Process spawned: default2:1113
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1114
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1115
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1117
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1118
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1119
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1120
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1121
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1122
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1123
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1124
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1125
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1126
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1127
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1128
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1129
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: default2:1130
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: test_fd_ls:1131
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: test_fd_ls:1132
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: test_fd_ls:1133
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: test_fd_ls:1134
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: test_fd_ls:1135
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Process spawned: test_fd_ls:1136
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 20 2019 03:47:44 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process ConfigurationTest;1110 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process atom;1111 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process test_fd_ls;1131 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process test_fd_ls;1132 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process test_fd_ls;1133 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process test_fd_ls;1134 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process test_fd_ls;1135 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process test_fd_ls;1136 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process ConfigurationTest;1110 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process atom;1111 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process test_fd_ls;1131 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process test_fd_ls;1132 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process test_fd_ls;1133 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process test_fd_ls;1134 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process test_fd_ls;1135 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Child Process test_fd_ls;1136 has been killed.
+[Wed Nov 20 2019 03:50:12 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 2576
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: ConfigurationTest:2582
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: atom:2583
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2584
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2585
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2586
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2587
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2588
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2589
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2590
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2591
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2592
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2593
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2594
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2595
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2596
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2597
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2598
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2599
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2600
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: default2:2601
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: test_fd_ls:2602
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: test_fd_ls:2603
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: test_fd_ls:2604
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: test_fd_ls:2605
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: test_fd_ls:2606
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Process spawned: test_fd_ls:2607
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child Process ConfigurationTest;2582 has been killed.
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child Process atom;2583 has been killed.
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child Process test_fd_ls;2602 has been killed.
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child Process test_fd_ls;2603 has been killed.
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child Process test_fd_ls;2604 has been killed.
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child Process test_fd_ls;2605 has been killed.
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child Process test_fd_ls;2606 has been killed.
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Child Process test_fd_ls;2607 has been killed.
+[Wed Nov 20 2019 03:50:13 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 2673
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: ConfigurationTest:2679
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: atom:2680
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2681
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2682
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2683
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2684
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2685
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2686
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2687
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2688
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2689
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2690
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2691
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2692
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2693
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2694
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2695
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2696
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2697
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: default2:2698
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: test_fd_ls:2699
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: test_fd_ls:2701
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: test_fd_ls:2702
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: test_fd_ls:2703
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: test_fd_ls:2704
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Process spawned: test_fd_ls:2705
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child Process ConfigurationTest;2679 has been killed.
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child Process atom;2680 has been killed.
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child Process test_fd_ls;2699 has been killed.
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child Process test_fd_ls;2701 has been killed.
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child Process test_fd_ls;2702 has been killed.
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child Process test_fd_ls;2703 has been killed.
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child Process test_fd_ls;2704 has been killed.
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Child Process test_fd_ls;2705 has been killed.
+[Wed Nov 20 2019 03:50:21 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 2923
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: ConfigurationTest:2931
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: atom:2932
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2933
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2934
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2935
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2936
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2937
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2938
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2940
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2941
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2942
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2943
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2944
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2945
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2946
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2947
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2948
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2949
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2950
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: default2:2951
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: test_fd_ls:2952
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: test_fd_ls:2953
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: test_fd_ls:2954
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: test_fd_ls:2955
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: test_fd_ls:2956
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Process spawned: test_fd_ls:2957
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child Process ConfigurationTest;2931 has been killed.
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child Process atom;2932 has been killed.
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child Process test_fd_ls;2952 has been killed.
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child Process test_fd_ls;2953 has been killed.
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child Process test_fd_ls;2954 has been killed.
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child Process test_fd_ls;2955 has been killed.
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child Process test_fd_ls;2956 has been killed.
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Child Process test_fd_ls;2957 has been killed.
+[Wed Nov 20 2019 03:50:38 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 3255
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: ConfigurationTest:3261
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: atom:3262
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3263
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3264
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3265
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3266
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3267
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3269
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3270
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3271
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3272
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3273
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3274
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3275
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3276
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3277
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3278
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3279
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3280
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: default2:3281
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: test_fd_ls:3282
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: test_fd_ls:3283
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: test_fd_ls:3284
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: test_fd_ls:3285
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: test_fd_ls:3286
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Process spawned: test_fd_ls:3287
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child Process ConfigurationTest;3261 has been killed.
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child Process atom;3262 has been killed.
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child Process test_fd_ls;3282 has been killed.
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child Process test_fd_ls;3283 has been killed.
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child Process test_fd_ls;3284 has been killed.
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child Process test_fd_ls;3285 has been killed.
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child Process test_fd_ls;3286 has been killed.
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Child Process test_fd_ls;3287 has been killed.
+[Wed Nov 20 2019 03:51:13 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 3335
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: ConfigurationTest:3351
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: atom:3352
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3353
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3354
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3355
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3356
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3359
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3360
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3361
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3363
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3364
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3366
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3367
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3368
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3369
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3370
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3371
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3372
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3373
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: default2:3374
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: test_fd_ls:3375
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: test_fd_ls:3376
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: test_fd_ls:3377
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: test_fd_ls:3378
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: test_fd_ls:3379
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Process spawned: test_fd_ls:3380
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child Process ConfigurationTest;3351 has been killed.
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child Process atom;3352 has been killed.
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child Process test_fd_ls;3375 has been killed.
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child Process test_fd_ls;3376 has been killed.
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child Process test_fd_ls;3377 has been killed.
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child Process test_fd_ls;3378 has been killed.
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child Process test_fd_ls;3379 has been killed.
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Child Process test_fd_ls;3380 has been killed.
+[Wed Nov 20 2019 03:51:14 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 3444
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: ConfigurationTest:3450
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: atom:3451
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3452
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3453
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3454
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3455
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3456
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3457
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3458
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3459
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3461
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3462
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3463
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3464
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3465
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3466
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3467
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3469
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3470
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: default2:3471
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: test_fd_ls:3472
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: test_fd_ls:3473
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: test_fd_ls:3474
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: test_fd_ls:3475
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: test_fd_ls:3476
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Process spawned: test_fd_ls:3477
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child Process ConfigurationTest;3450 has been killed.
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child Process atom;3451 has been killed.
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child Process test_fd_ls;3472 has been killed.
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child Process test_fd_ls;3473 has been killed.
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child Process test_fd_ls;3474 has been killed.
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child Process test_fd_ls;3475 has been killed.
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child Process test_fd_ls;3476 has been killed.
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Child Process test_fd_ls;3477 has been killed.
+[Wed Nov 20 2019 03:51:22 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 3564
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: ConfigurationTest:3571
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: atom:3572
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3573
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3574
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3575
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3576
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3577
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3578
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3579
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3580
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3581
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3582
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3583
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3584
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3585
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3587
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3588
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3589
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3590
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: default2:3591
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: test_fd_ls:3592
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: test_fd_ls:3593
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: test_fd_ls:3594
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: test_fd_ls:3595
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: test_fd_ls:3596
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Process spawned: test_fd_ls:3597
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child Process ConfigurationTest;3571 has been killed.
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child Process atom;3572 has been killed.
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child Process test_fd_ls;3592 has been killed.
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child Process test_fd_ls;3593 has been killed.
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child Process test_fd_ls;3594 has been killed.
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child Process test_fd_ls;3595 has been killed.
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child Process test_fd_ls;3596 has been killed.
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child couldn't be killed Error: kill ESRCH
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Child Process test_fd_ls;3597 has been killed.
+[Wed Nov 20 2019 03:51:28 GMT+0100]
+-> Fin de session daemon
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 3759
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: ConfigurationTest:3765
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: atom:3766
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3767
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3768
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3769
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3770
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3771
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3772
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3773
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3774
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3775
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3776
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3777
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3778
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3779
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3780
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3782
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3783
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3784
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: default2:3785
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: test_fd_ls:3786
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: test_fd_ls:3787
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: test_fd_ls:3788
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: test_fd_ls:3789
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: test_fd_ls:3790
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Process spawned: test_fd_ls:3791
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:47 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 3897
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> load Configuration ...
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> load Configuration done
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> reset logs ...
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> reset logs done
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: ConfigurationTest:3903
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: atom:3904
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3905
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3906
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3907
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3908
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3909
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3910
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3911
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3912
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3913
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3914
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3915
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3916
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3917
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3918
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3919
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3920
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3921
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: default2:3922
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: test_fd_ls:3923
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: test_fd_ls:3924
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: test_fd_ls:3925
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: test_fd_ls:3926
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: test_fd_ls:3928
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Process spawned: test_fd_ls:3929
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> The execution was successful
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 20 2019 03:51:58 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 20 2019 03:52:01 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 20 2019 03:52:01 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote

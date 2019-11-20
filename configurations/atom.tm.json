@@ -9,8 +9,8 @@
   "killSignal": "SIGINT",
   "terminationTime": 30000,
   "fd": {
-    "err": "default",
-    "out": "default"
+    "err": "logs/atom.err",
+    "out": "logs/atom.out"
   },
   "env": {
     "key": "value"

@@ -1,4 +1,5 @@
-{"command":"ls -l",
+{
+	"command":"ls -l",
 	"count":1,
 	"execAtLaunch":true,
 	"restart":"always",
@@ -7,8 +8,10 @@
 	"retryCount":12,
 	"killSignal":"SIGINT",
 	"terminationTime":10,
-	"fd":{"err":"log.err",
-	"out":"log.out"},
+	"fd":{
+		"err":"logs/ConfigurationTest.err",
+		"out":"logs/ConfigurationTest.out"
+	},
 	"env":{"test":"t"},
 	"workingDirectory":"path",
 	"umask":"0755"

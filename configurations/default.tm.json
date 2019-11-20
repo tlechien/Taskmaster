@@ -9,8 +9,8 @@
   "killSignal": "SIGTERM",
   "terminationTime": 30000,
   "fd": {
-    "err": "default",
-    "out": "default"
+    "err": "logs/default.err",
+    "out": "logs/default.out"
   },
   "env": {
     "key": "value"

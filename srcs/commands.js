@@ -152,9 +152,9 @@ global.commands = [
 				"retryCount": 3, //non
 				"killSignal": "SIGINT", //non
 				"terminationTime": 30000, //non
-				"redirect": { //non
-					"err": "default",
-					"out": "default"
+				"fd": { //non
+					"err": "/logs",
+					"out": "/logs"
 				},
 				"env": { //oui
 					"key": "value"
