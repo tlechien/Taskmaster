@@ -94,7 +94,7 @@ let io = socket(server).on("connection", socket => {
 		log("Server: Utilisateur envoi data '" + x + "'")
 		socket.emit("renvoi", "c bien recu mon pote");
 	})
-	socket.on("senddata", ()=>{
+	socket.on("senddata", (name, string)=>{
 		let programs = Object.keys(daemon.programs).map(y=>{
 			let x = daemon.programs[y];
 			return {command: x.command, count: x.count, name: x.name, expectedOutput: x.expectedOutput, fd: x.fd, subprocess: x.subprocess.map(sub=>{
@@ -112,8 +112,50 @@ let io = socket(server).on("connection", socket => {
 			socket.emit("renvoi", "echec cmd " + e.toString());
 		}
 	})
-	socket.on("reloadConfiguration", (file)=>loadFile(file + daemon.suffix));
+	socket.on("infos", (string)=>{
+		if (~["--list", "--l", "-l", "-list"].indexOf(string))
+			return socket.emit("infos", Object.keys(daemon.programs), -1)
+		if (!~Object.keys(daemon.programs).indexOf(string)) return socket.emit("infos", "Error", string);
+		let programs = daemon.programs[string];
+		programs = {
+			command: programs.command,
+			count: programs.count,
+			execAtLaunch: programs.execAtLaunch,
+			restart: programs.restart,
+			expectedOutput: programs.expectedOutput,
+			successTime: programs.successTime,
+			retryCount: programs.retryCount,
+			killSignal: programs.killSignal,
+			terminationTime: programs.terminationTime,
+			env: programs.env,
+			workingDirectory: programs.workingDirectory,
+			umask: programs.umask,
+			name: programs.name,
+			err: programs.err,
+			out: programs.out,
+			custom_err: programs.custom_err,
+			custom_out: programs.custom_out,
+		}
+		socket.emit("infos", programs, string)
+	})
+	socket.on("status", (string)=>{
+		if (~["--list", "--l", "-l", "-list"].indexOf(string))
+			return socket.emit("infos", Object.keys(daemon.programs), -1)
+		if (!~Object.keys(daemon.programs).indexOf(string)) return socket.emit("status", "Error", string);
+		let programs = daemon.programs[string].subprocess.map(sub=>{
+			return {
+				status: sub.status,
+				exit: sub.exit,
+				pid: sub.child.pid,
+				exitCode: sub.child.exitCode,
+				timestamp: sub.timestamp,
+				timestop: sub.timestop
+			}
+		})
+		socket.emit("status", programs, string)
+	}).on("reloadConfiguration", (file)=>loadFile(file + daemon.suffix));
 });
+
 log("Daemon: Daemon demarré avec le pid: " + process.pid);
 
 Daemon.init();
@@ -123,9 +165,8 @@ function exitHandler(options, err) {
 	log("Fin de session daemon");
 	process.exit(1);
 }
-process.once('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));
-process.once('SIGINT', exitHandler.bind(null, {exit: true, signal: "exit"})); //once ? probably
-process.once('SIGUSR1', exitHandler.bind(null, {exit: true, signal: "usr1"}));
+//process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));
+process.on('SIGINT', exitHandler.bind(null, {exit: true, signal: "exit"})); //on ? probably
 
 /*
 Previsualisation de la partie webclient

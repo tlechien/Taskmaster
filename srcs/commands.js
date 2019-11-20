@@ -31,21 +31,20 @@ global.commands = [
 			}
 		}
 	}, {
-		names: ["status", "s"],
-		usage: "Print status of programs.\n\ts",
+		names: ["infos", "i"],
+		usage: "Print infos of programs.\n\ti atom",
 		call: (argv, side) => {
-			// for (let i in main.programs)
-			// {
-			// 	let program = main.programs[i];
-			// 	console.log(program.name + ": " + program.command)
-			// 	if (~argv.indexOf("-l"))
-			// 		console.log("\t" + program.getVariables.join("\n\t"));
-			// }
-			// return (true);
+			if (side == "ctl")
+				if (argv.length)
+					ctl.socket_client.emit("infos", argv[0]);
+			else {
+				console.log("Usage: status [command]\nUtilisez status [--l|-list] pour avoir la liste des commandes.")
+			}
+			return (true);
 		}
 	}, {
 		names: ["stop", "stp"],
-		usage: "Print status of programs.\n\tstop",
+		usage: "Print status of a program.\n\tstop",
 		call: (argv, side) => {
 			if (!argv.length)
 				return console.log("Ca marche pa ")
@@ -58,7 +57,7 @@ global.commands = [
 		}
 	}, {
 		names: ["restart", "re"],
-		usage: "Print status of programs.\n\tstop",
+		usage: "Restart a programs.\n\trestart [program]",
 		call: (argv, side) => {
 			if (!argv.length)
 				return console.log("Ca marche pa ")
@@ -75,6 +74,18 @@ global.commands = [
 			}
 		}
 	}, {
+		names: ["status", "s"],
+		usage: "Print status of a program.\n\tstatus program",
+		call: (argv, side) => {
+			if (side == "ctl")
+				if (argv.length)
+					ctl.socket_client.emit("status", argv[0]);
+			else {
+				console.log("Usage: status [command]\nUtilisez status [--l|-list] pour avoir la liste des commandes.")
+			}
+			return (true);
+		}
+	},{
 		names: ["tail", "t", "log", "l"],
 		usage: "Display log file.\n\ttail program [out|err]",
 		call: (argv, side) => {
@@ -237,7 +248,7 @@ let autocompletion = line => {
 
 let event_line = line =>{
 	let index = handle_command(line);
-	if (!index && read && !ctl.isQuestion) read.setPrompt("\x1b[31m" + main.prompt)
+	if (!index && read && !ctl.isQuestion) read.setPrompt("\x1b[31m" + ctl.prompt)
 	else if (read && !ctl.isQuestion)read.setPrompt("\x1b[32m" + ctl.prompt)
 	if (read && !ctl.isQuestion) read.prompt(!true);
 }

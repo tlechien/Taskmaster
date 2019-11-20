@@ -13,7 +13,8 @@
   "custom_err": "logs/atom.err",
   "custom_out": "logs/atom.out",
   "env": {
-    "key": "value"
+    "key": "value",
+	"key1": "value1"
   },
   "workingDirectory": "",
   "umask": "0755"
