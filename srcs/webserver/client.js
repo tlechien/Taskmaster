@@ -36,10 +36,10 @@ socket.on("renvoi", (x) => {
 	                    <h4>${display_ts(program)}</h4>
 					</div>
 	                <div class="col" id=${program.name}_fd>
-	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="width: inherit;height: inherit;">err</button><button class="btn btn-primary" type="button">out</button></div>
+	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="${program.err ? "" : "background-color: #dc3545;" }">err</button><button class="btn btn-primary" type="button" style="${program.out ? "" : "background-color: #dc3545;" }">out</button></div>
 	                </div>
 	                <div class="col" id=${program.name}_action>
-	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="width: inherit;height: inherit;">reload</button><button class="btn btn-primary" type="button">stop</button></div>
+	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button">reload</button><button class="btn btn-primary" type="button">stop</button></div>
 	                </div>
 				</div>`
 			let subprocess = document.createElement("div");
@@ -84,7 +84,7 @@ socket.on("renvoi", (x) => {
 				//socket.emit("senddata");
 			})
 			document.querySelector(`#${program.name}_fd`).addEventListener("click", function (fd){
-				window.open(program.fd[fd.target.textContent]);
+				window.open(program["custom_" + fd.target.textContent] || "logs/" + program.name + "." + fd.target.textContent);
 				socket.emit("senddata");
 
 			})
