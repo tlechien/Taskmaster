@@ -10198,3 +10198,2145 @@ lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
 drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
 lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
 
+[Thu Nov 21 2019 01:10:03 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4903 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:10:03 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4903 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:10:03 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4903 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:10:03 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4903 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:10:03 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4903 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:10:03 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4903 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:13:02 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4903 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:13:02 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4903 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:13:02 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4903 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:13:02 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4903 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:13:02 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4903 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:13:02 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4903 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:20:54 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:20:54 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:20:54 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:20:54 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:20:54 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:20:54 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:36:45 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:36:45 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:36:45 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:36:45 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:36:45 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:36:45 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:39:15 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:39:15 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:39:15 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:39:15 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:39:15 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:39:15 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:43:29 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:43:29 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:43:29 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:43:29 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:43:29 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 01:43:29 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:33:54 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:33:54 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:33:54 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:33:54 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:03 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:03 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:03 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:03 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:03 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:38 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:38 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:38 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:38 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:38 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:38 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:41 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:41 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:41 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:41 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:41 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 03:34:41 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 07:34:05 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 07:34:05 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 07:34:05 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 07:34:05 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 07:34:05 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+
+[Thu Nov 21 2019 07:34:05 GMT+0100]
+total 2990
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 .
+drwxr-xr-x   33 root  wheel            1190 Aug 30 09:42 ..
+-rw-rw-r--    1 root  admin               0 Feb 21  2017 .DS_Store
+d--x--x--x    8 root  wheel             272 Nov 20 18:16 .DocumentRevisions-V100
+drwxr-xr-x@   2 root  wheel              68 May 16  2019 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel             170 May 16  2019 .Spotlight-V100
+d-wx-wx-wt   55 root  wheel            1870 Nov 20 23:25 .Trashes
+----------    1 root  admin               0 Feb 21  2017 .file
+drwx------  421 root  wheel           14314 Nov 20 18:15 .fseventsd
+-rw-------    1 root  wheel         1507328 Nov  8  2018 .hotfiles.btree
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 .vol
+drwxrwxr-x+  52 root  admin            1768 Oct 29 16:29 Applications
+drwxr-xr-x+  61 root  wheel            2074 May 13  2019 Library
+drwxr-xr-x@   2 root  wheel              68 Feb 21  2017 Network
+drwxr-xr-x@   4 root  wheel             136 May 10  2018 System
+drwxr-xr-x  141 root  admin            4794 Nov 18 11:01 Users
+drwxr-xr-x@   4 root  wheel             136 Nov 20 18:15 Volumes
+drwxr-xr-x@  39 root  wheel            1326 May 10  2018 bin
+drwxrwxr-t@   2 root  admin              68 Feb 21  2017 cores
+dr-xr-xr-x    3 root  wheel            4918 Nov 20 18:15 dev
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 etc -> private/etc
+drwx------   17 exam  applications      578 Aug 30 13:49 exam
+d-wxrwS--t    6 root  wheel             204 Jul 23 13:49 goinfre
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 home
+-rw-r--r--@   1 root  wheel             313 Dec 22  2016 installer.failurerequests
+dr-xr-xr-x    2 root  wheel               1 Nov 20 23:30 net
+drwxr-xr-x@   6 root  wheel             204 May 10  2018 private
+drwxr-xr-x@  63 root  wheel            2142 May 10  2018 sbin
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 tmp -> private/tmp
+drwxr-xr-x@  10 root  wheel             340 Jul 13  2018 usr
+lrwxr-xr-x@   1 root  wheel              11 May 10  2018 var -> private/var
+

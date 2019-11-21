@@ -57,14 +57,14 @@ global.commands = [
 					custom_err: programs.custom_err,
 					custom_out: programs.custom_out,
 				}
-				socket.emit("infos", programs, string)
+				data.emit("infos", programs, string)
 			}
 			return (true);
 		}
 	}, {
 		names: ["stop", "stp"],
 		usage: "Print status of a program.\n\tstop",
-		call: (argv, side, socket) => {
+		call: (argv, side, data) => {
 			if (side == "daemon")
 			{
 				if (!argv.length)
@@ -81,7 +81,7 @@ global.commands = [
 	}, {
 		names: ["restart", "re"],
 		usage: "Restart a programs.\n\trestart [program]",
-		call: (argv, side, socket) => {
+		call: (argv, side, data) => {
 			if (!argv.length)
 				return console.log("Ca marche pa ")
 			console.log("On stop", argv[0])
@@ -100,13 +100,37 @@ global.commands = [
 	}, {
 		names: ["status", "s"],
 		usage: "Print status of a program.\n\tstatus program",
-		call: (argv, side, socket) => {
-			if (side == "daemon"){
-				if (!argv.length)
-					return console.log("Usage: status [command]\nUtilisez status [--l|-list] pour avoir la liste des commandes.")
+		call: (argv, side, data) => {
+			if (side == "ctl" && !data && !argv.length)
+				return console.log("Usage: status [command]\nUtilisez status [--l|-list] pour avoir la liste des commandes.")
+			else if (side == "ctl" && data){
+				if (data == "Error")
+					console.log("\rErreur " + argv[0] + " n'existe pas.")
+				else if (!~argv[0])
+					console.log("Programme(s) disponible(s): " + data.join(" | ") + ".");
+				else {
+					if (!data.length)
+						console.log(argv[0] + " n'a pas été executé.")
+					else {
+						console.log("\r" + argv[0].toUpperCase() + " ".repeat(process.stdout.columns - argv[0].length));
+						let status = data.map((sub, index)=>{
+							return `${index}:
+							\r  status: ${sub.status},
+							\r  exit: ${sub.exit},
+							\r  pid: ${sub.pid},
+							\r  exitCode: ${sub.exitCode},
+							\r  timestamp: ${sub.timestamp},
+							\r  timestop: ${sub.timestop}`
+						});
+						console.log(status.join("\n"));
+					}
+				}
+				read.prompt();
+			}
+			else if (side == "daemon" && argv.length){
 				if (~["--list", "--l", "-l", "-list"].indexOf(argv[0]))
-					return socket.emit("infos", Object.keys(daemon.programs), -1)
-				if (!~Object.keys(daemon.programs).indexOf(argv[0])) return socket.emit("status", "Error", argv[0]);
+					return data.emit("infos", Object.keys(daemon.programs), -1)
+				if (!~Object.keys(daemon.programs).indexOf(argv[0])) return data.emit("status", "Error", argv);
 				let programs = daemon.programs[argv[0]].subprocess.map(sub=>{
 					return {
 						status: sub.status,
@@ -117,17 +141,17 @@ global.commands = [
 						timestop: sub.timestop
 					}
 				})
-				socket.emit("status", programs, argv[0])
+				data.emit("status", programs, argv)
 			}
 			return (true);
 		}
 	},{
 		names: ["tail", "t", "log", "l"],
 		usage: "Display log file.\n\ttail program [out|err]",
-		call: (argv, side, socket) => {
-			if (side == "ctl" && !socket && argv.length != 2)
+		call: (argv, side, data) => {
+			if (side == "ctl" && !data && argv.length != 2)
 				return console.log("To get the list of the programs, type `info -l`\nUsage: tail [program] [out|err]");
-			if (side == "ctl" && socket)
+			if (side == "ctl" && data)
 			{
 				if (!~argv[2])
 					console.log("\rErreur " + argv[0] + " n'existe pas.")
@@ -143,21 +167,21 @@ global.commands = [
 			}
 			if (side == "daemon" && argv.length == 2){
 				if (!argv.length)
-					return ;//console.log("To get the list of the programs, type `info -l`\nUsage: tail [program] [out|err]");
+					return ;
 				if (!daemon.programs.hasOwnProperty(argv[0]))
-					return socket.emit("tail", [...argv, -1]);
+					return data.emit("tail", [...argv, -1]);
 				else if (!~["out", "err"].indexOf(argv[1]))
-					return socket.emit("tail", [...argv, -2]);
+					return data.emit("tail", [...argv, -2]);
 				let prog = daemon.programs[argv[0]];
 				argv[2] = argv[1] == "err" ? prog.custom_err : prog.custom_out;
-				return socket.emit("tail", argv);
+				return data.emit("tail", argv);
 			}
 			return (true);
 		}
 	}, {
 		names: ["update", "u"],
 		usage: "Update configurations files.\n\tupdate -l",
-		call: (argv, side, socket) => {
+		call: (argv, side, data) => {
 			// if (!main.fetchs.length)
 			// 	console.log("La liste des fetchs est vide, utilisez .fetch");
 			// else if (~argv.indexOf("-l") || ~argv.indexOf("-list")){
@@ -183,7 +207,7 @@ global.commands = [
 	}, {
 		names: ["fetch", "f"],
 		usage: "Fetch configurations files.\n\tfetch",
-		call: (argv, side, socket) => {
+		call: (argv, side, data) => {
 			// let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
 			// files.filter(x=>x.endsWith(main.suffix)).forEach((x, y, arr)=>{
 			// 	let name = x.substr(0, x.indexOf(main.suffix))
@@ -214,37 +238,30 @@ global.commands = [
 	}, {
 		names: ["create", "c"],
 		usage: "Create configurations files.\n\tcreate",
-		call: (argv, side, socket) => {
-			let newProgram = { //restart prog ? (updateConfig)
-				"command": "", //always
-				"count": 1, //depends
-				"execAtLaunch": true, //non
-				"restart": ["always"], //oui
-				"expectedOutput": [0], //non
-				"successTime": 1000, //oui
-				"retryCount": 3, //non
-				"killSignal": "SIGINT", //non
-				"terminationTime": 30000, //non
-				"err": true,
-			    "out": true,
-			    "custom_err": "logs/",
-			    "custom_out": "logs/",
-				"env": { //oui
-					"key": "value"
-				},
-				"workingDirectory": "", //oui
-				"umask": "0755" // ?
+		call: (argv, side, data) => {
+			if (side == "ctl"){
+				read.close();
+				get_filename.run().then(answers => {
+					let name = answers.substr(0, ~answers.indexOf(".tm.json") || answers.length)
+					question.run().then(answer => {
+						read = null;
+						setupRead();
+						try {
+							fs.writeFileSync("./configurations/" + name + ".tm.json", answer.result, "utf-8");
+						} catch (err) {return false};
+					}).catch(console.error);
+				}).catch(console.log);
+				// //main.isQuestion = true;
+				// question(newProgram, 0);
+				// //main.isQuestion = false;
+				//todo import new file
+				return (true);
 			}
-			//main.isQuestion = true;
-			question(newProgram, 0);
-			//main.isQuestion = false;
-
-			return (true);
 		}
 	}, {
 		names: ["clear", "clr", "cl"],
 		usage: "Clear logs files.\n\tclear program program2 ...",
-		call: (argv, side, socket) => {
+		call: (argv, side, data) => {
 			console.log("Clear program log files...");
 			log("Clear program log files...");
 			return (true);
@@ -252,7 +269,7 @@ global.commands = [
 	}, {
 		names: ["clearall"],
 		usage: "Clear all logs files.\n\tclearall",
-		call: (argv, side, socket) => {
+		call: (argv, side, data) => {
 			console.log("Clearing log files ...");
 			log("Clearing log files ...")
 			return (true);
@@ -260,7 +277,7 @@ global.commands = [
 	}, {
 		names: ["import"],
 		usage: "import config files from a directory",
-		call: (argv, side, socket) => {
+		call: (argv, side, data) => {
 			// while (argv)
 			// {
 			// 	let name = argv.substr(argv.lastIndexOf("_") + 1)
@@ -283,7 +300,7 @@ global.commands = [
 	}, {
 		names: ["quit", "q"],
 		usage: "Close taskmaster.\n\tquit",
-		call: (argv, side, socket) => {
+		call: (argv, side, data) => {
 			log("Closing taskmaster ...");
 			process.exit(0);
 			return (true);
@@ -291,7 +308,7 @@ global.commands = [
 	}, {
 		names: ["exit", "background", "bg"],
 		usage: "Exit and send taskmaster in background.\n\tbg",
-		call: (argv, side, socket) => {
+		call: (argv, side, data) => {
 			if (side == "ctl")
 				process.exit(0);
 		}

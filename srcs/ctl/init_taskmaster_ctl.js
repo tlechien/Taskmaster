@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/11/21 00:45:01 by tlechien         ###   ########.fr       */
+/*   Updated: 2019/11/21 07:37:34 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 /*
 ** Configure reading stream
 */
-let setupRead = () => {
+global.setupRead = () => {
 	global.read = readline.createInterface({
 		input: process.stdin,
 		output: process.stdout,
@@ -32,6 +32,12 @@ let setupRead = () => {
 	global.read.on("SIGTERM", ()=>{
 		process.exit(1); //shouldn't exit ??
 	})
+	setTimeout(()=>{
+		child_process.execSync('tput ve && echo "\r"', {stdio: "inherit"});
+		read && read.setPrompt("\x1b[32m" + ctl.prompt)
+		read && read.prompt(true);
+	}, 500)
+	read && read.on('line', Commands.event_line);
 };
 
 
@@ -69,34 +75,14 @@ let init = () => {
 	custom_out: ${infos.custom_out}
 			`)			//console.log(status)
 		}
-		read.prompt();
-
-	}).on("status", (status, string) => {
-		if (status == "Error")
-			console.log("\rErreur " + string + " n'existe pas.")
-		else if (!~string)
-			console.log("Programme(s) disponible(s): " + status.join(" | ") + ".");
-		else {
-			if (!status.length)
-				console.log(string + " n'a pas été executé.")
-			else
-			{
-				console.log("\r" + string.toUpperCase());
-				status = status.map((sub, index)=>{
-					return `${index}:
-					\r  status: ${sub.status},
-					\r  exit: ${sub.exit},
-					\r  pid: ${sub.pid},
-					\r  exitCode: ${sub.exitCode},
-					\r  timestamp: ${sub.timestamp},
-					\r  timestop: ${sub.timestop}`
-				});
-				console.log(status.join("\n"));
-			}
-		}
-		read.prompt();
+		read.prompt()}).on("status", (progs, argv) => {
+		let index = commands.findIndex(x=>~x.names.indexOf("status"))
+		if (~index)
+			commands[index].call(argv, "ctl", progs);
 	}).on("tail", (argv)=>{
-		commands[5].call(argv, "ctl", true);
+		let index = commands.findIndex(x=>~x.names.indexOf("tail"))
+		if (~index)
+			commands[index].call(argv, "ctl", true);
 	});
 
 	//console.log("init")
@@ -111,11 +97,7 @@ let init = () => {
 	/*
 	** Display the prompt and get the input.
 	*/
-	setTimeout(()=>{
-		read && read.setPrompt("\x1b[32m" + ctl.prompt)
-		read && read.prompt(true);
-	}, 500)
-	read && read.on('line', Commands.event_line);
+
 }
 
 module.exports = {init}

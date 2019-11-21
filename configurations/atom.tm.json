@@ -8,8 +8,8 @@
   "retryCount": 3,
   "killSignal": "SIGINT",
   "terminationTime": 30000,
-  "err": true,
-  "out": true,
+  "err": false,
+  "out": false,
   "custom_err": "logs/atom.err",
   "custom_out": "logs/atom.out",
   "env": {
