@@ -16,15 +16,14 @@ global.get_filename = new Input({
 });
 
 global.question = new Snippet({
-  name: 'aben-azz',
-  message: 'Fill out the fields in package.json',
-  required: true,
-  fields: [
+	message: 'Fill out the fields in your new program config',
+	required: true,
+	fields: [
 	{
 		name: 'command',
 		message: '/bin/ls -la',
 		validate: (value) => {
-			if (!value || !value.trim().length) return question.styles.danger("Invalid command length");
+			if (!value || !value.trim().length) return question.styles.danger("Invalid command length.");
 			else return true
 		}
 	},
@@ -75,12 +74,12 @@ global.question = new Snippet({
 		message: '0,-1,1',
 		validate: (value, state, item, index) => {
 			if (!value || !value.trim().length)
-				return question.styles.danger("Must be equal to a valids numbers")
+				return question.styles.danger("Must be equal to a valids numbers.")
 			value = value.trim().split(",")
 			let bool = false;
 			if (value.reduce((acu, elem)=>acu && +elem < Infinity, true))
 				return true;
-			else return question.styles.danger("Must be equal to a valids numbers");
+			else return question.styles.danger("Must be equal to a valids numbers.");
 		}
 	},
 	{
@@ -104,9 +103,9 @@ global.question = new Snippet({
 		validate: (value, state, item, index) => {
 			let signals = Object.keys(require("os").constants.signals)
 			if (!value || !value.trim().length)
-				return question.styles.danger("Must be equal to a valid signal");
+				return question.styles.danger("Must be equal to a valid signal.");
 			if (~signals.indexOf(value)) return true;
-			else return question.styles.danger("Must be equal to a valid signal");
+			else return question.styles.danger("Must be equal to a valid signal.");
 		}
 	}, {
 		name: 'terminationTime',
@@ -144,17 +143,9 @@ global.question = new Snippet({
 	}, {
 		name: 'custom_err',
 		message: '/logs/program.err',
-		validate: (value) => {
-			if (!value || !value.trim().length) return question.styles.danger("Invalid length");
-			else return true
-		}
 	}, {
 		name: 'custom_out',
 		message: '/logs/program.out',
-		validate: (value) => {
-			if (!value || !value.trim().length) return question.styles.danger("Invalid length");
-			else return true
-		}
 	}, {
 		name: 'workingDirectory',
 		message: '/Users/user',
@@ -174,12 +165,7 @@ global.question = new Snippet({
 		}
 	}, {
 		name: 'env',
-		message: 'key:value,key2:value2',
-		validate: (value, state, item, index, non, lol) => {
-			if (!value || !value.trim().length)
-				return question.styles.danger("Must be equal to a pair key:value formated string");
-			else return true;
-		}
+		message: 'key:value,key2:value2'
 	}
   ],
   template: `{
