@@ -125,7 +125,7 @@ global.commands = [
 						console.log(status.join("\n"));
 					}
 				}
-				read.prompt();
+				read.prompt(true);
 			}
 			else if (side == "daemon" && argv.length){
 				if (~["--list", "--l", "-l", "-list"].indexOf(argv[0]))
@@ -163,7 +163,7 @@ global.commands = [
 					else str = CONFIGDIR + "/" + argv[2];
 					child_process.spawnSync("more", [str], {stdio: "inherit"});
 				}
-				read.prompt();
+				read.prompt(true);
 			}
 			if (side == "daemon" && argv.length == 2){
 				if (!argv.length)
@@ -329,7 +329,7 @@ let event_line = line =>{
 	let index = handle_command(line);
 	if (!index && read && !ctl.isQuestion) read.setPrompt("\x1b[31m" + ctl.prompt)
 	else if (read && !ctl.isQuestion)read.setPrompt("\x1b[32m" + ctl.prompt)
-	if (read && !ctl.isQuestion) read.prompt(!true);
+	if (read && !ctl.isQuestion) read.prompt(true);
 }
 
 let handle_command = command => {

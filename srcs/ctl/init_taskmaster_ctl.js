@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/11/21 07:37:34 by tlechien         ###   ########.fr       */
+/*   Updated: 2019/11/21 07:42:40 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ global.setupRead = () => {
 		process.exit(1); //shouldn't exit ??
 	})
 	setTimeout(()=>{
-		child_process.execSync('tput ve && echo "\r"', {stdio: "inherit"});
+		process.stdout.write('\u001B[?25h')
 		read && read.setPrompt("\x1b[32m" + ctl.prompt)
 		read && read.prompt(true);
 	}, 500)
@@ -75,7 +75,8 @@ let init = () => {
 	custom_out: ${infos.custom_out}
 			`)			//console.log(status)
 		}
-		read.prompt()}).on("status", (progs, argv) => {
+		read.prompt(true);
+	}).on("status", (progs, argv) => {
 		let index = commands.findIndex(x=>~x.names.indexOf("status"))
 		if (~index)
 			commands[index].call(argv, "ctl", progs);
