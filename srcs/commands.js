@@ -130,7 +130,7 @@ global.commands = [
 			else if (side == "daemon" && argv.length){
 				if (~["--list", "--l", "-l", "-list"].indexOf(argv[0]))
 					return data.emit("infos", Object.keys(daemon.programs), -1)
-				if (!~Object.keys(daemon.programs).indexOf(argv[0])) return data.emit("status", "Error", argv);
+				if (!~Object.keys(daemon.programs).indexOf(argv[0])) return data.emit("cmd", "status", argv, "Error");
 				let programs = daemon.programs[argv[0]].subprocess.map(sub=>{
 					return {
 						status: sub.status,
@@ -141,7 +141,7 @@ global.commands = [
 						timestop: sub.timestop
 					}
 				})
-				data.emit("status", programs, argv)
+				data.emit("cmd", "status", argv, programs)
 			}
 			return (true);
 		}
@@ -169,12 +169,12 @@ global.commands = [
 				if (!argv.length)
 					return ;
 				if (!daemon.programs.hasOwnProperty(argv[0]))
-					return data.emit("tail", [...argv, -1]);
+					return data.emit("cmd", "tail", [...argv, -1], true);
 				else if (!~["out", "err"].indexOf(argv[1]))
-					return data.emit("tail", [...argv, -2]);
+					return data.emit("cmd", "tail", [...argv, -2], true);
 				let prog = daemon.programs[argv[0]];
 				argv[2] = argv[1] == "err" ? prog.custom_err : prog.custom_out;
-				return data.emit("tail", argv);
+				return data.emit("cmd", "tail", argv, true);
 			}
 			return (true);
 		}

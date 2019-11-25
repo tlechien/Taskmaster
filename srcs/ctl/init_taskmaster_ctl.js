@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/11/21 07:42:40 by tlechien         ###   ########.fr       */
+/*   Updated: 2019/11/25 12:44:41 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,16 +76,11 @@ let init = () => {
 			`)			//console.log(status)
 		}
 		read.prompt(true);
-	}).on("status", (progs, argv) => {
-		let index = commands.findIndex(x=>~x.names.indexOf("status"))
+	}).on("cmd", (cmd, argv, data) => {
+		let index = commands.findIndex(x=>~x.names.indexOf(cmd))
 		if (~index)
-			commands[index].call(argv, "ctl", progs);
-	}).on("tail", (argv)=>{
-		let index = commands.findIndex(x=>~x.names.indexOf("tail"))
-		if (~index)
-			commands[index].call(argv, "ctl", true);
-	});
-
+			commands[index].call(argv, "ctl", data);
+	})
 	//console.log("init")
 	/*
 	** Setup stream if program is in foreground
