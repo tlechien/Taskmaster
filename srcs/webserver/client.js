@@ -35,10 +35,10 @@ socket.on("renvoi", (x) => {
 	                <div class="col">
 	                    <h4>${display_ts(program)}</h4>
 					</div>
-	                <div class="col" id=${program.name}_fd>
+	                <div class="col" id=fd_${program.name}>
 	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="${program.err ? "" : "background-color: #dc3545;" }">err</button><button class="btn btn-primary" type="button" style="${program.out ? "" : "background-color: #dc3545;" }">out</button></div>
 	                </div>
-	                <div class="col" id=${program.name}_action>
+	                <div class="col" id=action_${program.name}>
 	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button">reload</button><button class="btn btn-primary" type="button">stop</button></div>
 	                </div>
 				</div>`
@@ -83,12 +83,12 @@ socket.on("renvoi", (x) => {
 				toggleStates[program.name] = !toggleStates[program.name]
 				//socket.emit("senddata");
 			})
-			document.querySelector(`#${program.name}_fd`).addEventListener("click", function (fd){
+			document.querySelector(`#fd_${program.name}`).addEventListener("click", function (fd){
 				window.open(program["custom_" + fd.target.textContent] || "logs/" + program.name + "." + fd.target.textContent);
 				socket.emit("senddata");
 
 			})
-			document.querySelector(`#${program.name}_action`).addEventListener("click", function (name){
+			document.querySelector(`#action_${program.name}`).addEventListener("click", function (name){
 				if (~name.target.textContent.indexOf("reload")) socket.emit("cmd", "restart", [program.name], 3);
 				else if (~name.target.textContent.indexOf("stop")) socket.emit("cmd", "stop", [program.name], 2);
 				socket.emit("senddata");
