@@ -19,6 +19,7 @@
 ** Configure reading stream
 */
 global.setupRead = () => {
+	global.read && global.read.close();
 	global.read = readline.createInterface({
 		input: process.stdin,
 		output: process.stdout,
@@ -26,11 +27,13 @@ global.setupRead = () => {
 		completer: Commands.autocompletion,
 		removeHistoryDuplicates: true
 	});
-	global.read.on("SIGINT", ()=>{
-		process.exit(1); //shouldn't exit ??
+	global.read.once("SIGINT", ()=>{
+		//process.exit(1); //shouldn't exit ??
+		//read.close();
 	})
-	global.read.on("SIGTERM", ()=>{
-		process.exit(1); //shouldn't exit ??
+	global.read.once("SIGTERM", ()=>{
+		//process.exit(1); //shouldn't exit ??
+		//read.close();
 	})
 	setTimeout(()=>{
 		process.stdout.write('\u001B[?25h')
@@ -39,7 +42,6 @@ global.setupRead = () => {
 	}, 500)
 	read && read.on('line', Commands.event_line);
 };
-
 
 let init = () => {
 	ctl.socket_client = io.connect('http://localhost:5959', {reconnect: true, transports:["websocket"]});
@@ -77,10 +79,10 @@ let init = () => {
 		}
 		read.prompt(true);
 	}).on("cmd", (cmd, argv, data) => {
-		let index = commands.findIndex(x=>~x.names.indexOf(cmd))
+		let index = commands.findIndex(x=>~x.names.indexOf(cmd));
 		if (~index)
 			commands[index].call(argv, "ctl", data);
-	})
+	});
 	//console.log("init")
 	/*
 	** Setup stream if program is in foreground
@@ -96,4 +98,4 @@ let init = () => {
 
 }
 
-module.exports = {init}
+module.exports = {init};

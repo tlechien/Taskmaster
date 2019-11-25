@@ -9,7 +9,7 @@ global.io = require('socket.io-client');
 global.PATH = require('os').homedir();
 global.CONFIGDIR = PATH + "/taskmaster";
 global.logfile =  CONFIGDIR + "/logs/taskmaster_log"
-require("./file_creation")
+global.Question = require("./file_creation");
 /*
 ** DECLARATION
 */
@@ -19,12 +19,9 @@ global.log = (...msg) =>{
 	let date = new Date().toString();
 	date = date.substr(0, date.indexOf(" ("))
 	fs.appendFileSync(logfile, "[" + date + "]\n-> " + msg.join(" ") + "\n", "utf-8");
-}
-log("Session CTL demarrée.");
+};
 
-let isValidCommandSyntaxe = command => {
-	return true;
-}
+log("Session CTL demarrée.");
 
 global.ctl = {
 	isConfigurationValid: true,
@@ -43,11 +40,15 @@ global.ctl = {
 ** Catch event SIGTTIN to prevent interruption in background
 */
 
-
 function exitHandler(options, err) {
 	//log("Fin de session CTL")
-	//emit killAllChilds();
-	process.exit(1);
+	process.stdout.write('\u001B[?25h');
+	if (ctl.isQuestion){
+		console.log("on est la", ctl.isQuestion);
+		ctl.isQuestion = false;
+		global.read.setPrompt(true);
+		return ;
+	} else process.exit(1);
 }
 process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));
 process.on('SIGINT', exitHandler.bind(null, {exit: true, signal: "sigint"}));

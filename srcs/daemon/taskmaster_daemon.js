@@ -104,7 +104,7 @@ let io = socket(server).on("connection", socket => {
 			socket.emit("datas", programs);
 	})
 	socket.on("cmd", (cmd, argv, index)=>{
-		log("Server: Command server-side :'" + cmd + "'")
+		log("Server: Command server-side :'" + cmd + "'");
 		socket.emit("renvoi", "commande reçue");
 		try {
 			global.commands[index].call(argv, "daemon", socket);
