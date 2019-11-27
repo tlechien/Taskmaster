@@ -57,7 +57,7 @@ global.get_hash = (file, callback) => {
 	})
 };
 
-let checkJSONFile = file => {
+global.checkJSONFile = file => {
 	//console.log(`${file} file + [ath ${PATH + "/taskmaster/" + file}`)
 	let string = fs.readFileSync(CONFIGDIR + file, "UTF-8");
 	let objet;
@@ -65,8 +65,7 @@ let checkJSONFile = file => {
 		objet = JSON.parse(string);
 		//console.log(objet);
 	} catch (e){
-		console.log("Checkjson " + e.toString());
-		return ("Objet niqué inexistant");
+		return ("Checkjson " + e.toString());
 	}
 	if  (!objet.umask || !Boolean(parseInt(objet.umask, 8)))
 		return ("Umask incorrect");
@@ -81,11 +80,8 @@ let checkJSONFile = file => {
 	return (1);
 }
 
-global.loadFile = file => {
-	let msg = "";
-	if ((msg = checkJSONFile(file)) != 1)
-		return console.log(file + "\x1b[31m Erreur dans le fichier: " + msg + "\x1b[0m");
-	let obj = JSON.parse(fs.readFileSync(CONFIGDIR + file, "UTF-8"));
+global.createProgram = (file, path) => {
+	let obj = JSON.parse(fs.readFileSync(path, "UTF-8"));
 	let program = new Program(obj);
 	program.env = obj.env.split(",").reduce((x,y)=>{
 		let obj = {};
@@ -96,11 +92,18 @@ global.loadFile = file => {
 	program.name = file.substr(0, file.indexOf(daemon.suffix));
 	get_hash(file, hash => {
 		program.hash = hash;
-		//console.log(program.name + " " + program.hash + " xd")
 	});
-	daemon.programs[program.name] = program;
 	if (program.err && !program.custom_err.length) program.custom_err = "logs/" + program.name + ".err"
 	if (program.out && !program.custom_out.length) program.custom_out = "logs/" + program.name + ".out"
+	return program;
+}
+
+global.loadFile = file => {
+	let msg = "";
+	if ((msg = checkJSONFile(file)) != 1)
+		return console.log(file + "\x1b[31m Erreur dans le fichier: " + msg + "\x1b[0m");
+	let program = createProgram(file, CONFIGDIR + file);
+	daemon.programs[program.name] = program;
 	log(program.name + " a été ajouté aux programmes.");
 };
 

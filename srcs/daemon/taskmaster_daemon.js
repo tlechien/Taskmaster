@@ -4,24 +4,26 @@ global.fs = require("fs");
 const url = require('url')
 global.crypto = require('crypto');
 global.child_process = require('child_process');
+global.Commands = require("../commands");
 
 const path = require('path')
 const port = 5959;
 const logfile = "./logs/taskmaster_log"
 const Daemon = require("./init_taskmaster_daemon")
 global.PATH = require("os").homedir();
-global.Commands = require("../commands");
-global.CONFIGDIR = PATH + "/taskmaster/configurations/";
-global.logfile =  CONFIGDIR + "/logs/taskmaster_log"
+global.MAINDIR = PATH + "/taskmaster/";
+global.LOGDIR = MAINDIR + "logs/";
+global.CONFIGDIR = MAINDIR + "configurations/";
+global.logfile =  MAINDIR + "logs/taskmaster_log"
 
 global.daemon = {
 	isConfigurationValid: true,
 	suffix: ".tm.json",
-	taskLogs: CONFIGDIR + "/.logs",
-	pidLogs: CONFIGDIR + "/.pids",
+	taskLogs: LOGDIR + ".logs",
+	pidLogs: LOGDIR + ".pids",
 	programs: {},
 	processes: [],
-	fetchs: [],
+	fetches: [],
 };
 
 global.Program = class {
@@ -120,7 +122,7 @@ Daemon.init();
 
 function exitHandler(options, err) {
 	killAllChilds();
-	log("Fin de session daemon");
+	log("End of daemon session.");
 	process.exit(1);
 }
 //process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));

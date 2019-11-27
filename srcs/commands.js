@@ -1,5 +1,5 @@
 "use strict";
-let antiprompt = str => console.log("\r" + str + " ".repeat(process.stdout.columns - str.length));
+global.antiprompt = str => console.log("\r" + str + " ".repeat(process.stdout.columns - str.length));
 global.commands = [
 	{
 		names: ["help", "h"],
@@ -9,7 +9,7 @@ global.commands = [
 			if (side === "ctl"){
 				if (!argv.length){
 					let cmd = commands.map(x=>"[" + x.names.join(" | ") + "]: " + x.usage);
-					console.log("Commandes disponibles:\n" + cmd.join("\n"));
+					console.log("Available commands:\n" + cmd.join("\n"));
 					return true;
 				} else {
 					let index = commands.findIndex(x=>~x.names.indexOf(argv[0]));
@@ -22,7 +22,7 @@ global.commands = [
 					else
 					{
 						let cmd = commands.map(x=>"[" + x.names.join("|") + "]: " + x.usage);
-						console.log(argv[0] + " not found. Commandes disponibles:\n" + cmd.join("\n"));
+						console.log(argv[0] + " not found. Available commands:\n" + cmd.join("\n"));
 						return false;
 					}
 				}
@@ -33,7 +33,7 @@ global.commands = [
 		usage: "Print infos of programs.\n\ti atom",
 		call: (argv, side, data) => {
 			if (side === "ctl" && !argv.length)
-			 return console.log("Usage: status [command]\nUtilisez status [--l|-list] pour avoir la liste des commandes.");
+			 return console.log("Usage: info [command]\nType info [--l|-list] to get the list of the programs.");
 			if (side === "daemon" && argv.length){
 				if (~["--list", "--l", "-l", "-list"].indexOf(argv[0]))
 					return data.emit("cmd", "info", [-1, ...argv], Object.keys(daemon.programs));
@@ -63,9 +63,9 @@ global.commands = [
 			}
 			if (side === "ctl" && data && argv.length){
 				if (argv[0] == "Error")
-					console.log("\rErreur " + argv[0] + " n'existe pas.")
+					console.log("\rError " + argv[0] + " doesn't exist.")
 				else if (!~argv[0])
-					console.log("Programme(s) disponible(s): " + data.join(" | ") + ".");
+					console.log("Available program(s): " + data.join(" | ") + ".");
 				else {
 					antiprompt(`\r${argv[0].toUpperCase()}:`);
 					console.log(`\r\tcommand: ${data.command},
@@ -92,34 +92,34 @@ global.commands = [
 		}
 	}, {
 		names: ["stop", "stp"],
-		usage: "Print status of a program.\n\tstop",
+		usage: "Stop a program.\n\tstop",
 		call: (argv, side, data) => {
 			void data;
 			if (side === "daemon")
 			{
 				if (!argv.length)
-					return console.log("Ca marche pa ");
-				console.log("On stop", argv[0]);
+					return console.log("It doesn't work.");
+				console.log("Stopping", argv[0] + ".");
 				let index = Object.keys(daemon.programs).findIndex(x=>{
 					return ~x.toLowerCase().indexOf(argv[0].toLowerCase())
 				});
-				if (!~index)	console.log("Commande non trouvée: %s", argv[0]);
+				if (!~index)	console.log("Command not found: %s", argv[0] + ".");
 				else killChilds(daemon.programs[Object.keys(daemon.programs)[index]]);
 			}
 			return true;
 		}
 	}, {
 		names: ["restart", "re"],
-		usage: "Restart a programs.\n\trestart [program]",
+		usage: "Restart a program.\n\trestart [program]",
 		call: (argv, side, data) => {
 			void side; void data;
 			if (!argv.length)
-				return console.log("Ca marche pa ");
-			console.log("On stop", argv[0]);
+				return console.log("It doesn't work.");
+			console.log("Restarting", argv[0] + ".");
 			let index = Object.keys(daemon.programs).findIndex(x=>{
 				return ~x.toLowerCase().indexOf(argv[0].toLowerCase())
 			});
-			if (!~index) console.log("Commande non trouvée: %s", argv[0]);
+			if (!~index) console.log("Command not found: %s", argv[0] + ".");
 			else {
 				let prog = daemon.programs[Object.keys(daemon.programs)[index]];
 				killChilds(prog);
@@ -130,18 +130,18 @@ global.commands = [
 		}
 	}, {
 		names: ["status", "s"],
-		usage: "Print status of a program.\n\tstatus program",
+		usage: "Print the status of a program.\n\tstatus [program]",
 		call: (argv, side, data) => {
 			if (side === "ctl" && !data && !argv.length)
-				return console.log("Usage: status [command]\nUtilisez status [--l|-list] pour avoir la liste des commandes.");
+				return console.log("Usage: status [command]\nType status [--l|-list] to get the list of commands.");
 			else if (side === "ctl" && data){
 				if (data === "Error")
-					console.log("\rErreur " + argv[0] + " n'existe pas.");
+					console.log("\rError: " + argv[0] + " doesn't exist.");
 				else if (!~argv[0])
-					console.log("Programme(s) disponible(s): " + data.join(" | ") + ".");
+					console.log("Available program(s): " + data.join(" | ") + ".");
 				else {
 					if (!data.length)
-						console.log(argv[0] + " n'a pas été executé.");
+						console.log(argv[0] + " hasn't been executed.");
 					else {
 						antiprompt(argv[0].toUpperCase());
 						let status = data.map((sub, index)=>{
@@ -185,13 +185,13 @@ global.commands = [
 			if (side === "ctl" && data)
 			{
 				if (!~argv[2])
-					console.log("\rErreur " + argv[0] + " n'existe pas.");
+					console.log("\rError: " + argv[0] + " doesn't exist.");
 				else if (argv[2] === -2)
-					console.log("\rFd incorrect, veuillez choisir entre out et err");
+					console.log("\rPlease choose between 'out' and 'err'.");
 				else {
 					let str;
 					if (argv[2] === "") str = "logs/" + CONFIGDIR + "/" + argv[0] + "." + argv[1];
-					else str = CONFIGDIR + "/" + argv[2];
+					else str = CONFIGDIR + "/" + argv[2]; //TODO WTF CONFIGDIR
 					child_process.spawnSync("more", [str], {stdio: "inherit"});
 				}
 				read.prompt(true);
@@ -213,57 +213,61 @@ global.commands = [
 		names: ["update", "u"],
 		usage: "Update configurations files.\n\tupdate -l",
 		call: (argv, side, data) => {
-			// if (!main.fetchs.length)
-			// 	console.log("La liste des fetchs est vide, utilisez .fetch");
-			// else if (~argv.indexOf("-l") || ~argv.indexOf("-list")){
-			// 	console.log("Fetchs: "  + main.fetchs.program.name.join(" | ") + ".")
-			// } else if (!argv.length){
-			// 	main.fetchs.forEach(program=>{
-			// 		updateConfig(program);
-			// 		console.log(program.name + " a été mis à jour.");
-			// 	});
-			// 	main.fetchs = [];
-			// } else {
-			// 	argv.forEach(x=>{
-			// 		if (~main.fetchs.program.indexOf(x.toLowerCase()))
-			// 		{
-			// 			main.fetchs.splice(main.fetchs.indexOf(x.toLowerCase()), 1);
-			// 			console.log(x + " a été fetch seul");
-			// 		}
-			// 		else
-			// 			console.log(x + " n'existe pas dans la liste des fetchs");
-			// 	})
-			// }
+			if (side === "daemon"){
+				if (!daemon.fetches.length)
+					data.emit("out", "The fetch list is empty, please use 'fetch' first.");
+				else if (~argv.indexOf("-l") || ~argv.indexOf("-list")){
+					data.emit("out", "Fetch(es): "  + daemon.fetches.program.name.join(" | ") + ".")
+				} else if (!argv.length){
+					daemon.fetches.forEach(program=>{
+						updateConfig(program);
+						console.log(program.name + " has been updated.");
+						data.emit("out", program.name + " has been updated.");
+					});
+					daemon.fetches = [];
+				} else {
+					argv.forEach(x=>{
+						if (~daemon.fetches.program.indexOf(x))
+						{
+							daemon.fetches.splice(daemon.fetches.indexOf(x), 1);
+							data.emit("out", x + " has been fetch alone.");
+						}
+						else
+							data.emit("out", x + " doesn't appear in the fetch list.");
+					})
+				}
+			}
+			return true;
 		}
 	}, {
 		names: ["fetch", "f"],
 		usage: "Fetch configurations files.\n\tfetch",
 		call: (argv, side, data) => {
-			// let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
-			// files.filter(x=>x.endsWith(main.suffix)).forEach((x, y, arr)=>{
-			// 	let name = x.substr(0, x.indexOf(main.suffix))
-			// 	if (!main.programs[name])
-			// 	{
-			// 		if (!~main.fetchs.indexOf(name.toLowerCase()))
-			// 			main.fetchs.push(name.toLowerCase());
-			// 		console.log("Nouveau fichier trouvé " + name);
-			// 	} else {
-			// 		let hash = get_hash(x, (hash)=>{
-			// 			if (hash != main.programs[name].hash)
-			// 			{
-			// 				if (!~main.fetchs.indexOf(name.toLowerCase())){
-			// 					let obj = JSON.parse(fs.readFileSync(PATH + "/taskmaster/" + name + ".tm.json", "UTF-8"));
-			// 					let program = new Program(obj, hash, name.toLowerCase()) ;
-			// 					main.fetchs.push(program);
-			// 				}
-			// 				console.log("Le fichier " + name + " a été modifié.")
-			// 			}
-			// 			if (y == arr.length - 1 && !main.fetchs.length)
-			// 				console.log("Rien a fetch");
-			// 		})
-			// 	}
-			//
-			// });
+			if (side === "daemon"){
+				let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
+				files.filter(x=>x.endsWith(daemon.suffix)).forEach((x, y, arr)=>{
+					let name = x.substr(0, x.indexOf(daemon.suffix))
+					if (!daemon.programs[name])
+					{
+						if (checkJSONFile(x) != 1)
+							data.emit("out", "Bad JSON found: " + name + ".");
+						else if (!~daemon.fetches.map(x => x.name).indexOf(name))
+							daemon.fetches.push(createProgram(x, CONFIGDIR + x));
+						else data.emit("out", "New file found: " + name + ".");
+					} else {
+						let hash = get_hash(x, (hash)=>{
+							if (hash != daemon.programs[name].hash)
+							{
+								if (!~daemon.fetches.map(x => x.name).indexOf(name))
+									daemon.fetches.push(createProgram(x, CONFIGDIR + x));
+								data.emit("out", name + " has been modified.")
+							}
+							if (y == arr.length - 1 && !daemon.fetches.length)
+								data.emit("out", "Nothing to fetch.");
+						})
+					}
+				});
+			}
 			return true;
 		}
 	}, {
@@ -342,7 +346,12 @@ global.commands = [
 		names: ["quit", "q"],
 		usage: "Close taskmaster.\n\tquit",
 		call: (argv, side, data) => {
-			log("Closing taskmaster ...");
+			if (side === "ctl")
+				log("Closing taskmaster ...");
+			else {
+				killAllChilds();
+				log("End of daemon session.");
+			}
 			process.exit(0);
 			return true;
 		}

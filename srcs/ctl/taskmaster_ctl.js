@@ -7,8 +7,10 @@ global.Init = require("./init_taskmaster_ctl");
 global.socket = require("socket.io");
 global.io = require('socket.io-client');
 global.PATH = require('os').homedir();
-global.CONFIGDIR = PATH + "/taskmaster";
-global.logfile =  CONFIGDIR + "/logs/taskmaster_log"
+global.MAINDIR = PATH + "/taskmaster/";
+global.LOGDIR = MAINDIR + "logs/";
+global.CONFIGDIR = MAINDIR + "configurations/";
+global.logfile =  MAINDIR + "logs/taskmaster_log"
 global.Question = require("./file_creation");
 /*
 ** DECLARATION
@@ -27,11 +29,11 @@ global.ctl = {
 	isConfigurationValid: true,
 	programs: {},
 	processes: [],
-	fetchs: [],
+	fetches: [],
 	prompt: "Taskmaster: \x1B[0m",
 	suffix: ".tm.json",
-	taskLogs: CONFIGDIR + "/.logs",
-	pidLogs: CONFIGDIR + "/.pids",
+	taskLogs: LOGDIR + ".logs",
+	pidLogs: LOGDIR + ".pids",
 	isQuestion: false,
 };
 
