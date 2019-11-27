@@ -15,7 +15,7 @@ socket.on("renvoi", (x) => {
 	});
 	document.querySelector("#refresh_button").addEventListener("click", ()=>{
 		socket.emit("cmd", "fetch", [], 7);
-		socket.emit("cmd", "update", [], 6)
+		socket.emit("cmd", "update", [], 6);
 		socket.emit("senddata");
 	});
 	card.innerHTML = "";
@@ -106,7 +106,7 @@ setInterval(()=>{
 
 let display_pid = program=>{
 	let str = "⬇️";
-	if (program.count == 1)
+	if (program.count === 1)
 	{
 		if (str = program.subprocess.length)
 			str = program.subprocess[0].pid;

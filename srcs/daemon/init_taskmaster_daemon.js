@@ -100,7 +100,7 @@ global.createProgram = (file, path) => {
 
 global.loadFile = file => {
 	let msg = "";
-	if ((msg = checkJSONFile(file)) != 1)
+	if ((msg = checkJSONFile(file)) !== 1)
 		return console.log(file + "\x1b[31m Erreur dans le fichier: " + msg + "\x1b[0m");
 	let program = createProgram(file, CONFIGDIR + file);
 	daemon.programs[program.name] = program;

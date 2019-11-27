@@ -1,5 +1,5 @@
 {
-	"command":"ls -l",
+	"command":"ls -la",
 	"count":1,
 	"execAtLaunch":true,
 	"restart":"always",

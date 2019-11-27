@@ -215,15 +215,15 @@ global.commands = [
 		usage: "Update configurations files.\n\tupdate -l",
 		call: (argv, side, data) => {
 			if (side === "daemon"){
+				console.log("c un appel a daemonupdate", daemon.fetches.length);
 				if (!daemon.fetches.length)
-					data.emit("out", "The fetch list is empty, please use 'fetch' first.");
+					data && data.emit("out", "The fetch list is empty, please use 'fetch' first.");
 				else if (~argv.indexOf("-l") || ~argv.indexOf("-list")){
-					data.emit("out", "Fetch(es): "  + daemon.fetches.programs.name.join(" | ") + ".")
+					data && data.emit("out", "Fetch(es): "  + daemon.fetches.programs.name.join(" | ") + ".")
 				} else if (!argv.length){
 					daemon.fetches.forEach(program=>{
 						updateConfig(program);
-						console.log(program.name + " has been updated.");
-						data.emit("out", program.name + " has been updated.");
+						data && data.emit("out", program.name + " has been updated.");
 					});
 					daemon.fetches = [];
 				} else {
@@ -231,10 +231,10 @@ global.commands = [
 						if (~daemon.fetches.programs.indexOf(x))
 						{
 							daemon.fetches.splice(daemon.fetches.indexOf(x), 1);
-							data.emit("out", x + " has been fetch alone.");
+							data && data.emit("out", x + " has been fetch alone.");
 						}
 						else
-							data.emit("out", x + " doesn't appear in the fetch list.");
+							data && data.emit("out", x + " doesn't appear in the fetch list.");
 					})
 				}
 			}
@@ -245,29 +245,31 @@ global.commands = [
 		usage: "Fetch configurations files.\n\tfetch",
 		call: (argv, side, data) => {
 			if (side === "daemon"){
+				console.log("c un appel a daemonfetch");
 				let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
 				files.filter(x=>x.endsWith(daemon.suffix)).forEach((x, y, arr)=>{
-					let name = x.substr(0, x.indexOf(daemon.suffix))
+					let name = x.substr(0, x.indexOf(daemon.suffix));
 					if (!daemon.programs[name])
 					{
 						if (checkJSONFile(x) !== 1)
-							data.emit("out", "Bad JSON found: " + name + ".");
+							data && data.emit("out", "Bad JSON found: " + name + ".");
 						else if (!~daemon.fetches.map(x => x.name).indexOf(name))
 							daemon.fetches.push(createProgram(x, CONFIGDIR + x));
-						else data.emit("out", "New file found: " + name + ".");
+						else if (data) data.emit("out", "New file found: " + name + ".");
 					} else {
-						let hash = get_hash(x, (hash)=>{
+						 get_hash(x, (hash)=>{
 							if (hash !== daemon.programs[name].hash)
 							{
 								if (!~daemon.fetches.map(x => x.name).indexOf(name))
 									daemon.fetches.push(createProgram(x, CONFIGDIR + x));
-								data.emit("out", name + " has been modified.")
+								data && data.emit("out", name + " has been modified.")
 							}
 							if (y === arr.length - 1 && !daemon.fetches.length)
-								data.emit("out", "Nothing to fetch.");
+								data && data.emit("out", "Nothing to fetch.");
 						})
 					}
 				});
+				if (argv[0] == Infinity) commands[commands.findIndex(x=>~x.names.indexOf("update"))].call([], "daemon", data);
 			}
 			return true;
 		}

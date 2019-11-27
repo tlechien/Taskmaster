@@ -1,5 +1,5 @@
 {
-	"command": "echo 42sh",
+	"command": "echo 42sh xd",
 	"count": 1,
 	"execAtLaunch": true,
 	"restart": "always",

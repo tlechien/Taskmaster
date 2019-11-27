@@ -12,10 +12,10 @@ global.startProgram = program => {
 	date = date.substr(0, date.indexOf(" ("))
 	let child = child_process.exec(program.command, {
 		cwd : "/",//program.workingDirectory,
-		env : getCustomEnv(program.env),
+		env : program.env,
 		killSignal : program.killSignal,
 		gid: process.getgid(), // a verif
-		shell : "/bin/sh", // verif aussi
+		shell : "/bin/zsh", // verif aussi
 	}, (error, out, err)=>{
 		//console.log("err: '%s'" ,err);
 		//console.log("out: '%s'" ,out);
@@ -40,61 +40,59 @@ global.updateConfig = (newProgram) => {
 		launchProcess(newProgram);
 		console.log("on est dans shouldrestart")
 	}
-	else if (oldProgram.count != newProgram.count)
+	else if (oldProgram.count !== newProgram.count)
 	{
 		console.log(oldProgram);
 		if (oldProgram.count > newProgram.count)
 			oldProgram.subprocess.splice(Math.max(oldProgram.subprocess.length - 2, 0), 2).forEach(process=>killPid(process.child.pid));
 		else {
-			let diff = Math.abs(oldProgram.count - newProgram.count)
+			let diff = Math.abs(oldProgram.count - newProgram.count);
 			while (diff--)
 				startProgram(newProgram);
 		}
 		newProgram.subprocess.push(...oldProgram.subprocess)
 	}
 	daemon.programs[newProgram.name] = newProgram;
-}
+};
 
 global.shouldRestart = (oldProgram, newProgram) => {
-	if (oldProgram.command != newProgram.command ||
-		oldProgram.restart.toString() != newProgram.restart.toString() ||
-		oldProgram.successTime != newProgram.successTime ||
-		JSON.stringify(oldProgram.env) != JSON.stringify(newProgram.env) ||
-		oldProgram.workingDirectory != newProgram.workingDirectory)
-		return (true);
-	return (false);
-}
+	return oldProgram.command !== newProgram.command ||
+		oldProgram.restart.toString() !== newProgram.restart.toString() ||
+		oldProgram.successTime !== newProgram.successTime ||
+		JSON.stringify(oldProgram.env) !== JSON.stringify(newProgram.env) ||
+		oldProgram.workingDirectory !== newProgram.workingDirectory;
+};
 
 global.launchProcess = (program) => {
 	for (let i = 0; i < program.count; i++)
 		startProgram(program);
-}
+};
 
 global.killChilds = (program) => {
 	program.subprocess.forEach(subprocess=>{
-		if (subprocess.exit != Infinity)
+		if (subprocess.exit !== Infinity)
 			return;
 		console.log("here2");
 		killPid(subprocess.child.pid, program.killSignal, ()=>{log("Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")});
 	})
-}
+};
 
 global.killAllChilds = () =>{
 	Object.keys(daemon.programs).forEach(p => {
 		let program = daemon.programs[p];
 		killChilds(program);
 	});
-}
+};
 
 global.killPid = (pid, signal, callback)=>{
 	signal = signal || 'SIGKILL';
 	callback = callback || function() {};
 	try {process.kill(pid, signal);callback();}
 	catch (err) {
-		log("Child couldn't be killed " + err.toString())
+		log("Child couldn't be killed " + err.toString());
 		callback();
 	}
-}
+};
 
 global.Process = class {
 	constructor(_child, _timestamp, _status){
@@ -107,7 +105,7 @@ global.Process = class {
 	startListener(program) {
 		this.child.on("error", (error)=>{
 			log("child error: ", error);
-		})
+		});
 		this.child.on('exit', (code, signal) =>{
 			log("Child " + "exited with " + code+ " signal: ", signal);
 			this.status = signal;
@@ -119,7 +117,7 @@ global.Process = class {
 				log("The execution was successful");
 			}
 			//child.exit();
-		})
+		});
 		this.child.on('close', (code, signal) =>{
 			console.log('closing code: ' + code + ": signal", signal);
 		});
@@ -132,7 +130,7 @@ global.Process = class {
 			//process.exit(1); // <<<< this works as expected and exit the process asap
 		});
 	}
-}
+};
 
 // module.exports = {
 // 	startProgram, Process

@@ -22032,3 +22032,2354 @@ recu depuis le serveur: commande reçue
 -> CTL command exit 
 [Wed Nov 27 2019 21:03:00 GMT+0100]
 -> Server: Command server-side :'exit'
+[Wed Nov 27 2019 21:23:13 GMT+0100]
+-> Server: Command server-side :'fetch'
+[Wed Nov 27 2019 21:23:29 GMT+0100]
+-> Server: Command server-side :'fetch'
+[Wed Nov 27 2019 21:23:29 GMT+0100]
+-> Server: Command server-side :'fetch'
+[Wed Nov 27 2019 21:23:58 GMT+0100]
+-> Server: Command server-side :'fetch'
+[Wed Nov 27 2019 21:23:58 GMT+0100]
+-> Server: Command server-side :'fetch'
+[Wed Nov 27 2019 21:23:58 GMT+0100]
+-> Server: Command server-side :'fetch'
+[Wed Nov 27 2019 21:24:22 GMT+0100]
+-> Server: Command server-side :'fetch'
+[Wed Nov 27 2019 21:24:22 GMT+0100]
+-> Server: Command server-side :'update'
+[Wed Nov 27 2019 21:24:22 GMT+0100]
+-> Process spawned: 42sh:34786
+[Wed Nov 27 2019 21:24:22 GMT+0100]
+-> Process spawned: ConfigurationTest:34787
+[Wed Nov 27 2019 21:24:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:24:22 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:24:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:24:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:24:35 GMT+0100]
+-> Server: Command server-side :'fetch'
+[Wed Nov 27 2019 21:24:35 GMT+0100]
+-> Server: Command server-side :'update'
+[Wed Nov 27 2019 21:24:35 GMT+0100]
+-> Server: Command server-side :'fetch'
+[Wed Nov 27 2019 21:24:35 GMT+0100]
+-> Server: Command server-side :'update'
+[Wed Nov 27 2019 21:24:35 GMT+0100]
+-> Server: Command server-side :'fetch'
+[Wed Nov 27 2019 21:24:35 GMT+0100]
+-> Server: Command server-side :'update'
+[Wed Nov 27 2019 21:24:40 GMT+0100]
+-> Server: Command server-side :'restart'
+[Wed Nov 27 2019 21:24:40 GMT+0100]
+-> Process spawned: ConfigurationTest:34956
+[Wed Nov 27 2019 21:24:40 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:24:40 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:32:28 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:32:28 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:32:28 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:32:29 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:32:29 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 40388
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> load Configuration ...
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> 42sh a été ajouté aux programmes.
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> ConfigurationTest a été ajouté aux programmes.
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> atom a été ajouté aux programmes.
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> default a été ajouté aux programmes.
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> default2 a été ajouté aux programmes.
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> test_fd_ls a été ajouté aux programmes.
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Tous les fichiers de configuration ont été chargés
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> load Configuration done
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> reset logs ...
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> reset logs done
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: 42sh:40393
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: ConfigurationTest:40394
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: atom:40395
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40396
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40397
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40398
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40399
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40400
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40401
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40402
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40403
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40404
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40405
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40406
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40407
+[Wed Nov 27 2019 21:34:19 GMT+0100]
+-> Process spawned: default2:40408
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Process spawned: default2:40409
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Process spawned: default2:40410
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Process spawned: default2:40411
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Process spawned: default2:40412
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Process spawned: default2:40413
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Process spawned: test_fd_ls:40414
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Process spawned: test_fd_ls:40415
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Process spawned: test_fd_ls:40416
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Process spawned: test_fd_ls:40417
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Process spawned: test_fd_ls:40418
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Process spawned: test_fd_ls:40419
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:34:20 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:34:22 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:34:22 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:34:41 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:36:46 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:36:46 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:36:46 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:36:48 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:36:48 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:36:48 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:36:52 GMT+0100]
+-> CTL command h 
+[Wed Nov 27 2019 21:36:54 GMT+0100]
+-> CTL command h 
+[Wed Nov 27 2019 21:38:56 GMT+0100]
+-> CTL command exit 
+[Wed Nov 27 2019 21:39:04 GMT+0100]
+-> CTL command exit 
+[Wed Nov 27 2019 21:39:06 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:39:06 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:39:06 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:39:07 GMT+0100]
+-> CTL command exit 
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 43174
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> load Configuration ...
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> 42sh a été ajouté aux programmes.
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> ConfigurationTest a été ajouté aux programmes.
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> atom a été ajouté aux programmes.
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> default a été ajouté aux programmes.
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> default2 a été ajouté aux programmes.
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> test_fd_ls a été ajouté aux programmes.
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Tous les fichiers de configuration ont été chargés
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> load Configuration done
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> reset logs ...
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> reset logs done
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: 42sh:43184
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: ConfigurationTest:43185
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: atom:43186
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43187
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43188
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43189
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43190
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43191
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43192
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43193
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43194
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43195
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43196
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43197
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43198
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43199
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43200
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43201
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43202
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43203
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: default2:43204
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: test_fd_ls:43205
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: test_fd_ls:43206
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: test_fd_ls:43207
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: test_fd_ls:43208
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: test_fd_ls:43209
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Process spawned: test_fd_ls:43210
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:39:09 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:39:12 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:39:12 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:39:12 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:39:12 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:39:12 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:39:21 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:40:21 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:40:23 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:40:23 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:40:23 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:40:23 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:40:23 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:40:29 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:40:29 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:40:29 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:40:41 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:40:41 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:40:41 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:40:45 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:40:48 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:40:48 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:40:48 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:44:33 GMT+0100]
+-> End of daemon session.
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 46221
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> load Configuration ...
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> 42sh a été ajouté aux programmes.
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> ConfigurationTest a été ajouté aux programmes.
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> atom a été ajouté aux programmes.
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> default a été ajouté aux programmes.
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> default2 a été ajouté aux programmes.
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> test_fd_ls a été ajouté aux programmes.
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Tous les fichiers de configuration ont été chargés
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> load Configuration done
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> reset logs ...
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> reset logs done
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: 42sh:46226
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: ConfigurationTest:46227
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: atom:46228
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46229
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46230
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46231
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46232
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46233
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46234
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46235
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46236
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46237
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46238
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46239
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46240
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46241
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46242
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46243
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46244
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46245
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: default2:46246
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: test_fd_ls:46247
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: test_fd_ls:46248
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: test_fd_ls:46249
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: test_fd_ls:46250
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: test_fd_ls:46251
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Process spawned: test_fd_ls:46252
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:44:34 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:44:37 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:44:37 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:44:37 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:44:37 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:44:37 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:44:49 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:44:49 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:44:49 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:44:55 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:44:58 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:44:58 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:44:58 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:45:08 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:45:09 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:45:09 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:45:09 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:45:10 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:45:10 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:45:10 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:45:11 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:45:11 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:45:11 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:45:12 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:45:12 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:45:12 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:45:12 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:45:12 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:45:12 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:45:12 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:45:12 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:45:12 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:45:13 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:45:13 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:45:13 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:45:13 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:45:13 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:45:13 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:45:17 GMT+0100]
+-> CTL command fetch 
+[Wed Nov 27 2019 21:45:17 GMT+0100]
+-> Server: Command server-side :'fetch'
+[Wed Nov 27 2019 21:45:17 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:45:27 GMT+0100]
+-> CTL command update 
+[Wed Nov 27 2019 21:45:27 GMT+0100]
+-> Server: Command server-side :'update'
+[Wed Nov 27 2019 21:45:27 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:45:27 GMT+0100]
+-> Process spawned: atom:46782
+[Wed Nov 27 2019 21:45:27 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:45:27 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:45:32 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:45:32 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:45:32 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:46:02 GMT+0100]
+-> End of daemon session.
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 47136
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> load Configuration ...
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> 42sh a été ajouté aux programmes.
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> ConfigurationTest a été ajouté aux programmes.
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> atom a été ajouté aux programmes.
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> default a été ajouté aux programmes.
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> default2 a été ajouté aux programmes.
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> test_fd_ls a été ajouté aux programmes.
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Tous les fichiers de configuration ont été chargés
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> load Configuration done
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> reset logs ...
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> reset logs done
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: 42sh:47167
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: ConfigurationTest:47168
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: atom:47169
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47170
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47171
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47172
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47173
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47174
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47175
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47176
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47177
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47178
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47179
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47180
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47181
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47182
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47183
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47184
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47185
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47186
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: default2:47187
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: test_fd_ls:47188
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: test_fd_ls:47189
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: test_fd_ls:47190
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: test_fd_ls:47191
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: test_fd_ls:47192
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Process spawned: test_fd_ls:47193
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:46:04 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:46:05 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:46:05 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:46:05 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:46:05 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:46:05 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:46:19 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:46:19 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:46:19 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:46:32 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:47:00 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:47:05 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:47:05 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:47:05 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:47:06 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:47:06 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:47:06 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:47:07 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:47:07 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:47:07 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:47:07 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:47:07 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:47:07 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:47:08 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:47:08 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:47:08 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:47:08 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:47:08 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:47:08 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:47:08 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:47:08 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:47:08 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:47:09 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:47:09 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:47:09 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:47:09 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:47:09 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:47:09 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:47:11 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:47:11 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:47:11 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:47:20 GMT+0100]
+-> End of daemon session.
+[Wed Nov 27 2019 21:47:25 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:47:25 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:47:25 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 48033
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> load Configuration ...
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> 42sh a été ajouté aux programmes.
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> ConfigurationTest a été ajouté aux programmes.
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> atom a été ajouté aux programmes.
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> default a été ajouté aux programmes.
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> default2 a été ajouté aux programmes.
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> test_fd_ls a été ajouté aux programmes.
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Tous les fichiers de configuration ont été chargés
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> load Configuration done
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> reset logs ...
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> reset logs done
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: 42sh:48059
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: ConfigurationTest:48060
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: atom:48061
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48062
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48063
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48064
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48065
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48066
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48067
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48068
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48069
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48070
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48071
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48072
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48073
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48074
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48075
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48076
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48077
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48078
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: default2:48079
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: test_fd_ls:48080
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: test_fd_ls:48081
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: test_fd_ls:48082
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: test_fd_ls:48083
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: test_fd_ls:48084
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Process spawned: test_fd_ls:48085
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:47:31 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:47:35 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:47:35 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:47:35 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:48:00 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:48:00 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:48:00 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:48:00 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:48:00 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:48:12 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:48:12 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:48:12 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:48:15 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:48:18 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:48:18 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:48:18 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:49:25 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:49:25 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:49:25 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:49:25 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:49:25 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:49:26 GMT+0100]
+-> CTL command quit 
+[Wed Nov 27 2019 21:49:26 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 27 2019 21:49:26 GMT+0100]
+-> Server: Command server-side :'quit'
+[Wed Nov 27 2019 21:49:26 GMT+0100]
+-> End of daemon session.
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 49218
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> load Configuration ...
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> 42sh a été ajouté aux programmes.
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> ConfigurationTest a été ajouté aux programmes.
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> atom a été ajouté aux programmes.
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> default a été ajouté aux programmes.
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> default2 a été ajouté aux programmes.
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> test_fd_ls a été ajouté aux programmes.
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Tous les fichiers de configuration ont été chargés
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> load Configuration done
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> reset logs ...
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> reset logs done
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: 42sh:49223
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: ConfigurationTest:49224
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: atom:49225
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49226
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49227
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49228
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49229
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49230
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49231
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49232
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49233
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49234
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49235
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49236
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49237
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49238
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49239
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49240
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49241
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49242
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: default2:49243
+[Wed Nov 27 2019 21:49:32 GMT+0100]
+-> Process spawned: test_fd_ls:49244
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Process spawned: test_fd_ls:49245
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Process spawned: test_fd_ls:49246
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Process spawned: test_fd_ls:49247
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Process spawned: test_fd_ls:49248
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Process spawned: test_fd_ls:49249
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:49:33 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:49:35 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:49:35 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:49:35 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:49:35 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:49:35 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:49:43 GMT+0100]
+-> CTL command info atom
+[Wed Nov 27 2019 21:49:43 GMT+0100]
+-> Server: Command server-side :'info'
+[Wed Nov 27 2019 21:49:43 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:50:12 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:50:18 GMT+0100]
+-> CTL command info atom
+[Wed Nov 27 2019 21:50:18 GMT+0100]
+-> Server: Command server-side :'info'
+[Wed Nov 27 2019 21:50:18 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:51:17 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:51:17 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:51:17 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:51:17 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:51:17 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:51:18 GMT+0100]
+-> CTL command quit 
+[Wed Nov 27 2019 21:51:18 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 27 2019 21:51:18 GMT+0100]
+-> Server: Command server-side :'quit'
+[Wed Nov 27 2019 21:51:18 GMT+0100]
+-> End of daemon session.
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 50285
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> load Configuration ...
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> 42sh a été ajouté aux programmes.
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> ConfigurationTest a été ajouté aux programmes.
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> atom a été ajouté aux programmes.
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> default a été ajouté aux programmes.
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> default2 a été ajouté aux programmes.
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> test_fd_ls a été ajouté aux programmes.
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> Tous les fichiers de configuration ont été chargés
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> load Configuration done
+[Wed Nov 27 2019 21:51:21 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> reset logs ...
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> reset logs done
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: 42sh:50290
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: ConfigurationTest:50291
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: atom:50292
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50293
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50294
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50295
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50296
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50297
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50298
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50299
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50300
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50301
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50302
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50303
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50304
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50305
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50306
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50307
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50308
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50309
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: default2:50310
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: test_fd_ls:50311
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: test_fd_ls:50312
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: test_fd_ls:50313
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: test_fd_ls:50314
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: test_fd_ls:50315
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Process spawned: test_fd_ls:50316
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:51:22 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:51:25 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:51:25 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:51:25 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:51:25 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:51:25 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:51:38 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:51:38 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:51:38 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:51:50 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:52:00 GMT+0100]
+-> CTL command fetch 
+[Wed Nov 27 2019 21:52:00 GMT+0100]
+-> Server: Command server-side :'fetch'
+[Wed Nov 27 2019 21:52:00 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:52:08 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:52:08 GMT+0100]
+-> Process spawned: atom:50781
+[Wed Nov 27 2019 21:52:08 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:52:08 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:55:22 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:55:22 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:55:22 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:55:22 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:55:22 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:55:23 GMT+0100]
+-> CTL command quit 
+[Wed Nov 27 2019 21:55:23 GMT+0100]
+-> Closing taskmaster ...
+[Wed Nov 27 2019 21:55:23 GMT+0100]
+-> Server: Command server-side :'quit'
+[Wed Nov 27 2019 21:55:23 GMT+0100]
+-> End of daemon session.
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 52570
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> load Configuration ...
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> 42sh a été ajouté aux programmes.
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> ConfigurationTest a été ajouté aux programmes.
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> atom a été ajouté aux programmes.
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> default a été ajouté aux programmes.
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> default2 a été ajouté aux programmes.
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> test_fd_ls a été ajouté aux programmes.
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Tous les fichiers de configuration ont été chargés
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> load Configuration done
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> reset logs ...
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> reset logs done
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: 42sh:52575
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: ConfigurationTest:52576
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: atom:52577
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52578
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52579
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52580
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52581
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52582
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52583
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52584
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52585
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52586
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52587
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52588
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52589
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52590
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52591
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52592
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52593
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52594
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: default2:52595
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: test_fd_ls:52596
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: test_fd_ls:52597
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: test_fd_ls:52598
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: test_fd_ls:52599
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: test_fd_ls:52600
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Process spawned: test_fd_ls:52601
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:55:26 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:55:28 GMT+0100]
+-> Session CTL demarrée.
+[Wed Nov 27 2019 21:55:28 GMT+0100]
+-> setup read ... 
+[Wed Nov 27 2019 21:55:28 GMT+0100]
+-> setup read: done
+[Wed Nov 27 2019 21:55:28 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:55:28 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:55:41 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:55:41 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:55:41 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue
+[Wed Nov 27 2019 21:55:53 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Daemon: Daemon demarré avec le pid: 53076
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Checking taskmaster dir ...
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Checking taskmaster dir done
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> load Configuration ...
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> 42sh a été ajouté aux programmes.
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> ConfigurationTest a été ajouté aux programmes.
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> atom a été ajouté aux programmes.
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> default a été ajouté aux programmes.
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> default2 a été ajouté aux programmes.
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> test_fd_ls a été ajouté aux programmes.
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Tous les fichiers de configuration ont été chargés
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> load Configuration done
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> kill Old Taskmaster ...
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> kill Old Taskmaster done
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> reset logs ...
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> reseting pidLogs
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> reset logs done
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> exec onLaunch programs ...
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: 42sh:53081
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: ConfigurationTest:53082
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: atom:53083
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53084
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53085
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53086
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53087
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53088
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53089
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53090
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53091
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53092
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53093
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53094
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53095
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53096
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53097
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53098
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53099
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53100
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: default2:53101
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: test_fd_ls:53102
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: test_fd_ls:53103
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: test_fd_ls:53104
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: test_fd_ls:53105
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: test_fd_ls:53106
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Process spawned: test_fd_ls:53107
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> exec onLaunch programs done
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The execution was successful
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 127 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> Child exited with 0 signal:  
+[Wed Nov 27 2019 21:56:12 GMT+0100]
+-> The exit wasn't the one expected
+[Wed Nov 27 2019 21:56:16 GMT+0100]
+-> Server: Utilisateur envoi data 'Envoi depuis le ctl'
+[Wed Nov 27 2019 21:56:16 GMT+0100]
+-> 
+recu depuis le serveur: c bien recu mon pote
+[Wed Nov 27 2019 21:56:22 GMT+0100]
+-> SIGHUP, configuration reload
+[Wed Nov 27 2019 21:56:32 GMT+0100]
+-> CTL command infos atom
+[Wed Nov 27 2019 21:56:32 GMT+0100]
+-> Server: Command server-side :'infos'
+[Wed Nov 27 2019 21:56:32 GMT+0100]
+-> 
+recu depuis le serveur: commande reçue

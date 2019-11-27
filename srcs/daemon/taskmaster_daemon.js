@@ -36,11 +36,11 @@ global.Program = class {
 	get getVariables (){
 		return Object.keys(this).map(x=>x + "=> " + this[x]);
 	}
-}
+};
 
 global.log = (...msg) =>{
 	let date = new Date().toString();
-	date = date.substr(0, date.indexOf(" ("))
+	date = date.substr(0, date.indexOf(" ("));
 	fs.appendFileSync(logfile, "[" + date + "]\n-> " + msg.join(" ") + "\n", "utf-8");
 }
 // /Users/tlechien/taskmaster/srcs/daemon/taskmaster_daemon.js
@@ -89,22 +89,22 @@ let server = express().use((req, res) => {
 });
 
 let io = socket(server).on("connection", socket => {
-	console.log("Nouvelle connexion entrante")
+	console.log("Nouvelle connexion entrante");
 	socket.emit("connection_ok");
  // envoyer les données necessaire a laffichage du tableau process
 	socket.on("data", (x)=>{
-		log("Server: Utilisateur envoi data '" + x + "'")
+		log("Server: Utilisateur envoi data '" + x + "'");
 		socket.emit("renvoi", "c bien recu mon pote");
-	})
+	});
 	socket.on("senddata", (name, string)=>{
 		let programs = Object.keys(daemon.programs).map(y=>{
 			let x = daemon.programs[y];
 			return {command: x.command, err: x.err, out: x.out, count: x.count, name: x.name, expectedOutput: x.expectedOutput, fd: x.fd, subprocess: x.subprocess.map(sub=>{
 				return {status: sub.status, exit: sub.exit, pid: sub.child.pid, exitCode: sub.child.exitCode, timestamp: sub.timestamp, timestop: sub.timestop}
 			})}
-		})
+		});
 			socket.emit("datas", programs);
-	})
+	});
 	socket.on("cmd", (cmd, argv, index)=>{
 		log("Server: Command server-side :'" + cmd + "'");
 		socket.emit("renvoi", "commande reçue");
@@ -127,6 +127,12 @@ function exitHandler(options, err) {
 }
 //process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));
 process.on('SIGINT', exitHandler.bind(null, {exit: true, signal: "exit"})); //on ? probably
+process.on('SIGHUP', ()=>{
+	log("SIGHUP, configuration reload");
+	console.log("sighup");
+	let index = commands.findIndex(x=>~x.names.indexOf("fetch"));
+	if (~index) commands[index].call([Infinity], "daemon", undefined);
+}); //on ? probably
 
 /*
 Previsualisation de la partie webclient

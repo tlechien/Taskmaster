@@ -63,7 +63,7 @@ let init = () => {
 	/*
 	** Setup stream if program is in foreground
 	*/
-	log("setup read ... ")
+	log("setup read ... ");
 	setupRead();
 	log("setup read: done")
 
