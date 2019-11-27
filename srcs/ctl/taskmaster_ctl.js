@@ -50,7 +50,7 @@ function exitHandler(options, err) {
 		return ;
 	} else process.exit(1);
 }
-process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));
+//process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));
 process.on('SIGINT', exitHandler.bind(null, {exit: true, signal: "sigint"}));
 process.on('SIGUSR1', exitHandler.bind(null, {exit: true, signal: "usr1"}));
 process.on('SIGUSR2', exitHandler.bind(null, {exit: true, signal: "usr2"}));

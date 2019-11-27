@@ -71,6 +71,29 @@ hr {
     overflow: visible
 }
 
+.tooltip_cmd {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+	visibility: hidden;
+    width: 90%;
+    background-color: #00babc;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    padding: 3px 3px;
+    position: absolute;
+    top: -5px;
+	margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.tooltip_cmd:hover .tooltiptext {
+  visibility: visible;
+}
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;

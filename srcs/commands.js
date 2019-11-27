@@ -66,10 +66,9 @@ global.commands = [
 					console.log("\rErreur " + argv[0] + " n'existe pas.")
 				else if (!~argv[0])
 					console.log("Programme(s) disponible(s): " + data.join(" | ") + ".");
-				else { //antiprompt
-					console.log(`
-					\r${argv[0].toUpperCase()}:
-					\r\tcommand: ${data.command},
+				else {
+					antiprompt(`\r${argv[0].toUpperCase()}:`);
+					console.log(`\r\tcommand: ${data.command},
 					\r\tcount: ${data.count},
 					\r\texecAtLaunch: ${data.execAtLaunch},
 					\r\trestart: ${data.restart},

@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/11/27 12:20:00 by tlechien         ###   ########.fr       */
+/*   Updated: 2019/11/27 13:24:43 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,14 @@ global.setupRead = () => {
 		completer: Commands.autocompletion,
 		removeHistoryDuplicates: true
 	});
-	global.read.once("SIGINT", ()=>{
-		//process.exit(1); //shouldn't exit ??
-		//read.close();
-	})
-	global.read.once("SIGTERM", ()=>{
-		//process.exit(1); //shouldn't exit ??
-		//read.close();
-	})
+	// global.read.once("SIGINT", ()=>{
+	// 	//process.exit(1); //shouldn't exit ??
+	// 	//read.close();
+	// })
+	// global.read.once("SIGTERM", ()=>{
+	// 	//process.exit(1); //shouldn't exit ??
+	// 	//read.close();
+	// })
 	setTimeout(()=>{
 		process.stdout.write('\u001B[?25h')
 		read && read.setPrompt("\x1b[32m" + ctl.prompt)

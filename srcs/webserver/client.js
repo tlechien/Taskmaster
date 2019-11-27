@@ -20,8 +20,8 @@ socket.on("renvoi", (x) => {
 			div.className = "card-body";
 			div.innerHTML =
 				`<div style="align-items: center" class="row">
-					<div class="col-xl-1 offset-xl-0">
-		                    <h6>${program.name}</h6>
+					<div class="col-xl-1 offset-xl-0 tooltip_cmd">
+		                    <h6>${program.name}</h6><span class="tooltiptext">${program.command}</span>
 	                </div>
 					<div class="col-xl-1 offset-xl-3">
 						<h4>${program.count}</h4>
@@ -96,7 +96,7 @@ socket.on("renvoi", (x) => {
 	})
 })
 setInterval(()=>{
-	socket.emit("senddata");
+	//socket.emit("senddata");
 }, 10000);
 
 let display_pid = program=>{
