@@ -87,6 +87,12 @@ global.loadFile = file => {
 		return console.log(file + "\x1b[31m Erreur dans le fichier: " + msg + "\x1b[0m");
 	let obj = JSON.parse(fs.readFileSync(CONFIGDIR + file, "UTF-8"));
 	let program = new Program(obj);
+	program.env = obj.env.split(",").reduce((x,y)=>{
+		let obj = {};
+		let arr = y.split(":");
+		x[arr[0]] = arr[1]
+		return x;
+	}, {})
 	program.name = file.substr(0, file.indexOf(daemon.suffix));
 	get_hash(file, hash => {
 		program.hash = hash;

@@ -1,4 +1,5 @@
 "use strict";
+let antiprompt = str => console.log("\r" + str + " ".repeat(process.stdout.columns - str.length));
 global.commands = [
 	{
 		names: ["help", "h"],
@@ -30,13 +31,14 @@ global.commands = [
 	}, {
 		names: ["infos", "info", "i"],
 		usage: "Print infos of programs.\n\ti atom",
-		call: (argv, side, socket) => {
-			if (side === "daemon"){
-				if (!argv.length)
-					return console.log("Usage: status [command]\nUtilisez status [--l|-list] pour avoir la liste des commandes.");
+		call: (argv, side, data) => {
+			if (side === "ctl" && !argv.length)
+			 return console.log("Usage: status [command]\nUtilisez status [--l|-list] pour avoir la liste des commandes.");
+			if (side === "daemon" && argv.length){
 				if (~["--list", "--l", "-l", "-list"].indexOf(argv[0]))
-					return socket.emit("infos", Object.keys(daemon.programs), -1);
-				if (!~Object.keys(daemon.programs).indexOf(argv[0])) return socket.emit("infos", "Error", argv[0]);
+					return data.emit("cmd", "info", [-1, ...argv], Object.keys(daemon.programs));
+				if (!~Object.keys(daemon.programs).indexOf(argv[0]))
+					return data.emit("cmd", "info", argv, "Error");
 				let programs = daemon.programs[argv[0]];
 				programs = {
 					command: programs.command,
@@ -57,7 +59,35 @@ global.commands = [
 					custom_err: programs.custom_err,
 					custom_out: programs.custom_out,
 				};
-				data.emit("infos", programs, argv[0])
+				data.emit("cmd", "info", argv, programs);
+			}
+			if (side === "ctl" && data && argv.length){
+				if (argv[0] == "Error")
+					console.log("\rErreur " + argv[0] + " n'existe pas.")
+				else if (!~argv[0])
+					console.log("Programme(s) disponible(s): " + data.join(" | ") + ".");
+				else { //antiprompt
+					console.log(`
+					\r${argv[0].toUpperCase()}:
+					\r\tcommand: ${data.command},
+					\r\tcount: ${data.count},
+					\r\texecAtLaunch: ${data.execAtLaunch},
+					\r\trestart: ${data.restart},
+					\r\texpectedOutput: ${data.expectedOutput},
+					\r\tsuccessTime: ${data.successTime},
+					\r\tretryCount: ${data.retryCount},
+					\r\tkillSignal: ${data.killSignal},
+					\r\tterminationTime: ${data.terminationTime},
+					\r\tenv: \n\t\t${Object.keys(data.env).map((x, i, a)=>x + ": " + data.env[x] + ((i == a.length - 1) ? "" : ",")).join("\n\t\t")}
+					\r\tworkingDirectory: ${data.workingDirectory || "."},
+					\r\tumask: ${data.umask},
+					\r\tname: ${data.name},
+					\r\terr: ${data.err},
+					\r\tout: ${data.out},
+					\r\tcustom_err: ${data.custom_err},
+					\r\tcustom_out: ${data.custom_out}`)			//console.log(status)
+				}
+				read.prompt(true);
 			}
 			return true;
 		}
@@ -114,7 +144,7 @@ global.commands = [
 					if (!data.length)
 						console.log(argv[0] + " n'a pas été executé.");
 					else {
-						console.log("\r" + argv[0].toUpperCase() + " ".repeat(process.stdout.columns - argv[0].length));
+						antiprompt(argv[0].toUpperCase());
 						let status = data.map((sub, index)=>{
 							return `${index}:
 							\r  status: ${sub.status},

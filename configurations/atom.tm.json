@@ -1,21 +1,18 @@
 {
-  "command": "echo grosse commande atom",
-  "count": 1,
-  "execAtLaunch": true,
-  "restart": ["always"],
-  "expectedOutput": [0],
-  "successTime": 1000,
-  "retryCount": 3,
-  "killSignal": "SIGINT",
-  "terminationTime": 30000,
-  "err": false,
-  "out": false,
-  "custom_err": "logs/atom.err",
-  "custom_out": "logs/atom.out",
-  "env": {
-    "key": "value",
-	"key1": "value1"
-  },
-  "workingDirectory": "",
-  "umask": "0755"
+	"command": "echo grosse commande atom",
+	"count": 1,
+	"execAtLaunch": true,
+	"restart": ["always"],
+	"expectedOutput": [0],
+	"successTime": 1000,
+	"retryCount": 3,
+	"killSignal": "SIGINT",
+	"terminationTime": 30000,
+	"err": false,
+	"out": false,
+	"custom_err": "logs/atom.err",
+	"custom_out": "logs/atom.out",
+	"env": "key:value,key1:value1",
+	"workingDirectory": "",
+	"umask": "0755"
 }

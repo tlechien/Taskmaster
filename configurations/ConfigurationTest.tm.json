@@ -9,10 +9,10 @@
 	"killSignal":"SIGINT",
 	"terminationTime":10,
 	"err": true,
-    "out": true,
-    "custom_err": "logs/ConfigurationTest.err",
-    "custom_out": "logs/ConfigurationTest.out",
-	"env":{"test":"t"},
+	"out": true,
+	"custom_err": "logs/ConfigurationTest.err",
+	"custom_out": "logs/ConfigurationTest.out",
+	"env": "key:value,key1:value1",
 	"workingDirectory":"path",
 	"umask":"0755"
 }

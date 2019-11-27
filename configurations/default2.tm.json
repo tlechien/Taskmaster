@@ -1,21 +1,19 @@
 {
-  "name": "default",
-  "command": "~/42sh/sbgloop",
-  "count": 18,
-  "execAtLaunch": true,
-  "restart": ["always", "never", "signal"],
-  "expectedOutput": [0],
-  "successTime": 1000,
-  "retryCount": 3,
-  "killSignal": "SIGTERM",
-  "terminationTime": 30000,
-  "err": true,
-  "out": true,
-  "custom_err": "logs/default2.err",
-  "custom_out": "logs/default2.out",
-  "env": {
-    "key": "value"
-  },
-  "workingDirectory": "/Working/Path/",
-  "umask": "0755"
+	"name": "default",
+	"command": "~/42sh/sbgloop",
+	"count": 18,
+	"execAtLaunch": true,
+	"restart": ["always", "never", "signal"],
+	"expectedOutput": [0],
+	"successTime": 1000,
+	"retryCount": 3,
+	"killSignal": "SIGTERM",
+	"terminationTime": 30000,
+	"err": true,
+	"out": true,
+	"custom_err": "logs/default2.err",
+	"custom_out": "logs/default2.out",
+	"env": "key:value,key1:value1",
+	"workingDirectory": "/Working/Path/",
+	"umask": "0755"
 }
