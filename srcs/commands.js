@@ -1,4 +1,5 @@
 "use strict";
+const fs = require("fs");
 global.antiprompt = str => console.log("\r" + str + " ".repeat(process.stdout.columns - str.length));
 global.commands = [
 	{
@@ -62,8 +63,8 @@ global.commands = [
 				data.emit("cmd", "info", argv, programs);
 			}
 			if (side === "ctl" && data && argv.length){
-				if (argv[0] == "Error")
-					console.log("\rError " + argv[0] + " doesn't exist.")
+				if (argv[0] === "Error")
+					console.log("\rError " + argv[0] + " doesn't exist.");
 				else if (!~argv[0])
 					console.log("Available program(s): " + data.join(" | ") + ".");
 				else {
@@ -77,7 +78,7 @@ global.commands = [
 					\r\tretryCount: ${data.retryCount},
 					\r\tkillSignal: ${data.killSignal},
 					\r\tterminationTime: ${data.terminationTime},
-					\r\tenv: \n\t\t${Object.keys(data.env).map((x, i, a)=>x + ": " + data.env[x] + ((i == a.length - 1) ? "" : ",")).join("\n\t\t")}
+					\r\tenv: \n\t\t${Object.keys(data.env).map((x, i, a)=>x + ": " + data.env[x] + ((i === a.length - 1) ? "" : ",")).join("\n\t\t")}
 					\r\tworkingDirectory: ${data.workingDirectory || "."},
 					\r\tumask: ${data.umask},
 					\r\tname: ${data.name},
@@ -190,8 +191,8 @@ global.commands = [
 					console.log("\rPlease choose between 'out' and 'err'.");
 				else {
 					let str;
-					if (argv[2] === "") str = "logs/" + CONFIGDIR + "/" + argv[0] + "." + argv[1];
-					else str = CONFIGDIR + "/" + argv[2]; //TODO WTF CONFIGDIR
+					if (argv[2] === "") str = LOGDIR  + argv[0] + "." + argv[1];
+					else str = CONFIGDIR + "/" + argv[2];
 					child_process.spawnSync("more", [str], {stdio: "inherit"});
 				}
 				read.prompt(true);
@@ -217,7 +218,7 @@ global.commands = [
 				if (!daemon.fetches.length)
 					data.emit("out", "The fetch list is empty, please use 'fetch' first.");
 				else if (~argv.indexOf("-l") || ~argv.indexOf("-list")){
-					data.emit("out", "Fetch(es): "  + daemon.fetches.program.name.join(" | ") + ".")
+					data.emit("out", "Fetch(es): "  + daemon.fetches.programs.name.join(" | ") + ".")
 				} else if (!argv.length){
 					daemon.fetches.forEach(program=>{
 						updateConfig(program);
@@ -227,7 +228,7 @@ global.commands = [
 					daemon.fetches = [];
 				} else {
 					argv.forEach(x=>{
-						if (~daemon.fetches.program.indexOf(x))
+						if (~daemon.fetches.programs.indexOf(x))
 						{
 							daemon.fetches.splice(daemon.fetches.indexOf(x), 1);
 							data.emit("out", x + " has been fetch alone.");
@@ -249,20 +250,20 @@ global.commands = [
 					let name = x.substr(0, x.indexOf(daemon.suffix))
 					if (!daemon.programs[name])
 					{
-						if (checkJSONFile(x) != 1)
+						if (checkJSONFile(x) !== 1)
 							data.emit("out", "Bad JSON found: " + name + ".");
 						else if (!~daemon.fetches.map(x => x.name).indexOf(name))
 							daemon.fetches.push(createProgram(x, CONFIGDIR + x));
 						else data.emit("out", "New file found: " + name + ".");
 					} else {
 						let hash = get_hash(x, (hash)=>{
-							if (hash != daemon.programs[name].hash)
+							if (hash !== daemon.programs[name].hash)
 							{
 								if (!~daemon.fetches.map(x => x.name).indexOf(name))
 									daemon.fetches.push(createProgram(x, CONFIGDIR + x));
 								data.emit("out", name + " has been modified.")
 							}
-							if (y == arr.length - 1 && !daemon.fetches.length)
+							if (y === arr.length - 1 && !daemon.fetches.length)
 								data.emit("out", "Nothing to fetch.");
 						})
 					}
@@ -274,6 +275,7 @@ global.commands = [
 		names: ["create", "c"],
 		usage: "Create configurations files.\n\tcreate",
 		call: (argv, side, data) => {
+			void data;
 			if (side === "ctl"){
 				ctl.isQuestion = true;
 				return Question.file_creation();
@@ -283,63 +285,32 @@ global.commands = [
 		names: ["clear", "clr", "cl"],
 		usage: "Clear logs files.\n\tclear program program2 ...",
 		call: (argv, side, data) => {
-			if (side === "ctl") {
+			if (side === "ctl" && data) {
 				if (!argv.length){
-					console.log("Usage: clear [programs...].");
+					console.log("\rUsage: clear [programs...].");
+					read.prompt(true);
 					return false;
 				} else {
 					if (!data.length){
-						console.log("Aucun resultat trouvé pour les programmes.")
+						console.log("\rAucun resultat trouvé pour les programmes.");
+						read.prompt(true);
 						return ;
 					}
-					console.log(data);
 					if (data.length !== argv.length){
-						let exceptions = argv.filter(x=>data.map(y=>y.name).indexOf(x));
-						console.log("Le(s) programme(s) suivant(s) n'ont pas été trouvé(s) : " + execeptions.join(", ") + ".");
+						let exceptions = argv.filter(x=>!~data.map(x=>x.name).indexOf(x));
+						console.log("\rLe(s) programme(s) suivant(s) n'ont pas été trouvé(s) : " + exceptions.join(", ") + ".");
 					}
-					console.log("c ok pour " + data.join(", ") + ".");
+					data.forEach(prog => {
+						fs.existsSync(prog.custom_out) && fs.writeFileSync(prog.custom_out, "", "utf-8");
+						fs.existsSync(prog.custom_err) && fs.writeFileSync(prog.custom_err, "", "utf-8");
+						console.log("\r", prog.custom_out + " et " + prog.custom_err + " ont bien été supprimés.");
+					});
+					read.prompt(true);
 				}
 			} else if (side === "daemon"){
-				//confirmation ?
-				console.log("daemon clear ", argv, side);
-				console.log("ici", argv);
-				data.emit("cmd", "clear", argv, daemon.programs.filter(x=>~argv.indexOf(x.name)));
+				let program_names = Object.keys(daemon.programs).map(x=>daemon.programs[x]);
+				data.emit("cmd", "clear", argv, program_names.filter(x=>~argv.indexOf(x.name)));
 			}
-			return true;
-		}
-	}, {
-		names: ["clearall"],
-		usage: "Clear all logs files.\n\tclearall",
-		call: (argv, side, data) => {
-			if (side === "daemon"){
-				//confirmation ?
-				daemon.programs.forEach(clearLog);
-			}
-			console.log(dir);
-			log("Clearing log files ...");
-			return true;
-		}
-	}, {
-		names: ["import"],
-		usage: "import config files from a directory",
-		call: (argv, side, data) => {
-			// while (argv)
-			// {
-			// 	let name = argv.substr(argv.lastIndexOf("_") + 1)
-			// 	if (name in main.programs);{
-			// 	if (read.question("A file called $name is already loaded, do you want to rename it ? (y)es|(n)o/(a)bort" + "\n> ", answer=>{
-			// 	return(answer == "y")})); {
-			// 		read.question("")
-			// 	}
-			// 	}
-			// 	if (deja existant || deja dans le dossier || pas .tm.json)
-			// 		demander si renommer ou annuler
-			// 	else
-			// 	{
-			// 		verifier integrité fichier;
-			// 		copy file dans le CONFIGDIR;
-			// 	}
-			// }
 			return true;
 		}
 	}, {
@@ -359,8 +330,18 @@ global.commands = [
 		names: ["exit", "background", "bg"],
 		usage: "Exit and send taskmaster in background.\n\tbg",
 		call: (argv, side, data) => {
+			void data;
 			if (side === "ctl")
 				process.exit(0);
+		}
+	}, {
+		names: ["debug", "dbg"],
+		usage: "Show logs of taskmaster.\n\tdebug",
+		call: (argv, side, data) => {
+			void data;
+			if (side === "ctl"){
+				child_process.spawnSync("more", [LOGDIR + "taskmaster_log"], {stdio: "inherit"});
+			}
 		}
 	}
 ];
