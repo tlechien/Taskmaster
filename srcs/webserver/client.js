@@ -12,7 +12,12 @@ socket.on("renvoi", (x) => {
 	card = document.querySelector("#processes");
 	document.querySelector("#log_button").addEventListener("click", ()=>{
 		window.open("logs/taskmaster_log")
-	})
+	});
+	document.querySelector("#refresh_button").addEventListener("click", ()=>{
+		socket.emit("cmd", "fetch", [], 7);
+		socket.emit("cmd", "update", [], 6)
+		socket.emit("senddata");
+	});
 	card.innerHTML = "";
 	data.forEach(program=>{
 		let div = document.createElement("div");
@@ -96,7 +101,7 @@ socket.on("renvoi", (x) => {
 	})
 })
 setInterval(()=>{
-	//socket.emit("senddata");
+	socket.emit("senddata");
 }, 10000);
 
 let display_pid = program=>{
