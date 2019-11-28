@@ -89,7 +89,8 @@ socket.on("renvoi", (x) => {
 				//socket.emit("senddata");
 			})
 			document.querySelector(`#fd_${program.name}`).addEventListener("click", function (fd){
-				window.open(program["custom_" + fd.target.textContent] || "logs/" + program.name + "." + fd.target.textContent);
+				console.log("custom_" + fd.target.textContent, program);
+				window.open(program["custom_" + fd.target.textContent]);
 				socket.emit("senddata");
 
 			})

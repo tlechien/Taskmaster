@@ -99,7 +99,7 @@ let io = socket(server).on("connection", socket => {
 	socket.on("senddata", (name, string)=>{
 		let programs = Object.keys(daemon.programs).map(y=>{
 			let x = daemon.programs[y];
-			return {command: x.command, err: x.err, out: x.out, count: x.count, name: x.name, expectedOutput: x.expectedOutput, fd: x.fd, subprocess: x.subprocess.map(sub=>{
+			return {command: x.command, err: x.err, out: x.out, custom_err: x.custom_err, custom_out: x.custom_out, count: x.count, name: x.name, expectedOutput: x.expectedOutput, subprocess: x.subprocess.map(sub=>{
 				return {status: sub.status, exit: sub.exit, pid: sub.child.pid, exitCode: sub.child.exitCode, timestamp: sub.timestamp, timestop: sub.timestop}
 			})}
 		});

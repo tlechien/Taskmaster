@@ -17,12 +17,16 @@ global.startProgram = program => {
 		gid: process.getgid(), // a verif
 		shell : "/bin/zsh", // verif aussi
 	}, (error, out, err)=>{
-		//console.log("err: '%s'" ,err);
-		//console.log("out: '%s'" ,out);
-		if (program.err) fs.appendFileSync(program.custom_err, "[" + date + "]\n"  +  err + "\n", "utf-8");
-		if (program.out) fs.appendFileSync(program.custom_out, "[" + date + "]\n"  +  out + "\n", "utf-8");
-		//write_fd(program.fd.err, stderr);
-		//write_fd(program.fd.out, stdout);
+		if (program.err){
+			try {
+				fs.appendFileSync(program.custom_err, "[" + date + "]\n"  +  err + "\n", "utf-8");
+			} catch (e){}
+		}
+		if (program.out){
+			try {
+				fs.appendFileSync(program.custom_out, "[" + date + "]\n"  +  out + "\n", "utf-8");
+			} catch (e){}
+		}
 	})
 	//write_fd(taskLogs, "Process spawned: " + program.name + ":" + child.pid);
 	fs.appendFileSync(daemon.pidLogs, program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
@@ -33,6 +37,7 @@ global.startProgram = program => {
 };
 
 global.updateConfig = (newProgram) => {
+	console.log("on est dans update de", newProgram.name);
 	let oldProgram = daemon.programs[newProgram.name];
 	if (shouldRestart(oldProgram, newProgram))
 	{
@@ -42,6 +47,7 @@ global.updateConfig = (newProgram) => {
 	}
 	else if (oldProgram.count !== newProgram.count)
 	{
+		console.log("2eme if")
 		console.log(oldProgram);
 		if (oldProgram.count > newProgram.count)
 			oldProgram.subprocess.splice(Math.max(oldProgram.subprocess.length - 2, 0), 2).forEach(process=>killPid(process.child.pid));
@@ -73,7 +79,11 @@ global.killChilds = (program) => {
 		if (subprocess.exit !== Infinity)
 			return;
 		console.log("here2");
-		killPid(subprocess.child.pid, program.killSignal, ()=>{log("Child Process " + program.name + ";" + subprocess.child.pid + " has been killed.")});
+		killPid(subprocess.child.pid, program.killSignal, ()=>{if (subprocess.exit !== Infinity)log("Child Process " + program.name + ";" + subprocess.child.pid + " has been terminated normally.")});
+		setTimeout(()=>{
+			if (subprocess.exit == Infinity)
+				killPid(subprocess.child.pid, 'SIGKILL', ()=>{log("Child Process " + program.name + ";" + subprocess.child.pid + " has reached terminationTime and received a SIGKILL.")})
+		}, program.terminationTime)
 	})
 };
 
@@ -90,7 +100,6 @@ global.killPid = (pid, signal, callback)=>{
 	try {process.kill(pid, signal);callback();}
 	catch (err) {
 		log("Child couldn't be killed " + err.toString());
-		callback();
 	}
 };
 

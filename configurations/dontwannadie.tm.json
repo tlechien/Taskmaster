@@ -1,0 +1,18 @@
+{
+    "command": "~/taskmaster/dontwannadie",
+    "count": 1,
+    "execAtLaunch": true,
+    "restart": "always",
+    "expectedOutput": [0],
+    "successTime": 400,
+    "retryCount": 2,
+    "killSignal": "SIGINT",
+    "terminationTime": 501,
+    "err": false,
+    "out": true,
+    "custom_err": "logs/die.err",
+    "custom_out": "logs/die.out",
+    "workingDirectory": ".",
+    "umask": 778,
+    "env": ""
+ }

@@ -96,16 +96,18 @@ global.commands = [
 		usage: "Stop a program.\n\tstop",
 		call: (argv, side, data) => {
 			void data;
-			if (side === "daemon")
+			if (side === "ctl" && !argv.length)
+				return console.log("It doesn't work.");
+			if (side === "daemon" && argv.length)
 			{
-				if (!argv.length)
-					return console.log("It doesn't work.");
-				console.log("Stopping", argv[0] + ".");
 				let index = Object.keys(daemon.programs).findIndex(x=>{
-					return ~x.toLowerCase().indexOf(argv[0].toLowerCase())
+					return ~x.indexOf(argv[0])
 				});
-				if (!~index)	console.log("Command not found: %s", argv[0] + ".");
-				else killChilds(daemon.programs[Object.keys(daemon.programs)[index]]);
+				if (!~index)	data.emit("log", "Command not found: %s " + argv[0] + ".");
+				else {
+					data.emit("log", "Stopping " + argv[0] + ".");
+					killChilds(daemon.programs[Object.keys(daemon.programs)[index]]);
+				}
 			}
 			return true;
 		}
@@ -219,11 +221,18 @@ global.commands = [
 				if (!daemon.fetches.length)
 					data && data.emit("out", "The fetch list is empty, please use 'fetch' first.");
 				else if (~argv.indexOf("-l") || ~argv.indexOf("-list")){
-					data && data.emit("out", "Fetch(es): "  + daemon.fetches.programs.name.join(" | ") + ".")
+					data && data.emit("out", "Fetch(es): "  + daemon.fetches.map(x => x.name).join(" | ") + ".")
 				} else if (!argv.length){
+					console.log(daemon.fetches)
 					daemon.fetches.forEach(program=>{
-						updateConfig(program);
-						data && data.emit("out", program.name + " has been updated.");
+						if (!daemon.programs[program.name]){
+							daemon.programs[program.name] = program;
+							startProgram(program);
+						}
+						else {
+							updateConfig(program);
+							data && data.emit("out", program.name + " has been updated.");
+						}
 					});
 					daemon.fetches = [];
 				} else {
@@ -253,9 +262,11 @@ global.commands = [
 					{
 						if (checkJSONFile(x) !== 1)
 							data && data.emit("out", "Bad JSON found: " + name + ".");
-						else if (!~daemon.fetches.map(x => x.name).indexOf(name))
-							daemon.fetches.push(createProgram(x, CONFIGDIR + x));
-						else if (data) data.emit("out", "New file found: " + name + ".");
+						else {
+						 	if (!~daemon.fetches.map(x => x.name).indexOf(name))
+								daemon.fetches.push(createProgram(x, CONFIGDIR + x));
+							data && data.emit("out", "New file found: " + name + ".");
+						}
 					} else {
 						 get_hash(x, (hash)=>{
 							if (hash !== daemon.programs[name].hash)
