@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/11/27 20:42:25 by aben-azz         ###   ########.fr       */
+/*   Updated: 2019/11/28 15:13:22 by aben-azz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ global.setupRead = () => {
 let init = () => {
 	ctl.socket_client = io.connect('http://localhost:5959', {reconnect: true, transports:["websocket"]});
 	ctl.socket_client.on("connection_ok", ()=>{
-		console.log("\rConnecté au socket ctl side");
+		log("OK", "\rConnecté au socket ctl side");
 		read.prompt(true);
 		ctl.socket_client.emit("data", "Envoi depuis le ctl")
 	}).on("renvoi", (x)=>{

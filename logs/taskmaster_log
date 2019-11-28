@@ -1,2850 +1,686 @@
-[Thu Nov 28 2019 13:44:42 GMT+0100]
--> Session CTL demarrée.
-[Thu Nov 28 2019 13:44:42 GMT+0100]
--> setup read ... 
-[Thu Nov 28 2019 13:44:42 GMT+0100]
--> setup read: done
-[Thu Nov 28 2019 13:44:42 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 13:44:42 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 13:44:53 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 13:44:53 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:44:53 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:44:57 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 13:44:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:44:57 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:44:57 GMT+0100]
--> Process spawned: 42sh:52110
-[Thu Nov 28 2019 13:44:57 GMT+0100]
--> Child exited with 255 signal:  
-[Thu Nov 28 2019 13:44:57 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 13:46:10 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 13:46:10 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:46:10 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:46:13 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 13:46:13 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:46:13 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:46:43 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 13:46:43 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:46:43 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:46:45 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 13:46:45 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:46:45 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:46:45 GMT+0100]
--> Process spawned: 42sh:54426
-[Thu Nov 28 2019 13:46:45 GMT+0100]
--> Child exited with 255 signal:  
-[Thu Nov 28 2019 13:46:45 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 13:47:10 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 13:47:10 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:47:10 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:47:13 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 13:47:13 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:47:13 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:51:53 GMT+0100]
--> CTL command c 
-[Thu Nov 28 2019 13:51:53 GMT+0100]
--> Server: Command server-side :'c'
-[Thu Nov 28 2019 13:51:53 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:52:03 GMT+0100]
--> CTL command c 
-[Thu Nov 28 2019 13:52:03 GMT+0100]
--> Server: Command server-side :'c'
-[Thu Nov 28 2019 13:52:03 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:52:16 GMT+0100]
--> CTL command c 
-[Thu Nov 28 2019 13:52:16 GMT+0100]
--> Server: Command server-side :'c'
-[Thu Nov 28 2019 13:52:16 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:54:52 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 13:54:52 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 13:54:52 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:54:52 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:54:52 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:54:52 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:55:34 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 13:55:34 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 13:55:34 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:55:34 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:55:34 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:55:34 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:56:16 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 13:56:16 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 13:56:16 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:16 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:56:16 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:16 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:56:18 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 13:56:18 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 13:56:18 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:18 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:56:18 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:18 GMT+0100]
--> 
-recu depuis le serveur: echec cmd TypeError: Cannot read property 'command' of undefined
-[Thu Nov 28 2019 13:56:18 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:56:18 GMT+0100]
--> 
-recu depuis le serveur: echec cmd TypeError: Cannot read property 'command' of undefined
-[Thu Nov 28 2019 13:56:37 GMT+0100]
--> Session CTL demarrée.
-[Thu Nov 28 2019 13:56:37 GMT+0100]
--> setup read ... 
-[Thu Nov 28 2019 13:56:37 GMT+0100]
--> setup read: done
-[Thu Nov 28 2019 13:56:37 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 13:56:37 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 13:56:39 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 13:56:39 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:39 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:56:44 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 13:56:44 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:44 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:56:44 GMT+0100]
--> 
-recu depuis le serveur: echec cmd TypeError: Cannot read property 'command' of undefined
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:57 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:56:58 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:57:03 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 13:57:03 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:57:03 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:58:07 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 13:58:07 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:58:07 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:58:07 GMT+0100]
--> 
-recu depuis le serveur: echec cmd TypeError: Cannot read property 'command' of undefined
-[Thu Nov 28 2019 13:58:11 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 13:58:11 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 13:58:11 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:59:03 GMT+0100]
--> CTL command h 
-[Thu Nov 28 2019 13:59:03 GMT+0100]
--> Server: Command server-side :'h'
-[Thu Nov 28 2019 13:59:03 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:59:06 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 13:59:06 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 13:59:06 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 13:59:06 GMT+0100]
--> 
-recu depuis le serveur: echec cmd TypeError: Cannot read property 'command' of undefined
-[Thu Nov 28 2019 14:01:48 GMT+0100]
--> CTL command update -l
-[Thu Nov 28 2019 14:01:48 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:01:48 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:01:48 GMT+0100]
--> 
-recu depuis le serveur: echec cmd TypeError: Cannot read property 'name' of undefined
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> CTL command quit 
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Closing taskmaster ...
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Server: Command server-side :'quit'
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49479 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49480 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49481 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49482 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49483 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49484 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49485 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49486 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49487 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49488 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49489 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49490 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49491 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49492 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49493 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49494 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49495 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> Child Process default2;49496 has been terminated normally.
-[Thu Nov 28 2019 14:05:03 GMT+0100]
--> End of daemon session.
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Daemon: Daemon demarré avec le pid: 78382
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Checking taskmaster dir ...
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Checking taskmaster dir done
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> load Configuration ...
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> 42sh a été ajouté aux programmes.
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> ConfigurationTest a été ajouté aux programmes.
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> atom a été ajouté aux programmes.
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> default a été ajouté aux programmes.
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> default2 a été ajouté aux programmes.
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> test_fd_ls a été ajouté aux programmes.
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Tous les fichiers de configuration ont été chargés
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> load Configuration done
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> kill Old Taskmaster ...
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> kill Old Taskmaster done
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> reset logs ...
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> reseting pidLogs
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> reset logs done
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> exec onLaunch programs ...
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: 42sh:78388
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: ConfigurationTest:78389
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: atom:78390
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78392
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78393
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78394
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78395
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78396
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78397
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78398
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78399
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78400
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78401
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78402
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78403
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78404
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78405
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78406
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78407
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78408
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: default2:78409
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: test_fd_ls:78410
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: test_fd_ls:78411
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: test_fd_ls:78412
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: test_fd_ls:78414
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: test_fd_ls:78415
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Process spawned: test_fd_ls:78416
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> exec onLaunch programs done
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:05:05 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:05:06 GMT+0100]
--> Session CTL demarrée.
-[Thu Nov 28 2019 14:05:06 GMT+0100]
--> setup read ... 
-[Thu Nov 28 2019 14:05:06 GMT+0100]
--> setup read: done
-[Thu Nov 28 2019 14:05:06 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 14:05:06 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 14:05:09 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 14:05:09 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 14:05:09 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:05:18 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 14:05:18 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 14:05:18 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:05:23 GMT+0100]
--> CTL command update -l
-[Thu Nov 28 2019 14:05:23 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:05:23 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:05:25 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 14:05:25 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:05:25 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:05:25 GMT+0100]
--> 
-recu depuis le serveur: echec cmd TypeError: Cannot read property 'command' of undefined
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78392 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78393 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78394 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78395 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78396 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78397 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78398 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78399 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78400 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78401 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78402 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78403 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78404 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78405 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78406 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78407 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78408 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> Child Process default2;78409 has been terminated normally.
-[Thu Nov 28 2019 14:08:24 GMT+0100]
--> End of daemon session.
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Daemon: Daemon demarré avec le pid: 82474
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Checking taskmaster dir ...
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Checking taskmaster dir done
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> load Configuration ...
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> 42sh a été ajouté aux programmes.
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> ConfigurationTest a été ajouté aux programmes.
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> atom a été ajouté aux programmes.
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> default a été ajouté aux programmes.
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> default2 a été ajouté aux programmes.
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> test_fd_ls a été ajouté aux programmes.
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Tous les fichiers de configuration ont été chargés
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> load Configuration done
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> kill Old Taskmaster ...
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> kill Old Taskmaster done
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> reset logs ...
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> reseting pidLogs
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> reset logs done
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> exec onLaunch programs ...
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: 42sh:82480
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: ConfigurationTest:82481
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: atom:82482
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82483
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82484
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82485
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82486
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82487
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82488
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82489
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82490
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82491
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82492
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82493
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82494
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82495
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82496
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82497
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82498
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82499
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: default2:82500
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: test_fd_ls:82501
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: test_fd_ls:82502
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: test_fd_ls:82503
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: test_fd_ls:82504
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: test_fd_ls:82505
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Process spawned: test_fd_ls:82506
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> exec onLaunch programs done
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:08:34 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:08:35 GMT+0100]
--> Session CTL demarrée.
-[Thu Nov 28 2019 14:08:35 GMT+0100]
--> setup read ... 
-[Thu Nov 28 2019 14:08:35 GMT+0100]
--> setup read: done
-[Thu Nov 28 2019 14:08:35 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 14:08:35 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 14:08:38 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 14:08:38 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 14:08:38 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:08:52 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 14:08:52 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 14:08:52 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:08:55 GMT+0100]
--> CTL command update -l
-[Thu Nov 28 2019 14:08:55 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:08:55 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:08:59 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 14:08:59 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:08:59 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:08:59 GMT+0100]
--> 
-recu depuis le serveur: echec cmd TypeError: Cannot read property 'command' of undefined
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82483 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82484 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82485 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82486 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82487 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82488 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82489 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82490 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82491 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82492 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82493 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82494 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82495 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82496 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82497 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82498 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82499 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> Child Process default2;82500 has been terminated normally.
-[Thu Nov 28 2019 14:09:23 GMT+0100]
--> End of daemon session.
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Daemon: Daemon demarré avec le pid: 83583
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Checking taskmaster dir ...
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Checking taskmaster dir done
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> load Configuration ...
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> 42sh a été ajouté aux programmes.
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> ConfigurationTest a été ajouté aux programmes.
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> atom a été ajouté aux programmes.
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> default a été ajouté aux programmes.
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> default2 a été ajouté aux programmes.
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> test_fd_ls a été ajouté aux programmes.
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Tous les fichiers de configuration ont été chargés
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> load Configuration done
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> kill Old Taskmaster ...
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> kill Old Taskmaster done
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> reset logs ...
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> reseting pidLogs
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> reset logs done
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> exec onLaunch programs ...
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Process spawned: 42sh:83591
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Process spawned: ConfigurationTest:83592
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Process spawned: atom:83593
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Process spawned: default2:83594
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Process spawned: default2:83595
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Process spawned: default2:83596
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Process spawned: default2:83597
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Process spawned: default2:83598
-[Thu Nov 28 2019 14:09:25 GMT+0100]
--> Process spawned: default2:83599
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: default2:83600
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: default2:83601
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: default2:83602
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: default2:83603
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: default2:83604
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: default2:83605
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: default2:83606
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: default2:83607
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: default2:83608
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: default2:83609
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: default2:83610
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: default2:83611
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: test_fd_ls:83612
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: test_fd_ls:83613
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: test_fd_ls:83614
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: test_fd_ls:83615
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: test_fd_ls:83616
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Process spawned: test_fd_ls:83617
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> exec onLaunch programs done
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:09:26 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:09:27 GMT+0100]
--> Session CTL demarrée.
-[Thu Nov 28 2019 14:09:27 GMT+0100]
--> setup read ... 
-[Thu Nov 28 2019 14:09:27 GMT+0100]
--> setup read: done
-[Thu Nov 28 2019 14:09:27 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 14:09:27 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 14:09:28 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 14:09:28 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 14:09:28 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:09:33 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 14:09:33 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 14:09:33 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:09:35 GMT+0100]
--> CTL command update -l
-[Thu Nov 28 2019 14:09:35 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:09:35 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:09:36 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 14:09:36 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:09:36 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:09:36 GMT+0100]
--> 
-recu depuis le serveur: echec cmd TypeError: Cannot read property 'command' of undefined
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> CTL command quit 
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Closing taskmaster ...
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Server: Command server-side :'quit'
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83594 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83595 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83596 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83597 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83598 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83599 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83600 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83601 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83602 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83603 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83604 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83605 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83606 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83607 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83608 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83609 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83610 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> Child Process default2;83611 has been terminated normally.
-[Thu Nov 28 2019 14:14:41 GMT+0100]
--> End of daemon session.
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Daemon: Daemon demarré avec le pid: 89966
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Checking taskmaster dir ...
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Checking taskmaster dir done
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> load Configuration ...
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> 42sh a été ajouté aux programmes.
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> ConfigurationTest a été ajouté aux programmes.
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> atom a été ajouté aux programmes.
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> default a été ajouté aux programmes.
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> default2 a été ajouté aux programmes.
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> test_fd_ls a été ajouté aux programmes.
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Tous les fichiers de configuration ont été chargés
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> load Configuration done
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> kill Old Taskmaster ...
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> kill Old Taskmaster done
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> reset logs ...
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> reseting pidLogs
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> reset logs done
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> exec onLaunch programs ...
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: 42sh:89971
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: ConfigurationTest:89972
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: atom:89973
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89975
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89976
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89977
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89978
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89979
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89980
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89981
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89982
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89983
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89984
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89985
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89986
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89987
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89988
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89989
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89990
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89991
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: default2:89992
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: test_fd_ls:89993
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: test_fd_ls:89994
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: test_fd_ls:89995
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: test_fd_ls:89996
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: test_fd_ls:89997
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Process spawned: test_fd_ls:89998
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> exec onLaunch programs done
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:14:53 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:14:55 GMT+0100]
--> Session CTL demarrée.
-[Thu Nov 28 2019 14:14:55 GMT+0100]
--> setup read ... 
-[Thu Nov 28 2019 14:14:55 GMT+0100]
--> setup read: done
-[Thu Nov 28 2019 14:14:55 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 14:14:55 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 14:15:01 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 14:15:01 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 14:15:01 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:15:04 GMT+0100]
--> CTL command update -l
-[Thu Nov 28 2019 14:15:04 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:15:04 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:15:08 GMT+0100]
--> CTL command update dontwannadie
-[Thu Nov 28 2019 14:15:08 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:15:08 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:15:08 GMT+0100]
--> 
-recu depuis le serveur: echec cmd TypeError: Cannot read property 'indexOf' of undefined
-[Thu Nov 28 2019 14:15:13 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 14:15:13 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:15:13 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:15:13 GMT+0100]
--> Process spawned: dontwannadie:90388
-[Thu Nov 28 2019 14:16:56 GMT+0100]
--> Session CTL demarrée.
-[Thu Nov 28 2019 14:16:56 GMT+0100]
--> setup read ... 
-[Thu Nov 28 2019 14:16:56 GMT+0100]
--> setup read: done
-[Thu Nov 28 2019 14:16:56 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 14:16:56 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 14:17:00 GMT+0100]
--> CTL command exit 
-[Thu Nov 28 2019 14:17:00 GMT+0100]
--> Server: Command server-side :'exit'
-[Thu Nov 28 2019 14:17:32 GMT+0100]
--> Session CTL demarrée.
-[Thu Nov 28 2019 14:17:32 GMT+0100]
--> setup read ... 
-[Thu Nov 28 2019 14:17:32 GMT+0100]
--> setup read: done
-[Thu Nov 28 2019 14:17:32 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 14:17:32 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 14:18:03 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 14:18:03 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 14:18:03 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Daemon: Daemon demarré avec le pid: 94010
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Checking taskmaster dir ...
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Checking taskmaster dir done
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> load Configuration ...
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> 42sh a été ajouté aux programmes.
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> ConfigurationTest a été ajouté aux programmes.
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> atom a été ajouté aux programmes.
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> default a été ajouté aux programmes.
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> default2 a été ajouté aux programmes.
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> dontwannadie a été ajouté aux programmes.
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> test_fd_ls a été ajouté aux programmes.
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Tous les fichiers de configuration ont été chargés
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> load Configuration done
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> kill Old Taskmaster ...
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> kill Old Taskmaster done
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> reset logs ...
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> reseting pidLogs
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> reset logs done
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> exec onLaunch programs ...
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: 42sh:94016
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: ConfigurationTest:94017
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: atom:94018
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94019
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94020
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94021
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94022
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94023
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94024
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94025
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94026
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94027
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94028
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94029
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94030
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94031
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94032
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94033
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94034
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94035
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: default2:94036
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: dontwannadie:94037
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: test_fd_ls:94038
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: test_fd_ls:94039
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: test_fd_ls:94040
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: test_fd_ls:94041
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: test_fd_ls:94042
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Process spawned: test_fd_ls:94043
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> exec onLaunch programs done
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:18:14 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:18:18 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 14:18:19 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 14:18:19 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:18:19 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 14:18:19 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 14:18:50 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 14:18:50 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 14:18:50 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:18:55 GMT+0100]
--> CTL command update -l
-[Thu Nov 28 2019 14:18:55 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:18:55 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:18:56 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 14:18:56 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:18:56 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:21:10 GMT+0100]
--> CTL command info 
-[Thu Nov 28 2019 14:21:10 GMT+0100]
--> Server: Command server-side :'info'
-[Thu Nov 28 2019 14:21:10 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:21:12 GMT+0100]
--> CTL command info -l
-[Thu Nov 28 2019 14:21:12 GMT+0100]
--> Server: Command server-side :'info'
-[Thu Nov 28 2019 14:21:12 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:21:18 GMT+0100]
--> CTL command info dontwannadie
-[Thu Nov 28 2019 14:21:18 GMT+0100]
--> Server: Command server-side :'info'
-[Thu Nov 28 2019 14:21:18 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:21:35 GMT+0100]
--> Server: Command server-side :'restart'
-[Thu Nov 28 2019 14:21:35 GMT+0100]
--> Process spawned: dontwannadie:98361
-[Thu Nov 28 2019 14:24:15 GMT+0100]
--> CTL command stop dontwannadie
-[Thu Nov 28 2019 14:24:15 GMT+0100]
--> Server: Command server-side :'stop'
-[Thu Nov 28 2019 14:24:15 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:24:15 GMT+0100]
--> Child Process dontwannadie;98361 has been terminated normally.
-[Thu Nov 28 2019 14:24:58 GMT+0100]
--> Server: Command server-side :'stop'
-[Thu Nov 28 2019 14:24:58 GMT+0100]
--> Child Process dontwannadie;98361 has been terminated normally.
-[Thu Nov 28 2019 14:25:01 GMT+0100]
--> Server: Command server-side :'stop'
-[Thu Nov 28 2019 14:25:01 GMT+0100]
--> Child Process dontwannadie;98361 has been terminated normally.
-[Thu Nov 28 2019 14:25:01 GMT+0100]
--> Server: Command server-side :'stop'
-[Thu Nov 28 2019 14:25:01 GMT+0100]
--> Child Process dontwannadie;98361 has been terminated normally.
-[Thu Nov 28 2019 14:25:01 GMT+0100]
--> Server: Command server-side :'stop'
-[Thu Nov 28 2019 14:25:01 GMT+0100]
--> Child Process dontwannadie;98361 has been terminated normally.
-[Thu Nov 28 2019 14:30:04 GMT+0100]
--> Child exited with null signal:  SIGKILL
-[Thu Nov 28 2019 14:30:04 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:30:04 GMT+0100]
--> Child exited with null signal:  SIGKILL
-[Thu Nov 28 2019 14:30:04 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Daemon: Daemon demarré avec le pid: 30282
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Checking taskmaster dir ...
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Checking taskmaster dir done
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> load Configuration ...
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> 42sh a été ajouté aux programmes.
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> ConfigurationTest a été ajouté aux programmes.
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> atom a été ajouté aux programmes.
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> default a été ajouté aux programmes.
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> default2 a été ajouté aux programmes.
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> test_fd_ls a été ajouté aux programmes.
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Tous les fichiers de configuration ont été chargés
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> load Configuration done
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> kill Old Taskmaster ...
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> kill Old Taskmaster done
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> reset logs ...
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> reseting pidLogs
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> reset logs done
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> exec onLaunch programs ...
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: 42sh:30291
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: ConfigurationTest:30296
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: atom:30297
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30299
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30301
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30304
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30305
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30306
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30308
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30312
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30314
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30317
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30320
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30322
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30323
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30324
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30325
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30326
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30330
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30331
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: default2:30335
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: test_fd_ls:30336
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: test_fd_ls:30337
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: test_fd_ls:30338
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: test_fd_ls:30339
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: test_fd_ls:30340
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Process spawned: test_fd_ls:30341
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> exec onLaunch programs done
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:40:06 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:40:07 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 14:40:07 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 14:40:15 GMT+0100]
--> CTL command exit 
-[Thu Nov 28 2019 14:40:15 GMT+0100]
--> Server: Command server-side :'exit'
-[Thu Nov 28 2019 14:40:16 GMT+0100]
--> Session CTL demarrée.
-[Thu Nov 28 2019 14:40:16 GMT+0100]
--> setup read ... 
-[Thu Nov 28 2019 14:40:16 GMT+0100]
--> setup read: done
-[Thu Nov 28 2019 14:40:16 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 14:40:16 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 14:40:24 GMT+0100]
--> CTL command fetch 
-[Thu Nov 28 2019 14:40:24 GMT+0100]
--> Server: Command server-side :'fetch'
-[Thu Nov 28 2019 14:40:24 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:40:28 GMT+0100]
--> CTL command update 
-[Thu Nov 28 2019 14:40:28 GMT+0100]
--> Server: Command server-side :'update'
-[Thu Nov 28 2019 14:40:28 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:40:28 GMT+0100]
--> Process spawned: dontwannadie:31178
-[Thu Nov 28 2019 14:40:43 GMT+0100]
--> Server: Command server-side :'stop'
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Daemon: Daemon demarré avec le pid: 33226
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Checking taskmaster dir ...
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Checking taskmaster dir done
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> load Configuration ...
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> 42sh a été ajouté aux programmes.
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> ConfigurationTest a été ajouté aux programmes.
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> atom a été ajouté aux programmes.
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> default a été ajouté aux programmes.
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> default2 a été ajouté aux programmes.
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> dontwannadie a été ajouté aux programmes.
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> test_fd_ls a été ajouté aux programmes.
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Tous les fichiers de configuration ont été chargés
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> load Configuration done
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> kill Old Taskmaster ...
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> kill Old Taskmaster done
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> reset logs ...
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> reseting pidLogs
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> reset logs done
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> exec onLaunch programs ...
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: 42sh:33252
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: ConfigurationTest:33253
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: atom:33254
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33255
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33256
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33257
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33258
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33259
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33260
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33261
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33262
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33263
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33264
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33265
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33266
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33267
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33268
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33269
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33270
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33272
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: default2:33273
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: dontwannadie:33274
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: test_fd_ls:33275
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: test_fd_ls:33276
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: test_fd_ls:33277
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: test_fd_ls:33278
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: test_fd_ls:33279
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Process spawned: test_fd_ls:33280
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> exec onLaunch programs done
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 14:41:21 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 14:41:29 GMT+0100]
--> CTL command stop dontwannadie
-[Thu Nov 28 2019 14:41:29 GMT+0100]
--> Server: Command server-side :'stop'
-[Thu Nov 28 2019 14:41:29 GMT+0100]
--> 
-recu depuis le serveur: commande reçue
-[Thu Nov 28 2019 14:41:30 GMT+0100]
--> Child Process dontwannadie;33274 has reached terminationTime and received a SIGKILL.
-[Thu Nov 28 2019 14:41:30 GMT+0100]
--> Child exited with null signal:  SIGKILL
-[Thu Nov 28 2019 14:41:30 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:41:52 GMT+0100]
--> Server: Command server-side :'restart'
-[Thu Nov 28 2019 14:41:52 GMT+0100]
--> Process spawned: dontwannadie:34520
-[Thu Nov 28 2019 14:41:56 GMT+0100]
--> Server: Command server-side :'stop'
-[Thu Nov 28 2019 14:41:57 GMT+0100]
--> Child Process dontwannadie;34520 has reached terminationTime and received a SIGKILL.
-[Thu Nov 28 2019 14:41:57 GMT+0100]
--> Child exited with null signal:  SIGKILL
-[Thu Nov 28 2019 14:41:57 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:47:31 GMT+0100]
--> CTL command quit 
-[Thu Nov 28 2019 14:47:31 GMT+0100]
--> Closing taskmaster ...
-[Thu Nov 28 2019 14:47:31 GMT+0100]
--> Server: Command server-side :'quit'
-[Thu Nov 28 2019 14:47:31 GMT+0100]
--> End of daemon session.
-[Thu Nov 28 2019 14:47:32 GMT+0100]
--> Session CTL demarrée.
-[Thu Nov 28 2019 14:47:32 GMT+0100]
--> setup read ... 
-[Thu Nov 28 2019 14:47:32 GMT+0100]
--> setup read: done
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Daemon: Daemon demarré avec le pid: 48437
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Checking taskmaster dir ...
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Checking taskmaster dir done
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> load Configuration ...
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> 42sh a été ajouté aux programmes.
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> ConfigurationTest a été ajouté aux programmes.
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> atom a été ajouté aux programmes.
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> default a été ajouté aux programmes.
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> default2 a été ajouté aux programmes.
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> dontwannadie a été ajouté aux programmes.
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> test_fd_ls a été ajouté aux programmes.
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Tous les fichiers de configuration ont été chargés
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> load Configuration done
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> kill Old Taskmaster ...
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> kill Old Taskmaster done
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> reset logs ...
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> reseting pidLogs
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> reset logs done
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> exec onLaunch programs ...
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: 42sh:48444
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: ConfigurationTest:48445
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: atom:48446
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48447
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48448
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48449
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48450
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48451
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48452
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48456
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48457
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48458
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48459
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48460
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48461
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48462
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48464
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48465
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48466
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48467
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: default2:48468
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: dontwannadie:48469
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: test_fd_ls:48470
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: test_fd_ls:48471
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: test_fd_ls:48472
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: test_fd_ls:48473
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: test_fd_ls:48474
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Process spawned: test_fd_ls:48475
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> exec onLaunch programs done
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> The execution was successful
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Child exited with 0 signal:  
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> The exit wasn't the one expected
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> Server: Utilisateur envoi data 'Envoi depuis le ctl'
-[Thu Nov 28 2019 14:47:59 GMT+0100]
--> 
-recu depuis le serveur: c bien recu mon pote
-[Thu Nov 28 2019 14:48:09 GMT+0100]
--> Server: Command server-side :'stop'
-[Thu Nov 28 2019 14:48:10 GMT+0100]
--> Child Process dontwannadie;48469 has reached terminationTime and received a SIGKILL.
-[Thu Nov 28 2019 14:48:10 GMT+0100]
--> Child exited with null signal:  SIGKILL
-[Thu Nov 28 2019 14:48:10 GMT+0100]
--> The exit wasn't the one expected
+[Thu Nov 28 2019 15:55:27 GMT+0100]
+-> [32m ✔  End of daemon session.[0m
+[Thu Nov 28 2019 15:55:28 GMT+0100]
+-> [32m ✔  Daemon: Daemon demarré avec le pid: 66907[0m
+[Thu Nov 28 2019 15:55:28 GMT+0100]
+-> [36m ℹ  Checking taskmaster dir ...[0m
+[Thu Nov 28 2019 15:55:28 GMT+0100]
+-> [32m ✔  Checking taskmaster dir done[0m
+[Thu Nov 28 2019 15:55:28 GMT+0100]
+-> [36m ℹ  load Configuration ...[0m
+[Thu Nov 28 2019 15:55:28 GMT+0100]
+-> [32m ✔  42sh a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:55:28 GMT+0100]
+-> [32m ✔  ConfigurationTest a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:55:28 GMT+0100]
+-> [32m ✔  atom a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:55:28 GMT+0100]
+-> [32m ✔  default a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  default2 a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  dontwannadie a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  faux.tm.jsonErreur dans le fichier: Checkjson SyntaxError: Unexpected token r in JSON at position 342[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  test_fd_ls a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  Tous les fichiers de configuration ont été chargés[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  load Configuration done[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  reset logs ...[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  reseting pidLogs[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  reset logs done[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  exec onLaunch programs ...[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: 42sh:66908[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:66909[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m echo grosse commande atom[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: atom:66910[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66911[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66912[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66913[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66915[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66916[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66917[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66918[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66919[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66920[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66921[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66922[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66923[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66924[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66925[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66926[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66927[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66928[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: default2:66929[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ~/taskmaster/dontwannadie[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: dontwannadie:66930[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:66931[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:66932[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:66933[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:66934[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:66935[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:66936[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  exec onLaunch programs done[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  The execution was successful[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [32m ✔  The execution was successful[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  Nouvelle connexion entrante[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:55:29 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:55:30 GMT+0100]
+-> ℹ️[36m  undefined[0m
+[Thu Nov 28 2019 15:55:32 GMT+0100]
+-> ℹ️[36m  q[0m
+[Thu Nov 28 2019 15:55:32 GMT+0100]
+-> ℹ️[36m  undefined[0m
+[Thu Nov 28 2019 15:55:34 GMT+0100]
+-> [32m ✔  Session CTL demarrée.[0m
+[Thu Nov 28 2019 15:55:34 GMT+0100]
+-> [36m ℹ  undefined[0m
+[Thu Nov 28 2019 15:55:34 GMT+0100]
+-> [36m ℹ  undefined[0m
+[Thu Nov 28 2019 15:55:34 GMT+0100]
+-> [36m ℹ  Nouvelle connexion entrante[0m
+[Thu Nov 28 2019 15:55:34 GMT+0100]
+-> [32m ✔  Connecté au socket ctl side[0m
+[Thu Nov 28 2019 15:55:35 GMT+0100]
+-> [36m ℹ  dbg[0m
+[Thu Nov 28 2019 15:55:35 GMT+0100]
+-> [36m ℹ  Server: Command server-side :'dbg'[0m
+[Thu Nov 28 2019 15:56:01 GMT+0100]
+-> [36m ℹ  undefined[0m
+[Thu Nov 28 2019 15:56:04 GMT+0100]
+-> [32m ✔  Session CTL demarrée.[0m
+[Thu Nov 28 2019 15:56:04 GMT+0100]
+-> [36m ℹ  undefined[0m
+[Thu Nov 28 2019 15:56:04 GMT+0100]
+-> [36m ℹ  undefined[0m
+[Thu Nov 28 2019 15:56:04 GMT+0100]
+-> [36m ℹ  Nouvelle connexion entrante[0m
+[Thu Nov 28 2019 15:56:04 GMT+0100]
+-> [32m ✔  Connecté au socket ctl side[0m
+[Thu Nov 28 2019 15:56:06 GMT+0100]
+-> [36m ℹ  dbg[0m
+[Thu Nov 28 2019 15:56:06 GMT+0100]
+-> [36m ℹ  Server: Command server-side :'dbg'[0m
+[Thu Nov 28 2019 15:56:09 GMT+0100]
+-> [36m ℹ  undefined[0m
+[Thu Nov 28 2019 15:56:12 GMT+0100]
+-> [32m ✔  End of daemon session.[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  Daemon: Daemon demarré avec le pid: 67388[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Checking taskmaster dir ...[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  Checking taskmaster dir done[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  load Configuration ...[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  42sh a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  ConfigurationTest a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  atom a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  default a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  default2 a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  dontwannadie a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  faux.tm.jsonErreur dans le fichier: Checkjson SyntaxError: Unexpected token r in JSON at position 342[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  test_fd_ls a été ajouté aux programmes.[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  Tous les fichiers de configuration ont été chargés[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  load Configuration done[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  reset logs ...[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  reseting pidLogs[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  reset logs done[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  exec onLaunch programs ...[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: 42sh:67411[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:67412[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m echo grosse commande atom[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: atom:67413[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67414[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67415[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67417[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67418[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67419[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67420[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67421[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67422[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67423[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67424[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67425[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67426[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67427[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67428[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67429[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67430[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67431[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/42sh/sbgloop[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: default2:67432[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ~/taskmaster/dontwannadie[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: dontwannadie:67433[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:67434[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:67435[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:67436[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:67437[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:67438[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  [32m ls -la[0m[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:67439[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  exec onLaunch programs done[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  The execution was successful[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [32m ✔  The execution was successful[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: [0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 127: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Thu Nov 28 2019 15:56:16 GMT+0100]
+-> [36m ℹ  Nouvelle connexion entrante[0m
+[Thu Nov 28 2019 15:56:17 GMT+0100]
+-> [32m ✔  Session CTL demarrée.[0m
+[Thu Nov 28 2019 15:56:17 GMT+0100]
+-> [36m ℹ  undefined[0m
+[Thu Nov 28 2019 15:56:17 GMT+0100]
+-> [36m ℹ  undefined[0m
+[Thu Nov 28 2019 15:56:17 GMT+0100]
+-> [36m ℹ  Nouvelle connexion entrante[0m
+[Thu Nov 28 2019 15:56:17 GMT+0100]
+-> [32m ✔  Connecté au socket ctl side[0m
+[Thu Nov 28 2019 15:56:19 GMT+0100]
+-> [36m ℹ  dbg[0m
+[Thu Nov 28 2019 15:56:19 GMT+0100]
+-> [36m ℹ  Server: Command server-side :'dbg'[0m
+[Thu Nov 28 2019 15:56:23 GMT+0100]
+-> [36m ℹ  undefined[0m

@@ -3,23 +3,22 @@ const Builtins = require("./builtin");
 let checkTaskMasterDir = () => {
 	try {
 		fs.accessSync(CONFIGDIR, fs.constants.R_OK | fs.constants.W_OK);
-		console.log("Dossier existant");
 	} catch (error) {
 		if (error === "ENOENT") {
-			console.log("Dossier ${PATH}/taskmaster non-existant on le crée ...");
+			log("INFO", "Dossier ${PATH}/taskmaster non-existant on le crée ...");
 			fs.mkdir(CONFIGDIR, (err)=>{
-				if (err) console.log("Création interrompue.");
-				console.log("Dossier créé avec succes...");
+				if (err) log("ERROR", "Création interrompue.");
+				log("OK", "Dossier créé avec succes...");
 			});
 		} else if (error === "EACCESS") {
-			console.log("Droit insuffisant.");
+			log("ERROR", "Droit insuffisant.");
 			daemon.isConfigurationValid = false;
 			//Initialiser variable pour empecher les manipulations sur les fichiers de configurations
 		} else {
 			daemon.isConfigurationValid = false;
-			console.log(error.toString());
+			log("ERROR", "error checktaskmaster dir: " + error.toString());
 		}
-		console.log("Erreur checktaskmaster dir: " + error.code);
+		log("ERROR", "Erreur checktaskmaster dir: " + error.code);
 	}
 };
 let onLaunchPrograms = () =>{
@@ -31,16 +30,13 @@ let onLaunchPrograms = () =>{
 }
 
 let resetLogs = () =>{
-	console.log("reseting pidLogs");
-	log("reseting pidLogs");
+	log("INFO", "reseting pidLogs");
 	fs.writeFile(daemon.pidLogs, "", (err) =>{
 		//write_fd(daemon.taskLogs, "Pid logs has been reset");
 		if (err)
 		{
-			console.log("err pidLogs");
-			log("err pidLogs");
+			log("ERRO", "err pidLogs");
 			//write_fd(daemon.taskLogs, "Unable to erase Pid logs.");
-			console.log("resetlog throw")
 			throw error ()
 		}
 	});
@@ -101,44 +97,22 @@ global.createProgram = (file, path) => {
 global.loadFile = file => {
 	let msg = "";
 	if ((msg = checkJSONFile(file)) !== 1)
-		return console.log(file + "\x1b[31m Erreur dans le fichier: " + msg + "\x1b[0m");
+		return log("ERROR", file + "Erreur dans le fichier: " + msg);
 	let program = createProgram(file, CONFIGDIR + file);
 	daemon.programs[program.name] = program;
-	log(program.name + " a été ajouté aux programmes.");
+	log("OK", program.name + " a été ajouté aux programmes.");
 };
 
 let loadConfiguration = () => {
-	if (!daemon.isConfigurationValid)  return console.log("Dossier de configuration inexistant.");
+	if (!daemon.isConfigurationValid)  return log("ERROR", "Dossier de configuration inexistant.");
 	let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
 	if (files.length)
 	{
 		files.filter(x=>x.endsWith(daemon.suffix)).forEach(loadFile);
-		console.log(files)
 	}
-	log("Tous les fichiers de configuration ont été chargés")
+	log("OK", "Tous les fichiers de configuration ont été chargés")
 
 };
-
-let killOld = () => {
-	try {
-		let command = `ps -A | grep "node taskmaster" | grep -v grep`;
-		let stdout = child_process.execSync(command, {encoding: "UTF-8"});
-		let array = stdout.split("\n");
-		array = array.filter(x=>x.length).map(x=>x.trim().substr(0, x.trim().indexOf(" "))).filter(x=>x!=process.pid);
-		if (!array.length)
-			console.log("Une seule instance de taskmaster est en cours")
-		else
-		{
-			console.log(array.join(" | ") + " sont des pids qui sont pas egaux a " + process.pid);
-			array.forEach(pid=>{
-				killPid(+pid, "SIGKILL");
-			//	console.log("\r" + pid + " terminé.")
-			})
-		}
-	} catch (e){}
-
-	return (3);
-}
 
 
 let init = () => {
@@ -146,33 +120,27 @@ let init = () => {
 	/*
 	** Checks that taskmaster have access to ressources
 	*/
-	log("Checking taskmaster dir ...")
+	log("INFO", "Checking taskmaster dir ...")
 	checkTaskMasterDir();
-	log("Checking taskmaster dir done")
+	log("OK", "Checking taskmaster dir done")
 	/*
 	** Load configuration, build objects.
 	*/
-	log("load Configuration ...")
+	log("INFO", "load Configuration ...")
 	loadConfiguration();
-	log("load Configuration done")
-	/*
-	** Kill other instances of taskmaster to be the only one alive.
-	*/
-	log("kill Old Taskmaster ...")
-	killOld();
-	log("kill Old Taskmaster done")
+	log("OK", "load Configuration done")
 	/*
 	** Reset Pid log file.
 	*/
-	log("reset logs ...")
+	log("INFO", "reset logs ...")
 	resetLogs();
-	log("reset logs done")
+	log("OK", "reset logs done")
 	/*
 	** Launch programs that should be started on launch from config.
 	*/
-	log("exec onLaunch programs ...")
+	log("INFO", "exec onLaunch programs ...")
 	onLaunchPrograms();
-	log("exec onLaunch programs done")
+	log("OK", "exec onLaunch programs done")
 }
 
 module.exports = {init};

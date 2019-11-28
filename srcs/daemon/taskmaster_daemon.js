@@ -38,11 +38,17 @@ global.Program = class {
 	}
 };
 
-global.log = (...msg) =>{
+global.log = (type = "INFO", message) => {
 	let date = new Date().toString();
-	date = date.substr(0, date.indexOf(" ("));
-	fs.appendFileSync(logfile, "[" + date + "]\n-> " + msg.join(" ") + "\n", "utf-8");
+	date = date.substr(0, date.indexOf(" ("))
+	let msg = "[" + date + "]\n-> ";
+	msg += {WARNING: "\x1b[33m ⚠", ERROR: "\x1b[31m ✖", OK: "\x1b[32m ✔", INFO: "\x1b[36m ℹ", "": "\x1b[36m ℹ"}[type.toUpperCase()] || "\x1b[36m ℹ";
+	msg += "  " + message + "\x1b[0m";
+	console.log(msg + "\x1b[0m");
+	fs.appendFileSync(logfile, msg + "\n", "utf-8");
 }
+
+
 // /Users/tlechien/taskmaster/srcs/daemon/taskmaster_daemon.js
 // /Users/tlechien/taskmaster/logs/taskmaster_log
 let server = express().use((req, res) => {
@@ -83,18 +89,18 @@ let server = express().use((req, res) => {
 }).listen(process.env.port || port || 8080).on("error", (obj)=>{
 	if (obj.errno === "EADDRINUSE")
 	{
-		console.log("Port " + port + " déjà utilisé.")
+		log("Error", "Port " + port + " déjà utilisé.")
 		process.exit(1);
 	}
 });
 
 let io = socket(server).on("connection", socket => {
-	console.log("Nouvelle connexion entrante");
+	log("INFO", "Nouvelle connexion entrante");
 	socket.emit("connection_ok");
  // envoyer les données necessaire a laffichage du tableau process
 	socket.on("data", (x)=>{
-		log("Server: Utilisateur envoi data '" + x + "'");
-		socket.emit("renvoi", "c bien recu mon pote");
+		//log("Server: Utilisateur envoi data '" + x + "'");
+		//socket.emit("renvoi", "c bien recu mon pote");
 	});
 	socket.on("senddata", (name, string)=>{
 		let programs = Object.keys(daemon.programs).map(y=>{
@@ -106,7 +112,7 @@ let io = socket(server).on("connection", socket => {
 			socket.emit("datas", programs);
 	});
 	socket.on("cmd", (cmd, argv, index)=>{
-		log("Server: Command server-side :'" + cmd + "'");
+		log("Info", "Server: Command server-side :'" + cmd + "'");
 		socket.emit("renvoi", "commande reçue");
 		try {
 			global.commands[index].call(argv, "daemon", socket);
@@ -116,20 +122,19 @@ let io = socket(server).on("connection", socket => {
 	}).on("reloadConfiguration", (file)=>loadFile(file + daemon.suffix));
 });
 
-log("Daemon: Daemon demarré avec le pid: " + process.pid);
+log("OK", "Daemon: Daemon demarré avec le pid: " + process.pid);
 
 Daemon.init();
 
 function exitHandler(options, err) {
 	killAllChilds();
-	log("End of daemon session.");
+	log("OK", "End of daemon session.");
 	process.exit(1);
 }
 //process.on('exit', exitHandler.bind(null, {exit: true, signal: "exit"}));
 process.on('SIGINT', exitHandler.bind(null, {exit: true, signal: "exit"})); //on ? probably
 process.on('SIGHUP', ()=>{
-	log("SIGHUP, configuration reload");
-	console.log("sighup");
+	log("Info", "SIGHUP, configuration reload");
 	let index = commands.findIndex(x=>~x.names.indexOf("fetch"));
 	if (~index) commands[index].call([Infinity], "daemon", undefined);
 }); //on ? probably

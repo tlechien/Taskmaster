@@ -7,7 +7,7 @@ global.startProgram = program => {
 	console.log("Missing rights to execute this command: %s", path);
 	return(1);
 	}*/
-	console.log(`\x1b[32m ${program.command}\x1b[0m`)
+	log("OK", `\x1b[32m ${program.command}\x1b[0m`)
 	let date = new Date().toString();
 	date = date.substr(0, date.indexOf(" ("))
 	let child = child_process.exec(program.command, {
@@ -30,7 +30,7 @@ global.startProgram = program => {
 	})
 	//write_fd(taskLogs, "Process spawned: " + program.name + ":" + child.pid);
 	fs.appendFileSync(daemon.pidLogs, program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
-	log("Process spawned: " + program.name + ":" + child.pid);
+	log("INFO", "Process spawned: " + program.name + ":" + child.pid);
 	let cls = new Process(child, Date.now(), "running");
 	program.subprocess.push(cls);
 	cls.startListener(program);
@@ -43,12 +43,9 @@ global.updateConfig = (newProgram) => {
 	{
 		killChilds(oldProgram);
 		launchProcess(newProgram);
-		console.log("on est dans shouldrestart")
 	}
 	else if (oldProgram.count !== newProgram.count)
 	{
-		console.log("2eme if")
-		console.log(oldProgram);
 		if (oldProgram.count > newProgram.count)
 			oldProgram.subprocess.splice(Math.max(oldProgram.subprocess.length - 2, 0), 2).forEach(process=>killPid(process.child.pid));
 		else {
@@ -78,7 +75,6 @@ global.killChilds = (program) => {
 	program.subprocess.forEach(subprocess=>{
 		if (subprocess.exit !== Infinity)
 			return;
-		console.log("here2");
 		killPid(subprocess.child.pid, program.killSignal, ()=>{if (subprocess.exit !== Infinity)log("Child Process " + program.name + ";" + subprocess.child.pid + " has been terminated normally.")});
 		setTimeout(()=>{
 			if (subprocess.exit == Infinity)
@@ -99,7 +95,7 @@ global.killPid = (pid, signal, callback)=>{
 	callback = callback || function() {};
 	try {process.kill(pid, signal);callback();}
 	catch (err) {
-		log("Child couldn't be killed " + err.toString());
+		log("ERROR", "Child couldn't be killed " + err.toString());
 	}
 };
 
@@ -113,22 +109,22 @@ global.Process = class {
 	}
 	startListener(program) {
 		this.child.on("error", (error)=>{
-			log("child error: ", error);
+			log("ERROR", "child error: ", error);
 		});
 		this.child.on('exit', (code, signal) =>{
-			log("Child " + "exited with " + code+ " signal: ", signal);
+			log("ERROR", "Child " + "exited with " + code+ " signal: ", signal);
 			this.status = signal;
 			this.exit = code;
 			this.timestop = Date.now();
 			if (!program.expectedOutput.includes(code))
-				log("The exit wasn't the one expected");
+				log("ERROR", "The exit wasn't the one expected");
 			else {
-				log("The execution was successful");
+				log("OK", "The execution was successful");
 			}
 			//child.exit();
 		});
 		this.child.on('close', (code, signal) =>{
-			console.log('closing code: ' + code + ": signal", signal);
+			log("INFO", 'closing code: ' + code + ": signal", signal);
 		});
 		this.child.stderr.on('data', function (data) {
 			//console.log('child err: ' + data);

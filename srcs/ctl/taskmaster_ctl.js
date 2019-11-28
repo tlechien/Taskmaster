@@ -17,13 +17,17 @@ global.Question = require("./file_creation");
 */
 //console.log(os.constants);
 
-global.log = (...msg) =>{
+global.log = (type = "INFO", message) => {
 	let date = new Date().toString();
 	date = date.substr(0, date.indexOf(" ("))
-	fs.appendFileSync(logfile, "[" + date + "]\n-> " + msg.join(" ") + "\n", "utf-8");
-};
+	let msg = "[" + date + "]\n-> ";
+	msg += {WARNING: "\x1b[33m ⚠", ERROR: "\x1b[31m ✖", OK: "\x1b[32m ✔", INFO: "\x1b[36m ℹ", "": "\x1b[36m ℹ"}[type.toUpperCase()] || "\x1b[36m ℹ";
+	msg += "  " + message + "\x1b[0m";
+	console.log(msg + "\x1b[0m");
+	fs.appendFileSync(logfile, msg + "\n", "utf-8");
+}
 
-log("Session CTL demarrée.");
+log("OK", "Session CTL demarrée.");
 
 global.ctl = {
 	isConfigurationValid: true,
@@ -46,7 +50,6 @@ function exitHandler(options, err) {
 	//log("Fin de session CTL")
 	process.stdout.write('\u001B[?25h');
 	if (ctl.isQuestion){
-		console.log("on est la", ctl.isQuestion);
 		ctl.isQuestion = false;
 		global.read.setPrompt(true);
 		return ;

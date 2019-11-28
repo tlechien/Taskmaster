@@ -10,10 +10,11 @@
 	"author": "aben-azz,tlechien",
 	"license": "ISC",
 	"dependencies": {
-		"express": "latest",
-		"url": "latest",
-		"path": "latest",
+		"decimal.js": "^10.2.0",
 		"enquirer": "latest",
-		"socket.io": "latest"
+		"express": "latest",
+		"path": "latest",
+		"socket.io": "latest",
+		"url": "latest"
 	}
 }

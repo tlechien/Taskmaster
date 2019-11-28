@@ -83,7 +83,6 @@ socket.on("renvoi", (x) => {
 			}
 			div.addEventListener("click", function(tag){
 				if (program.count <= 1 || tag.target.type == "button") return
-				console.log(subprocess)
 				$(subprocess).slideToggle("linear");
 				toggleStates[program.name] = !toggleStates[program.name]
 				//socket.emit("senddata");

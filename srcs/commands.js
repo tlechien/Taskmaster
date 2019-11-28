@@ -195,7 +195,7 @@ global.commands = [
 					let str;
 					if (argv[2] === "") str = LOGDIR  + argv[0] + "." + argv[1];
 					else str = CONFIGDIR + "/" + argv[2];
-					child_process.spawnSync("more", [str], {stdio: "inherit"});
+					child_process.spawnSync("less", ["-R", str], {stdio: "inherit"});
 				}
 				read.prompt(true);
 			}
@@ -353,7 +353,7 @@ global.commands = [
 		call: (argv, side, data) => {
 			void data;
 			if (side === "ctl"){
-				child_process.spawnSync("more", [LOGDIR + "taskmaster_log"], {stdio: "inherit"});
+				child_process.spawnSync("less", ["-R", LOGDIR + "taskmaster_log"], {stdio: "inherit"});
 			}
 		}
 	}
