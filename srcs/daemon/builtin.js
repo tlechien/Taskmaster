@@ -2,12 +2,12 @@
 
 let getCustomEnv = env => env;
 
-global.startProgram = program => {
+lobal.startProgram = (program, counter) => {
 	/*if (!(fs.stat(program.path).mode & fs.constants.S_IRWXU)){
 	console.log("Missing rights to execute this command: %s", path);
 	return(1);
 	}*/
-	log("OK", `\x1b[32m ${program.command}\x1b[0m`)
+	log("OK",`\x1b[32m ${program.command}\x1b[0m`)
 	let date = new Date().toString();
 	date = date.substr(0, date.indexOf(" ("))
 	let child = child_process.exec(program.command, {
@@ -31,7 +31,7 @@ global.startProgram = program => {
 	//write_fd(taskLogs, "Process spawned: " + program.name + ":" + child.pid);
 	fs.appendFileSync(daemon.pidLogs, program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
 	log("INFO", "Process spawned: " + program.name + ":" + child.pid);
-	let cls = new Process(child, Date.now(), "running");
+	let cls = new Process(program, child, Date.now(), counter, "running");
 	program.subprocess.push(cls);
 	cls.startListener(program);
 };
@@ -51,7 +51,7 @@ global.updateConfig = (newProgram) => {
 		else {
 			let diff = Math.abs(oldProgram.count - newProgram.count);
 			while (diff--)
-				startProgram(newProgram);
+				startProgram(newProgram, 0);
 		}
 		newProgram.subprocess.push(...oldProgram.subprocess)
 	}
@@ -68,7 +68,7 @@ global.shouldRestart = (oldProgram, newProgram) => {
 
 global.launchProcess = (program) => {
 	for (let i = 0; i < program.count; i++)
-		startProgram(program);
+		startProgram(program, 0);
 };
 
 global.killChilds = (program) => {
@@ -100,10 +100,12 @@ global.killPid = (pid, signal, callback)=>{
 };
 
 global.Process = class {
-	constructor(_child, _timestamp, _status){
+	constructor(_parent, _child, _timestamp, _counter, _status){
+		this.parent = _parent;
 		this.status = _status;
 		this.exit = Infinity;
 		this.child = _child;
+		this.counter = _counter;
 		this.timestamp = _timestamp;
 		this.timestop = -1;
 	}
@@ -116,8 +118,11 @@ global.Process = class {
 			this.status = signal;
 			this.exit = code;
 			this.timestop = Date.now();
-			if (!program.expectedOutput.includes(code))
+			if (!program.expectedOutput.includes(code)){
 				log("ERROR", "The exit wasn't the one expected");
+				if (this.counter <= this.parent.retryCount)
+				startProgram(this.parent, this.counter + 1);
+			}
 			else {
 				log("OK", "The execution was successful");
 			}

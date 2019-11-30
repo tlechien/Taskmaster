@@ -115,19 +115,21 @@ global.commands = [
 		names: ["restart", "re"],
 		usage: "Restart a program.\n\trestart [program]",
 		call: (argv, side, data) => {
-			void side; void data;
-			if (!argv.length)
+			if (side === "ctl" && !argv.length)
 				return console.log("It doesn't work.");
-			console.log("Restarting", argv[0] + ".");
-			let index = Object.keys(daemon.programs).findIndex(x=>{
-				return ~x.toLowerCase().indexOf(argv[0].toLowerCase())
-			});
-			if (!~index) console.log("Command not found: %s", argv[0] + ".");
-			else {
-				let prog = daemon.programs[Object.keys(daemon.programs)[index]];
-				killChilds(prog);
-				prog.subprocess.length = 0;
-				launchProcess(prog)
+			else (side === "daemon" && argv.length)
+			{
+				let index = Object.keys(daemon.programs).findIndex(x=>{
+					return ~x.toLowerCase().indexOf(argv[0].toLowerCase())
+				});
+				if (!~index) console.log("Command not found: %s", argv[0] + ".");
+				else {
+					data.emit("log", "Restarting "+ argv[0] + ".");
+					let prog = daemon.programs[Object.keys(daemon.programs)[index]];
+					killChilds(prog);
+					prog.subprocess.length = 0;
+					launchProcess(prog);
+				}
 			}
 			return true;
 		}
