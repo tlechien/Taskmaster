@@ -3,22 +3,22 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	    <title>Untitled</title>
-	    <link rel="stylesheet" href="srcs/webserver/bootstrap.min.css">
-	    <link rel="stylesheet" href="srcs/webserver/Article-Dual-Column.css">
-	    <link rel="stylesheet" href="srcs/webserver/Header-Blue.css">
-	    <link rel="stylesheet" href="srcs/webserver/Navigation-with-Button.css">
-	    <link rel="stylesheet" href="srcs/webserver/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>Taskmaster webserver client</title>
+		<link rel="stylesheet" href="srcs/webserver/bootstrap.min.css">
+		<link rel="stylesheet" href="srcs/webserver/Article-Dual-Column.css">
+		<link rel="stylesheet" href="srcs/webserver/Header-Blue.css">
+		<link rel="stylesheet" href="srcs/webserver/Navigation-with-Button.css">
+		<link rel="stylesheet" href="srcs/webserver/styles.css">
 		<script src="srcs/webserver/jquery-3.4.1.min.js"></script>
 		<script src="srcs/webserver/bootstrap.min.js"></script>
 		<script src="srcs/webserver/socket.io.js"></script>
 		<script src="srcs/webserver/client.js"></script>
 	</head>
 	<body>
-	    <ul class="list-group"></ul>
-	    <div class="card">
-	        <div class="card-body">
+		<ul class="list-group"></ul>
+		<div class="card">
+			<div class="card-body">
 				<button id="log_button" class="btn btn-primary" type="button" style="right: 15px;position: absolute;top: 12px;">📃</button>
 				<button id="refresh_button" class="btn btn-primary" type="button" style="right: 15px;position: absolute;top: 52px;">🔄</button>
 				<div class="row" style="align-items: center;text-align: center;">
@@ -30,32 +30,32 @@
 					<div class="col" style="align-self: right;position: absolute;right: 0;"></div>
 				</div>
 				<p></p>
-	            <div class="row" style="align-items: center; background-color: black; ">
-	                <div class="col-xl-2 offset-xl-0">
-	                    <h2>Process name</h2>
-	                </div>
-	                <div class="col-xl-1 offset-xl-2">
-	                    <h2>Count</h2>
-	                </div>
-	                <div class="col">
-	                    <h2>PID</h2>
-	                </div>
-	                <div class="col">
-	                    <h2>Status</h2>
-	                </div>
-	                <div class="col">
-	                    <h2>Timestamp</h2>
-	                </div>
-	                <div class="col">
-	                    <h2>View logs files</h2>
-	                </div>
-	                <div class="col">
-	                    <h2>Process action</h2>
-	                </div>
-	            </div>
+				<div class="row" style="align-items: center; background-color: black; ">
+					<div class="col-xl-2 offset-xl-0">
+						<h2>Process name</h2>
+					</div>
+					<div class="col-xl-1 offset-xl-2">
+						<h2>Count</h2>
+					</div>
+					<div class="col">
+						<h2>PID</h2>
+					</div>
+					<div class="col">
+						<h2>Status</h2>
+					</div>
+					<div class="col">
+						<h2>Timestamp</h2>
+					</div>
+					<div class="col">
+						<h2>View logs files</h2>
+					</div>
+					<div class="col">
+						<h2>Process action</h2>
+					</div>
+				</div>
 				<p>
-	        </div>
+			</div>
 			<div id="processes"></div>
-	    </div>
+		</div>
 	</body>
 </html>

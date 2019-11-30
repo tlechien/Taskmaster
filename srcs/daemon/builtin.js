@@ -2,12 +2,12 @@
 
 let getCustomEnv = env => env;
 
-lobal.startProgram = (program, counter) => {
+global.startProgram = (program, counter) => {
 	/*if (!(fs.stat(program.path).mode & fs.constants.S_IRWXU)){
 	console.log("Missing rights to execute this command: %s", path);
 	return(1);
 	}*/
-	log("OK",`\x1b[32m ${program.command}\x1b[0m`)
+	log("OK",`${program.command}`)
 	let date = new Date().toString();
 	date = date.substr(0, date.indexOf(" ("))
 	let child = child_process.exec(program.command, {

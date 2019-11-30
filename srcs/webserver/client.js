@@ -2,7 +2,7 @@ let socket = io.connect();
 let card = null
 let toggleStates = {};
 let convert = function(s) {
-    let ms = s % 1000;s = (s - ms) / 1000;let secs = s % 60;s = (s - secs) / 60;let mins = s % 60;let hrs = (s - mins) / 60;return (hrs < 10 ? "0" + hrs : hrs) + ":" + (mins < 10 ? "0" + mins : mins) + ":" + (secs < 10  ?  "0" + secs : secs)
+	let ms = s % 1000;s = (s - ms) / 1000;let secs = s % 60;s = (s - secs) / 60;let mins = s % 60;let hrs = (s - mins) / 60;return (hrs < 10 ? "0" + hrs : hrs) + ":" + (mins < 10 ? "0" + mins : mins) + ":" + (secs < 10  ?  "0" + secs : secs)
 }
 socket.on("renvoi", (x) => {
 	console.log("recu depuis le serveur: " + x)
@@ -11,7 +11,7 @@ socket.on("renvoi", (x) => {
 }).on("datas", (data) => {
 	card = document.querySelector("#processes");
 	document.querySelector("#log_button").addEventListener("click", ()=>{
-		window.open("logs/taskmaster_log")
+		window.open("srcs/webserver/logs.html")
 	});
 	document.querySelector("#refresh_button").addEventListener("click", ()=>{
 		socket.emit("cmd", "fetch", [], 7);

@@ -111,6 +111,11 @@ let io = socket(server).on("connection", socket => {
 		});
 			socket.emit("datas", programs);
 	});
+
+	socket.on("pls_log", ()=>{
+		let logs = fs.readFileSync(LOGDIR + "taskmaster_log", "utf-8").split("[0m\n").map(x=>x.replace('[32m ✔ ', 'SUCCESS').replace('[31m ✖ ', 'ERROR').replace('[36m ℹ ', 'INFO').replace('\n', '<br>'))
+		socket.emit("sendlog", logs);
+	})
 	socket.on("cmd", (cmd, argv, index)=>{
 		log("Info", "Server: Command server-side :'" + cmd + "'");
 		socket.emit("renvoi", "commande reçue");
