@@ -684,3 +684,747 @@
 -> [36m ℹ  Server: Command server-side :'dbg'[0m
 [Thu Nov 28 2019 15:56:23 GMT+0100]
 -> [36m ℹ  undefined[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  Daemon: Daemon demarré avec le pid: 6082[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Checking taskmaster dir ...[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  Checking taskmaster dir done[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  load Configuration ...[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  42sh a été ajouté aux programmes.[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ConfigurationTest a été ajouté aux programmes.[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  atom a été ajouté aux programmes.[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  default a été ajouté aux programmes.[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  default2 a été ajouté aux programmes.[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  dontwannadie a été ajouté aux programmes.[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [31m ✖  faux.tm.jsonErreur dans le fichier: Checkjson SyntaxError: Unexpected token r in JSON at position 342[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  test_fd_ls a été ajouté aux programmes.[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  Tous les fichiers de configuration ont été chargés[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  load Configuration done[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  reset logs ...[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  reseting pidLogs[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  reset logs done[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  exec onLaunch programs ...[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: 42sh:6088[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6089[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  echo grosse commande atom[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: atom:6090[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6092[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6093[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6094[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6095[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6096[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6097[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6098[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6099[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6101[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6102[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6103[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6104[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6105[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6106[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:12 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6107[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6108[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6110[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6111[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ~/taskmaster/dontwannadie[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: dontwannadie:6112[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6113[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6114[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6115[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6116[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6117[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6118[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  exec onLaunch programs done[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: 42sh:6120[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6121[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  echo grosse commande atom[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: atom:6122[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6123[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6124[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6125[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6126[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6127[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6129[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6130[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  echo grosse commande atom[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: atom:6131[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6132[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6133[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6134[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6136[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6137[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6138[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6139[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  echo grosse commande atom[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: atom:6140[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6141[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6142[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6144[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6145[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6146[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: test_fd_ls:6147[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6148[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6150[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6152[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6154[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6156[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6157[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6158[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6160[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:6161[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:13 GMT+0100]
+-> [36m ℹ  closing code: 0: signal[0m
+[Sun Dec 01 2019 16:33:22 GMT+0100]
+-> [36m ℹ  Nouvelle connexion entrante[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Server: Command server-side :'stop'[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6303[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6304[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6305[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6306[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6309[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6310[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6311[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6312[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6313[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6314[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6315[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6316[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6317[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6318[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6319[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6320[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6321[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGTERM[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  Process spawned: default2:6324[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:27 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:33:33 GMT+0100]
+-> [36m ℹ  Server: Command server-side :'stop'[0m
+[Sun Dec 01 2019 16:33:33 GMT+0100]
+-> [36m ℹ  undefined[0m
+[Sun Dec 01 2019 16:33:33 GMT+0100]
+-> [31m ✖  Child exited with null signal: SIGKILL[0m
+[Sun Dec 01 2019 16:33:33 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Sun Dec 01 2019 16:33:33 GMT+0100]
+-> [32m ✔  ~/taskmaster/dontwannadie[0m
+[Sun Dec 01 2019 16:33:33 GMT+0100]
+-> [36m ℹ  Process spawned: dontwannadie:6379[0m
+[Sun Dec 01 2019 16:33:33 GMT+0100]
+-> [36m ℹ  closing code: null: signal[0m
+[Sun Dec 01 2019 16:35:27 GMT+0100]
+-> [32m ✔  End of daemon session.[0m

@@ -38,7 +38,7 @@ socket.on("renvoi", (x) => {
 	                    ${display_status(program)}
 	                </div>
 	                <div class="col">
-	                    <h4>${display_ts(program)}</h4>
+	                    ${display_ts(program)}
 					</div>
 	                <div class="col" id=fd_${program.name}>
 	                    <div class="btn-group" role="group" style="display: flex;align-items: stretch;"><button class="btn btn-primary" type="button" style="${program.err ? "" : "background-color: #dc3545;" }">err</button><button class="btn btn-primary" type="button" style="${program.out ? "" : "background-color: #dc3545;" }">out</button></div>
@@ -65,7 +65,7 @@ socket.on("renvoi", (x) => {
 		                    ${display_sub_status(sub, program.expectedOutput)}
 		                </div>
 		                <div class="col">
-		                    <h4>${convert(((~sub.timestop) ? sub.timestop : Date.now()) - sub.timestamp)}</h4>
+							${display_sub_ts(sub, program.successTime)}
 						</div>
 		                <div class="col">
 							<h4></h4>
@@ -166,17 +166,38 @@ let display_sub_status = (sub, eOut)=>{
 
 let display_ts = program=>{
 	let str = "⬇️";
+	let style = "<h4>";
 	if (program.count == 1)
 	{
 		if (program.subprocess.length)
 		{
-			if (~program.subprocess[0].timestop)
+			if (~program.subprocess[0].timestop){
 				str = convert(program.subprocess[0].timestop - program.subprocess[0].timestamp);
+				if (program.subprocess[0].timestop - program.subprocess[0].timestamp >= parent.successTime)
+					style = "<h4 style='color:#28a745'>";
+				else
+					style = "<h4 style='color:#dc3545'>";
+			}
 			else
 				str = convert(Date.now() - program.subprocess[0].timestamp)
 		}
 		else
 			str = "---";
 	}
-	return (str);
+	return (style + str + "</h4>");
+}
+
+let display_sub_ts = (sub, successT) => {
+	let str = "⬇️";
+	let style = "<h4>";
+	if (~sub.timestop){
+		str = convert(sub.timestop - sub.timestamp);
+		if (sub.timestop - sub.timestamp >= successT)
+			style = "<h4 style='color:#28a745'>";
+		else
+			style = "<h4 style='color:#dc3545'>";
+	}
+	else
+		str = convert(Date.now() - sub.timestamp)
+	return (style + str + "</h4>");
 }

@@ -21,8 +21,6 @@ fichiers
 	- liste les differentes commandes
 - status
 	- afficher status des pids de tous les programmes.
-- run [program]
-	- lancer un program
 - stop [program
 	- arreter un program
 - kill [program] SIGNAL]
@@ -39,8 +37,6 @@ fichiers
 	- supprimer les fichiers de log de process et process2
 - clearall
 	- supprimer tous les fichiers log
-- startserver
-	- demarrer le serveur
 - tail [program] [out]
 	- affiche la sortie fd dans la console de program
 - debug

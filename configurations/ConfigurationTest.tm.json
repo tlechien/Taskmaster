@@ -3,7 +3,7 @@
 	"count":1,
 	"execAtLaunch":true,
 	"restart":"always",
-	"expectedOutput":["0"],
+	"expectedOutput":[0],
 	"successTime":20000,
 	"retryCount":12,
 	"killSignal":"SIGINT",

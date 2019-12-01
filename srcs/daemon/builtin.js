@@ -58,7 +58,7 @@ global.updateConfig = (newProgram) => {
 	daemon.programs[newProgram.name] = newProgram;
 };
 
-global.shouldRestart = (oldProgram, newProgram) => {
+let shouldRestart = (oldProgram, newProgram) => {
 	return oldProgram.command !== newProgram.command ||
 		oldProgram.restart.toString() !== newProgram.restart.toString() ||
 		oldProgram.successTime !== newProgram.successTime ||
@@ -99,6 +99,27 @@ global.killPid = (pid, signal, callback)=>{
 	}
 };
 
+let processExitHandler = (child, code, signal) => {
+	log("ERROR", "Child " + "exited with " + code + " signal: " + signal);
+	let parent = child.parent;
+	child.status = signal;
+	child.exit = code;
+	child.timestop = Date.now();
+	if (!~parent.expectedOutput.indexOf(code) || !~parent.expectedOutput.indexOf(signal) || child.timestop - child.timestamp < parent.successTime) {
+		if (!~parent.expectedOutput.indexOf(code))
+			log("ERROR", "The exit wasn't the one expected.");
+		else if (!~parent.expectedOutput.indexOf(signal))
+			log("ERROR", "The signal wasn't the one expected.");
+		else
+			log("ERROR", "Execution time too short.")
+		if (child.counter < parent.retryCount)
+			startProgram(parent, child.counter + 1);
+	}
+	else {
+		log("OK", "The execution was successful");
+	}
+}
+
 global.Process = class {
 	constructor(_parent, _child, _timestamp, _counter, _status){
 		this.parent = _parent;
@@ -113,21 +134,7 @@ global.Process = class {
 		this.child.on("error", (error)=>{
 			log("ERROR", "child error: ", error);
 		});
-		this.child.on('exit', (code, signal) =>{
-			log("ERROR", "Child " + "exited with " + code+ " signal: ", signal);
-			this.status = signal;
-			this.exit = code;
-			this.timestop = Date.now();
-			if (!program.expectedOutput.includes(code)){
-				log("ERROR", "The exit wasn't the one expected");
-				if (this.counter <= this.parent.retryCount)
-				startProgram(this.parent, this.counter + 1);
-			}
-			else {
-				log("OK", "The execution was successful");
-			}
-			//child.exit();
-		});
+		this.child.on('exit', (code, signal) => processExitHandler(this, code, signal));
 		this.child.on('close', (code, signal) =>{
 			log("INFO", 'closing code: ' + code + ": signal", signal);
 		});
