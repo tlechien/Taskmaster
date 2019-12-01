@@ -1,5 +1,5 @@
 {
-    "command": "~/taskmaster/dontwannadie",
+    "command": "~/taskmaster/demo/dontwannadie",
     "count": 1,
     "execAtLaunch": true,
     "restart": "always",
