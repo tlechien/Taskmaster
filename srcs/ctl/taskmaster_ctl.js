@@ -18,6 +18,7 @@ global.Question = require("./file_creation");
 //console.log(os.constants);
 
 global.log = (type = "INFO", message) => {
+	if (!message) return;
 	let date = new Date().toString();
 	date = date.substr(0, date.indexOf(" ("))
 	let msg = "[" + date + "]\n-> ";
@@ -27,7 +28,7 @@ global.log = (type = "INFO", message) => {
 	fs.appendFileSync(logfile, msg + "\n", "utf-8");
 }
 
-log("OK", "Session CTL demarrée.");
+log("OK", "Session CTL started.");
 
 global.ctl = {
 	isConfigurationValid: true,

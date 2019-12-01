@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/11/28 15:13:22 by aben-azz         ###   ########.fr       */
+/*   Updated: 2019/12/01 20:57:12 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,16 @@ global.setupRead = () => {
 
 let init = () => {
 	ctl.socket_client = io.connect('http://localhost:5959', {reconnect: true, transports:["websocket"]});
+	ctl.socket_client.on('connect_error', function(err) {
+		log("ERROR", 'Failed to connect to the daemon.');
+		process.exit(1);
+	});
 	ctl.socket_client.on("connection_ok", ()=>{
-		log("OK", "\rConnecté au socket ctl side");
+		log("OK", "\rConnected to the daemon with success.");
 		read.prompt(true);
-		ctl.socket_client.emit("data", "Envoi depuis le ctl")
+		ctl.socket_client.emit("data", "Data from ctl")
 	}).on("renvoi", (x)=>{
-		log("\nrecu depuis le serveur: " + x)
+		log("\nReceived from the daemon: " + x)
 	}).on("cmd", (cmd, argv, data)=>{
 		let index = commands.findIndex(x=>~x.names.indexOf(cmd));
 		if (~index)

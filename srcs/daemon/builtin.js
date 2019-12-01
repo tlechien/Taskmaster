@@ -9,14 +9,16 @@ global.startProgram = (program, counter) => {
 	}*/
 	log("OK",`${program.command}`)
 	let date = new Date().toString();
+	let umask = process.umask(parseInt(program.umask, 8));
 	date = date.substr(0, date.indexOf(" ("))
 	let child = child_process.exec(program.command, {
-		cwd : "/",//program.workingDirectory,
+		cwd : program.workingDirectory,
 		env : program.env,
 		killSignal : program.killSignal,
 		gid: process.getgid(), // a verif
 		shell : "/bin/zsh", // verif aussi
 	}, (error, out, err)=>{
+		console.log(`program.umask: ${program.umask}, ancien ${umask}, nouvo: ${process.umask(umask)}`);
 		if (program.err){
 			try {
 				fs.appendFileSync(program.custom_err, "[" + date + "]\n"  +  err + "\n", "utf-8");
@@ -28,7 +30,6 @@ global.startProgram = (program, counter) => {
 			} catch (e){}
 		}
 	})
-	//write_fd(taskLogs, "Process spawned: " + program.name + ":" + child.pid);
 	fs.appendFileSync(daemon.pidLogs, program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
 	log("INFO", "Process spawned: " + program.name + ":" + child.pid);
 	let cls = new Process(program, child, Date.now(), counter, "running");
@@ -40,10 +41,7 @@ global.updateConfig = (newProgram) => {
 	console.log("on est dans update de", newProgram.name);
 	let oldProgram = daemon.programs[newProgram.name];
 	if (shouldRestart(oldProgram, newProgram))
-	{
-		killChilds(oldProgram);
-		launchProcess(newProgram);
-	}
+		killChilds(oldProgram, ()=>{launchProcess(newProgram)});
 	else if (oldProgram.count !== newProgram.count)
 	{
 		if (oldProgram.count > newProgram.count)
@@ -71,14 +69,17 @@ global.launchProcess = (program) => {
 		startProgram(program, 0);
 };
 
-global.killChilds = (program) => {
-	program.subprocess.forEach(subprocess=>{
-		if (subprocess.exit !== Infinity)
+global.killChilds = (program, callback) => {
+	program.subprocess.forEach((subprocess, index)=>{
+		console.log(subprocess.child.pid, subprocess.exit, subprocess.timestamp, subprocess.timestop);
+		if (subprocess.exit !== Infinity || !subprocess.pid)
 			return;
 		killPid(subprocess.child.pid, program.killSignal, ()=>{if (subprocess.exit !== Infinity)log("Child Process " + program.name + ";" + subprocess.child.pid + " has been terminated normally.")});
 		setTimeout(()=>{
 			if (subprocess.exit == Infinity)
 				killPid(subprocess.child.pid, 'SIGKILL', ()=>{log("Child Process " + program.name + ";" + subprocess.child.pid + " has reached terminationTime and received a SIGKILL.")})
+			if (index == program.subprocess.length - 1)
+				callback();
 		}, program.terminationTime)
 	})
 };
@@ -95,28 +96,29 @@ global.killPid = (pid, signal, callback)=>{
 	callback = callback || function() {};
 	try {process.kill(pid, signal);callback();}
 	catch (err) {
-		log("ERROR", "Child couldn't be killed " + err.toString());
+		log("ERROR", "Child couldn't be killed " + err.toString() + ".");
 	}
 };
 
 let processExitHandler = (child, code, signal) => {
-	log("ERROR", "Child " + "exited with " + code + " signal: " + signal);
+	log("ERROR", "Child " + "exited with " + code + " signal: " + signal + ".");
 	let parent = child.parent;
 	child.status = signal;
 	child.exit = code;
 	child.timestop = Date.now();
-	if (!~parent.expectedOutput.indexOf(code) || !~parent.expectedOutput.indexOf(signal) || child.timestop - child.timestamp < parent.successTime) {
+	if (daemon.mementoMori) return(log("info", `${child.pid} has been killed by the Daemon.`));
+	if (!~parent.expectedOutput.indexOf(code) || ~parent.expectedOutput.indexOf(signal) || child.timestop - child.timestamp < parent.successTime) {
 		if (!~parent.expectedOutput.indexOf(code))
 			log("ERROR", "The exit wasn't the one expected.");
 		else if (!~parent.expectedOutput.indexOf(signal))
 			log("ERROR", "The signal wasn't the one expected.");
 		else
 			log("ERROR", "Execution time too short.")
-		if (child.counter < parent.retryCount)
+		if (!~parent.restart.indexOf("never") && (signal && ~parent.restart.indexOf(signal.toString())) && child.counter < parent.retryCount)
 			startProgram(parent, child.counter + 1);
 	}
 	else {
-		log("OK", "The execution was successful");
+		log("OK", "The execution was successful.");
 	}
 }
 

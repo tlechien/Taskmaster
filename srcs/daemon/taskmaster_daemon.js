@@ -24,6 +24,7 @@ global.daemon = {
 	programs: {},
 	processes: [],
 	fetches: [],
+	mementoMori: 0
 };
 
 global.Program = class {
@@ -132,6 +133,7 @@ log("OK", "Daemon: Daemon demarré avec le pid: " + process.pid);
 Daemon.init();
 
 function exitHandler(options, err) {
+	daemon.mementoMori = 1;
 	killAllChilds();
 	log("OK", "End of daemon session.");
 	process.exit(1);

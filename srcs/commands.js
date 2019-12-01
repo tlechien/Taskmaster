@@ -183,7 +183,7 @@ global.commands = [
 		}
 	},{
 		names: ["tail", "t", "log", "l"],
-		usage: "Display log file.\n\ttail program [out|err]",
+		usage: "Display a program log file.\n\ttail program [out|err]",
 		call: (argv, side, data) => {
 			if (side === "ctl" && !data && argv.length !== 2)
 				return console.log("To get the list of the programs, type `info -l`\nUsage: tail [program] [out|err]");
@@ -219,13 +219,11 @@ global.commands = [
 		usage: "Update configurations files.\n\tupdate -l",
 		call: (argv, side, data) => {
 			if (side === "daemon"){
-				console.log("c un appel a daemonupdate", daemon.fetches.length);
 				if (!daemon.fetches.length)
 					data && data.emit("out", "The fetch list is empty, please use 'fetch' first.");
 				else if (~argv.indexOf("-l") || ~argv.indexOf("-list")){
 					data && data.emit("out", "Fetch(es): "  + daemon.fetches.map(x => x.name).join(" | ") + ".")
 				} else if (!argv.length){
-					console.log(daemon.fetches)
 					daemon.fetches.forEach(program=>{
 						if (!daemon.programs[program.name]){
 							daemon.programs[program.name] = program;
@@ -256,7 +254,6 @@ global.commands = [
 		usage: "Fetch configurations files.\n\tfetch",
 		call: (argv, side, data) => {
 			if (side === "daemon"){
-				console.log("c un appel a daemonfetch");
 				let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
 				files.filter(x=>x.endsWith(daemon.suffix)).forEach((x, y, arr)=>{
 					let name = x.substr(0, x.indexOf(daemon.suffix));
@@ -335,6 +332,7 @@ global.commands = [
 			if (side === "ctl")
 				log("Closing taskmaster ...");
 			else {
+				daemon.mementoMori = 1;
 				killAllChilds();
 				log("End of daemon session.");
 			}
