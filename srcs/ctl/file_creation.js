@@ -173,25 +173,24 @@ let file_creation = () => {
 			}
 		],
 		template: `{
-    "command": "\${command}",
-    "count": \${count},
-    "execAtLaunch": \${execAtLaunch},
-    "restart": "\${restart}",
-    "expectedOutput": [\${expectedOutput}],
-    "successTime": \${successTime},
-    "retryCount": \${retryCount},
-    "killSignal": "\${killSignal}",
-    "terminationTime": \${terminationTime},
-    "err": \${err},
-    "out": \${out},
-    "custom_err": "\${custom_err}",
-    "custom_out": "\${custom_out}",
-    "workingDirectory": "\${workingDirectory}",
-    "umask": \${umask},
-    "env": "\${env}"
+	"command": "\${command}",
+	"count": \${count},
+	"execAtLaunch": \${execAtLaunch},
+	"restart": "\${restart}",
+	"expectedOutput": [\${expectedOutput}],
+	"successTime": \${successTime},
+	"retryCount": \${retryCount},
+	"killSignal": "\${killSignal}",
+	"terminationTime": \${terminationTime},
+	"err": \${err},
+	"out": \${out},
+	"custom_err": "\${custom_err}",
+	"custom_out": "\${custom_out}",
+	"workingDirectory": "\${workingDirectory}",
+	"umask": \${umask},
+	"env": "\${env}"
  }`
 	});
-	//global.read.close();
 	get_filename.run().then(answers => {
 		let name = answers.substr(0, ~answers.indexOf(".tm.json") || answers.length);
 		question.run().then(answer => {

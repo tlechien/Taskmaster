@@ -8,8 +8,6 @@ socket.on("renvoi", (x) => {
 	console.log("recu depuis le serveur: " + x)
 }).on("connection_ok", ()=>{
 	socket.emit("senddata");
-}).on("datas", (data) => {
-	card = document.querySelector("#processes");
 	document.querySelector("#log_button").addEventListener("click", ()=>{
 		window.open("srcs/webserver/logs.html")
 	});
@@ -17,7 +15,11 @@ socket.on("renvoi", (x) => {
 		socket.emit("cmd", "fetch", [], 7);
 		socket.emit("cmd", "update", [], 6);
 		socket.emit("senddata");
+		console.log("data emitted");
 	});
+}).on("datas", (data) => {
+	card = document.querySelector("#processes");
+
 	card.innerHTML = "";
 	data.forEach(program=>{
 		let div = document.createElement("div");
