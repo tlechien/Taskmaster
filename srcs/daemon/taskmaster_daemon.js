@@ -96,7 +96,7 @@ let server = express().use((req, res) => {
 });
 
 let io = socket(server).on("connection", socket => {
-	log("INFO", "Nouvelle connexion entrante");
+	log("INFO", "New incoming connection.");
 	socket.emit("connection_ok");
  // envoyer les données necessaire a laffichage du tableau process
 	socket.on("data", (x)=>{
@@ -119,16 +119,16 @@ let io = socket(server).on("connection", socket => {
 	})
 	socket.on("cmd", (cmd, argv, index)=>{
 		log("Info", "Server: Command server-side :'" + cmd + "'");
-		socket.emit("renvoi", "commande reçue");
+		socket.emit("renvoi", "Command received.");
 		try {
 			global.commands[index].call(argv, "daemon", socket);
 		} catch (e) {
-			socket.emit("renvoi", "echec cmd " + e.toString());
+			socket.emit("renvoi", "Failed to call the command: " + e.toString());
 		}
 	}).on("reloadConfiguration", (file)=>loadFile(file + daemon.suffix));
 });
 
-log("OK", "Daemon: Daemon demarré avec le pid: " + process.pid);
+log("OK", "Daemon session started with pid: " + process.pid);
 
 Daemon.init();
 

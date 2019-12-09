@@ -5,7 +5,7 @@ let convert = function(s) {
 	let ms = s % 1000;s = (s - ms) / 1000;let secs = s % 60;s = (s - secs) / 60;let mins = s % 60;let hrs = (s - mins) / 60;return (hrs < 10 ? "0" + hrs : hrs) + ":" + (mins < 10 ? "0" + mins : mins) + ":" + (secs < 10  ?  "0" + secs : secs)
 }
 socket.on("renvoi", (x) => {
-	console.log("recu depuis le serveur: " + x)
+	console.log("Received from server: " + x)
 }).on("connection_ok", ()=>{
 	socket.emit("senddata");
 	document.querySelector("#log_button").addEventListener("click", ()=>{

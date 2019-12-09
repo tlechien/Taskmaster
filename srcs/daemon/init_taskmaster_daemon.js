@@ -5,20 +5,20 @@ let checkTaskMasterDir = () => {
 		fs.accessSync(CONFIGDIR, fs.constants.R_OK | fs.constants.W_OK);
 	} catch (error) {
 		if (error === "ENOENT") {
-			log("INFO", "Dossier ${PATH}/taskmaster non-existant on le crée ...");
+			log("INFO", "Directory ${PATH}/taskmaster not found. Setting up a new one...");
 			fs.mkdir(CONFIGDIR, (err)=>{
-				if (err) log("ERROR", "Création interrompue.");
-				log("OK", "Dossier créé avec succes...");
+				if (err) log("ERROR", "Directory creation failed.");
+				log("OK", "Directory has been created with success...");
 			});
 		} else if (error === "EACCESS") {
-			log("ERROR", "Droit insuffisant.");
+			log("ERROR", "Missing permissions.");
 			daemon.isConfigurationValid = false;
 			//Initialiser variable pour empecher les manipulations sur les fichiers de configurations
 		} else {
 			daemon.isConfigurationValid = false;
-			log("ERROR", "error checktaskmaster dir: " + error.toString());
+			log("ERROR", "Error checktaskmaster dir: " + error.toString());
 		}
-		log("ERROR", "Erreur checktaskmaster dir: " + error.code);
+		log("ERROR", "Error checktaskmaster dir: " + error.code + ".");
 	}
 };
 let onLaunchPrograms = () =>{
@@ -30,12 +30,12 @@ let onLaunchPrograms = () =>{
 }
 
 let resetLogs = () =>{
-	log("INFO", "reseting pidLogs");
+	log("INFO", "Reseting pidLogs.");
 	fs.writeFile(daemon.pidLogs, "", (err) =>{
 		//write_fd(daemon.taskLogs, "Pid logs has been reset");
 		if (err)
 		{
-			log("ERRO", "err pidLogs");
+			log("ERROR", "Cannot write pidLogs.");
 			//write_fd(daemon.taskLogs, "Unable to erase Pid logs.");
 			throw error ()
 		}
@@ -65,7 +65,7 @@ global.checkJSONFile = file => {
 	}
 	if  (!objet.umask || !Boolean(parseInt(objet.umask, 8)))
 		return ("Umask incorrect");
-	if (!objet.command || !objet.command.length) return ("Commande inexistante");
+	if (!objet.command || !objet.command.length) return ("Command does not exist.");
 	else if (!objet.hasOwnProperty("execAtLaunch") && !objet.execAtLaunch.length) return ("ExecAtLaunch incorrect");
 	else if (objet.killSignal)
 	{
@@ -97,20 +97,20 @@ global.createProgram = (file, path) => {
 global.loadFile = file => {
 	let msg = "";
 	if ((msg = checkJSONFile(file)) !== 1)
-		return log("ERROR", file + "Erreur dans le fichier: " + msg);
+		return log("ERROR", file + "File format incorrect: " + msg);
 	let program = createProgram(file, CONFIGDIR + file);
 	daemon.programs[program.name] = program;
-	log("OK", program.name + " a été ajouté aux programmes.");
+	log("OK", program.name + " has been added to the programs.");
 };
 
 let loadConfiguration = () => {
-	if (!daemon.isConfigurationValid)  return log("ERROR", "Dossier de configuration inexistant.");
+	if (!daemon.isConfigurationValid)  return log("ERROR", "Configuration directory missing.");
 	let files =  fs.readdirSync(CONFIGDIR, "UTF-8");
 	if (files.length)
 	{
 		files.filter(x=>x.endsWith(daemon.suffix)).forEach(loadFile);
 	}
-	log("OK", "Tous les fichiers de configuration ont été chargés")
+	log("OK", "All configuration files have been loaded.")
 
 };
 
@@ -120,27 +120,27 @@ let init = () => {
 	/*
 	** Checks that taskmaster have access to ressources
 	*/
-	log("INFO", "Checking taskmaster dir ...")
+	log("INFO", "Checking taskmaster directory...")
 	checkTaskMasterDir();
-	log("OK", "Checking taskmaster dir done")
+	log("OK", "Taskmaster directory is valid.")
 	/*
 	** Load configuration, build objects.
 	*/
-	log("INFO", "load Configuration ...")
+	log("INFO", "Loading configurations ...")
 	loadConfiguration();
-	log("OK", "load Configuration done")
+	log("OK", "Configuration loaded!")
 	/*
 	** Reset Pid log file.
 	*/
-	log("INFO", "reset logs ...")
+	log("INFO", "Reseting Pid logs ...")
 	resetLogs();
-	log("OK", "reset logs done")
+	log("OK", "Pid logs reset done.")
 	/*
 	** Launch programs that should be started on launch from config.
 	*/
-	log("INFO", "exec onLaunch programs ...")
+	log("INFO", "Executing onLaunch programs ...")
 	onLaunchPrograms();
-	log("OK", "exec onLaunch programs done")
+	log("OK", "OnLaunch programs have all been executed.")
 }
 
 module.exports = {init};
