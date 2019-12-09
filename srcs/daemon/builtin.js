@@ -38,7 +38,6 @@ global.startProgram = (program, counter) => {
 };
 
 global.updateConfig = (newProgram) => {
-	console.log("on est dans update de", newProgram.name);
 	let oldProgram = daemon.programs[newProgram.name];
 	if (shouldRestart(oldProgram, newProgram))
 		killChilds(oldProgram, ()=>{launchProcess(newProgram)});
@@ -134,11 +133,11 @@ global.Process = class {
 	}
 	startListener(program) {
 		this.child.on("error", (error)=>{
-			log("ERROR", "child error: ", error);
+			log("ERROR", "child error: " + error + ".");
 		});
 		this.child.on('exit', (code, signal) => processExitHandler(this, code, signal));
 		this.child.on('close', (code, signal) =>{
-			log("INFO", 'closing code: ' + code + ": signal", signal);
+			log("INFO", 'closing code: ' + code + ": signal " + signal + ".");
 		});
 		this.child.stderr.on('data', function (data) {
 			//console.log('child err: ' + data);

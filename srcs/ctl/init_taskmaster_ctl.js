@@ -6,7 +6,7 @@
 /*   By: aben-azz <aben-azz@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 19:28:04 by aben-azz          #+#    #+#             */
-/*   Updated: 2019/12/01 20:57:12 by tlechien         ###   ########.fr       */
+/*   Updated: 2019/12/09 17:02:53 by tlechien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ let init = () => {
 		read.prompt(true);
 		ctl.socket_client.emit("data", "Data from ctl")
 	}).on("renvoi", (x)=>{
-		log("\nReceived from the daemon: " + x)
+		log("\nReceived from the daemon: " + x + ".")
 	}).on("cmd", (cmd, argv, data)=>{
 		let index = commands.findIndex(x=>~x.names.indexOf(cmd));
 		if (~index)
@@ -67,9 +67,9 @@ let init = () => {
 	/*
 	** Setup stream if program is in foreground
 	*/
-	log("setup read ... ");
+	log("Setup read ... ");
 	setupRead();
-	log("setup read: done")
+	log("Setup read: done")
 
 	//startProgram(ctl.programs.atom);
 	/*

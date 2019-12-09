@@ -13,6 +13,6 @@
 	"custom_err": "",
 	"custom_out": "",
 	"workingDirectory": "",
-	"umask": 755,
+	"umask": "0755",
 	"env": ""
 }

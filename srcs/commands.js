@@ -31,7 +31,7 @@ global.commands = [
 		}
 	}, {
 		names: ["infos", "info", "i"],
-		usage: "Print infos of programs.\n\ti atom",
+		usage: "Print infos of programs.\n\tinfo [--l|-list] {program}",
 		call: (argv, side, data) => {
 			if (side === "ctl" && !argv.length)
 			 return console.log("Usage: info [command]\nType info [--l|-list] to get the list of the programs.");
@@ -93,17 +93,17 @@ global.commands = [
 		}
 	}, {
 		names: ["stop", "stp"],
-		usage: "Stop a program.\n\tstop",
+		usage: "Stop a program.\n\tstop {program}",
 		call: (argv, side, data) => {
 			void data;
 			if (side === "ctl" && !argv.length)
-				return console.log("It doesn't work.");
+				return console.log("Missing argument: program name required.");
 			if (side === "daemon" && argv.length)
 			{
 				let index = Object.keys(daemon.programs).findIndex(x=>{
 					return ~x.indexOf(argv[0])
 				});
-				if (!~index)	data.emit("log", "Command not found: %s " + argv[0] + ".");
+				if (!~index)	data.emit("log", "Program not found: %s " + argv[0] + ".");
 				else {
 					data.emit("log", "Stopping " + argv[0] + ".");
 					killChilds(daemon.programs[Object.keys(daemon.programs)[index]]);
@@ -116,13 +116,13 @@ global.commands = [
 		usage: "Restart a program.\n\trestart [program]",
 		call: (argv, side, data) => {
 			if (side === "ctl" && !argv.length)
-				return console.log("It doesn't work.");
+				return console.log("Missing argument: program name required.");
 			else (side === "daemon" && argv.length)
 			{
 				let index = Object.keys(daemon.programs).findIndex(x=>{
 					return ~x.toLowerCase().indexOf(argv[0].toLowerCase())
 				});
-				if (!~index) console.log("Command not found: %s", argv[0] + ".");
+				if (!~index) console.log("Program not found: %s", argv[0] + ".");
 				else {
 					data.emit("log", "Restarting "+ argv[0] + ".");
 					let prog = daemon.programs[Object.keys(daemon.programs)[index]];
@@ -295,7 +295,7 @@ global.commands = [
 		}
 	}, {
 		names: ["clear", "clr", "cl"],
-		usage: "Clear logs files.\n\tclear program program2 ...",
+		usage: "Clear logs files.\n\tclear [programs...]",
 		call: (argv, side, data) => {
 			if (side === "ctl" && data) {
 				if (!argv.length){
@@ -304,18 +304,18 @@ global.commands = [
 					return false;
 				} else {
 					if (!data.length){
-						console.log("\rAucun resultat trouvé pour les programmes.");
+						console.log("\rNo result found for these programs.");
 						read.prompt(true);
 						return ;
 					}
 					if (data.length !== argv.length){
 						let exceptions = argv.filter(x=>!~data.map(x=>x.name).indexOf(x));
-						console.log("\rLe(s) programme(s) suivant(s) n'ont pas été trouvé(s) : " + exceptions.join(", ") + ".");
+						console.log("\rThe following programs haven't been found: " + exceptions.join(", ") + ".");
 					}
 					data.forEach(prog => {
 						fs.existsSync(prog.custom_out) && fs.writeFileSync(prog.custom_out, "", "utf-8");
 						fs.existsSync(prog.custom_err) && fs.writeFileSync(prog.custom_err, "", "utf-8");
-						console.log("\r", prog.custom_out + " et " + prog.custom_err + " ont bien été supprimés.");
+						console.log("\r", prog.custom_out + " and " + prog.custom_err + " has been successfully cleared.");
 					});
 					read.prompt(true);
 				}
@@ -330,7 +330,7 @@ global.commands = [
 		usage: "Close taskmaster.\n\tquit",
 		call: (argv, side, data) => {
 			if (side === "ctl")
-				log("Closing taskmaster ...");
+				log("Closing taskmaster ctl...");
 			else {
 				daemon.mementoMori = 1;
 				killAllChilds();
@@ -390,7 +390,7 @@ let handle_command = command => {
 		}
 		else if (command.trim().length)
 		{
-			console.log("Commande not found. Type help for a list of available command");
+			console.log("Command not found. Type help for a list of available commands.");
 			return (0);
 		} else return (1)
 	} catch (e) {
