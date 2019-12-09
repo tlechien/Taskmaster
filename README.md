@@ -50,3 +50,4 @@ fichiers
 - mettre des logs colorisé a chaque interaction pour plus dinformation
 - Webserver over name => command
 - button reload configuration
+- SIGTERM

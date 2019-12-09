@@ -320,8 +320,12 @@ global.commands = [
 					read.prompt(true);
 				}
 			} else if (side === "daemon"){
-				let program_names = Object.keys(daemon.programs).map(x=>daemon.programs[x]);
-				data.emit("cmd", "clear", argv, program_names.filter(x=>~argv.indexOf(x.name)));
+				let program_names = Object.keys(daemon.programs).map(x=>{
+					let obj = daemon.programs[x]
+					return {custom_err: obj.custom_err, name: obj.name, custom_out: obj.custom_out}
+				});
+				try {data.emit("cmd", "clear", argv, program_names.filter(x=>~argv.indexOf(x.name)))}
+				catch (e){log("ERROR", "emit error " + e.toString())}
 			}
 			return true;
 		}
@@ -383,8 +387,6 @@ let handle_command = command => {
 	let index = commands.findIndex(x=>~x.names.indexOf(command));
 	try {
 		if (~index){
-			log("CTL command", command, argv.join());
-			//ctl.socket_client.emit("data", "test");
 			ctl.socket_client.emit("cmd", command, argv, index);
 			return commands[index].call(argv, "ctl", false);
 		}

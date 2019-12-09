@@ -15,10 +15,12 @@ global.startProgram = (program, counter) => {
 		cwd : program.workingDirectory,
 		env : program.env,
 		killSignal : program.killSignal,
+		maxBuffer: 1024 ** 3,
 		gid: process.getgid(), // a verif
 		shell : "/bin/zsh", // verif aussi
 	}, (error, out, err)=>{
 		console.log(`program.umask: ${program.umask}, ancien ${umask}, nouvo: ${process.umask(umask)}`);
+		log("ERROR", `Error at exec: ${error}.`)
 		if (program.err){
 			try {
 				fs.appendFileSync(program.custom_err, "[" + date + "]\n"  +  err + "\n", "utf-8");

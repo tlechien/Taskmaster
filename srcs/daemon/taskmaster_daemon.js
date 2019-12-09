@@ -54,7 +54,7 @@ global.log = (type = "INFO", message) => {
 // /Users/tlechien/taskmaster/logs/taskmaster_log
 let server = express().use((req, res) => {
 	const parsedUrl = url.parse(req.url);
-	let pathname = `.${parsedUrl.pathname}`;
+	let pathname = decodeURI(`.${parsedUrl.pathname}`);
 	const mimeType = {
 		'.ico': 'image/x-icon',
 		'.html': 'text/html',
@@ -121,7 +121,7 @@ let io = socket(server).on("connection", socket => {
 		log("Info", "Server: Command server-side :'" + cmd + "'");
 		socket.emit("renvoi", "Command received.");
 		try {
-			global.commands[index].call(argv, "daemon", socket);
+		global.commands[index].call(argv, "daemon", socket);
 		} catch (e) {
 			socket.emit("renvoi", "Failed to call the command: " + e.toString());
 		}

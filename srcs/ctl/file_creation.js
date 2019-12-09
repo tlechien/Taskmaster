@@ -16,7 +16,7 @@ let file_creation = () => {
 				fs.accessSync("./configurations/" + value.substr(0, ~value.indexOf(".tm.json") || value.length) + ".tm.json");
 				return get_filename.styles.danger("Already exists.");
 			} catch (err) {
-				console.error(`Cannot access the configuration file (${value})`.);
+				console.error(`Cannot access the configuration file (${value}).`);
 				return true
 			}
 		}
@@ -201,7 +201,7 @@ let file_creation = () => {
 				ctl.isQuestion = false;
 				return true
 			} catch (err) {
-				console.error(`Failed to write the configuration file (${value})`.);
+				console.error(`Failed to write the configuration file (${value}).`);
 				return false
 			}
 		}).catch(x=> {
