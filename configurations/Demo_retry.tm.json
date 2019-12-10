@@ -1,0 +1,18 @@
+{
+	"command": "ls -la",
+	"count": 6,
+	"execAtLaunch": false,
+	"restart": "always",
+	"expectedOutput": ["1"],
+	"successTime": 100,
+	"retryCount": 3,
+	"killSignal": "SIGKILL",
+	"terminationTime": 100,
+	"env": "key:value,key1:value1",
+	"workingDirectory": ".",
+	"umask": "0755",
+	"err": true,
+	"out": true,
+	"custom_err": "",
+	"custom_out": ""
+}

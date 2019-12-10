@@ -1,0 +1,18 @@
+{
+	"command": "ls",
+	"count": 1,
+	"execAtLaunch": true,
+	"restart": "never",
+	"expectedOutput": [1],
+	"successTime": 0.1,
+	"retryCount": 2,
+	"killSignal": "SIGTERM",
+	"terminationTime": 100,
+	"err": true,
+	"out": true,
+	"custom_err": " ",
+	"custom_out": " ",
+	"workingDirectory": ".",
+	"umask": 100,
+	"env": " "
+ }

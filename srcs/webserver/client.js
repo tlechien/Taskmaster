@@ -31,7 +31,7 @@ socket.on("renvoi", (x) => {
 		                    <h6>${program.name}</h6><span class="tooltiptext">${program.command}</span>
 	                </div>
 					<div class="col-xl-1 offset-xl-3">
-						<h4>${program.count}</h4>
+						<h4>${program.count} ${(program.count == 1 && Object.keys(program.subprocess).length > 1) ? "("+ (Object.keys(program.subprocess).length - 1)+ ")": ""}</h4>
 					</div>
 	                <div class="col">
 	                    <h4>${display_pid(program)}</h4>
@@ -58,7 +58,7 @@ socket.on("renvoi", (x) => {
 			                 <h6>${program.name}</h6>
 		                </div>
 						<div class="col-xl-1 offset-xl-3">
-							<h4>${index + 1}</h4>
+							<h4>${display_sub_count(sub, program, index)}</h4>
 						</div>
 		                <div class="col">
 		                    <h4>${sub.pid}</h4>
@@ -189,6 +189,13 @@ let display_ts = program=>{
 	return (style + str + "</h4>");
 }
 
+let display_sub_count = (sub, program, index) =>{
+	let str = (index + 1).toString();
+	 if (sub.counter > 0)
+	 	str = ((index % (program.count)) + 1).toString();
+	//return (str + '&ensp;'.repeat((program.count.toString().length - str.length) + 1) + "(" + sub.counter + ")");
+	return ("(" + sub.counter + ")" + "&nbsp" + str)
+}
 let display_sub_ts = (sub, successT) => {
 	let str = "⬇️";
 	let style = "<h4>";

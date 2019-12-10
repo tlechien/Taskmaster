@@ -13,6 +13,6 @@
 	"custom_err": "logs/ConfigurationTest.err",
 	"custom_out": "logs/ConfigurationTest.out",
 	"env": "key:value,key1:value1",
-	"workingDirectory":"path",
+	"workingDirectory":"/",
 	"umask":"0755"
 }

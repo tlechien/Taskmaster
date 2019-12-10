@@ -66,13 +66,14 @@ global.checkJSONFile = file => {
 	if  (!objet.umask || !Boolean(parseInt(objet.umask, 8)))
 		return ("Umask incorrect");
 	if (!objet.command || !objet.command.length) return ("Command does not exist.");
-	else if (!objet.hasOwnProperty("execAtLaunch") && !objet.execAtLaunch.length) return ("ExecAtLaunch incorrect");
-	else if (objet.killSignal)
+	if (!objet.hasOwnProperty("execAtLaunch") && !objet.execAtLaunch.length) return ("ExecAtLaunch incorrect.");
+	if (objet.killSignal)
 	{
 		let sig = ["SIGALRM", "SIGHUP", "SIGINT", "SIGKILL", "SIGPIPE", "SIGTERM", "SIGUSR1", "SIGUSR2"];
 		if (!~sig.indexOf(objet.killSignal).length)
 			return ("Signal incorrect");
 	}
+	if (!fs.existsSync(objet.workingDirectory)) return ("Unable to access workingDirectory.")
 	return (1);
 }
 

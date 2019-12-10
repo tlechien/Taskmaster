@@ -1,9 +1,8 @@
 {
-	"name": "default",
 	"command": "~/42sh/sbgloop",
 	"count": 18,
 	"execAtLaunch": true,
-	"restart": ["always", "never", "signal"],
+	"restart": ["never"],
 	"expectedOutput": [0],
 	"successTime": 1000,
 	"retryCount": 3,
@@ -14,6 +13,6 @@
 	"custom_err": "logs/default2.err",
 	"custom_out": "logs/default2.out",
 	"env": "key:value,key1:value1",
-	"workingDirectory": "/Working/Path/",
+	"workingDirectory": ".",
 	"umask": "0755"
 }

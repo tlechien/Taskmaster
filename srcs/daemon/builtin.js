@@ -19,8 +19,8 @@ global.startProgram = (program, counter) => {
 		gid: process.getgid(), // a verif
 		shell : "/bin/zsh", // verif aussi
 	}, (error, out, err)=>{
-		console.log(`program.umask: ${program.umask}, ancien ${umask}, nouvo: ${process.umask(umask)}`);
-		log("ERROR", `Error at exec: ${error}.`)
+		if (error)
+			log("ERROR", `Error at exec: ${error}.`)
 		if (program.err){
 			try {
 				fs.appendFileSync(program.custom_err, "[" + date + "]\n"  +  err + "\n", "utf-8");
@@ -58,7 +58,7 @@ global.updateConfig = (newProgram) => {
 };
 
 let shouldRestart = (oldProgram, newProgram) => {
-	return oldProgram.command !== newProgram.command ||
+	return !oldProgram || oldProgram.command !== newProgram.command ||
 		oldProgram.restart.toString() !== newProgram.restart.toString() ||
 		oldProgram.successTime !== newProgram.successTime ||
 		JSON.stringify(oldProgram.env) !== JSON.stringify(newProgram.env) ||
@@ -72,7 +72,6 @@ global.launchProcess = (program) => {
 
 global.killChilds = (program, callback) => {
 	program.subprocess.forEach((subprocess, index)=>{
-		console.log(subprocess.child.pid, subprocess.exit, subprocess.timestamp, subprocess.timestop);
 		if (subprocess.exit !== Infinity || !subprocess.pid)
 			return;
 		killPid(subprocess.child.pid, program.killSignal, ()=>{if (subprocess.exit !== Infinity)log("Child Process " + program.name + ";" + subprocess.child.pid + " has been terminated normally.")});
@@ -108,14 +107,14 @@ let processExitHandler = (child, code, signal) => {
 	child.exit = code;
 	child.timestop = Date.now();
 	if (daemon.mementoMori) return(log("info", `${child.pid} has been killed by the Daemon.`));
-	if (!~parent.expectedOutput.indexOf(code) || ~parent.expectedOutput.indexOf(signal) || child.timestop - child.timestamp < parent.successTime) {
+	if (!~parent.expectedOutput.indexOf(code) || !~parent.expectedOutput.indexOf(signal) || child.timestop - child.timestamp < parent.successTime) {
 		if (!~parent.expectedOutput.indexOf(code))
 			log("ERROR", "The exit wasn't the one expected.");
 		else if (!~parent.expectedOutput.indexOf(signal))
 			log("ERROR", "The signal wasn't the one expected.");
 		else
 			log("ERROR", "Execution time too short.")
-		if (!~parent.restart.indexOf("never") && (signal && ~parent.restart.indexOf(signal.toString())) && child.counter < parent.retryCount)
+		if (!~parent.restart.indexOf("never") && ((signal && ~parent.restart.indexOf(signal.toString())) || !~parent.expectedOutput.indexOf(code)) && child.counter < parent.retryCount)
 			startProgram(parent, child.counter + 1);
 	}
 	else {

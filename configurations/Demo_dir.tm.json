@@ -1,0 +1,18 @@
+{
+    "command": "ls -lRa .",
+    "count": 1,
+    "execAtLaunch": false,
+    "restart": "always",
+    "expectedOutput": [0, 1],
+    "successTime": 100,
+    "retryCount": 1,
+    "killSignal": "SIGTERM",
+    "terminationTime":180 ,
+    "err": true,
+    "out": true,
+    "custom_err": "",
+    "custom_out": "",
+    "workingDirectory": "/Library",
+    "umask": 777,
+    "env": ""
+ }

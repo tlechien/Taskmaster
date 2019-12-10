@@ -107,7 +107,7 @@ let io = socket(server).on("connection", socket => {
 		let programs = Object.keys(daemon.programs).map(y=>{
 			let x = daemon.programs[y];
 			return {command: x.command, err: x.err, out: x.out, custom_err: x.custom_err, custom_out: x.custom_out, count: x.count, name: x.name, successTime: x.successTime, expectedOutput: x.expectedOutput, subprocess: x.subprocess.map(sub=>{
-				return {status: sub.status, exit: sub.exit, pid: sub.child.pid, exitCode: sub.child.exitCode, timestamp: sub.timestamp, timestop: sub.timestop}
+				return {status: sub.status, exit: sub.exit, pid: sub.child.pid, exitCode: sub.child.exitCode, timestamp: sub.timestamp, timestop: sub.timestop, counter: sub.counter}
 			})}
 		});
 			socket.emit("datas", programs);

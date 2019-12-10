@@ -92,7 +92,7 @@ let file_creation = () => {
 				name: 'successTime',
 				message: '400',
 				validate: (value, state, item, index, non, lol) => {
-					if (+value != NaN && +value > 0) return true;
+					if (+value != NaN && +value >= 0) return true;
 					else return question.styles.danger("Must be a positive number.");
 				}
 			}, {
@@ -146,10 +146,10 @@ let file_creation = () => {
 				}
 			}, {
 				name: 'custom_err',
-				message: '/logs/program.err',
+				message: 'logs/program.err',
 			}, {
 				name: 'custom_out',
-				message: '/logs/program.out',
+				message: 'logs/program.out',
 			}, {
 				name: 'workingDirectory',
 				message: '/Users/user',

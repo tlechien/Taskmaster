@@ -334,11 +334,11 @@ global.commands = [
 		usage: "Close taskmaster.\n\tquit",
 		call: (argv, side, data) => {
 			if (side === "ctl")
-				log("Closing taskmaster ctl...");
+				log("INFO", "Closing taskmaster ctl...");
 			else {
 				daemon.mementoMori = 1;
 				killAllChilds();
-				log("End of daemon session.");
+				log("INFO","End of daemon session.");
 			}
 			process.exit(0);
 			return true;

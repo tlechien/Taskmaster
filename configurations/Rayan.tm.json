@@ -1,0 +1,18 @@
+{
+	"command": "ls -la",
+	"count": 20,
+	"execAtLaunch": true,
+	"restart": "always",
+	"expectedOutput": [1],
+	"successTime": 0.1,
+	"retryCount": 10,
+	"killSignal": "SIGINT",
+	"terminationTime": 100,
+	"err": true,
+	"out": true,
+	"custom_err": "logs/program.err",
+	"custom_out": "logs/program.out",
+	"workingDirectory": ".",
+	"umask": 777,
+	"env": "/"
+ }
