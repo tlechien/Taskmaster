@@ -290,6 +290,8 @@ global.commands = [
 			void data;
 			if (side === "ctl"){
 				ctl.isQuestion = true;
+				read.close();
+				read.removeAllListeners();
 				return Question.file_creation();
 			}
 		}
@@ -400,8 +402,4 @@ let handle_command = command => {
 	}
 
 };
-
-// process.on("SIGCONT", ()=>{
-// 	console.log("on reprend ? " + process.stdin.isTTY);
-// })
 module.exports = {handle_command, autocompletion, event_line};

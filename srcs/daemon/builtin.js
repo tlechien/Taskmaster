@@ -3,10 +3,6 @@
 let getCustomEnv = env => env;
 
 global.startProgram = (program, counter) => {
-	/*if (!(fs.stat(program.path).mode & fs.constants.S_IRWXU)){
-	console.log("Missing rights to execute this command: %s", path);
-	return(1);
-	}*/
 	log("OK",`${program.command}`)
 	let date = new Date().toString();
 	let umask = process.umask(parseInt(program.umask, 8));
@@ -19,8 +15,7 @@ global.startProgram = (program, counter) => {
 		gid: process.getgid(), // a verif
 		shell : "/bin/zsh", // verif aussi
 	}, (error, out, err)=>{
-		if (error)
-			log("ERROR", `Error at exec: ${error}.`)
+		process.umask(umask);
 		if (program.err){
 			try {
 				fs.appendFileSync(program.custom_err, "[" + date + "]\n"  +  err + "\n", "utf-8");
@@ -32,6 +27,7 @@ global.startProgram = (program, counter) => {
 			} catch (e){}
 		}
 	})
+	process.umask(umask);
 	fs.appendFileSync(daemon.pidLogs, program.name + ";" + child.pid + ";" + Date.now() + "\n", "UTF-8");
 	log("INFO", "Process spawned: " + program.name + ":" + child.pid);
 	let cls = new Process(program, child, Date.now(), counter, "running");
@@ -131,6 +127,7 @@ global.Process = class {
 		this.counter = _counter;
 		this.timestamp = _timestamp;
 		this.timestop = -1;
+
 	}
 	startListener(program) {
 		this.child.on("error", (error)=>{
@@ -139,14 +136,6 @@ global.Process = class {
 		this.child.on('exit', (code, signal) => processExitHandler(this, code, signal));
 		this.child.on('close', (code, signal) =>{
 			log("INFO", 'closing code: ' + code + ": signal " + signal + ".");
-		});
-		this.child.stderr.on('data', function (data) {
-			//console.log('child err: ' + data);
-			//process.exit(1); // <<<< this works as expected and exit the process asap
-		});
-		this.child.stdout.on('data', function (data) {
-			//console.log('child out: ' + data);
-			//process.exit(1); // <<<< this works as expected and exit the process asap
 		});
 	}
 };

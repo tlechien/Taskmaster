@@ -1,9 +1,5 @@
-
-
 const fs = require("fs");
 const { Snippet, Input } = require('enquirer');
-
-
 
 let file_creation = () => {
 	let get_filename = new Input({
