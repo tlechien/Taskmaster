@@ -5,7 +5,7 @@ let checkTaskMasterDir = () => {
 		fs.accessSync(CONFIGDIR, fs.constants.R_OK | fs.constants.W_OK);
 	} catch (error) {
 		if (error === "ENOENT") {
-			log("INFO", "Directory ${PATH}/taskmaster not found. Setting up a new one...");
+			log("INFO", "Directory ${MAINDIR} not found. Setting up a new one...");
 			fs.mkdir(CONFIGDIR, (err)=>{
 				if (err) log("ERROR", "Directory creation failed.");
 				log("OK", "Directory has been created with success...");
@@ -37,7 +37,7 @@ let resetLogs = () =>{
 		{
 			log("ERROR", "Cannot write pidLogs.");
 			//write_fd(daemon.taskLogs, "Unable to erase Pid logs.");
-			throw error ()
+			//throw
 		}
 	});
 }

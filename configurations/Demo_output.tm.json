@@ -12,7 +12,7 @@
 	"out": false,
 	"custom_err": "",
 	"custom_out": "",
-	"workingDirectory": "",
+	"workingDirectory": ".",
 	"umask": "0755",
 	"env": ""
 }

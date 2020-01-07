@@ -1,0 +1,862 @@
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  Daemon session started with pid: 23608[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Checking taskmaster directory...[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  Taskmaster directory is valid.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Loading configurations ...[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ConfigurationTest has been added to the programs.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Demo_bad_config.tm.jsonFile format incorrect: Checkjson SyntaxError: Unexpected token r in JSON at position 342[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  Demo_count has been added to the programs.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  Demo_dir has been added to the programs.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  Demo_dontwannadie has been added to the programs.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Demo_output.tm.jsonFile format incorrect: Unable to access workingDirectory.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  Demo_retry has been added to the programs.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  Demo_signalretry has been added to the programs.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Demo_unexistant.tm.jsonFile format incorrect: Unable to access workingDirectory.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  atom.tm.jsonFile format incorrect: Unable to access workingDirectory.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ®Demo_env has been added to the programs.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  All configuration files have been loaded.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  Configuration loaded![0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Reseting Pid logs ...[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Reseting pidLogs.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  Pid logs reset done.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Executing onLaunch programs ...[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:23614[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23615[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23616[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23617[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23618[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23619[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23620[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23621[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23622[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23623[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23624[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23625[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23626[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23627[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23628[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23629[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23630[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23631[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:23632[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  ~/taskmaster/demo/dontwannadie[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_dontwannadie:23633[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [32m ✔  OnLaunch programs have all been executed.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:32:25 GMT+0100]
+-> [36m ℹ  closing code: 0: signal null.[0m
+[Tue Jan 07 2020 18:32:26 GMT+0100]
+-> [36m ℹ  Demo_dontwannadie:23633 has successfully been ran for it's successTime[0m
+[Tue Jan 07 2020 18:32:34 GMT+0100]
+-> [36m ℹ  New incoming connection.[0m
+[Tue Jan 07 2020 18:32:44 GMT+0100]
+-> [36m ℹ  New incoming connection.[0m
+[Tue Jan 07 2020 18:34:37 GMT+0100]
+-> [32m ✔  End of daemon session.[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [32m ✔  Daemon session started with pid: 24985[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [36m ℹ  Checking taskmaster directory...[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [31m ✖  Error checktaskmaster dir: Error: ENOENT: no such file or directory, access '/private/tmp/taskmaster/taskmaster/configurations/'[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [31m ✖  Error checktaskmaster dir: ENOENT.[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [32m ✔  Taskmaster directory is valid.[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [36m ℹ  Loading configurations ...[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [31m ✖  Configuration directory missing.[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [32m ✔  Configuration loaded![0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [36m ℹ  Reseting Pid logs ...[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [36m ℹ  Reseting pidLogs.[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [32m ✔  Pid logs reset done.[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [36m ℹ  Executing onLaunch programs ...[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [32m ✔  OnLaunch programs have all been executed.[0m
+[Tue Jan 07 2020 18:34:41 GMT+0100]
+-> [31m ✖  Cannot write pidLogs.[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [32m ✔  Daemon session started with pid: 25301[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [36m ℹ  Checking taskmaster directory...[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [31m ✖  Error checktaskmaster dir: Error: ENOENT: no such file or directory, access '/private/tmp/taskmaster/taskmaster/configurations/'[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [31m ✖  Error checktaskmaster dir: ENOENT.[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [32m ✔  Taskmaster directory is valid.[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [36m ℹ  Loading configurations ...[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [31m ✖  Configuration directory missing.[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [32m ✔  Configuration loaded![0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [36m ℹ  Reseting Pid logs ...[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [36m ℹ  Reseting pidLogs.[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [32m ✔  Pid logs reset done.[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [36m ℹ  Executing onLaunch programs ...[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [32m ✔  OnLaunch programs have all been executed.[0m
+[Tue Jan 07 2020 18:35:13 GMT+0100]
+-> [31m ✖  Cannot write pidLogs.[0m
+[Tue Jan 07 2020 18:35:18 GMT+0100]
+-> [36m ℹ  New incoming connection.[0m
+[Tue Jan 07 2020 18:38:00 GMT+0100]
+-> [32m ✔  End of daemon session.[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [32m ✔  Daemon session started with pid: 26892[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [36m ℹ  Checking taskmaster directory...[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [31m ✖  Error checktaskmaster dir: Error: ENOENT: no such file or directory, access '/private/tmp/taskmasterconfigurations/'[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [31m ✖  Error checktaskmaster dir: ENOENT.[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [32m ✔  Taskmaster directory is valid.[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [36m ℹ  Loading configurations ...[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [31m ✖  Configuration directory missing.[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [32m ✔  Configuration loaded![0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [36m ℹ  Reseting Pid logs ...[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [36m ℹ  Reseting pidLogs.[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [32m ✔  Pid logs reset done.[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [36m ℹ  Executing onLaunch programs ...[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [32m ✔  OnLaunch programs have all been executed.[0m
+[Tue Jan 07 2020 18:38:03 GMT+0100]
+-> [31m ✖  Cannot write pidLogs.[0m
+[Tue Jan 07 2020 18:38:06 GMT+0100]
+-> [36m ℹ  New incoming connection.[0m
+[Tue Jan 07 2020 18:38:37 GMT+0100]
+-> [32m ✔  End of daemon session.[0m
+[Tue Jan 07 2020 18:38:37 GMT+0100]
+-> [32m ✔  Daemon session started with pid: 27215[0m
+[Tue Jan 07 2020 18:38:37 GMT+0100]
+-> [36m ℹ  Checking taskmaster directory...[0m
+[Tue Jan 07 2020 18:38:37 GMT+0100]
+-> [32m ✔  Taskmaster directory is valid.[0m
+[Tue Jan 07 2020 18:38:37 GMT+0100]
+-> [36m ℹ  Loading configurations ...[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ConfigurationTest has been added to the programs.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Demo_bad_config.tm.jsonFile format incorrect: Checkjson SyntaxError: Unexpected token r in JSON at position 342[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  Demo_count has been added to the programs.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  Demo_dir has been added to the programs.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  Demo_dontwannadie has been added to the programs.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Demo_output.tm.jsonFile format incorrect: Unable to access workingDirectory.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  Demo_retry has been added to the programs.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  Demo_signalretry has been added to the programs.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Demo_unexistant.tm.jsonFile format incorrect: Unable to access workingDirectory.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  atom.tm.jsonFile format incorrect: Unable to access workingDirectory.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ®Demo_env has been added to the programs.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  All configuration files have been loaded.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  Configuration loaded![0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Reseting Pid logs ...[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Reseting pidLogs.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  Pid logs reset done.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Executing onLaunch programs ...[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:27216[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27217[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27218[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27219[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27220[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27221[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27222[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27223[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27224[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27225[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27226[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27227[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27228[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27229[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27230[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27231[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27232[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27233[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27234[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  ~/taskmaster/demo/dontwannadie[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_dontwannadie:27235[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [32m ✔  OnLaunch programs have all been executed.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  closing code: 0: signal null.[0m
+[Tue Jan 07 2020 18:38:38 GMT+0100]
+-> [36m ℹ  Demo_dontwannadie:27235 has successfully been ran for it's successTime[0m
+[Tue Jan 07 2020 18:38:39 GMT+0100]
+-> [36m ℹ  New incoming connection.[0m
+[Tue Jan 07 2020 18:38:51 GMT+0100]
+-> [32m ✔  Session CTL started.[0m
+[Tue Jan 07 2020 18:38:51 GMT+0100]
+-> [36m ℹ  New incoming connection.[0m
+[Tue Jan 07 2020 18:38:51 GMT+0100]
+-> [32m ✔  Connected to the daemon with success.[0m
+[Tue Jan 07 2020 18:39:27 GMT+0100]
+-> [36m ℹ  Closing taskmaster ctl...[0m
+[Tue Jan 07 2020 18:39:27 GMT+0100]
+-> [36m ℹ  Server: Command server-side :'quit'[0m
+[Tue Jan 07 2020 18:39:27 GMT+0100]
+-> [36m ℹ  End of daemon session.[0m
+[Tue Jan 07 2020 18:39:28 GMT+0100]
+-> [32m ✔  Session CTL started.[0m
+[Tue Jan 07 2020 18:39:28 GMT+0100]
+-> [31m ✖  Failed to connect to the daemon.[0m
+[Tue Jan 07 2020 18:39:33 GMT+0100]
+-> [32m ✔  Session CTL started.[0m
+[Tue Jan 07 2020 18:39:33 GMT+0100]
+-> [31m ✖  Failed to connect to the daemon.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  Daemon session started with pid: 27822[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Checking taskmaster directory...[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  Taskmaster directory is valid.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Loading configurations ...[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ConfigurationTest has been added to the programs.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Demo_bad_config.tm.jsonFile format incorrect: Checkjson SyntaxError: Unexpected token r in JSON at position 342[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  Demo_count has been added to the programs.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  Demo_dir has been added to the programs.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  Demo_dontwannadie has been added to the programs.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  Demo_output has been added to the programs.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  Demo_retry has been added to the programs.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  Demo_signalretry has been added to the programs.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Demo_unexistant.tm.jsonFile format incorrect: Unable to access workingDirectory.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  atom has been added to the programs.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ®Demo_env has been added to the programs.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  All configuration files have been loaded.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  Configuration loaded![0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Reseting Pid logs ...[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Reseting pidLogs.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  Pid logs reset done.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Executing onLaunch programs ...[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: ConfigurationTest:27823[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27824[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27825[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27826[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27827[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27828[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27829[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27830[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27831[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27832[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27833[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27834[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27835[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27836[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27837[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27838[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27839[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27840[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/42sh/sbgloop[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_count:27841[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ~/taskmaster/demo/dontwannadie[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_dontwannadie:27842[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  ls -la[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: Demo_output:27843[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  echo grosse commande atom[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Process spawned: atom:27844[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [32m ✔  OnLaunch programs have all been executed.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 127 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The exit wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  Child exited with 0 signal: null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [31m ✖  The signal wasn't the one expected.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 127: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 0: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 0: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  closing code: 0: signal null.[0m
+[Tue Jan 07 2020 18:39:39 GMT+0100]
+-> [36m ℹ  Demo_dontwannadie:27842 has successfully been ran for it's successTime[0m
+[Tue Jan 07 2020 18:39:43 GMT+0100]
+-> [36m ℹ  New incoming connection.[0m
