@@ -127,9 +127,12 @@ global.Process = class {
 		this.counter = _counter;
 		this.timestamp = _timestamp;
 		this.timestop = -1;
-
 	}
 	startListener(program) {
+		let success = setTimeout(() => {
+			if (this.exit == Infinity)
+				log("SUCCESS", `${this.parent.name}:${this.child.pid} has successfully been ran for it's successTime`);
+		}, this.parent.successTime);
 		this.child.on("error", (error)=>{
 			log("ERROR", "child error: " + error + ".");
 		});

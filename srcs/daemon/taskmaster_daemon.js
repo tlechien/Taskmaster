@@ -90,7 +90,7 @@ let server = express().use((req, res) => {
 }).listen(process.env.port || port || 8080).on("error", (obj)=>{
 	if (obj.errno === "EADDRINUSE")
 	{
-		log("Error", "Port " + port + " déjà utilisé.")
+		log("Error", "Socket " + port + " already used.")
 		process.exit(1);
 	}
 });
