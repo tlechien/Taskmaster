@@ -66,16 +66,15 @@ global.launchProcess = (program) => {
 		startProgram(program, 0);
 };
 
-global.killChilds = (program, callback) => {
+global.killChilds = (program) => {
 	program.subprocess.forEach((subprocess, index)=>{
-		if (subprocess.exit !== Infinity || !subprocess.pid)
-			return;
+		 if (subprocess.exit !== Infinity || !subprocess.child.pid)
+		 	return;
 		killPid(subprocess.child.pid, program.killSignal, ()=>{if (subprocess.exit !== Infinity)log("Child Process " + program.name + ";" + subprocess.child.pid + " has been terminated normally.")});
+		console.log(program.terminationTime);
 		setTimeout(()=>{
 			if (subprocess.exit == Infinity)
 				killPid(subprocess.child.pid, 'SIGKILL', ()=>{log("Child Process " + program.name + ";" + subprocess.child.pid + " has reached terminationTime and received a SIGKILL.")})
-			if (index == program.subprocess.length - 1)
-				callback();
 		}, program.terminationTime)
 	})
 };
